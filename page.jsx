@@ -1,67 +1,454 @@
-import Link from "next/link"
+import React from "react"
 
-export default function Relocate2DayHomepage() {
+export default function Homepage() {
+  const destinations = [
+    {
+      name: "Spain",
+      image:
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+      description:
+        "Great weather, vibrant cities and the Digital Nomad Visa.",
+    },
+    {
+      name: "Portugal",
+      image:
+        "https://images.unsplash.com/photo-1513735492246-483525079686?q=80&w=1200&auto=format&fit=crop",
+      description:
+        "Affordable living, friendly locals and simple tax regimes.",
+    },
+    {
+      name: "Italy",
+      image:
+        "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1200&auto=format&fit=crop",
+      description:
+        "Beautiful coastline, amazing food and relaxed lifestyle.",
+    },
+    {
+      name: "Greece",
+      image:
+        "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=1200&auto=format&fit=crop",
+      description:
+        "Island living, sunshine and a growing remote work community.",
+    },
+  ]
+
+  const features = [
+    {
+      title: "Visa & Residency",
+      description:
+        "Up-to-date visa guides and residency requirements.",
+      icon: "🌍",
+    },
+    {
+      title: "Taxes Made Simple",
+      description:
+        "Compare taxes, social contributions and savings.",
+      icon: "💶",
+    },
+    {
+      title: "Cost of Living",
+      description:
+        "Real living expenses for Europe’s top cities.",
+      icon: "🏠",
+    },
+    {
+      title: "Healthcare",
+      description:
+        "Find the best healthcare systems and options.",
+      icon: "❤️",
+    },
+    {
+      title: "Banking & Finance",
+      description:
+        "Open accounts, transfer money and manage finances.",
+      icon: "🏦",
+    },
+    {
+      title: "Community Support",
+      description:
+        "Connect with experts and remote workers abroad.",
+      icon: "🤝",
+    },
+  ]
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-violet-50 text-gray-900">
+    <div className="min-h-screen overflow-x-hidden bg-white text-[#0B1957]">
 
-      {/* Navigation */}
-      <header className="sticky top-0 z-50 border-b bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      {/* NAVIGATION */}
+      <header className="sticky top-0 z-50 border-b border-white/30 bg-white/70 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
 
-          <div className="text-2xl font-bold tracking-tight">
-            <Link href="/" className="hover:opacity-80 transition-opacity">
-              Relocate<span className="text-gray-500">2Day</span>
-            </Link>
+          <div className="text-3xl font-black tracking-tight">
+            <span className="bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
+              Relocate2Day
+            </span>
           </div>
 
-          <nav className="hidden gap-8 md:flex text-sm font-medium">
-            <a href="#features" className="hover:text-gray-600 transition-colors">Features</a>
-            <a href="#countries" className="hover:text-gray-600 transition-colors">Countries</a>
-            <a href="#pricing" className="hover:text-gray-600 transition-colors">Pricing</a>
-            <a href="#faq" className="hover:text-gray-600 transition-colors">FAQ</a>
+          <nav className="hidden items-center gap-8 text-sm font-semibold md:flex">
+            <a href="#countries" className="hover:text-violet-600 transition">
+              Countries
+            </a>
+
+            <a href="#features" className="hover:text-violet-600 transition">
+              Features
+            </a>
+
+            <a href="#pricing" className="hover:text-violet-600 transition">
+              Pricing
+            </a>
+
+            <a href="#faq" className="hover:text-violet-600 transition">
+              FAQ
+            </a>
           </nav>
 
-          <button className="rounded-2xl bg-black px-5 py-2 text-sm font-semibold text-white shadow-lg transition hover:scale-105">
-            Get Started
-          </button>
+          <div className="flex items-center gap-4">
+            <button className="hidden md:block text-sm font-semibold">
+              Log in
+            </button>
+
+            <button className="rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+              Get started
+            </button>
+          </div>
         </div>
       </header>
 
       {/* HERO */}
-      <section className="relative overflow-hidden scroll-mt-24">
-        <div className="relative mx-auto max-w-7xl px-6 py-24">
-          <h1 className="text-5xl font-bold">
-            Relocate to Europe without the confusion.
-          </h1>
+      <section className="relative overflow-hidden">
 
-          <p className="mt-6 text-gray-600 max-w-xl">
-            Compare visas, taxes, residency requirements, healthcare, and cost of living.
-          </p>
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2000&auto=format&fit=crop')",
+          }}
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" />
+
+        <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-20">
+
+          {/* Hero Content */}
+          <div className="mx-auto max-w-5xl text-center">
+
+            <h1 className="text-5xl font-black leading-none tracking-tight text-[#0B1957] md:text-8xl">
+              Move to Europe.
+              <br />
+              Live your{" "}
+              <span className="bg-gradient-to-r from-violet-600 via-pink-500 to-yellow-400 bg-clip-text text-transparent">
+                best life.
+              </span>
+            </h1>
+
+            <p className="mx-auto mt-8 max-w-3xl text-xl leading-8 text-[#24346d]">
+              Relocate2Day is your all-in-one platform for remote workers
+              relocating to Spain, Portugal and beyond.
+            </p>
+
+            {/* Quick Buttons */}
+            <div className="mt-10 flex flex-wrap justify-center gap-4">
+              {[
+                "Compare countries",
+                "Understand taxes",
+                "Plan your move",
+              ].map((item) => (
+                <button
+                  key={item}
+                  className="rounded-2xl border border-white/40 bg-white/70 px-6 py-3 text-sm font-semibold shadow-lg backdrop-blur-xl transition hover:scale-105"
+                >
+                  {item}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Search Card */}
+          <div className="mx-auto mt-16 max-w-5xl rounded-[36px] bg-[#081B57]/95 p-8 shadow-[0_20px_80px_rgba(8,27,87,0.35)] backdrop-blur-xl">
+
+            <div className="text-center">
+              <h2 className="text-4xl font-black text-white">
+                Where should you relocate?
+              </h2>
+
+              <p className="mt-3 text-gray-300">
+                Answer a few questions and get personalized recommendations.
+              </p>
+            </div>
+
+            <div className="mt-10 grid gap-4 md:grid-cols-4">
+
+              <div className="rounded-2xl bg-white/10 p-5 text-white backdrop-blur-xl">
+                <div className="text-sm text-gray-300">I'm from</div>
+                <div className="mt-2 font-semibold">Select country</div>
+              </div>
+
+              <div className="rounded-2xl bg-white/10 p-5 text-white backdrop-blur-xl">
+                <div className="text-sm text-gray-300">Annual income</div>
+                <div className="mt-2 font-semibold">€90,000</div>
+              </div>
+
+              <div className="rounded-2xl bg-white/10 p-5 text-white backdrop-blur-xl">
+                <div className="text-sm text-gray-300">I want to live in</div>
+                <div className="mt-2 font-semibold">Europe</div>
+              </div>
+
+              <button className="rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-5 text-lg font-bold text-white shadow-2xl transition hover:scale-[1.03]">
+                Find my best options
+              </button>
+            </div>
+
+            <div className="mt-8 flex flex-wrap justify-center gap-8 text-sm text-gray-300">
+              <div>✅ 100% Free</div>
+              <div>✅ No credit card required</div>
+              <div>✅ Personalized results in 30 seconds</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DESTINATIONS */}
+      <section
+        id="countries"
+        className="bg-white px-6 py-28"
+      >
+        <div className="mx-auto max-w-7xl">
+
+          <div className="text-center">
+            <div className="text-sm font-bold uppercase tracking-[0.3em] text-violet-500">
+              Popular destinations
+            </div>
+
+            <h2 className="mt-4 text-5xl font-black">
+              Find your perfect place in Europe
+            </h2>
+
+            <p className="mt-4 text-xl text-gray-500">
+              Explore the best countries for remote workers.
+            </p>
+          </div>
+
+          <div className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+            {destinations.map((country) => (
+              <div
+                key={country.name}
+                className="group relative overflow-hidden rounded-[32px] shadow-2xl"
+              >
+                <img
+                  src={country.image}
+                  alt={country.name}
+                  className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-110"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+
+                <div className="absolute bottom-0 p-8 text-white">
+
+                  <div className="mb-4 inline-flex rounded-full bg-orange-400 px-3 py-1 text-xs font-bold uppercase tracking-wide">
+                    {country.name}
+                  </div>
+
+                  <h3 className="text-4xl font-black">
+                    {country.name}
+                  </h3>
+
+                  <p className="mt-4 text-white/90">
+                    {country.description}
+                  </p>
+
+                  <button className="mt-6 rounded-2xl bg-white/20 px-5 py-3 text-sm font-semibold backdrop-blur-xl transition hover:bg-white/30">
+                    Explore {country.name} →
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* FEATURES */}
-      <section id="features" className="scroll-mt-24 mx-auto max-w-7xl px-6 py-24">
-        <h2 className="text-4xl font-bold">Features</h2>
-      </section>
+      <section
+        id="features"
+        className="bg-gradient-to-b from-white to-[#f7f2ff] px-6 py-28"
+      >
+        <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-2">
 
-      {/* COUNTRIES */}
-      <section id="countries" className="scroll-mt-24 mx-auto max-w-7xl px-6 py-24">
-        <h2 className="text-4xl font-bold">Countries</h2>
+          <div>
+            <h2 className="text-6xl font-black leading-tight">
+              Everything you need
+              <br />
+              to relocate with{" "}
+              <span className="bg-gradient-to-r from-violet-600 to-pink-500 bg-clip-text text-transparent">
+                confidence
+              </span>
+            </h2>
+
+            <p className="mt-8 max-w-xl text-xl leading-8 text-gray-500">
+              We simplify the complex so you can focus on what matters most:
+              your new life.
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2">
+
+            {features.map((feature) => (
+              <div
+                key={feature.title}
+                className="rounded-[28px] border border-white/40 bg-white/70 p-8 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-2"
+              >
+                <div className="text-5xl">
+                  {feature.icon}
+                </div>
+
+                <h3 className="mt-6 text-2xl font-black">
+                  {feature.title}
+                </h3>
+
+                <p className="mt-4 leading-7 text-gray-500">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* PRICING */}
-      <section id="pricing" className="scroll-mt-24 mx-auto max-w-7xl px-6 py-24">
-        <h2 className="text-4xl font-bold">Pricing</h2>
+      <section
+        id="pricing"
+        className="bg-gradient-to-r from-pink-100 via-purple-50 to-blue-100 px-6 py-28"
+      >
+        <div className="mx-auto max-w-7xl">
+
+          <div className="text-center">
+            <div className="text-sm font-bold uppercase tracking-[0.3em] text-violet-500">
+              Simple pricing
+            </div>
+
+            <h2 className="mt-4 text-5xl font-black">
+              Choose your plan
+            </h2>
+          </div>
+
+          <div className="mt-16 grid gap-8 lg:grid-cols-3">
+
+            {/* FREE */}
+            <div className="rounded-[32px] bg-white p-10 shadow-2xl">
+              <h3 className="text-3xl font-black">Free</h3>
+
+              <div className="mt-6 text-6xl font-black">
+                €0
+              </div>
+
+              <div className="mt-10 space-y-4 text-gray-600">
+                <div>✓ Country comparison</div>
+                <div>✓ Basic guides</div>
+                <div>✓ Cost of living overview</div>
+              </div>
+
+              <button className="mt-10 w-full rounded-2xl border border-gray-200 py-4 font-bold transition hover:bg-gray-50">
+                Get started
+              </button>
+            </div>
+
+            {/* PRO */}
+            <div className="relative rounded-[32px] border-2 border-violet-500 bg-white p-10 shadow-[0_20px_80px_rgba(139,92,246,0.25)]">
+
+              <div className="absolute right-6 top-6 rounded-full bg-orange-400 px-4 py-2 text-xs font-black uppercase">
+                Most Popular
+              </div>
+
+              <h3 className="text-3xl font-black">Pro</h3>
+
+              <div className="mt-6 text-6xl font-black">
+                €12
+              </div>
+
+              <div className="mt-10 space-y-4 text-gray-600">
+                <div>✓ All free features</div>
+                <div>✓ Tax calculator</div>
+                <div>✓ Visa guides</div>
+                <div>✓ Relocation checklist</div>
+              </div>
+
+              <button className="mt-10 w-full rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 py-4 font-bold text-white shadow-xl transition hover:scale-[1.02]">
+                Start 7-day free trial
+              </button>
+            </div>
+
+            {/* PREMIUM */}
+            <div className="rounded-[32px] bg-white p-10 shadow-2xl">
+              <h3 className="text-3xl font-black">Premium</h3>
+
+              <div className="mt-6 text-6xl font-black">
+                €29
+              </div>
+
+              <div className="mt-10 space-y-4 text-gray-600">
+                <div>✓ All Pro features</div>
+                <div>✓ Personalized relocation plan</div>
+                <div>✓ Priority support</div>
+                <div>✓ Expert Q&A</div>
+              </div>
+
+              <button className="mt-10 w-full rounded-2xl border border-gray-200 py-4 font-bold transition hover:bg-gray-50">
+                Start 7-day free trial
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="scroll-mt-24 mx-auto max-w-7xl px-6 py-24">
-        <h2 className="text-4xl font-bold">FAQ</h2>
+      <section
+        id="faq"
+        className="bg-white px-6 py-28"
+      >
+        <div className="mx-auto max-w-5xl">
+
+          <div className="text-center">
+            <h2 className="text-5xl font-black">
+              Frequently asked questions
+            </h2>
+          </div>
+
+          <div className="mt-16 grid gap-6 md:grid-cols-2">
+
+            {[
+              "What is Relocate2Day?",
+              "Which countries do you cover?",
+              "Is the tax information accurate?",
+              "Do you help with visa applications?",
+              "Can I talk to an expert?",
+              "How does the free trial work?",
+            ].map((question) => (
+              <div
+                key={question}
+                className="rounded-[24px] border border-gray-100 bg-white p-6 shadow-lg transition hover:shadow-xl"
+              >
+                <div className="flex items-center justify-between">
+                  <div className="font-semibold">
+                    {question}
+                  </div>
+
+                  <div className="text-2xl">
+                    +
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
-      <footer className="border-t p-10 text-center">
-        Relocate2Day ©
+      {/* FOOTER */}
+      <footer className="bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 py-10 text-center text-white">
+        <div className="font-bold">
+          Relocate2Day © 2026
+        </div>
       </footer>
     </div>
   )
