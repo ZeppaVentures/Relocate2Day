@@ -14,7 +14,7 @@ export default function Home() {
   name: "Gibraltar",
   slug: "gibraltar",
   image:
-    "https://images.unsplash.com/photo-1719075144848-46e5e8eb8b18?q=80&w=1200&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1545289825-f9d7f7562daf?q=80&w=1200&auto=format&fit=crop",
   description:
     "British culture, tax advantages and a gateway between Europe and Africa.",
 },
