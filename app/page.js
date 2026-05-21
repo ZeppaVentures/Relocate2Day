@@ -5,43 +5,38 @@ export default function Home() {
     {
       name: "Spain",
       slug: "spain",
-      image:
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+      image: "/images/countries/spain-card.jpg",
       description:
         "Great weather, vibrant cities and the Digital Nomad Visa.",
     },
     {
-  name: "Gibraltar",
-  slug: "gibraltar",
-  image:
-  "https://images.unsplash.com/photo-1545289825-f9d7f7562daf?q=80&w=1200&auto=format&fit=crop",
-  description:
-    "British culture, tax advantages and a gateway between Europe and Africa.",
-},
+      name: "Gibraltar",
+      slug: "gibraltar",
+      image: "/images/countries/gibraltar-card.jpg",
+      description:
+        "British culture, tax advantages and a gateway between Europe and Africa.",
+    },
     {
       name: "Portugal",
       slug: "portugal",
-      image:
-        "https://images.unsplash.com/photo-1513735492246-483525079686?q=80&w=1200&auto=format&fit=crop",
+      image: "/images/countries/portugal-card.jpg",
       description:
         "Affordable living, friendly locals and simple tax regimes.",
     },
     {
       name: "Italy",
       slug: "italy",
-      image:
-        "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1200&auto=format&fit=crop",
+      image: "/images/countries/italy-card.jpg",
       description:
         "Beautiful coastline, amazing food and relaxed lifestyle.",
     },
-{
-  name: "Malta",
-  slug: "malta",
-  image:
-    "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?q=80&w=1200&auto=format&fit=crop",
-  description:
-    "English-speaking, sunny and one of Europe's most welcoming residency programmes.",
-},
+    {
+      name: "Malta",
+      slug: "malta",
+      image: "/images/countries/malta-card.jpg",
+      description:
+        "English-speaking, sunny and one of Europe's most welcoming residency programmes.",
+    },
   ];
 
   const features = [
@@ -134,8 +129,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2000&auto=format&fit=crop')",
+            backgroundImage: "url('/images/countries/home-hero.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" />
