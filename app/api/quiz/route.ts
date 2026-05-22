@@ -4,16 +4,22 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
 
+    const apiKey = process.env.ANTHROPIC_API_KEY;
+    if (!apiKey) {
+      console.error("ANTHROPIC_API_KEY is not set");
+      return NextResponse.json({ error: "API key not configured" }, { status: 500 });
+    }
+
     const response = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "x-api-key": process.env.ANTHROPIC_API_KEY || "",
+        "x-api-key": apiKey,
         "anthropic-version": "2023-06-01",
       },
       body: JSON.stringify({
         model: "claude-sonnet-4-5",
-        max_tokens: 1000,
+        max_tokens: 1500,
         messages: [{ role: "user", content: body.prompt }],
       }),
     });
@@ -21,7 +27,7 @@ export async function POST(req: NextRequest) {
     const data = await response.json();
 
     if (!response.ok) {
-      console.error("Anthropic API error:", data);
+      console.error("Anthropic API error:", JSON.stringify(data));
       return NextResponse.json({ error: "API error", detail: data }, { status: 500 });
     }
 
@@ -35,6 +41,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(parsed);
   } catch (err) {
     console.error("Quiz API route error:", err);
-    return NextResponse.json({ error: "Failed to generate results" }, { status: 500 });
+    return NextResponse.json({ error: "Failed to generate results", detail: String(err) }, { status: 500 });
   }
 }

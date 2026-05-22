@@ -92,10 +92,14 @@ Order the results array from highest to lowest score.`;
           body: JSON.stringify({ prompt }),
         });
 
-        if (!response.ok) throw new Error("API call failed");
+        const data = await response.json();
 
-        const parsed = await response.json();
-        setResults(parsed);
+        if (!response.ok) {
+          console.error("Quiz error detail:", JSON.stringify(data));
+          throw new Error(JSON.stringify(data));
+        }
+
+        setResults(data);
       } catch (err) {
         console.error(err);
         setError(true);
