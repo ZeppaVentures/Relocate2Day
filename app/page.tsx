@@ -199,7 +199,7 @@ export default function Home() {
   // ─── Shared select style helper ─────────────────────────────────────────────
 
   const fieldClass = (id: string) =>
-    `rounded-2xl p-5 text-white backdrop-blur-xl transition-all ${
+    `rounded-2xl p-5 text-white transition-all ${
       errors[id] ? "bg-red-500/20 ring-2 ring-red-400" : "bg-white/10"
     }`;
 
@@ -270,10 +270,10 @@ export default function Home() {
               <p className="mt-3 text-gray-300">Answer a few questions and get your personalised country ranking.</p>
             </div>
 
-            <div className="mt-8 grid gap-4 md:grid-cols-2">
+            <div className="mt-8 grid gap-4 md:grid-cols-2 [overflow:visible]">
 
               {/* Country of origin — searchable dropdown */}
-              <div id="nationality" className={fieldClass("nationality")}>
+              <div id="nationality" className={`relative z-[100] ${errors["nationality"] ? "bg-red-500/20 ring-2 ring-red-400" : "bg-white/10"} rounded-2xl p-5 text-white transition-all`}>
                 <div className="text-sm text-gray-300 mb-2">I'm from</div>
                 <div className="relative">
                   <input
@@ -290,7 +290,7 @@ export default function Home() {
                     className="w-full bg-transparent font-semibold placeholder-white/30 outline-none text-white"
                   />
                   {showCountryList && filteredCountries.length > 0 && (
-                    <ul className="absolute left-0 top-8 z-50 max-h-52 w-full overflow-y-auto rounded-2xl bg-[#0f2470] shadow-2xl ring-1 ring-white/10">
+                    <ul className="absolute left-0 top-8 z-[200] max-h-52 w-full overflow-y-auto rounded-2xl bg-[#0f2470] shadow-2xl ring-1 ring-white/10">
                       {filteredCountries.map((c) => (
                         <li
                           key={c}
