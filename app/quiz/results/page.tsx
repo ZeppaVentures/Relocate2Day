@@ -86,25 +86,15 @@ Respond ONLY with a JSON object in this exact format, no preamble, no markdown b
 
 Order the results array from highest to lowest score.`;
 
-        const response = await fetch("https://api.anthropic.com/v1/messages", {
+        const response = await fetch("/api/quiz", {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            model: "claude-sonnet-4-20250514",
-            max_tokens: 1000,
-            messages: [{ role: "user", content: prompt }],
-          }),
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ prompt }),
         });
 
-        const data = await response.json();
-        const text = data.content
-          .map((item: { type: string; text?: string }) => item.text || "")
-          .join("");
+        if (!response.ok) throw new Error("API call failed");
 
-        const clean = text.replace(/```json|```/g, "").trim();
-        const parsed = JSON.parse(clean);
+        const parsed = await response.json();
         setResults(parsed);
       } catch (err) {
         console.error(err);
@@ -144,7 +134,7 @@ Order the results array from highest to lowest score.`;
         <div className="text-center max-w-md px-6">
           <div className="text-6xl mb-6">😕</div>
           <h2 className="text-3xl font-black mb-4">Something went wrong</h2>
-          <p className="text-gray-500 mb-8">We couldn't generate your results. Please try again.</p>
+          <p className="text-gray-500 mb-8">We couldn&apos;t generate your results. Please try again.</p>
           <Link
             href="/"
             className="rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-8 py-4 text-sm font-bold text-white shadow-xl transition hover:scale-105"
@@ -217,7 +207,7 @@ Order the results array from highest to lowest score.`;
               { label: "Family situation", value: family },
               { label: "Lifestyle", value: lifestyle },
               { label: "Industry", value: industry },
-              ...(aspirations ? [{ label: "Aspirations", value: aspirations }] : []),
+              ...(aspirations && aspirations !== "Not applicable" ? [{ label: "Aspirations", value: aspirations }] : []),
             ].map((item) => (
               <div key={item.label} className="rounded-2xl bg-white p-4 shadow-sm">
                 <div className="text-xs text-gray-400 font-semibold uppercase tracking-wide">{item.label}</div>
@@ -274,7 +264,7 @@ Order the results array from highest to lowest score.`;
 
                 {/* Card body */}
                 <div className="bg-white p-8">
-                  <p className="text-gray-600 text-lg mb-6 italic">"{result.summary}"</p>
+                  <p className="text-gray-600 text-lg mb-6 italic">&ldquo;{result.summary}&rdquo;</p>
 
                   {/* Score bar */}
                   <div className="mb-6">
