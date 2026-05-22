@@ -58,8 +58,7 @@ export default function GibraltarPage() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1667391272465-6e250d3f762f?q=80&w=2000&auto=format&fit=crop')",
+            backgroundImage: "url('/images/countries/gibraltar-hero.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-black/30" />

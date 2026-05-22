@@ -66,8 +66,7 @@ export default function SpainPage() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1754403392652-0edc305bce4b?q=80&w=2000&auto=format&fit=crop')",
+            backgroundImage: "url('/images/countries/spain-hero.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-black/20" />

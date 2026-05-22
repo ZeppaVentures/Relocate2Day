@@ -57,8 +57,7 @@ export default function ItalyPage() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=2000&auto=format&fit=crop')",
+            backgroundImage: "url('/images/countries/italy-hero.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-black/25" />

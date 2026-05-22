@@ -57,8 +57,7 @@ export default function MaltaPage() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1514890547357-a9ee288728e0?q=80&w=2000&auto=format&fit=crop')",
+            backgroundImage: "url('/images/countries/malta-hero.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-black/30" />
