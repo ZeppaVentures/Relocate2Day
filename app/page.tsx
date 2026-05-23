@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { supabase } from "@/lib/supabase";
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
@@ -91,6 +92,35 @@ const ASPIRATIONS = [
 
 export default function Home() {
   const router = useRouter();
+  const [user, setUser] = useState<any>(null);
+
+useEffect(() => {
+  supabase.auth.getUser().then(({ data }) => {
+    setUser(data.user);
+  });
+}, []);
+
+const handleCheckout = async (priceId: string) => {
+  if (!user) {
+    router.push("/auth/signup");
+    return;
+  }
+
+  const response = await fetch("/api/stripe/checkout", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      priceId,
+      userId: user.id,
+      userEmail: user.email,
+    }),
+  });
+
+  const data = await response.json();
+  if (data.url) {
+    window.location.href = data.url;
+  }
+};
 
   const [nationality, setNationality] = useState("");
   const [countrySearch, setCountrySearch] = useState("");
@@ -508,46 +538,82 @@ export default function Home() {
       </section>
 
       {/* PRICING */}
-      <section id="pricing" className="bg-white px-6 py-28">
-        <div className="mx-auto max-w-7xl">
-          <div className="text-center">
-            <div className="text-sm font-bold uppercase tracking-[0.3em] text-violet-500">Pricing</div>
-            <h2 className="mt-4 text-5xl font-black">Simple, transparent pricing</h2>
-            <p className="mt-4 text-xl text-gray-500">Start for free. Upgrade when you need more.</p>
-          </div>
-          <div className="mt-16 grid gap-8 md:grid-cols-2 max-w-3xl mx-auto">
-            <div className="rounded-[28px] border-2 border-gray-100 bg-white p-8 shadow-lg">
-              <h3 className="text-2xl font-black">Free</h3>
-              <div className="mt-4 text-5xl font-black">€0</div>
-              <p className="mt-2 text-gray-500">Forever free</p>
-              <ul className="mt-8 space-y-3 text-sm text-gray-600">
-                <li>✅ Country comparisons</li>
-                <li>✅ Basic visa guides</li>
-                <li>✅ Cost of living data</li>
-                <li>✅ Relocation quiz</li>
-              </ul>
-              <button className="mt-8 w-full rounded-2xl border-2 border-violet-600 px-6 py-3 text-sm font-bold text-violet-600 transition hover:bg-violet-50">
-                Get started free
-              </button>
-            </div>
-            <div className="rounded-[28px] bg-gradient-to-br from-violet-600 via-pink-500 to-orange-400 p-8 shadow-2xl text-white">
-              <h3 className="text-2xl font-black">Premium</h3>
-              <div className="mt-4 text-5xl font-black">€9</div>
-              <p className="mt-2 text-white/80">per month</p>
-              <ul className="mt-8 space-y-3 text-sm text-white/90">
-                <li>✅ Everything in Free</li>
-                <li>✅ Full tax calculator</li>
-                <li>✅ Detailed visa guides</li>
-                <li>✅ Healthcare & banking guides</li>
-                <li>✅ Expert community access</li>
-              </ul>
-              <button className="mt-8 w-full rounded-2xl bg-white px-6 py-3 text-sm font-bold text-violet-600 transition hover:scale-105">
-                Get started
-              </button>
-            </div>
-          </div>
+<section id="pricing" className="bg-white px-6 py-28">
+  <div className="mx-auto max-w-7xl">
+    <div className="text-center">
+      <div className="text-sm font-bold uppercase tracking-[0.3em] text-violet-500">Pricing</div>
+      <h2 className="mt-4 text-5xl font-black">Simple, transparent pricing</h2>
+      <p className="mt-4 text-xl text-gray-500">Start for free. Upgrade when you need more.</p>
+    </div>
+
+    <div className="mt-16 grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
+
+      {/* Free */}
+      <div className="rounded-[28px] border-2 border-gray-100 bg-white p-8 shadow-lg">
+        <h3 className="text-2xl font-black">Free</h3>
+        <div className="mt-4 text-5xl font-black">€0</div>
+        <p className="mt-2 text-gray-500">Forever free</p>
+        <ul className="mt-8 space-y-3 text-sm text-gray-600">
+          <li>✅ Country comparisons</li>
+          <li>✅ Basic visa guides</li>
+          <li>✅ Cost of living data</li>
+          <li>✅ Relocation quiz</li>
+        </ul>
+        <button
+          onClick={() => router.push("/auth/signup")}
+          className="mt-8 w-full rounded-2xl border-2 border-violet-600 px-6 py-3 text-sm font-bold text-violet-600 transition hover:bg-violet-50"
+        >
+          Get started free
+        </button>
+      </div>
+
+      {/* Monthly */}
+      <div className="rounded-[28px] bg-gradient-to-br from-violet-600 via-pink-500 to-orange-400 p-8 shadow-2xl text-white">
+        <h3 className="text-2xl font-black">Premium</h3>
+        <div className="mt-4 text-5xl font-black">€12</div>
+        <p className="mt-2 text-white/80">per month</p>
+        <ul className="mt-8 space-y-3 text-sm text-white/90">
+          <li>✅ Everything in Free</li>
+          <li>✅ Full tax calculator</li>
+          <li>✅ Detailed visa guides</li>
+          <li>✅ Healthcare & banking guides</li>
+          <li>✅ Expert community access</li>
+        </ul>
+        <button
+          onClick={() => handleCheckout(process.env.NEXT_PUBLIC_STRIPE_PRICE_MONTHLY!)}
+          className="mt-8 w-full rounded-2xl bg-white px-6 py-3 text-sm font-bold text-violet-600 transition hover:scale-105"
+        >
+          Get started
+        </button>
+      </div>
+
+      {/* Annual */}
+      <div className="rounded-[28px] border-2 border-violet-200 bg-white p-8 shadow-lg relative">
+        <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-violet-600 to-orange-400 px-4 py-1 text-xs font-bold text-white whitespace-nowrap">
+          Best value — save €45
         </div>
-      </section>
+        <h3 className="text-2xl font-black">Premium Annual</h3>
+        <div className="mt-4 text-5xl font-black">€99</div>
+        <p className="mt-2 text-gray-500">per year <span className="text-violet-600 font-bold">(€8.25/mo)</span></p>
+        <ul className="mt-8 space-y-3 text-sm text-gray-600">
+          <li>✅ Everything in Free</li>
+          <li>✅ Full tax calculator</li>
+          <li>✅ Detailed visa guides</li>
+          <li>✅ Healthcare & banking guides</li>
+          <li>✅ Expert community access</li>
+          <li>✅ 31% cheaper than monthly</li>
+        </ul>
+        <button
+          onClick={() => handleCheckout(process.env.NEXT_PUBLIC_STRIPE_PRICE_YEARLY!)}
+          className="mt-8 w-full rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white transition hover:scale-105"
+        >
+          Get started
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* FAQ */}
       <section id="faq" className="bg-[#f8f7ff] px-6 py-28">
