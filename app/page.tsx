@@ -2,8 +2,146 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
+
+// ─── Data ────────────────────────────────────────────────────────────────────
+
+const COUNTRIES = [
+  "Afghanistan","Albania","Algeria","Andorra","Angola","Antigua and Barbuda",
+  "Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain",
+  "Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan",
+  "Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Brunei","Bulgaria",
+  "Burkina Faso","Burundi","Cabo Verde","Cambodia","Cameroon","Canada",
+  "Central African Republic","Chad","Chile","China","Colombia","Comoros",
+  "Congo","Costa Rica","Croatia","Cuba","Cyprus","Czech Republic","Denmark",
+  "Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador",
+  "Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Fiji",
+  "Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece",
+  "Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras",
+  "Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel",
+  "Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati",
+  "Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia",
+  "Libya","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malawi",
+  "Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania",
+  "Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia",
+  "Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal",
+  "Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North Korea",
+  "North Macedonia","Norway","Oman","Pakistan","Palau","Panama",
+  "Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal",
+  "Qatar","Romania","Russia","Rwanda","Saint Kitts and Nevis","Saint Lucia",
+  "Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe",
+  "Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore",
+  "Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea",
+  "South Sudan","Spain","Sri Lanka","Sudan","Suriname","Sweden","Switzerland",
+  "Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo",
+  "Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu",
+  "Uganda","Ukraine","United Arab Emirates","United Kingdom","United States",
+  "Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam",
+  "Yemen","Zambia","Zimbabwe",
+];
+
+const INCOME_BRACKETS = [
+  "Under €10,000",
+  "€10,000 – €20,000",
+  "€20,000 – €30,000",
+  "€30,000 – €40,000",
+  "€40,000 – €50,000",
+  "€50,000 – €60,000",
+  "€60,000 – €70,000",
+  "€70,000 – €80,000",
+  "€80,000 – €90,000",
+  "Over €90,000",
+];
+
+const INDUSTRIES = [
+  "Accounting & Audit","Advertising & Marketing","Aerospace & Defence",
+  "Agriculture","Architecture & Design","Arts & Entertainment",
+  "Automotive","Banking & Finance","Biotechnology","Consulting",
+  "Construction & Real Estate","Customer Service","Cybersecurity",
+  "Data & Analytics","Education & Academia","Energy & Utilities",
+  "Engineering","Environmental & Sustainability","Fashion & Luxury",
+  "Financial Services","Food & Beverage","Government & Public Sector",
+  "Healthcare & Medicine","Hospitality & Tourism","Human Resources",
+  "Insurance","iGaming & Online Gambling","Legal","Logistics & Supply Chain",
+  "Manufacturing","Media & Journalism","Non-Profit & NGO","Pharmaceuticals",
+  "Property & Real Estate","Retail & E-Commerce","Shipping & Maritime",
+  "Software & Technology","Sports & Fitness","Telecommunications",
+  "Other",
+];
+
+const ASPIRATIONS = [
+  "Not applicable",
+  "Start my own business",
+  "Retire early",
+  "Gain EU residency or citizenship",
+  "Reduce my tax burden legally",
+  "Work for a multinational company",
+  "Freelance or consult internationally",
+  "Study or pursue further education",
+  "Raise a family in a safer environment",
+  "Live near the sea or in a warmer climate",
+  "Join a growing tech or startup scene",
+  "Work in finance or fintech",
+  "Work in iGaming or online gaming",
+  "Build a property portfolio abroad",
+  "Enjoy a slower pace of life",
+];
+
+// ─── Component ───────────────────────────────────────────────────────────────
 
 export default function Home() {
+  const router = useRouter();
+
+  const [nationality, setNationality] = useState("");
+  const [countrySearch, setCountrySearch] = useState("");
+  const [showCountryList, setShowCountryList] = useState(false);
+  const [income, setIncome] = useState("");
+  const [lifeStage, setLifeStage] = useState("");
+  const [family, setFamily] = useState("");
+  const [lifestyle, setLifestyle] = useState("");
+  const [industry, setIndustry] = useState("");
+  const [aspirations, setAspirations] = useState("Not applicable");
+  const [errors, setErrors] = useState<Record<string, boolean>>({});
+
+  const filteredCountries = COUNTRIES.filter((c) =>
+    c.toLowerCase().includes(countrySearch.toLowerCase())
+  );
+
+  const validate = () => {
+    const newErrors: Record<string, boolean> = {};
+    if (!nationality) newErrors.nationality = true;
+    if (!income) newErrors.income = true;
+    if (!lifeStage) newErrors.lifeStage = true;
+    if (!family) newErrors.family = true;
+    if (!lifestyle) newErrors.lifestyle = true;
+    if (!industry) newErrors.industry = true;
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleQuiz = () => {
+    if (!validate()) {
+      return;
+    }
+    const params = new URLSearchParams({
+      nationality,
+      income,
+      lifeStage,
+      family,
+      lifestyle,
+      industry,
+      aspirations,
+    });
+    router.push(`/quiz/results?${params.toString()}`);
+  };
+
+  const fieldClass = (key: string) =>
+    `rounded-2xl p-5 text-white transition-all ${
+      errors[key]
+        ? "bg-red-500/30 ring-2 ring-red-400"
+        : "bg-white/10"
+    }`;
+
   const destinations = [
     {
       name: "Spain",
@@ -70,35 +208,6 @@ export default function Home() {
       answer: "Our tax guides are regularly updated, but tax laws change frequently. Always verify with a local tax advisor before making financial decisions.",
     },
   ];
-
-  const router = useRouter();
-
-  const handleQuiz = () => {
-    const nationality = (document.getElementById("nationality") as HTMLInputElement)?.value;
-    const income = (document.getElementById("income") as HTMLInputElement)?.value;
-    const lifeStage = (document.getElementById("lifeStage") as HTMLSelectElement)?.value;
-    const family = (document.getElementById("family") as HTMLSelectElement)?.value;
-    const lifestyle = (document.getElementById("lifestyle") as HTMLSelectElement)?.value;
-    const industry = (document.getElementById("industry") as HTMLInputElement)?.value;
-    const aspirations = (document.getElementById("aspirations") as HTMLInputElement)?.value;
-
-    if (!nationality || !income || !lifeStage || !family || !lifestyle || !industry) {
-      alert("Please fill in all required fields before continuing.");
-      return;
-    }
-
-    const params = new URLSearchParams({
-      nationality,
-      income,
-      lifeStage,
-      family,
-      lifestyle,
-      industry,
-      aspirations: aspirations || "",
-    });
-
-    router.push(`/quiz/results?${params.toString()}`);
-  };
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-white text-[#0B1957]">
@@ -167,82 +276,159 @@ export default function Home() {
             </div>
 
             <div className="mt-8 grid gap-4 md:grid-cols-2">
-              <div className="rounded-2xl bg-white/10 p-5 text-white backdrop-blur-xl">
+
+              {/* NATIONALITY */}
+              <div className={`relative z-[100] ${fieldClass("nationality")}`}>
                 <div className="text-sm text-gray-300 mb-2">I'm from</div>
                 <input
-                  id="nationality"
                   type="text"
-                  placeholder="e.g. United Kingdom, USA, Brazil..."
-                  className="w-full bg-transparent font-semibold placeholder-white/30 outline-none"
+                  placeholder="Search country..."
+                  value={countrySearch || nationality}
+                  onChange={(e) => {
+                    setCountrySearch(e.target.value);
+                    setNationality("");
+                    setShowCountryList(true);
+                  }}
+                  onFocus={() => setShowCountryList(true)}
+                  onBlur={() => setTimeout(() => setShowCountryList(false), 150)}
+                  className="w-full bg-transparent font-semibold placeholder-white/40 outline-none text-white"
                 />
+                {showCountryList && filteredCountries.length > 0 && (
+                  <ul className="absolute left-0 right-0 top-full mt-1 z-[200] max-h-52 overflow-y-auto rounded-2xl bg-[#0d1f6e] border border-white/20 shadow-2xl">
+                    {filteredCountries.map((country) => (
+                      <li
+                        key={country}
+                        onMouseDown={() => {
+                          setNationality(country);
+                          setCountrySearch(country);
+                          setShowCountryList(false);
+                          setErrors((e) => ({ ...e, nationality: false }));
+                        }}
+                        className="px-4 py-2 text-sm text-white cursor-pointer hover:bg-white/10"
+                      >
+                        {country}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
 
-              <div className="rounded-2xl bg-white/10 p-5 text-white backdrop-blur-xl">
+              {/* INCOME */}
+              <div className={fieldClass("income")}>
                 <div className="text-sm text-gray-300 mb-2">Annual income</div>
-                <input
-                  id="income"
-                  type="text"
-                  placeholder="e.g. €50,000, $80,000..."
-                  className="w-full bg-transparent font-semibold placeholder-white/30 outline-none"
-                />
+                <select
+                  value={income}
+                  onChange={(e) => {
+                    setIncome(e.target.value);
+                    setErrors((er) => ({ ...er, income: false }));
+                  }}
+                  className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer"
+                >
+                  <option value="" className="text-black bg-white">Select bracket...</option>
+                  {INCOME_BRACKETS.map((b) => (
+                    <option key={b} value={b} className="text-black bg-white">{b}</option>
+                  ))}
+                </select>
               </div>
 
-              <div className="rounded-2xl bg-white/10 p-5 text-white backdrop-blur-xl">
+              {/* LIFE STAGE */}
+              <div className={fieldClass("lifeStage")}>
                 <div className="text-sm text-gray-300 mb-2">Life stage</div>
-                <select id="lifeStage" className="w-full bg-transparent font-semibold outline-none text-white">
-                  <option value="" className="text-black">Select...</option>
-                  <option value="Employee relocating with a company" className="text-black">Employee relocating with a company</option>
-                  <option value="Remote worker / freelancer" className="text-black">Remote worker / freelancer</option>
-                  <option value="Self-employed / entrepreneur" className="text-black">Self-employed / entrepreneur</option>
-                  <option value="Retiree" className="text-black">Retiree</option>
-                  <option value="Student" className="text-black">Student</option>
-                  <option value="Looking for work" className="text-black">Looking for work</option>
+                <select
+                  value={lifeStage}
+                  onChange={(e) => {
+                    setLifeStage(e.target.value);
+                    setErrors((er) => ({ ...er, lifeStage: false }));
+                  }}
+                  className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer"
+                >
+                  <option value="" className="text-black bg-white">Select...</option>
+                  <option value="Employee relocating with a company" className="text-black bg-white">Employee relocating with a company</option>
+                  <option value="Remote worker / freelancer" className="text-black bg-white">Remote worker / freelancer</option>
+                  <option value="Self-employed / entrepreneur" className="text-black bg-white">Self-employed / entrepreneur</option>
+                  <option value="Retiree" className="text-black bg-white">Retiree</option>
+                  <option value="Student" className="text-black bg-white">Student</option>
+                  <option value="Looking for work" className="text-black bg-white">Looking for work</option>
                 </select>
               </div>
 
-              <div className="rounded-2xl bg-white/10 p-5 text-white backdrop-blur-xl">
+              {/* FAMILY */}
+              <div className={fieldClass("family")}>
                 <div className="text-sm text-gray-300 mb-2">Family situation</div>
-                <select id="family" className="w-full bg-transparent font-semibold outline-none text-white">
-                  <option value="" className="text-black">Select...</option>
-                  <option value="Single" className="text-black">Single</option>
-                  <option value="Couple (no children)" className="text-black">Couple (no children)</option>
-                  <option value="Family with young children" className="text-black">Family with young children</option>
-                  <option value="Family with teenagers" className="text-black">Family with teenagers</option>
-                  <option value="Single parent" className="text-black">Single parent</option>
+                <select
+                  value={family}
+                  onChange={(e) => {
+                    setFamily(e.target.value);
+                    setErrors((er) => ({ ...er, family: false }));
+                  }}
+                  className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer"
+                >
+                  <option value="" className="text-black bg-white">Select...</option>
+                  <option value="Single" className="text-black bg-white">Single</option>
+                  <option value="Couple (no children)" className="text-black bg-white">Couple (no children)</option>
+                  <option value="Family with young children" className="text-black bg-white">Family with young children</option>
+                  <option value="Family with teenagers" className="text-black bg-white">Family with teenagers</option>
+                  <option value="Single parent" className="text-black bg-white">Single parent</option>
                 </select>
               </div>
 
-              <div className="rounded-2xl bg-white/10 p-5 text-white backdrop-blur-xl">
+              {/* LIFESTYLE */}
+              <div className={fieldClass("lifestyle")}>
                 <div className="text-sm text-gray-300 mb-2">Lifestyle preference</div>
-                <select id="lifestyle" className="w-full bg-transparent font-semibold outline-none text-white">
-                  <option value="" className="text-black">Select...</option>
-                  <option value="Bustling city life" className="text-black">Bustling city life</option>
-                  <option value="Coastal / beach lifestyle" className="text-black">Coastal / beach lifestyle</option>
-                  <option value="Quiet rural or village life" className="text-black">Quiet rural or village life</option>
-                  <option value="Mix of city and nature" className="text-black">Mix of city and nature</option>
+                <select
+                  value={lifestyle}
+                  onChange={(e) => {
+                    setLifestyle(e.target.value);
+                    setErrors((er) => ({ ...er, lifestyle: false }));
+                  }}
+                  className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer"
+                >
+                  <option value="" className="text-black bg-white">Select...</option>
+                  <option value="Bustling city life" className="text-black bg-white">Bustling city life</option>
+                  <option value="Coastal / beach lifestyle" className="text-black bg-white">Coastal / beach lifestyle</option>
+                  <option value="Quiet rural or village life" className="text-black bg-white">Quiet rural or village life</option>
+                  <option value="Mix of city and nature" className="text-black bg-white">Mix of city and nature</option>
                 </select>
               </div>
 
-              <div className="rounded-2xl bg-white/10 p-5 text-white backdrop-blur-xl">
+              {/* INDUSTRY */}
+              <div className={fieldClass("industry")}>
                 <div className="text-sm text-gray-300 mb-2">Industry</div>
-                <input
-                  id="industry"
-                  type="text"
-                  placeholder="e.g. Finance, Tech, Healthcare..."
-                  className="w-full bg-transparent font-semibold placeholder-white/30 outline-none"
-                />
+                <select
+                  value={industry}
+                  onChange={(e) => {
+                    setIndustry(e.target.value);
+                    setErrors((er) => ({ ...er, industry: false }));
+                  }}
+                  className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer"
+                >
+                  <option value="" className="text-black bg-white">Select industry...</option>
+                  {INDUSTRIES.map((ind) => (
+                    <option key={ind} value={ind} className="text-black bg-white">{ind}</option>
+                  ))}
+                </select>
               </div>
             </div>
 
-            <div className="mt-4 rounded-2xl bg-white/10 p-5 text-white backdrop-blur-xl">
+            {/* ASPIRATIONS */}
+            <div className="mt-4 rounded-2xl bg-white/10 p-5 text-white">
               <div className="text-sm text-gray-300 mb-2">Career aspirations <span className="text-white/40">(optional)</span></div>
-              <input
-                id="aspirations"
-                type="text"
-                placeholder="e.g. Start my own business, work in fintech, retire early..."
-                className="w-full bg-transparent font-semibold placeholder-white/30 outline-none"
-              />
+              <select
+                value={aspirations}
+                onChange={(e) => setAspirations(e.target.value)}
+                className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer"
+              >
+                {ASPIRATIONS.map((a) => (
+                  <option key={a} value={a} className="text-black bg-white">{a}</option>
+                ))}
+              </select>
             </div>
+
+            {Object.keys(errors).length > 0 && (
+              <p className="mt-4 text-center text-sm text-red-300">
+                Please fill in all highlighted fields before continuing.
+              </p>
+            )}
 
             <button
               onClick={handleQuiz}
