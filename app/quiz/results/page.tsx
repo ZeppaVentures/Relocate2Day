@@ -11,6 +11,7 @@ const countryFlags: Record<string, string> = {
   Italy: "🇮🇹",
   Gibraltar: "🇬🇮",
   Malta: "🇲🇹",
+  Bulgaria: "🇧🇬",
 };
 
 const countryImages: Record<string, string> = {
@@ -19,6 +20,7 @@ const countryImages: Record<string, string> = {
   Italy: "/images/countries/italy-card.jpg",
   Gibraltar: "/images/countries/gibraltar-card.jpg",
   Malta: "/images/countries/malta-card.jpg",
+  Bulgaria: "/images/countries/bulgaria-card.jpg",
 };
 
 interface CountryResult {
@@ -51,7 +53,12 @@ function ResultsContent() {
   useEffect(() => {
     const fetchResults = async () => {
       try {
-        const prompt = `You are a European relocation expert. Based on the following user profile, rank these 5 countries for relocation: Spain, Portugal, Italy, Gibraltar, and Malta.
+        const prompt = `You are a European relocation expert. Based on the following user profile, rank exactly 5 countries for relocation from this list: Spain, Portugal, Italy, Gibraltar, Malta, and Bulgaria.
+
+Important rules:
+- If the user's nationality matches any of these countries (e.g. if they are Spanish, exclude Spain; if Bulgarian, exclude Bulgaria etc.), exclude that country from the results entirely
+- Always return exactly 5 countries in the ranked results
+- The user's nationality is: ${nationality}
 
 User profile:
 - Nationality: ${nationality}
@@ -117,9 +124,9 @@ Order the results array from highest to lowest score.`;
         <div className="text-center max-w-md px-6">
           <div className="text-6xl mb-6 animate-bounce">🌍</div>
           <h2 className="text-3xl font-black mb-4">Finding your perfect match...</h2>
-          <p className="text-gray-500 text-lg">Analysing your profile across 5 European countries</p>
+          <p className="text-gray-500 text-lg">Analysing your profile across 6 European countries</p>
           <div className="mt-8 flex justify-center gap-2">
-            {["Spain", "Portugal", "Italy", "Gibraltar", "Malta"].map((country, i) => (
+            {["Spain", "Portugal", "Italy", "Gibraltar", "Malta", "Bulgaria"].map((country, i) => (
               <div
                 key={country}
                 className="w-2 h-2 rounded-full bg-violet-400 animate-pulse"
@@ -227,7 +234,7 @@ Order the results array from highest to lowest score.`;
         <div className="mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-black">Your personalised ranking</h2>
-            <p className="mt-4 text-gray-500 text-lg">All 5 countries ranked for your specific situation</p>
+            <p className="mt-4 text-gray-500 text-lg">5 countries ranked for your specific situation</p>
           </div>
 
           <div className="space-y-8">
