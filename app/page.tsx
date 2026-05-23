@@ -227,10 +227,15 @@ export default function Home() {
             <a href="#faq" className="hover:text-violet-600 transition">FAQ</a>
           </nav>
           <div className="flex items-center gap-4">
-            <button className="hidden md:block text-sm font-semibold">Log in</button>
-            <button className="rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-              Get started
-            </button>
+            <Link href="/auth/login" className="hidden md:block text-sm font-semibold hover:text-violet-600 transition">
+  Log in
+</Link>
+<Link
+  href="/auth/signup"
+  className="rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+>
+  Get started
+</Link>
           </div>
         </div>
       </header>
