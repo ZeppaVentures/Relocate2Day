@@ -257,15 +257,37 @@ const handleCheckout = async (priceId: string) => {
             <a href="#faq" className="hover:text-violet-600 transition">FAQ</a>
           </nav>
           <div className="flex items-center gap-4">
-            <Link href="/auth/login" className="hidden md:block text-sm font-semibold hover:text-violet-600 transition">
-  Log in
-</Link>
-<Link
-  href="/auth/signup"
-  className="rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
->
-  Get started
-</Link>
+            {user ? (
+  <Link
+    href="/account"
+    className="flex items-center gap-3 rounded-2xl border-2 border-gray-200 px-4 py-2 text-sm font-bold hover:border-violet-400 transition"
+  >
+    {user.user_metadata?.avatar_url ? (
+      <img
+        src={user.user_metadata.avatar_url}
+        alt="Avatar"
+        className="w-7 h-7 rounded-full object-cover"
+      />
+    ) : (
+      <div className="w-7 h-7 rounded-full bg-gradient-to-r from-violet-600 to-orange-400 flex items-center justify-center text-white text-xs font-black">
+        {user.email?.[0]?.toUpperCase()}
+      </div>
+    )}
+    My Account
+  </Link>
+) : (
+  <>
+    <Link href="/auth/login" className="hidden md:block text-sm font-semibold hover:text-violet-600 transition">
+      Log in
+    </Link>
+    <Link
+      href="/auth/signup"
+      className="rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+    >
+      Get started
+    </Link>
+  </>
+)}
           </div>
         </div>
       </header>
