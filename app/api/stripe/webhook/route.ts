@@ -32,26 +32,25 @@ export async function POST(req: NextRequest) {
 
   switch (event.type) {
     case "checkout.session.completed": {
-  const subscription = await stripe.subscriptions.retrieve(
-    session.subscription as string
-  ) as any;
+      const subscription = await stripe.subscriptions.retrieve(
+        session.subscription as string
+      ) as any;
 
-  await supabase
-    .from("profiles")
-    .update({
-      stripe_customer_id: session.customer as string,
-      subscription_status: "active",
-      subscription_plan: subscription.items.data[0].price.recurring?.interval === "year" ? "annual" : "monthly",
-      subscription_end_date: new Date(subscription.current_period_end * 1000).toISOString(),
-    })
-    .eq("id", session.metadata?.userId);
+      await supabase
+        .from("profiles")
+        .update({
+          stripe_customer_id: session.customer as string,
+          subscription_status: "active",
+          subscription_plan: subscription.items.data[0].price.recurring?.interval === "year" ? "annual" : "monthly",
+          subscription_end_date: new Date(subscription.current_period_end * 1000).toISOString(),
+        })
+        .eq("id", session.metadata?.userId);
 
-  break;
-}
+      break;
     }
 
     case "customer.subscription.updated": {
-      const subscription = event.data.object as Stripe.Subscription;
+      const subscription = event.data.object as any;
       const customerId = subscription.customer as string;
 
       await supabase
@@ -67,7 +66,7 @@ export async function POST(req: NextRequest) {
     }
 
     case "customer.subscription.deleted": {
-      const subscription = event.data.object as Stripe.Subscription;
+      const subscription = event.data.object as any;
       const customerId = subscription.customer as string;
 
       await supabase
