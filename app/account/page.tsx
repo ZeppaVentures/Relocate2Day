@@ -45,9 +45,17 @@ export default function AccountPage() {
   };
 
   const handleManageBilling = async () => {
-    // Will be implemented with Stripe customer portal
-    alert("Billing portal coming soon!");
-  };
+  const response = await fetch("/api/stripe/portal", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ customerId: profile.stripe_customer_id }),
+  });
+
+  const data = await response.json();
+  if (data.url) {
+    window.location.href = data.url;
+  }
+};
 
   if (loading) {
     return (
