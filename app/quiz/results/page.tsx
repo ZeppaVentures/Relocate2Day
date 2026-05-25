@@ -280,19 +280,29 @@ Order the results array from highest to lowest score.`;
                       </ul>
                     </div>
                   </div>
-                  <Link
-                    href={`/countries/${result.country.toLowerCase()}`}
-                    className="mt-6 inline-block rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-lg transition hover:scale-105"
-                  >
-                    Read the full {result.country} guide →
-                  </Link>
+                  <div className="mt-6 flex flex-wrap gap-3">
+                    <Link
+                      href={`/countries/${result.country.toLowerCase()}`}
+                      className="inline-block rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-lg transition hover:scale-105"
+                    >
+                      Read the full {result.country} guide →
+                    </Link>
+                    {index === 0 && (
+  <a
+    href="#city-quiz"
+    className="inline-block rounded-2xl border-2 border-violet-600 px-6 py-3 text-sm font-bold text-violet-600 transition hover:bg-violet-50"
+  >
+    🏙️ Find your perfect city →
+  </a>
+)}
+                  </div>
                 </div>
               </div>
             ))}
           </div>
 
           {/* CITY QUIZ */}
-          <div className="mt-16 rounded-[32px] bg-[#f8f7ff] border-2 border-violet-100 p-10">
+          <div id="city-quiz" className="mt-16 rounded-[32px] bg-[#f8f7ff] border-2 border-violet-100 p-10">
             <div className="text-center mb-8">
               <div className="text-4xl mb-4">🏙️</div>
               <h2 className="text-3xl font-black">Now find your perfect city</h2>
