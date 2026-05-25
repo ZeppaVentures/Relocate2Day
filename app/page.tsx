@@ -308,15 +308,16 @@ const handleCheckout = async (priceId: string) => {
 
   {/* Mobile menu overlay */}
   {mobileMenuOpen && (
-    <div className="fixed inset-0 z-[999] flex">
-      {/* Backdrop */}
-      <div
-        className="flex-1 bg-black/40 backdrop-blur-sm"
-        onClick={() => setMobileMenuOpen(false)}
-      />
+    <{mobileMenuOpen && (
+  <div className="fixed inset-0 z-[9999] flex" style={{position: 'fixed', top: 0, left: 0, right: 0, bottom: 0}}>
+    {/* Backdrop */}
+    <div
+      className="flex-1 bg-black/60"
+      onClick={() => setMobileMenuOpen(false)}
+    />
 
-      {/* Slide-in panel */}
-      <div className="w-72 bg-white h-full shadow-2xl flex flex-col relative z-[9999]">
+    {/* Slide-in panel */}
+    <div className="w-72 bg-white h-full shadow-2xl flex flex-col" style={{position: 'relative', zIndex: 10000}}>
         <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
           <span className="text-xl font-black bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
             Relocate2Day
