@@ -286,12 +286,20 @@ Order results from highest to lowest score.`;
                     </div>
                   )}
 
-                  <Link
-                    href={`/countries/${result.country.toLowerCase().replace(/ /g, "-")}`}
-                    className="mt-2 inline-block rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-lg transition hover:scale-105"
-                  >
-                    Read the full {result.country} guide →
-                  </Link>
+                  <div className="mt-6 flex flex-wrap gap-3">
+  <Link
+    href={`/cities/${encodeURIComponent(result.city)}?country=${encodeURIComponent(result.country)}`}
+    className="inline-block rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-lg transition hover:scale-105"
+  >
+    📖 Full {result.city} relocation guide →
+  </Link>
+  <Link
+    href={`/countries/${result.country.toLowerCase().replace(/ /g, "-")}`}
+    className="inline-block rounded-2xl border-2 border-violet-600 px-6 py-3 text-sm font-bold text-violet-600 transition hover:bg-violet-50"
+  >
+    {result.country} country guide →
+  </Link>
+</div>
                 </div>
               </div>
             ))}
