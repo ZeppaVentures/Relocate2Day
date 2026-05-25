@@ -93,6 +93,7 @@ const ASPIRATIONS = [
 export default function Home() {
   const router = useRouter();
   const [user, setUser] = useState<any>(null);
+const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 useEffect(() => {
   supabase.auth.getUser().then(({ data }) => {
@@ -243,54 +244,141 @@ const handleCheckout = async (priceId: string) => {
     <div className="min-h-screen overflow-x-hidden bg-white text-[#0B1957]">
 
       {/* NAVIGATION */}
-      <header className="sticky top-0 z-50 border-b border-white/30 bg-white/70 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <div className="text-3xl font-black tracking-tight">
-            <span className="bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
-              Relocate2Day
-            </span>
-          </div>
-          <nav className="hidden items-center gap-8 text-sm font-semibold md:flex">
-            <a href="#countries" className="hover:text-violet-600 transition">Countries</a>
-            <a href="#features" className="hover:text-violet-600 transition">Features</a>
-            <a href="#pricing" className="hover:text-violet-600 transition">Pricing</a>
-            <a href="#faq" className="hover:text-violet-600 transition">FAQ</a>
-          </nav>
-          <div className="flex items-center gap-4">
-            {user ? (
-  <Link
-    href="/account"
-    className="flex items-center gap-3 rounded-2xl border-2 border-gray-200 px-4 py-2 text-sm font-bold hover:border-violet-400 transition"
-  >
-    {user.user_metadata?.avatar_url ? (
-      <img
-        src={user.user_metadata.avatar_url}
-        alt="Avatar"
-        className="w-7 h-7 rounded-full object-cover"
-      />
-    ) : (
-      <div className="w-7 h-7 rounded-full bg-gradient-to-r from-violet-600 to-orange-400 flex items-center justify-center text-white text-xs font-black">
-        {user.email?.[0]?.toUpperCase()}
-      </div>
-    )}
-    My Account
-  </Link>
-) : (
-  <>
-    <Link href="/auth/login" className="hidden md:block text-sm font-semibold hover:text-violet-600 transition">
-      Log in
-    </Link>
-    <Link
-      href="/auth/signup"
-      className="rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+<header className="sticky top-0 z-50 border-b border-white/30 bg-white/70 backdrop-blur-xl">
+  <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+    <div className="text-3xl font-black tracking-tight">
+      <span className="bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
+        Relocate2Day
+      </span>
+    </div>
+
+    {/* Desktop nav */}
+    <nav className="hidden items-center gap-8 text-sm font-semibold md:flex">
+      <a href="#countries" className="hover:text-violet-600 transition">Countries</a>
+      <a href="#features" className="hover:text-violet-600 transition">Features</a>
+      <a href="#pricing" className="hover:text-violet-600 transition">Pricing</a>
+      <a href="#faq" className="hover:text-violet-600 transition">FAQ</a>
+    </nav>
+
+    {/* Desktop auth buttons */}
+    <div className="hidden md:flex items-center gap-4">
+      {user ? (
+        <Link
+          href="/account"
+          className="flex items-center gap-3 rounded-2xl border-2 border-gray-200 px-4 py-2 text-sm font-bold hover:border-violet-400 transition"
+        >
+          {user.user_metadata?.avatar_url ? (
+            <img
+              src={user.user_metadata.avatar_url}
+              alt="Avatar"
+              className="w-7 h-7 rounded-full object-cover"
+            />
+          ) : (
+            <div className="w-7 h-7 rounded-full bg-gradient-to-r from-violet-600 to-orange-400 flex items-center justify-center text-white text-xs font-black">
+              {user.email?.[0]?.toUpperCase()}
+            </div>
+          )}
+          My Account
+        </Link>
+      ) : (
+        <>
+          <Link href="/auth/login" className="text-sm font-semibold hover:text-violet-600 transition">
+            Log in
+          </Link>
+          <Link
+            href="/auth/signup"
+            className="rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            Get started
+          </Link>
+        </>
+      )}
+    </div>
+
+    {/* Mobile hamburger */}
+    <button
+      className="md:hidden flex flex-col gap-1.5 p-2"
+      onClick={() => setMobileMenuOpen(true)}
     >
-      Get started
-    </Link>
-  </>
-)}
-          </div>
+      <span className="block w-6 h-0.5 bg-[#0B1957]" />
+      <span className="block w-6 h-0.5 bg-[#0B1957]" />
+      <span className="block w-6 h-0.5 bg-[#0B1957]" />
+    </button>
+  </div>
+
+  {/* Mobile menu overlay */}
+  {mobileMenuOpen && (
+    <div className="fixed inset-0 z-[100] flex">
+      {/* Backdrop */}
+      <div
+        className="flex-1 bg-black/40 backdrop-blur-sm"
+        onClick={() => setMobileMenuOpen(false)}
+      />
+
+      {/* Slide-in panel */}
+      <div className="w-72 bg-white h-full shadow-2xl flex flex-col">
+        <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
+          <span className="text-xl font-black bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
+            Relocate2Day
+          </span>
+          <button
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-gray-400 hover:text-gray-600 text-2xl font-light"
+          >
+            ✕
+          </button>
         </div>
-      </header>
+
+        <nav className="flex flex-col px-6 py-8 gap-6 text-[#0B1957] font-semibold text-lg flex-1">
+          <a href="#countries" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">Countries</a>
+          <a href="#features" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">Features</a>
+          <a href="#pricing" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">Pricing</a>
+          <a href="#faq" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">FAQ</a>
+        </nav>
+
+        <div className="px-6 py-8 border-t border-gray-100 flex flex-col gap-4">
+          {user ? (
+            <Link
+              href="/account"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-3 rounded-2xl border-2 border-gray-200 px-4 py-3 text-sm font-bold hover:border-violet-400 transition"
+            >
+              {user.user_metadata?.avatar_url ? (
+                <img
+                  src={user.user_metadata.avatar_url}
+                  alt="Avatar"
+                  className="w-7 h-7 rounded-full object-cover"
+                />
+              ) : (
+                <div className="w-7 h-7 rounded-full bg-gradient-to-r from-violet-600 to-orange-400 flex items-center justify-center text-white text-xs font-black">
+                  {user.email?.[0]?.toUpperCase()}
+                </div>
+              )}
+              My Account
+            </Link>
+          ) : (
+            <>
+              <Link
+                href="/auth/login"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full text-center rounded-2xl border-2 border-gray-200 px-6 py-3 text-sm font-bold hover:border-violet-400 transition"
+              >
+                Log in
+              </Link>
+              <Link
+                href="/auth/signup"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full text-center rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-xl transition hover:scale-105"
+              >
+                Get started
+              </Link>
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  )}
+</header>
 
       {/* HERO */}
       <section className="relative overflow-hidden">
