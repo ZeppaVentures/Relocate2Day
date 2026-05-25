@@ -127,11 +127,7 @@ Order the results array from highest to lowest score.`;
           <p className="text-gray-500 text-lg">Analysing your profile across 6 European countries</p>
           <div className="mt-8 flex justify-center gap-2">
             {["Spain", "Portugal", "Italy", "Gibraltar", "Malta", "Bulgaria"].map((country, i) => (
-              <div
-                key={country}
-                className="w-2 h-2 rounded-full bg-violet-400 animate-pulse"
-                style={{ animationDelay: `${i * 0.2}s` }}
-              />
+              <div key={country} className="w-2 h-2 rounded-full bg-violet-400 animate-pulse" style={{ animationDelay: `${i * 0.2}s` }} />
             ))}
           </div>
         </div>
@@ -146,10 +142,7 @@ Order the results array from highest to lowest score.`;
           <div className="text-6xl mb-6">😕</div>
           <h2 className="text-3xl font-black mb-4">Something went wrong</h2>
           <p className="text-gray-500 mb-8">We couldn&apos;t generate your results. Please try again.</p>
-          <Link
-            href="/"
-            className="rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-8 py-4 text-sm font-bold text-white shadow-xl transition hover:scale-105"
-          >
+          <Link href="/" className="rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-8 py-4 text-sm font-bold text-white shadow-xl transition hover:scale-105">
             ← Try again
           </Link>
         </div>
@@ -178,22 +171,15 @@ Order the results array from highest to lowest score.`;
 
       {/* HERO RESULT */}
       <section className="relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${countryImages[topResult.country]}')` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${countryImages[topResult.country]}')` }} />
         <div className="absolute inset-0 bg-[#0B1957]/70" />
         <div className="relative mx-auto max-w-7xl px-6 py-24 text-white text-center">
           <div className="inline-flex rounded-full bg-orange-400 px-4 py-1 text-xs font-bold uppercase tracking-wide mb-6">
             Your top match
           </div>
           <div className="text-7xl mb-4">{countryFlags[topResult.country]}</div>
-          <h1 className="text-6xl font-black leading-none md:text-8xl mb-6">
-            {topResult.country}
-          </h1>
-          <p className="mx-auto max-w-2xl text-xl text-white/80 mb-8">
-            {results.intro}
-          </p>
+          <h1 className="text-6xl font-black leading-none md:text-8xl mb-6">{topResult.country}</h1>
+          <p className="mx-auto max-w-2xl text-xl text-white/80 mb-8">{results.intro}</p>
           <div className="inline-flex items-center gap-3 rounded-2xl bg-white/20 px-8 py-4 backdrop-blur-xl">
             <div className="text-4xl font-black">{topResult.score}</div>
             <div className="text-left">
@@ -207,9 +193,7 @@ Order the results array from highest to lowest score.`;
       {/* PROFILE SUMMARY */}
       <section className="bg-[#f8f7ff] px-6 py-12">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-center text-sm font-bold uppercase tracking-[0.3em] text-violet-500 mb-6">
-            Based on your profile
-          </h2>
+          <h2 className="text-center text-sm font-bold uppercase tracking-[0.3em] text-violet-500 mb-6">Based on your profile</h2>
           <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
             {[
               { label: "Nationality", value: nationality },
@@ -239,17 +223,9 @@ Order the results array from highest to lowest score.`;
 
           <div className="space-y-8">
             {results.results.map((result, index) => (
-              <div
-                key={result.country}
-                className={`rounded-[28px] overflow-hidden shadow-lg ${index === 0 ? "ring-2 ring-violet-500" : ""}`}
-              >
-                {/* Card header */}
+              <div key={result.country} className={`rounded-[28px] overflow-hidden shadow-lg ${index === 0 ? "ring-2 ring-violet-500" : ""}`}>
                 <div className="relative h-32 overflow-hidden">
-                  <img
-                    src={countryImages[result.country]}
-                    alt={result.country}
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={countryImages[result.country]} alt={result.country} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-[#0B1957]/60" />
                   <div className="absolute inset-0 flex items-center justify-between px-8">
                     <div className="flex items-center gap-4">
@@ -273,20 +249,13 @@ Order the results array from highest to lowest score.`;
                   )}
                 </div>
 
-                {/* Card body */}
                 <div className="bg-white p-8">
                   <p className="text-gray-600 text-lg mb-6 italic">&ldquo;{result.summary}&rdquo;</p>
-
-                  {/* Score bar */}
                   <div className="mb-6">
                     <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 rounded-full transition-all duration-1000"
-                        style={{ width: `${result.score}%` }}
-                      />
+                      <div className="h-full bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 rounded-full transition-all duration-1000" style={{ width: `${result.score}%` }} />
                     </div>
                   </div>
-
                   <div className="grid gap-6 md:grid-cols-2">
                     <div>
                       <h4 className="font-black text-sm uppercase tracking-wide text-green-600 mb-3">✅ Why it suits you</h4>
@@ -311,7 +280,6 @@ Order the results array from highest to lowest score.`;
                       </ul>
                     </div>
                   </div>
-
                   <Link
                     href={`/countries/${result.country.toLowerCase()}`}
                     className="mt-6 inline-block rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-lg transition hover:scale-105"
@@ -323,6 +291,92 @@ Order the results array from highest to lowest score.`;
             ))}
           </div>
 
+          {/* CITY QUIZ */}
+          <div className="mt-16 rounded-[32px] bg-[#f8f7ff] border-2 border-violet-100 p-10">
+            <div className="text-center mb-8">
+              <div className="text-4xl mb-4">🏙️</div>
+              <h2 className="text-3xl font-black">Now find your perfect city</h2>
+              <p className="mt-3 text-gray-500 text-lg">
+                You&apos;ve found your country — now let&apos;s find the perfect city or town within it.
+              </p>
+            </div>
+
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className="rounded-2xl bg-white p-5 shadow-sm">
+                <div className="text-sm text-gray-500 font-semibold mb-2">Country</div>
+                <select
+                  id="cityCountry"
+                  defaultValue={results?.results[0]?.country || ""}
+                  className="w-full bg-transparent font-bold text-[#0B1957] outline-none cursor-pointer"
+                >
+                  {["Spain", "Portugal", "Italy", "Gibraltar", "Malta", "Bulgaria"].map((c) => (
+                    <option key={c} value={c}>{c}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="rounded-2xl bg-white p-5 shadow-sm">
+                <div className="text-sm text-gray-500 font-semibold mb-2">Monthly rent budget</div>
+                <select id="cityBudget" className="w-full bg-transparent font-bold text-[#0B1957] outline-none cursor-pointer">
+                  <option value="Under €500">Under €500</option>
+                  <option value="€500 – €800">€500 – €800</option>
+                  <option value="€800 – €1,200">€800 – €1,200</option>
+                  <option value="€1,200 – €1,800">€1,200 – €1,800</option>
+                  <option value="Over €1,800">Over €1,800</option>
+                </select>
+              </div>
+
+              <div className="rounded-2xl bg-white p-5 shadow-sm">
+                <div className="text-sm text-gray-500 font-semibold mb-2">City lifestyle preference</div>
+                <select id="cityLifestyle" className="w-full bg-transparent font-bold text-[#0B1957] outline-none cursor-pointer">
+                  <option value="Bustling city life">Bustling city life</option>
+                  <option value="Coastal / beach town">Coastal / beach town</option>
+                  <option value="Quiet town or village">Quiet town or village</option>
+                  <option value="University or student city">University or student city</option>
+                  <option value="Mix of city and nature">Mix of city and nature</option>
+                </select>
+              </div>
+
+              <div className="rounded-2xl bg-white p-5 shadow-sm">
+                <div className="text-sm text-gray-500 font-semibold mb-2">Top priority</div>
+                <select id="cityPriorities" className="w-full bg-transparent font-bold text-[#0B1957] outline-none cursor-pointer">
+                  <option value="Affordability">Affordability</option>
+                  <option value="Career opportunities">Career opportunities</option>
+                  <option value="Expat community">Expat community</option>
+                  <option value="Quality of life">Quality of life</option>
+                  <option value="Safety and family friendliness">Safety and family friendliness</option>
+                  <option value="Warm climate and beaches">Warm climate and beaches</option>
+                  <option value="Culture and nightlife">Culture and nightlife</option>
+                  <option value="Nature and outdoor activities">Nature and outdoor activities</option>
+                </select>
+              </div>
+            </div>
+
+            <button
+              onClick={() => {
+                const country = (document.getElementById("cityCountry") as HTMLSelectElement)?.value;
+                const budget = (document.getElementById("cityBudget") as HTMLSelectElement)?.value;
+                const cityLifestyle = (document.getElementById("cityLifestyle") as HTMLSelectElement)?.value;
+                const priorities = (document.getElementById("cityPriorities") as HTMLSelectElement)?.value;
+                const params = new URLSearchParams({
+                  country,
+                  budget,
+                  lifestyle: cityLifestyle,
+                  priorities,
+                  family,
+                  lifeStage,
+                  nationality,
+                  income,
+                  industry,
+                });
+                window.location.href = `/quiz/city-results?${params.toString()}`;
+              }}
+              className="mt-6 w-full rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-5 text-lg font-bold text-white shadow-2xl transition hover:scale-[1.02]"
+            >
+              Find my perfect city →
+            </button>
+          </div>
+
           {/* CTA */}
           <div className="mt-16 rounded-[32px] bg-gradient-to-br from-violet-600 via-pink-500 to-orange-400 p-10 text-center text-white">
             <h2 className="text-3xl font-black">Want to go deeper?</h2>
@@ -330,16 +384,10 @@ Order the results array from highest to lowest score.`;
               Get access to our full tax calculator, detailed visa guides and expert community.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Link
-                href="/#pricing"
-                className="rounded-2xl bg-white px-8 py-4 text-sm font-bold text-violet-600 shadow-2xl transition hover:scale-105"
-              >
+              <Link href="/#pricing" className="rounded-2xl bg-white px-8 py-4 text-sm font-bold text-violet-600 shadow-2xl transition hover:scale-105">
                 See pricing →
               </Link>
-              <Link
-                href="/"
-                className="rounded-2xl bg-white/20 px-8 py-4 text-sm font-bold text-white backdrop-blur-xl transition hover:bg-white/30"
-              >
+              <Link href="/" className="rounded-2xl bg-white/20 px-8 py-4 text-sm font-bold text-white backdrop-blur-xl transition hover:bg-white/30">
                 ← Start over
               </Link>
             </div>
