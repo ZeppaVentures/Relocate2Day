@@ -316,7 +316,7 @@ const handleCheckout = async (priceId: string) => {
       />
 
       {/* Slide-in panel */}
-      <div className="w-72 bg-white h-full shadow-2xl flex flex-col">
+      <div className="w-72 bg-white h-full shadow-2xl flex flex-col relative z-[9999]">
         <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
           <span className="text-xl font-black bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
             Relocate2Day
