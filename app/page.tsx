@@ -93,35 +93,33 @@ const ASPIRATIONS = [
 export default function Home() {
   const router = useRouter();
   const [user, setUser] = useState<any>(null);
-const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-useEffect(() => {
-  supabase.auth.getUser().then(({ data }) => {
-    setUser(data.user);
-  });
-}, []);
+  useEffect(() => {
+    supabase.auth.getUser().then(({ data }) => {
+      setUser(data.user);
+    });
+  }, []);
 
-const handleCheckout = async (priceId: string) => {
-  if (!user) {
-    router.push("/auth/signup");
-    return;
-  }
-
-  const response = await fetch("/api/stripe/checkout", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      priceId,
-      userId: user.id,
-      userEmail: user.email,
-    }),
-  });
-
-  const data = await response.json();
-  if (data.url) {
-    window.location.href = data.url;
-  }
-};
+  const handleCheckout = async (priceId: string) => {
+    if (!user) {
+      router.push("/auth/signup");
+      return;
+    }
+    const response = await fetch("/api/stripe/checkout", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        priceId,
+        userId: user.id,
+        userEmail: user.email,
+      }),
+    });
+    const data = await response.json();
+    if (data.url) {
+      window.location.href = data.url;
+    }
+  };
 
   const [nationality, setNationality] = useState("");
   const [countrySearch, setCountrySearch] = useState("");
@@ -151,9 +149,7 @@ const handleCheckout = async (priceId: string) => {
   };
 
   const handleQuiz = () => {
-    if (!validate()) {
-      return;
-    }
+    if (!validate()) return;
     const params = new URLSearchParams({
       nationality,
       income,
@@ -168,48 +164,16 @@ const handleCheckout = async (priceId: string) => {
 
   const fieldClass = (key: string) =>
     `rounded-2xl p-5 text-white transition-all ${
-      errors[key]
-        ? "bg-red-500/30 ring-2 ring-red-400"
-        : "bg-white/10"
+      errors[key] ? "bg-red-500/30 ring-2 ring-red-400" : "bg-white/10"
     }`;
 
   const destinations = [
-    {
-      name: "Spain",
-      slug: "spain",
-      image: "/images/countries/spain-card.jpg",
-      description: "Great weather, vibrant cities and the Digital Nomad Visa.",
-    },
-    {
-      name: "Gibraltar",
-      slug: "gibraltar",
-      image: "/images/countries/gibraltar-card.jpg",
-      description: "British culture, tax advantages and a gateway between Europe and Africa.",
-    },
-    {
-      name: "Portugal",
-      slug: "portugal",
-      image: "/images/countries/portugal-card.jpg",
-      description: "Affordable living, friendly locals and simple tax regimes.",
-    },
-    {
-      name: "Italy",
-      slug: "italy",
-      image: "/images/countries/italy-card.jpg",
-      description: "Beautiful coastline, amazing food and relaxed lifestyle.",
-    },
-    {
-      name: "Malta",
-      slug: "malta",
-      image: "/images/countries/malta-card.jpg",
-      description: "English-speaking, sunny and one of Europe's most welcoming residency programmes.",
-    },
-    {
-      name: "Bulgaria",
-      slug: "bulgaria",
-      image: "/images/countries/bulgaria-card.jpg",
-      description: "Low flat tax, affordable living and a fast-growing expat community in the heart of the Balkans.",
-    },
+    { name: "Spain", slug: "spain", image: "/images/countries/spain-card.jpg", description: "Great weather, vibrant cities and the Digital Nomad Visa." },
+    { name: "Gibraltar", slug: "gibraltar", image: "/images/countries/gibraltar-card.jpg", description: "British culture, tax advantages and a gateway between Europe and Africa." },
+    { name: "Portugal", slug: "portugal", image: "/images/countries/portugal-card.jpg", description: "Affordable living, friendly locals and simple tax regimes." },
+    { name: "Italy", slug: "italy", image: "/images/countries/italy-card.jpg", description: "Beautiful coastline, amazing food and relaxed lifestyle." },
+    { name: "Malta", slug: "malta", image: "/images/countries/malta-card.jpg", description: "English-speaking, sunny and one of Europe's most welcoming residency programmes." },
+    { name: "Bulgaria", slug: "bulgaria", image: "/images/countries/bulgaria-card.jpg", description: "Low flat tax, affordable living and a fast-growing expat community in the heart of the Balkans." },
   ];
 
   const features = [
@@ -222,172 +186,107 @@ const handleCheckout = async (priceId: string) => {
   ];
 
   const faqs = [
-    {
-      question: "Which countries does Relocate2Day cover?",
-      answer: "We currently cover Spain, Gibraltar, Portugal, Italy, Malta and Bulgaria, with more countries coming soon.",
-    },
-    {
-      question: "Is Relocate2Day free to use?",
-      answer: "Yes — our core tools are free. We also offer a premium plan with deeper guides, tax calculators and expert support.",
-    },
-    {
-      question: "Can Relocate2Day help me with visa applications?",
-      answer: "We provide up-to-date guides on visa requirements and processes, but we are not a legal service. We recommend consulting a local immigration lawyer for your specific situation.",
-    },
-    {
-      question: "How accurate is the tax information?",
-      answer: "Our tax guides are regularly updated, but tax laws change frequently. Always verify with a local tax advisor before making financial decisions.",
-    },
+    { question: "Which countries does Relocate2Day cover?", answer: "We currently cover Spain, Gibraltar, Portugal, Italy, Malta and Bulgaria, with more countries coming soon." },
+    { question: "Is Relocate2Day free to use?", answer: "Yes — our core tools are free. We also offer a premium plan with deeper guides, tax calculators and expert support." },
+    { question: "Can Relocate2Day help me with visa applications?", answer: "We provide up-to-date guides on visa requirements and processes, but we are not a legal service. We recommend consulting a local immigration lawyer for your specific situation." },
+    { question: "How accurate is the tax information?", answer: "Our tax guides are regularly updated, but tax laws change frequently. Always verify with a local tax advisor before making financial decisions." },
   ];
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-white text-[#0B1957]">
 
       {/* NAVIGATION */}
-<header className="sticky top-0 z-50 border-b border-white/30 bg-white/70 backdrop-blur-xl">
-  <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-    <div className="text-3xl font-black tracking-tight">
-      <span className="bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
-        Relocate2Day
-      </span>
-    </div>
-
-    {/* Desktop nav */}
-    <nav className="hidden items-center gap-8 text-sm font-semibold md:flex">
-      <a href="#countries" className="hover:text-violet-600 transition">Countries</a>
-      <a href="#features" className="hover:text-violet-600 transition">Features</a>
-      <a href="#pricing" className="hover:text-violet-600 transition">Pricing</a>
-      <a href="#faq" className="hover:text-violet-600 transition">FAQ</a>
-    </nav>
-
-    {/* Desktop auth buttons */}
-    <div className="hidden md:flex items-center gap-4">
-      {user ? (
-        <Link
-          href="/account"
-          className="flex items-center gap-3 rounded-2xl border-2 border-gray-200 px-4 py-2 text-sm font-bold hover:border-violet-400 transition"
-        >
-          {user.user_metadata?.avatar_url ? (
-            <img
-              src={user.user_metadata.avatar_url}
-              alt="Avatar"
-              className="w-7 h-7 rounded-full object-cover"
-            />
-          ) : (
-            <div className="w-7 h-7 rounded-full bg-gradient-to-r from-violet-600 to-orange-400 flex items-center justify-center text-white text-xs font-black">
-              {user.email?.[0]?.toUpperCase()}
-            </div>
-          )}
-          My Account
-        </Link>
-      ) : (
-        <>
-          <Link href="/auth/login" className="text-sm font-semibold hover:text-violet-600 transition">
-            Log in
-          </Link>
-          <Link
-            href="/auth/signup"
-            className="rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-          >
-            Get started
-          </Link>
-        </>
-      )}
-    </div>
-
-    {/* Mobile hamburger */}
-    <button
-      className="md:hidden flex flex-col gap-1.5 p-2"
-      onClick={() => setMobileMenuOpen(true)}
-    >
-      <span className="block w-6 h-0.5 bg-[#0B1957]" />
-      <span className="block w-6 h-0.5 bg-[#0B1957]" />
-      <span className="block w-6 h-0.5 bg-[#0B1957]" />
-    </button>
-  </div>
-
-  {/* Mobile menu overlay */}
-{mobileMenuOpen && (
-  <div style={{position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, zIndex: 99999, display: 'flex'}}>
-    {/* Backdrop */}
-    <div
-      className="flex-1 bg-black/60"
-      onClick={() => setMobileMenuOpen(false)}
-    />
-
-    {/* Slide-in panel */}
-    <div className="w-72 bg-white h-full shadow-2xl flex flex-col" style={{position: 'relative', zIndex: 10000}}>
-        <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
-          <span className="text-xl font-black bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
-            Relocate2Day
-          </span>
-          <button
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-gray-400 hover:text-gray-600 text-2xl font-light"
-          >
-            ✕
+      <header className="sticky top-0 z-50 border-b border-white/30 bg-white/70 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+          <div className="text-3xl font-black tracking-tight">
+            <span className="bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
+              Relocate2Day
+            </span>
+          </div>
+          <nav className="hidden items-center gap-8 text-sm font-semibold md:flex">
+            <a href="#countries" className="hover:text-violet-600 transition">Countries</a>
+            <a href="#features" className="hover:text-violet-600 transition">Features</a>
+            <a href="#pricing" className="hover:text-violet-600 transition">Pricing</a>
+            <a href="#faq" className="hover:text-violet-600 transition">FAQ</a>
+          </nav>
+          <div className="hidden md:flex items-center gap-4">
+            {user ? (
+              <Link href="/account" className="flex items-center gap-3 rounded-2xl border-2 border-gray-200 px-4 py-2 text-sm font-bold hover:border-violet-400 transition">
+                {user.user_metadata?.avatar_url ? (
+                  <img src={user.user_metadata.avatar_url} alt="Avatar" className="w-7 h-7 rounded-full object-cover" />
+                ) : (
+                  <div className="w-7 h-7 rounded-full bg-gradient-to-r from-violet-600 to-orange-400 flex items-center justify-center text-white text-xs font-black">
+                    {user.email?.[0]?.toUpperCase()}
+                  </div>
+                )}
+                My Account
+              </Link>
+            ) : (
+              <>
+                <Link href="/auth/login" className="text-sm font-semibold hover:text-violet-600 transition">Log in</Link>
+                <Link href="/auth/signup" className="rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                  Get started
+                </Link>
+              </>
+            )}
+          </div>
+          {/* Mobile hamburger */}
+          <button className="md:hidden flex flex-col gap-1.5 p-2" onClick={() => setMobileMenuOpen(true)}>
+            <span className="block w-6 h-0.5 bg-[#0B1957]" />
+            <span className="block w-6 h-0.5 bg-[#0B1957]" />
+            <span className="block w-6 h-0.5 bg-[#0B1957]" />
           </button>
         </div>
+      </header>
 
-        <nav className="flex flex-col px-6 py-8 gap-6 text-[#0B1957] font-semibold text-lg flex-1">
-          <a href="#countries" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">Countries</a>
-          <a href="#features" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">Features</a>
-          <a href="#pricing" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">Pricing</a>
-          <a href="#faq" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">FAQ</a>
-        </nav>
-
-        <div className="px-6 py-8 border-t border-gray-100 flex flex-col gap-4">
-          {user ? (
-            <Link
-              href="/account"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-3 rounded-2xl border-2 border-gray-200 px-4 py-3 text-sm font-bold hover:border-violet-400 transition"
-            >
-              {user.user_metadata?.avatar_url ? (
-                <img
-                  src={user.user_metadata.avatar_url}
-                  alt="Avatar"
-                  className="w-7 h-7 rounded-full object-cover"
-                />
+      {/* MOBILE MENU — outside header so z-index works */}
+      {mobileMenuOpen && (
+        <div style={{ position: "fixed", top: 0, left: 0, right: 0, bottom: 0, zIndex: 99999, display: "flex" }}>
+          <div style={{ flex: 1, backgroundColor: "rgba(0,0,0,0.7)" }} onClick={() => setMobileMenuOpen(false)} />
+          <div style={{ width: "288px", backgroundColor: "white", height: "100%", boxShadow: "0 25px 50px rgba(0,0,0,0.3)", display: "flex", flexDirection: "column" }}>
+            <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
+              <span className="text-xl font-black bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
+                Relocate2Day
+              </span>
+              <button onClick={() => setMobileMenuOpen(false)} className="text-gray-400 hover:text-gray-600 text-2xl">✕</button>
+            </div>
+            <nav className="flex flex-col px-6 py-8 gap-6 text-[#0B1957] font-semibold text-lg flex-1">
+              <a href="#countries" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">Countries</a>
+              <a href="#features" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">Features</a>
+              <a href="#pricing" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">Pricing</a>
+              <a href="#faq" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">FAQ</a>
+            </nav>
+            <div className="px-6 py-8 border-t border-gray-100 flex flex-col gap-4">
+              {user ? (
+                <Link href="/account" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3 rounded-2xl border-2 border-gray-200 px-4 py-3 text-sm font-bold hover:border-violet-400 transition">
+                  {user.user_metadata?.avatar_url ? (
+                    <img src={user.user_metadata.avatar_url} alt="Avatar" className="w-7 h-7 rounded-full object-cover" />
+                  ) : (
+                    <div className="w-7 h-7 rounded-full bg-gradient-to-r from-violet-600 to-orange-400 flex items-center justify-center text-white text-xs font-black">
+                      {user.email?.[0]?.toUpperCase()}
+                    </div>
+                  )}
+                  My Account
+                </Link>
               ) : (
-                <div className="w-7 h-7 rounded-full bg-gradient-to-r from-violet-600 to-orange-400 flex items-center justify-center text-white text-xs font-black">
-                  {user.email?.[0]?.toUpperCase()}
-                </div>
+                <>
+                  <Link href="/auth/login" onClick={() => setMobileMenuOpen(false)} className="w-full text-center rounded-2xl border-2 border-gray-200 px-6 py-3 text-sm font-bold hover:border-violet-400 transition">
+                    Log in
+                  </Link>
+                  <Link href="/auth/signup" onClick={() => setMobileMenuOpen(false)} className="w-full text-center rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-xl transition hover:scale-105">
+                    Get started
+                  </Link>
+                </>
               )}
-              My Account
-            </Link>
-          ) : (
-            <>
-              <Link
-                href="/auth/login"
-                onClick={() => setMobileMenuOpen(false)}
-                className="w-full text-center rounded-2xl border-2 border-gray-200 px-6 py-3 text-sm font-bold hover:border-violet-400 transition"
-              >
-                Log in
-              </Link>
-              <Link
-                href="/auth/signup"
-                onClick={() => setMobileMenuOpen(false)}
-                className="w-full text-center rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white shadow-xl transition hover:scale-105"
-              >
-                Get started
-              </Link>
-            </>
-          )}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  )}
-</header>
+      )}
 
       {/* HERO */}
       <section className="relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/countries/home-hero.jpg')" }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/countries/home-hero.jpg')" }} />
         <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" />
-
         <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-20">
           <div className="mx-auto max-w-5xl text-center">
             <h1 className="text-5xl font-black leading-none tracking-tight text-[#0B1957] md:text-8xl">
@@ -403,10 +302,7 @@ const handleCheckout = async (priceId: string) => {
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               {["Compare countries", "Understand taxes", "Plan your move"].map((item) => (
-                <button
-                  key={item}
-                  className="rounded-2xl border border-white/40 bg-white/70 px-6 py-3 text-sm font-semibold shadow-lg backdrop-blur-xl transition hover:scale-105"
-                >
+                <button key={item} className="rounded-2xl border border-white/40 bg-white/70 px-6 py-3 text-sm font-semibold shadow-lg backdrop-blur-xl transition hover:scale-105">
                   {item}
                 </button>
               ))}
@@ -421,7 +317,6 @@ const handleCheckout = async (priceId: string) => {
             </div>
 
             <div className="mt-8 grid gap-4 md:grid-cols-2">
-
               {/* NATIONALITY */}
               <div className={`relative z-[100] ${fieldClass("nationality")}`}>
                 <div className="text-sm text-gray-300 mb-2">I'm from</div>
@@ -429,11 +324,7 @@ const handleCheckout = async (priceId: string) => {
                   type="text"
                   placeholder="Search country..."
                   value={countrySearch || nationality}
-                  onChange={(e) => {
-                    setCountrySearch(e.target.value);
-                    setNationality("");
-                    setShowCountryList(true);
-                  }}
+                  onChange={(e) => { setCountrySearch(e.target.value); setNationality(""); setShowCountryList(true); }}
                   onFocus={() => setShowCountryList(true)}
                   onBlur={() => setTimeout(() => setShowCountryList(false), 150)}
                   className="w-full bg-transparent font-semibold placeholder-white/40 outline-none text-white"
@@ -441,16 +332,7 @@ const handleCheckout = async (priceId: string) => {
                 {showCountryList && filteredCountries.length > 0 && (
                   <ul className="absolute left-0 right-0 top-full mt-1 z-[200] max-h-52 overflow-y-auto rounded-2xl bg-[#0d1f6e] border border-white/20 shadow-2xl">
                     {filteredCountries.map((country) => (
-                      <li
-                        key={country}
-                        onMouseDown={() => {
-                          setNationality(country);
-                          setCountrySearch(country);
-                          setShowCountryList(false);
-                          setErrors((e) => ({ ...e, nationality: false }));
-                        }}
-                        className="px-4 py-2 text-sm text-white cursor-pointer hover:bg-white/10"
-                      >
+                      <li key={country} onMouseDown={() => { setNationality(country); setCountrySearch(country); setShowCountryList(false); setErrors((e) => ({ ...e, nationality: false })); }} className="px-4 py-2 text-sm text-white cursor-pointer hover:bg-white/10">
                         {country}
                       </li>
                     ))}
@@ -461,32 +343,16 @@ const handleCheckout = async (priceId: string) => {
               {/* INCOME */}
               <div className={fieldClass("income")}>
                 <div className="text-sm text-gray-300 mb-2">Annual income</div>
-                <select
-                  value={income}
-                  onChange={(e) => {
-                    setIncome(e.target.value);
-                    setErrors((er) => ({ ...er, income: false }));
-                  }}
-                  className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer"
-                >
+                <select value={income} onChange={(e) => { setIncome(e.target.value); setErrors((er) => ({ ...er, income: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
                   <option value="" className="text-black bg-white">Select bracket...</option>
-                  {INCOME_BRACKETS.map((b) => (
-                    <option key={b} value={b} className="text-black bg-white">{b}</option>
-                  ))}
+                  {INCOME_BRACKETS.map((b) => <option key={b} value={b} className="text-black bg-white">{b}</option>)}
                 </select>
               </div>
 
               {/* LIFE STAGE */}
               <div className={fieldClass("lifeStage")}>
                 <div className="text-sm text-gray-300 mb-2">Life stage</div>
-                <select
-                  value={lifeStage}
-                  onChange={(e) => {
-                    setLifeStage(e.target.value);
-                    setErrors((er) => ({ ...er, lifeStage: false }));
-                  }}
-                  className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer"
-                >
+                <select value={lifeStage} onChange={(e) => { setLifeStage(e.target.value); setErrors((er) => ({ ...er, lifeStage: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
                   <option value="" className="text-black bg-white">Select...</option>
                   <option value="Employee relocating with a company" className="text-black bg-white">Employee relocating with a company</option>
                   <option value="Remote worker / freelancer" className="text-black bg-white">Remote worker / freelancer</option>
@@ -500,14 +366,7 @@ const handleCheckout = async (priceId: string) => {
               {/* FAMILY */}
               <div className={fieldClass("family")}>
                 <div className="text-sm text-gray-300 mb-2">Family situation</div>
-                <select
-                  value={family}
-                  onChange={(e) => {
-                    setFamily(e.target.value);
-                    setErrors((er) => ({ ...er, family: false }));
-                  }}
-                  className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer"
-                >
+                <select value={family} onChange={(e) => { setFamily(e.target.value); setErrors((er) => ({ ...er, family: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
                   <option value="" className="text-black bg-white">Select...</option>
                   <option value="Single" className="text-black bg-white">Single</option>
                   <option value="Couple (no children)" className="text-black bg-white">Couple (no children)</option>
@@ -520,14 +379,7 @@ const handleCheckout = async (priceId: string) => {
               {/* LIFESTYLE */}
               <div className={fieldClass("lifestyle")}>
                 <div className="text-sm text-gray-300 mb-2">Lifestyle preference</div>
-                <select
-                  value={lifestyle}
-                  onChange={(e) => {
-                    setLifestyle(e.target.value);
-                    setErrors((er) => ({ ...er, lifestyle: false }));
-                  }}
-                  className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer"
-                >
+                <select value={lifestyle} onChange={(e) => { setLifestyle(e.target.value); setErrors((er) => ({ ...er, lifestyle: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
                   <option value="" className="text-black bg-white">Select...</option>
                   <option value="Bustling city life" className="text-black bg-white">Bustling city life</option>
                   <option value="Coastal / beach lifestyle" className="text-black bg-white">Coastal / beach lifestyle</option>
@@ -539,18 +391,9 @@ const handleCheckout = async (priceId: string) => {
               {/* INDUSTRY */}
               <div className={fieldClass("industry")}>
                 <div className="text-sm text-gray-300 mb-2">Industry</div>
-                <select
-                  value={industry}
-                  onChange={(e) => {
-                    setIndustry(e.target.value);
-                    setErrors((er) => ({ ...er, industry: false }));
-                  }}
-                  className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer"
-                >
+                <select value={industry} onChange={(e) => { setIndustry(e.target.value); setErrors((er) => ({ ...er, industry: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
                   <option value="" className="text-black bg-white">Select industry...</option>
-                  {INDUSTRIES.map((ind) => (
-                    <option key={ind} value={ind} className="text-black bg-white">{ind}</option>
-                  ))}
+                  {INDUSTRIES.map((ind) => <option key={ind} value={ind} className="text-black bg-white">{ind}</option>)}
                 </select>
               </div>
             </div>
@@ -558,27 +401,16 @@ const handleCheckout = async (priceId: string) => {
             {/* ASPIRATIONS */}
             <div className="mt-4 rounded-2xl bg-white/10 p-5 text-white">
               <div className="text-sm text-gray-300 mb-2">Career aspirations <span className="text-white/40">(optional)</span></div>
-              <select
-                value={aspirations}
-                onChange={(e) => setAspirations(e.target.value)}
-                className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer"
-              >
-                {ASPIRATIONS.map((a) => (
-                  <option key={a} value={a} className="text-black bg-white">{a}</option>
-                ))}
+              <select value={aspirations} onChange={(e) => setAspirations(e.target.value)} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
+                {ASPIRATIONS.map((a) => <option key={a} value={a} className="text-black bg-white">{a}</option>)}
               </select>
             </div>
 
             {Object.keys(errors).length > 0 && (
-              <p className="mt-4 text-center text-sm text-red-300">
-                Please fill in all highlighted fields before continuing.
-              </p>
+              <p className="mt-4 text-center text-sm text-red-300">Please fill in all highlighted fields before continuing.</p>
             )}
 
-            <button
-              onClick={handleQuiz}
-              className="mt-6 w-full rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-5 text-lg font-bold text-white shadow-2xl transition hover:scale-[1.02]"
-            >
+            <button onClick={handleQuiz} className="mt-6 w-full rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-5 text-lg font-bold text-white shadow-2xl transition hover:scale-[1.02]">
               Find my best options →
             </button>
 
@@ -602,22 +434,13 @@ const handleCheckout = async (priceId: string) => {
           <div className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
             {destinations.map((country) => (
               <div key={country.name} className="group relative overflow-hidden rounded-[32px] shadow-2xl">
-                <img
-                  src={country.image}
-                  alt={country.name}
-                  className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-110"
-                />
+                <img src={country.image} alt={country.name} className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
                 <div className="absolute bottom-0 p-8 text-white">
-                  <div className="mb-4 inline-flex rounded-full bg-orange-400 px-3 py-1 text-xs font-bold uppercase tracking-wide">
-                    {country.name}
-                  </div>
+                  <div className="mb-4 inline-flex rounded-full bg-orange-400 px-3 py-1 text-xs font-bold uppercase tracking-wide">{country.name}</div>
                   <h3 className="text-4xl font-black">{country.name}</h3>
                   <p className="mt-4 text-white/90">{country.description}</p>
-                  <Link
-                    href={`/countries/${country.slug}`}
-                    className="mt-6 inline-block rounded-2xl bg-white/20 px-5 py-3 text-sm font-semibold backdrop-blur-xl transition hover:bg-white/30"
-                  >
+                  <Link href={`/countries/${country.slug}`} className="mt-6 inline-block rounded-2xl bg-white/20 px-5 py-3 text-sm font-semibold backdrop-blur-xl transition hover:bg-white/30">
                     Explore {country.name} →
                   </Link>
                 </div>
@@ -648,82 +471,72 @@ const handleCheckout = async (priceId: string) => {
       </section>
 
       {/* PRICING */}
-<section id="pricing" className="bg-white px-6 py-28">
-  <div className="mx-auto max-w-7xl">
-    <div className="text-center">
-      <div className="text-sm font-bold uppercase tracking-[0.3em] text-violet-500">Pricing</div>
-      <h2 className="mt-4 text-5xl font-black">Simple, transparent pricing</h2>
-      <p className="mt-4 text-xl text-gray-500">Start for free. Upgrade when you need more.</p>
-    </div>
+      <section id="pricing" className="bg-white px-6 py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center">
+            <div className="text-sm font-bold uppercase tracking-[0.3em] text-violet-500">Pricing</div>
+            <h2 className="mt-4 text-5xl font-black">Simple, transparent pricing</h2>
+            <p className="mt-4 text-xl text-gray-500">Start for free. Upgrade when you need more.</p>
+          </div>
+          <div className="mt-16 grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
 
-    <div className="mt-16 grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
+            {/* Free */}
+            <div className="rounded-[28px] border-2 border-gray-100 bg-white p-8 shadow-lg">
+              <h3 className="text-2xl font-black">Free</h3>
+              <div className="mt-4 text-5xl font-black">€0</div>
+              <p className="mt-2 text-gray-500">Forever free</p>
+              <ul className="mt-8 space-y-3 text-sm text-gray-600">
+                <li>✅ Country comparisons</li>
+                <li>✅ Basic visa guides</li>
+                <li>✅ Cost of living data</li>
+                <li>✅ Relocation quiz</li>
+              </ul>
+              <button onClick={() => router.push("/auth/signup")} className="mt-8 w-full rounded-2xl border-2 border-violet-600 px-6 py-3 text-sm font-bold text-violet-600 transition hover:bg-violet-50">
+                Get started free
+              </button>
+            </div>
 
-      {/* Free */}
-      <div className="rounded-[28px] border-2 border-gray-100 bg-white p-8 shadow-lg">
-        <h3 className="text-2xl font-black">Free</h3>
-        <div className="mt-4 text-5xl font-black">€0</div>
-        <p className="mt-2 text-gray-500">Forever free</p>
-        <ul className="mt-8 space-y-3 text-sm text-gray-600">
-          <li>✅ Country comparisons</li>
-          <li>✅ Basic visa guides</li>
-          <li>✅ Cost of living data</li>
-          <li>✅ Relocation quiz</li>
-        </ul>
-        <button
-          onClick={() => router.push("/auth/signup")}
-          className="mt-8 w-full rounded-2xl border-2 border-violet-600 px-6 py-3 text-sm font-bold text-violet-600 transition hover:bg-violet-50"
-        >
-          Get started free
-        </button>
-      </div>
+            {/* Monthly */}
+            <div className="rounded-[28px] bg-gradient-to-br from-violet-600 via-pink-500 to-orange-400 p-8 shadow-2xl text-white">
+              <h3 className="text-2xl font-black">Premium</h3>
+              <div className="mt-4 text-5xl font-black">€12</div>
+              <p className="mt-2 text-white/80">per month · 14-day free trial</p>
+              <ul className="mt-8 space-y-3 text-sm text-white/90">
+                <li>✅ Everything in Free</li>
+                <li>✅ Full tax calculator</li>
+                <li>✅ Detailed visa guides</li>
+                <li>✅ Healthcare & banking guides</li>
+                <li>✅ Expert community access</li>
+              </ul>
+              <button onClick={() => handleCheckout(process.env.NEXT_PUBLIC_STRIPE_PRICE_MONTHLY!)} className="mt-8 w-full rounded-2xl bg-white px-6 py-3 text-sm font-bold text-violet-600 transition hover:scale-105">
+                Start 14-day free trial
+              </button>
+            </div>
 
-      {/* Monthly */}
-      <div className="rounded-[28px] bg-gradient-to-br from-violet-600 via-pink-500 to-orange-400 p-8 shadow-2xl text-white">
-        <h3 className="text-2xl font-black">Premium</h3>
-        <div className="mt-4 text-5xl font-black">€12</div>
-        <p className="mt-2 text-white/80">per month · 14-day free trial</p>
-        <ul className="mt-8 space-y-3 text-sm text-white/90">
-          <li>✅ Everything in Free</li>
-          <li>✅ Full tax calculator</li>
-          <li>✅ Detailed visa guides</li>
-          <li>✅ Healthcare & banking guides</li>
-          <li>✅ Expert community access</li>
-        </ul>
-        <button
-  onClick={() => handleCheckout(process.env.NEXT_PUBLIC_STRIPE_PRICE_MONTHLY!)}
-  className="mt-8 w-full rounded-2xl bg-white px-6 py-3 text-sm font-bold text-violet-600 transition hover:scale-105"
->
-  Start 14-day free trial
-</button>
-      </div>
+            {/* Annual */}
+            <div className="rounded-[28px] border-2 border-violet-200 bg-white p-8 shadow-lg relative">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-violet-600 to-orange-400 px-4 py-1 text-xs font-bold text-white whitespace-nowrap">
+                Best value — save €45
+              </div>
+              <h3 className="text-2xl font-black">Premium Annual</h3>
+              <div className="mt-4 text-5xl font-black">€99</div>
+              <p className="mt-2 text-gray-500">per year · <span className="text-violet-600 font-bold">14-day free trial</span></p>
+              <ul className="mt-8 space-y-3 text-sm text-gray-600">
+                <li>✅ Everything in Free</li>
+                <li>✅ Full tax calculator</li>
+                <li>✅ Detailed visa guides</li>
+                <li>✅ Healthcare & banking guides</li>
+                <li>✅ Expert community access</li>
+                <li>✅ 31% cheaper than monthly</li>
+              </ul>
+              <button onClick={() => handleCheckout(process.env.NEXT_PUBLIC_STRIPE_PRICE_YEARLY!)} className="mt-8 w-full rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white transition hover:scale-105">
+                Start 14-day free trial
+              </button>
+            </div>
 
-      {/* Annual */}
-      <div className="rounded-[28px] border-2 border-violet-200 bg-white p-8 shadow-lg relative">
-        <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-violet-600 to-orange-400 px-4 py-1 text-xs font-bold text-white whitespace-nowrap">
-          Best value — save €45
+          </div>
         </div>
-        <h3 className="text-2xl font-black">Premium Annual</h3>
-        <div className="mt-4 text-5xl font-black">€99</div>
-        <p className="mt-2 text-gray-500">per year · <span className="text-violet-600 font-bold">14-day free trial</span></p>
-        <ul className="mt-8 space-y-3 text-sm text-gray-600">
-          <li>✅ Everything in Free</li>
-          <li>✅ Full tax calculator</li>
-          <li>✅ Detailed visa guides</li>
-          <li>✅ Healthcare & banking guides</li>
-          <li>✅ Expert community access</li>
-          <li>✅ 31% cheaper than monthly</li>
-        </ul>
-        <button
-  onClick={() => handleCheckout(process.env.NEXT_PUBLIC_STRIPE_PRICE_YEARLY!)}
-  className="mt-8 w-full rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white transition hover:scale-105"
->
-  Start 14-day free trial
-</button>
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* FAQ */}
       <section id="faq" className="bg-[#f8f7ff] px-6 py-28">
