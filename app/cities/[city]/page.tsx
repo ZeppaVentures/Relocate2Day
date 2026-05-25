@@ -80,9 +80,7 @@ export default function CityGuidePage() {
 
     const fetchGuide = async () => {
       try {
-        const prompt = `You are a European relocation expert. Create a detailed relocation guide for ${city}, ${country}.
-
-Provide accurate, practical information for someone relocating to ${city}. Include specific local details, office names, addresses where relevant, and realistic timeframes.
+        const prompt = `You are a European relocation expert. Create a concise relocation guide for ${city}, ${country}.
 
 Respond ONLY with a JSON object in this exact format, no preamble, no markdown backticks:
 {
