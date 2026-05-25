@@ -307,9 +307,8 @@ const handleCheckout = async (priceId: string) => {
   </div>
 
   {/* Mobile menu overlay */}
-  {mobileMenuOpen && (
-    <{mobileMenuOpen && (
-  <div className="fixed inset-0 z-[9999] flex" style={{position: 'fixed', top: 0, left: 0, right: 0, bottom: 0}}>
+{mobileMenuOpen && (
+  <div style={{position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, zIndex: 99999, display: 'flex'}}>
     {/* Backdrop */}
     <div
       className="flex-1 bg-black/60"
