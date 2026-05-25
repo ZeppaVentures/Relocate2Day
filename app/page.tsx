@@ -593,7 +593,7 @@ const handleCheckout = async (priceId: string) => {
       <div className="rounded-[28px] bg-gradient-to-br from-violet-600 via-pink-500 to-orange-400 p-8 shadow-2xl text-white">
         <h3 className="text-2xl font-black">Premium</h3>
         <div className="mt-4 text-5xl font-black">€12</div>
-        <p className="mt-2 text-white/80">per month</p>
+        <p className="mt-2 text-white/80">per month · 14-day free trial</p>
         <ul className="mt-8 space-y-3 text-sm text-white/90">
           <li>✅ Everything in Free</li>
           <li>✅ Full tax calculator</li>
@@ -602,11 +602,11 @@ const handleCheckout = async (priceId: string) => {
           <li>✅ Expert community access</li>
         </ul>
         <button
-          onClick={() => handleCheckout(process.env.NEXT_PUBLIC_STRIPE_PRICE_MONTHLY!)}
-          className="mt-8 w-full rounded-2xl bg-white px-6 py-3 text-sm font-bold text-violet-600 transition hover:scale-105"
-        >
-          Get started
-        </button>
+  onClick={() => handleCheckout(process.env.NEXT_PUBLIC_STRIPE_PRICE_MONTHLY!)}
+  className="mt-8 w-full rounded-2xl bg-white px-6 py-3 text-sm font-bold text-violet-600 transition hover:scale-105"
+>
+  Start 14-day free trial
+</button>
       </div>
 
       {/* Annual */}
@@ -616,7 +616,7 @@ const handleCheckout = async (priceId: string) => {
         </div>
         <h3 className="text-2xl font-black">Premium Annual</h3>
         <div className="mt-4 text-5xl font-black">€99</div>
-        <p className="mt-2 text-gray-500">per year <span className="text-violet-600 font-bold">(€8.25/mo)</span></p>
+        <p className="mt-2 text-gray-500">per year · <span className="text-violet-600 font-bold">14-day free trial</span></p>
         <ul className="mt-8 space-y-3 text-sm text-gray-600">
           <li>✅ Everything in Free</li>
           <li>✅ Full tax calculator</li>
@@ -626,11 +626,11 @@ const handleCheckout = async (priceId: string) => {
           <li>✅ 31% cheaper than monthly</li>
         </ul>
         <button
-          onClick={() => handleCheckout(process.env.NEXT_PUBLIC_STRIPE_PRICE_YEARLY!)}
-          className="mt-8 w-full rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white transition hover:scale-105"
-        >
-          Get started
-        </button>
+  onClick={() => handleCheckout(process.env.NEXT_PUBLIC_STRIPE_PRICE_YEARLY!)}
+  className="mt-8 w-full rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-3 text-sm font-bold text-white transition hover:scale-105"
+>
+  Start 14-day free trial
+</button>
       </div>
 
     </div>
