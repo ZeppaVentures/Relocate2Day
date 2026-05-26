@@ -391,13 +391,17 @@ Order results from HIGHEST net income to LOWEST (most money in pocket first).`;
               </div>
             </div>
 
-            <button
-              onClick={handleCalculate}
-              disabled={loading || !grossIncome || selectedCountries.length === 0}
-              className="mt-8 w-full rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-5 text-lg font-bold text-white shadow-2xl transition hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {loading ? "Calculating..." : "Calculate my tax →"}
-            </button>
+            <div className="mt-8 rounded-2xl bg-amber-50 border border-amber-200 p-4 text-sm text-amber-800">
+  <strong>⚠️ Disclaimer:</strong> Results are estimates for comparison purposes only, based on 2025 tax rates. They do not constitute tax advice. Always consult a qualified tax advisor before making financial or relocation decisions.
+</div>
+
+<button
+  onClick={handleCalculate}
+  disabled={loading || !grossIncome || selectedCountries.length === 0}
+  className="mt-4 w-full rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-5 text-lg font-bold text-white shadow-2xl transition hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
+>
+  {loading ? "Calculating..." : "Calculate my tax →"}
+</button>
           </div>
 
           {/* LOADING */}
