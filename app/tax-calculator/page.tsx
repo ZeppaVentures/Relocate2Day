@@ -260,7 +260,7 @@ Order results from HIGHEST net income to LOWEST (most money in pocket first).`;
                 <select
                   value={incomeType}
                   onChange={(e) => setIncomeType(e.target.value)}
-                  className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 text-sm font-semibold outline-none focus:border-violet-500 transition bg-white"
+                  className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 text-sm font-semibold outline-none focus:border-violet-500 transition bg-white appearance-none"
                 >
                   {INCOME_TYPES.map((t) => (
                     <option key={t.value} value={t.value}>{t.label}</option>
@@ -273,7 +273,7 @@ Order results from HIGHEST net income to LOWEST (most money in pocket first).`;
                 <div>
                   <label className="block text-sm font-bold mb-2">Gross annual income (€)</label>
                   <input
-                    type="number"
+                    type="text"
                     value={grossIncome}
                     onChange={(e) => setGrossIncome(e.target.value)}
                     placeholder="e.g. 60000"
