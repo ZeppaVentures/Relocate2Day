@@ -503,7 +503,7 @@ export default function Home() {
               <p className="mt-2 text-white/80">per month · 14-day free trial</p>
               <ul className="mt-8 space-y-3 text-sm text-white/90">
                 <li>✅ Everything in Free</li>
-                <li>✅ Full tax calculator</li>
+                <li>✅ <Link href="/tax-calculator" className="underline">Full tax calculator</Link></li>>
                 <li>✅ Detailed visa guides</li>
                 <li>✅ Healthcare & banking guides</li>
                 <li>✅ Expert community access</li>
@@ -523,7 +523,7 @@ export default function Home() {
               <p className="mt-2 text-gray-500">per year · <span className="text-violet-600 font-bold">14-day free trial</span></p>
               <ul className="mt-8 space-y-3 text-sm text-gray-600">
                 <li>✅ Everything in Free</li>
-                <li>✅ Full tax calculator</li>
+                <li>✅ <Link href="/tax-calculator" className="underline">Full tax calculator</Link></li>
                 <li>✅ Detailed visa guides</li>
                 <li>✅ Healthcare & banking guides</li>
                 <li>✅ Expert community access</li>
