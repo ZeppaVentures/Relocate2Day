@@ -258,10 +258,10 @@ Order results from HIGHEST net income to LOWEST (most money in pocket first).`;
               <div>
                 <label className="block text-sm font-bold mb-2">Income type</label>
                 <select
-                  value={incomeType}
-                  onChange={(e) => setIncomeType(e.target.value)}
-                  className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 text-sm font-semibold outline-none focus:border-violet-500 transition bg-white appearance-none"
-                >
+  value={incomeType}
+  onChange={(e) => setIncomeType(e.target.value)}
+  className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 text-sm font-semibold outline-none focus:border-violet-500 transition bg-white appearance-none"
+>
                   {INCOME_TYPES.map((t) => (
                     <option key={t.value} value={t.value}>{t.label}</option>
                   ))}
@@ -286,10 +286,10 @@ Order results from HIGHEST net income to LOWEST (most money in pocket first).`;
               <div>
                 <label className="block text-sm font-bold mb-2">Family situation</label>
                 <select
-                  value={familySituation}
-                  onChange={(e) => setFamilySituation(e.target.value)}
-                  className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 text-sm font-semibold outline-none focus:border-violet-500 transition bg-white"
-                >
+  value={familySituation}
+  onChange={(e) => setFamilySituation(e.target.value)}
+  className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 text-sm font-semibold outline-none focus:border-violet-500 transition bg-white appearance-none"
+>
                   {FAMILY_SITUATIONS.map((f) => (
                     <option key={f.value} value={f.value}>{f.label}</option>
                   ))}
