@@ -107,6 +107,21 @@ Order the results array from highest to lowest score.`;
         }
 
         setResults(data);
+
+        // Send to HubSpot
+        fetch("/api/hubspot/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            nationality,
+            income,
+            lifeStage,
+            industry,
+            topCountry: data.results?.[0]?.country,
+            source: "Quiz completion",
+          }),
+        }).catch(console.error);
+
       } catch (err) {
         console.error(err);
         setError(true);
@@ -288,13 +303,13 @@ Order the results array from highest to lowest score.`;
                       Read the full {result.country} guide →
                     </Link>
                     {index === 0 && (
-  <a
-    href="#city-quiz"
-    className="inline-block rounded-2xl border-2 border-violet-600 px-6 py-3 text-sm font-bold text-violet-600 transition hover:bg-violet-50"
-  >
-    🏙️ Find your perfect city →
-  </a>
-)}
+                      <a
+                        href="#city-quiz"
+                        className="inline-block rounded-2xl border-2 border-violet-600 px-6 py-3 text-sm font-bold text-violet-600 transition hover:bg-violet-50"
+                      >
+                        🏙️ Find your perfect city →
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

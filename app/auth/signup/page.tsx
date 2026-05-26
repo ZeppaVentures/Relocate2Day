@@ -42,6 +42,15 @@ export default function SignUpPage() {
       setLoading(false);
       return;
     }
+// Send to HubSpot
+await fetch("/api/hubspot/contact", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    email,
+    source: "Sign up",
+  }),
+});
 
     setSuccess(true);
     setLoading(false);
