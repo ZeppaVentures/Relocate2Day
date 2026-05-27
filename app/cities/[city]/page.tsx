@@ -5,6 +5,16 @@ import { useParams, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 
+interface StepType {
+  step: string;
+  title: string;
+  description: string;
+  documents: string[];
+  timeframe: string;
+  officeName?: string;
+  officialUrl?: string;
+}
+
 interface CityGuide {
   city: string;
   country: string;
@@ -15,40 +25,17 @@ interface CityGuide {
     bestFor: string;
     avgRent: string;
   }[];
-  visaSteps: {
-    step: string;
-    title: string;
-    description: string;
-    documents: string[];
-    timeframe: string;
-  }[];
-  taxRegistration: {
-    step: string;
-    title: string;
-    description: string;
-    documents: string[];
-    timeframe: string;
-  }[];
-  healthcare: {
-    step: string;
-    title: string;
-    description: string;
-    documents: string[];
-    timeframe: string;
-  }[];
-  banking: {
-    step: string;
-    title: string;
-    description: string;
-    documents: string[];
-    timeframe: string;
-  }[];
+  visaSteps: StepType[];
+  taxRegistration: StepType[];
+  healthcare: StepType[];
+  banking: StepType[];
   schools: {
     name: string;
     type: string;
     description: string;
     language: string;
     ageRange: string;
+    website?: string;
   }[];
 }
 
@@ -82,17 +69,19 @@ export default function CityGuidePage() {
       try {
         const prompt = `You are a European relocation expert. Create a concise relocation guide for ${city}, ${country}.
 
+Provide accurate, practical information for someone relocating to ${city}. Where possible include official government website URLs and office names. Always note that addresses and opening hours should be verified directly with official sources before visiting.
+
 Respond ONLY with a JSON object in this exact format, no preamble, no markdown backticks:
 {
   "city": "${city}",
   "country": "${country}",
-  "intro": "2-3 sentence introduction to ${city} as a place to live",
+  "intro": "2 sentence introduction to ${city} as a place to live",
   "neighbourhoods": [
     {
       "name": "Neighbourhood name",
-      "description": "2 sentence description of the neighbourhood",
-      "bestFor": "Who it suits best",
-      "avgRent": "Average 1-bed rent per month"
+      "description": "1 sentence description",
+      "bestFor": "Who it suits",
+      "avgRent": "Average 1-bed rent"
     }
   ],
   "visaSteps": [
@@ -101,6 +90,8 @@ Respond ONLY with a JSON object in this exact format, no preamble, no markdown b
       "title": "Step title",
       "description": "Detailed description of what to do",
       "documents": ["Document 1", "Document 2"],
+      "officeName": "Name of the relevant office or authority",
+      "officialUrl": "https://official-government-website.com",
       "timeframe": "Expected timeframe"
     }
   ],
@@ -110,6 +101,8 @@ Respond ONLY with a JSON object in this exact format, no preamble, no markdown b
       "title": "Step title",
       "description": "Detailed description",
       "documents": ["Document 1"],
+      "officeName": "Name of the relevant tax office or authority",
+      "officialUrl": "https://official-tax-website.com",
       "timeframe": "Expected timeframe"
     }
   ],
@@ -119,6 +112,8 @@ Respond ONLY with a JSON object in this exact format, no preamble, no markdown b
       "title": "Step title",
       "description": "Detailed description",
       "documents": ["Document 1"],
+      "officeName": "Name of the relevant health authority",
+      "officialUrl": "https://official-health-website.com",
       "timeframe": "Expected timeframe"
     }
   ],
@@ -128,6 +123,8 @@ Respond ONLY with a JSON object in this exact format, no preamble, no markdown b
       "title": "Step title",
       "description": "Detailed description",
       "documents": ["Document 1"],
+      "officeName": "Recommended banks or financial institutions",
+      "officialUrl": "https://bank-website.com",
       "timeframe": "Expected timeframe"
     }
   ],
@@ -137,12 +134,13 @@ Respond ONLY with a JSON object in this exact format, no preamble, no markdown b
       "type": "International / Public / Private",
       "description": "Brief description",
       "language": "Language of instruction",
-      "ageRange": "Age range"
+      "ageRange": "Age range",
+      "website": "https://school-website.com"
     }
   ]
 }
 
-Include 4-5 neighbourhoods, 4-5 visa steps, 3-4 tax steps, 3-4 healthcare steps, 3-4 banking steps, and 3-5 schools. Make all content specific to ${city}, ${country}.`;
+Include exactly 3 neighbourhoods, 3 visa steps, 3 tax steps, 3 healthcare steps, 3 banking steps, and 3 schools. Make all content specific to ${city}, ${country}.`;
 
         const response = await fetch("/api/quiz", {
           method: "POST",
@@ -213,7 +211,7 @@ Include 4-5 neighbourhoods, 4-5 visa steps, 3-4 tax steps, 3-4 healthcare steps,
     </div>
   );
 
-  const StepCard = ({ step }: { step: { step: string; title: string; description: string; documents: string[]; timeframe: string } }) => (
+  const StepCard = ({ step }: { step: StepType }) => (
     <div className="rounded-[24px] border border-gray-100 bg-white p-6 shadow-sm">
       <div className="flex gap-4 mb-4">
         <div className="w-8 h-8 rounded-full bg-gradient-to-r from-violet-600 to-pink-500 flex items-center justify-center text-white font-black text-sm shrink-0">
@@ -224,9 +222,10 @@ Include 4-5 neighbourhoods, 4-5 visa steps, 3-4 tax steps, 3-4 healthcare steps,
           <p className="text-gray-600 text-sm mt-1">{step.description}</p>
         </div>
       </div>
+
       {step.documents.length > 0 && (
         <div className="ml-12 mb-3">
-          <div className="text-xs font-bold uppercase tracking-wide text-violet-600 mb-2">Documents needed</div>
+          <div className="text-xs font-bold uppercase tracking-wide text-violet-600 mb-2">📋 Documents needed</div>
           <ul className="space-y-1">
             {step.documents.map((doc) => (
               <li key={doc} className="flex gap-2 text-sm text-gray-600">
@@ -237,10 +236,36 @@ Include 4-5 neighbourhoods, 4-5 visa steps, 3-4 tax steps, 3-4 healthcare steps,
           </ul>
         </div>
       )}
-      <div className="ml-12">
+
+      {step.officeName && (
+        <div className="ml-12 mb-3">
+          <div className="text-xs font-bold uppercase tracking-wide text-violet-600 mb-2">🏢 Where to go</div>
+          <p className="text-sm text-gray-600">{step.officeName}</p>
+        </div>
+      )}
+
+      {step.officialUrl && (
+        <div className="ml-12 mb-3">
+          <div className="text-xs font-bold uppercase tracking-wide text-violet-600 mb-2">🌐 Official website</div>
+          <a
+            href={step.officialUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-violet-600 hover:underline break-all"
+          >
+            {step.officialUrl}
+          </a>
+        </div>
+      )}
+
+      <div className="ml-12 mb-3">
         <span className="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
           ⏱️ {step.timeframe}
         </span>
+      </div>
+
+      <div className="ml-12 mt-3 rounded-xl bg-amber-50 border border-amber-200 px-3 py-2">
+        <p className="text-xs text-amber-700">⚠️ Always verify addresses and opening hours directly with the official website before visiting.</p>
       </div>
     </div>
   );
@@ -403,7 +428,17 @@ Include 4-5 neighbourhoods, 4-5 visa steps, 3-4 tax steps, 3-4 healthcare steps,
                     <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-bold text-blue-700">{school.language}</span>
                     <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-bold text-green-700">Ages {school.ageRange}</span>
                   </div>
-                  <p className="text-gray-600 text-sm">{school.description}</p>
+                  <p className="text-gray-600 text-sm mb-3">{school.description}</p>
+                  {school.website && (
+                    <a
+                      href={school.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-violet-600 hover:underline"
+                    >
+                      🌐 Visit website →
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
