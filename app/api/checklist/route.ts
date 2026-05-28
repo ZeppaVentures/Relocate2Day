@@ -11,69 +11,29 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { userId, city, country, nationality, nationalityType, employmentType, familySituation } = body;
 
-    const prompt = `You are a European relocation expert. Create a detailed, personalised relocation checklist for someone moving to ${city}, ${country}.
+    const prompt = `You are a European relocation expert. Create a concise personalised relocation checklist for a ${nationality} (${nationalityType}) moving to ${city}, ${country}. Employment: ${employmentType}. Family: ${familySituation}.
 
-User profile:
-- Nationality: ${nationality}
-- Nationality type: ${nationalityType} (EU citizen, UK citizen, or Non-EU citizen)
-- Employment type: ${employmentType}
-- Family situation: ${familySituation}
-- Destination: ${city}, ${country}
+Tailor visa/residency steps based on nationality type (EU=free movement, UK=post-Brexit rules, non-EU=full visa required).
 
-IMPORTANT: Tailor the checklist based on nationality type:
-- EU citizens have freedom of movement and simpler registration requirements
-- UK citizens (post-Brexit) need visas/residence permits for stays over 90 days
-- Non-EU citizens need full visa applications and residence permits
+Use native language terms e.g. NIE, Empadronamiento, NIF, Codice Fiscale, EGN etc.
 
-Include native language terms in brackets where relevant, for example:
-- Spain: NIE (Número de Identidad de Extranjero), Empadronamiento, TIE (Tarjeta de Identidad de Extranjero), Número de la Seguridad Social
-- Portugal: NIF (Número de Identificação Fiscal), SEF/AIMA registration, Cartão de Residência, Utente number (SNS)
-- Italy: Codice Fiscale, Permesso di Soggiorno, Tessera Sanitaria, Iscrizione Anagrafica
-- Gibraltar: Civilian Registration Certificate, GHIC (Gibraltar Health Insurance Card)
-- Malta: Residence Card, Identity Card (Karta tal-Identità), PE number (Social Security)
-- Bulgaria: ЕГН (EGN - Unified Civil Number), Адресна регистрация (Address Registration), НЗОК (NHIF health insurance)
-
-Respond ONLY with a JSON object in this exact format, no preamble, no markdown backticks:
+Respond ONLY with JSON, no markdown:
 {
   "title": "Your ${country} Relocation Checklist",
   "sections": [
     {
       "title": "3-6 Months Before Moving",
       "emoji": "📋",
-      "items": [
-        {
-          "id": "1",
-          "task": "Task description including native language terms where relevant",
-          "details": "More detail about why this is needed and how to do it",
-          "documents": ["Document 1 (Native term)", "Document 2"],
-          "category": "visa"
-        }
-      ]
+      "items": [{"id": "1", "task": "Task", "details": "Details", "documents": ["Doc 1"], "category": "visa"}]
     },
-    {
-      "title": "1-3 Months Before Moving",
-      "emoji": "🏠",
-      "items": []
-    },
-    {
-      "title": "First 2 Weeks After Arrival",
-      "emoji": "✈️",
-      "items": []
-    },
-    {
-      "title": "First Month",
-      "emoji": "📅",
-      "items": []
-    },
-    {
-      "title": "Ongoing",
-      "emoji": "🔄",
-      "items": []
-    }
+    {"title": "1-3 Months Before Moving", "emoji": "🏠", "items": []},
+    {"title": "First 2 Weeks After Arrival", "emoji": "✈️", "items": []},
+    {"title": "First Month", "emoji": "📅", "items": []},
+    {"title": "Ongoing", "emoji": "🔄", "items": []}
   ]
 }
 
-Include 4-6 items per section. Make everything specific to ${city}, ${country} and the user's nationality type. Each item should be actionable and specific.`;
+Include 3-4 items per section. Be concise and specific to ${city}, ${country}.`;
 
     const apiKey = process.env.ANTHROPIC_API_KEY;
     const response = await fetch("https://api.anthropic.com/v1/messages", {

@@ -5,11 +5,22 @@ import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 
 const COUNTRIES = ["Spain", "Portugal", "Italy", "Gibraltar", "Malta", "Bulgaria"];
+
+const CITIES_BY_COUNTRY: Record<string, string[]> = {
+  Spain: ["Barcelona", "Madrid", "Valencia", "Seville", "Málaga", "Alicante", "Bilbao", "Granada", "Palma de Mallorca", "Las Palmas"],
+  Portugal: ["Lisbon", "Porto", "Algarve", "Cascais", "Braga", "Funchal", "Coimbra", "Setúbal"],
+  Italy: ["Rome", "Milan", "Florence", "Bologna", "Naples", "Turin", "Palermo", "Catania", "Bari", "Lecce"],
+  Gibraltar: ["Gibraltar City", "La Línea de la Concepción (Spain)"],
+  Malta: ["Valletta", "Sliema", "St. Julian's", "Mdina", "Gozo", "Marsaskala", "Mellieħa"],
+  Bulgaria: ["Sofia", "Plovdiv", "Varna", "Bansko", "Burgas", "Veliko Tarnovo"],
+};
+
 const NATIONALITY_TYPES = [
   { value: "eu", label: "🇪🇺 EU / EEA citizen (free movement)" },
   { value: "uk", label: "🇬🇧 UK citizen (post-Brexit rules apply)" },
   { value: "non_eu", label: "🌍 Non-EU citizen (visa required)" },
 ];
+
 const EMPLOYMENT_TYPES = [
   { value: "employed", label: "Employed (local contract)" },
   { value: "employed_abroad", label: "Employed abroad / remote worker" },
@@ -18,6 +29,7 @@ const EMPLOYMENT_TYPES = [
   { value: "student", label: "Student" },
   { value: "business_owner", label: "Business owner" },
 ];
+
 const FAMILY_SITUATIONS = [
   { value: "single", label: "Single, no children" },
   { value: "couple", label: "Couple, no children" },
@@ -25,6 +37,9 @@ const FAMILY_SITUATIONS = [
   { value: "family_teen", label: "Family with teenage children" },
   { value: "single_parent", label: "Single parent" },
 ];
+
+const EU_NATIONALITIES = ["Austrian","Belgian","Bulgarian","Croatian","Cypriot","Czech","Danish","Estonian","Finnish","French","German","Greek","Hungarian","Irish","Italian","Latvian","Lithuanian","Luxembourgish","Maltese","Dutch","Polish","Portuguese","Romanian","Slovak","Slovenian","Spanish","Swedish","Norwegian","Icelandic","Swiss"];
+const OTHER_NATIONALITIES = ["American","Australian","Canadian","New Zealander","South African","Indian","Chinese","Japanese","Brazilian","Mexican","Argentinian","Other"];
 
 interface ChecklistItem {
   id: string;
@@ -34,11 +49,13 @@ interface ChecklistItem {
   category: string;
   completed: boolean;
 }
+
 interface ChecklistSection {
   title: string;
   emoji: string;
   items: ChecklistItem[];
 }
+
 interface Checklist {
   id: string;
   title: string;
@@ -52,13 +69,13 @@ interface Checklist {
 
 export default function ChecklistPage() {
   const [user, setUser] = useState<{ id: string } | null>(null);
-  const [isPremium, setIsPremium] = useState(false);
   const [checkingAuth, setCheckingAuth] = useState(true);
   const [checklists, setChecklists] = useState<Checklist[]>([]);
   const [activeChecklist, setActiveChecklist] = useState<Checklist | null>(null);
   const [showGenerator, setShowGenerator] = useState(false);
   const [generating, setGenerating] = useState(false);
   const [loading, setLoading] = useState(true);
+
   const [city, setCity] = useState("");
   const [country, setCountry] = useState("Spain");
   const [nationality, setNationality] = useState("");
@@ -71,8 +88,6 @@ export default function ChecklistPage() {
       const { data: { user } } = await supabase.auth.getUser();
       if (user) {
         setUser(user);
-        const { data } = await supabase.from("profiles").select("subscription_status").eq("id", user.id).single();
-        setIsPremium(data?.subscription_status === "active");
         const res = await fetch(`/api/checklist?userId=${user.id}`);
         const data2 = await res.json();
         if (data2.checklists?.length > 0) {
@@ -87,6 +102,13 @@ export default function ChecklistPage() {
     };
     init();
   }, []);
+
+  const handleNationalityChange = (value: string) => {
+    setNationality(value);
+    if (EU_NATIONALITIES.includes(value)) setNationalityType("eu");
+    else if (value === "British") setNationalityType("uk");
+    else setNationalityType("non_eu");
+  };
 
   const handleGenerate = async () => {
     if (!user || !city || !nationality) return;
@@ -141,10 +163,14 @@ export default function ChecklistPage() {
   const getProgress = (checklist: Checklist) => {
     const allItems = checklist.items.flatMap((s) => s.items);
     const completed = allItems.filter((i) => i.completed).length;
-    return { completed, total: allItems.length, percent: Math.round((completed / allItems.length) * 100) };
+    return { completed, total: allItems.length, percent: allItems.length > 0 ? Math.round((completed / allItems.length) * 100) : 0 };
   };
 
-  if (checkingAuth || loading) return <div className="min-h-screen bg-white flex items-center justify-center"><div className="text-6xl animate-bounce">📋</div></div>;
+  if (checkingAuth || loading) return (
+    <div className="min-h-screen bg-white flex items-center justify-center">
+      <div className="text-6xl animate-bounce">📋</div>
+    </div>
+  );
 
   if (!user) return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center text-[#0B1957]">
@@ -175,6 +201,7 @@ export default function ChecklistPage() {
       </section>
 
       <div className="mx-auto max-w-5xl px-6 py-12">
+
         {checklists.length > 0 && (
           <div className="mb-8">
             <div className="flex items-center justify-between mb-4">
@@ -199,35 +226,55 @@ export default function ChecklistPage() {
           <div className="rounded-[32px] bg-[#f8f7ff] p-8 mb-12">
             <h2 className="text-2xl font-black mb-2">Create a new checklist</h2>
             <p className="text-gray-500 mb-8">Tell us about your move and we&apos;ll generate a personalised checklist.</p>
+
             <div className="grid gap-6 md:grid-cols-2">
               <div>
                 <label className="block text-sm font-bold mb-2">Destination country</label>
-                <select value={country} onChange={(e) => setCountry(e.target.value)} className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 text-sm font-semibold outline-none focus:border-violet-500 transition bg-white appearance-none">
+                <select value={country} onChange={(e) => { setCountry(e.target.value); setCity(""); }} className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 text-sm font-semibold outline-none focus:border-violet-500 transition bg-white appearance-none">
                   {COUNTRIES.map((c) => <option key={c} value={c}>{c}</option>)}
                 </select>
               </div>
+
               <div>
                 <label className="block text-sm font-bold mb-2">Destination city</label>
-                <input type="text" value={city} onChange={(e) => setCity(e.target.value)} placeholder="e.g. Barcelona, Lisbon, Valletta..." className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 text-sm font-semibold outline-none focus:border-violet-500 transition bg-white" />
+                <select value={city} onChange={(e) => setCity(e.target.value)} className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 text-sm font-semibold outline-none focus:border-violet-500 transition bg-white appearance-none">
+                  <option value="">Select a city...</option>
+                  {CITIES_BY_COUNTRY[country]?.map((c) => <option key={c} value={c}>{c}</option>)}
+                </select>
               </div>
+
               <div>
                 <label className="block text-sm font-bold mb-2">Your nationality</label>
-                <input type="text" value={nationality} onChange={(e) => setNationality(e.target.value)} placeholder="e.g. British, American, German..." className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 text-sm font-semibold outline-none focus:border-violet-500 transition bg-white" />
+                <select value={nationality} onChange={(e) => handleNationalityChange(e.target.value)} className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 text-sm font-semibold outline-none focus:border-violet-500 transition bg-white appearance-none">
+                  <option value="">Select nationality...</option>
+                  <optgroup label="🇪🇺 EU / EEA">
+                    {EU_NATIONALITIES.map(n => <option key={n} value={n}>{n}</option>)}
+                  </optgroup>
+                  <optgroup label="🇬🇧 United Kingdom">
+                    <option value="British">British</option>
+                  </optgroup>
+                  <optgroup label="🌍 Other">
+                    {OTHER_NATIONALITIES.map(n => <option key={n} value={n}>{n}</option>)}
+                  </optgroup>
+                </select>
               </div>
+
               <div>
                 <label className="block text-sm font-bold mb-2">Employment type</label>
                 <select value={employmentType} onChange={(e) => setEmploymentType(e.target.value)} className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 text-sm font-semibold outline-none focus:border-violet-500 transition bg-white appearance-none">
                   {EMPLOYMENT_TYPES.map((t) => <option key={t.value} value={t.value}>{t.label}</option>)}
                 </select>
               </div>
+
               <div>
                 <label className="block text-sm font-bold mb-2">Family situation</label>
                 <select value={familySituation} onChange={(e) => setFamilySituation(e.target.value)} className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 text-sm font-semibold outline-none focus:border-violet-500 transition bg-white appearance-none">
                   {FAMILY_SITUATIONS.map((f) => <option key={f.value} value={f.value}>{f.label}</option>)}
                 </select>
               </div>
+
               <div>
-                <label className="block text-sm font-bold mb-2">Nationality type</label>
+                <label className="block text-sm font-bold mb-2">Nationality type <span className="text-gray-400 font-normal">(auto-filled)</span></label>
                 <div className="space-y-2">
                   {NATIONALITY_TYPES.map((t) => (
                     <button key={t.value} onClick={() => setNationalityType(t.value)} className={`w-full rounded-2xl px-4 py-3 text-sm font-bold text-left transition ${nationalityType === t.value ? "bg-violet-600 text-white" : "bg-white border-2 border-gray-200 text-gray-600 hover:border-violet-400"}`}>{t.label}</button>
@@ -235,6 +282,7 @@ export default function ChecklistPage() {
                 </div>
               </div>
             </div>
+
             <button onClick={handleGenerate} disabled={generating || !city || !nationality} className="mt-8 w-full rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-5 text-lg font-bold text-white shadow-2xl transition hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed">
               {generating ? "Generating your checklist..." : "Generate my checklist →"}
             </button>
