@@ -7,7 +7,16 @@ import { supabase } from "@/lib/supabase";
 const COUNTRIES = ["Spain", "Portugal", "Italy", "Gibraltar", "Malta", "Bulgaria"];
 
 const CITIES_BY_COUNTRY: Record<string, string[]> = {
-  Spain: ["Barcelona", "Madrid", "Valencia", "Seville", "Málaga", "Alicante", "Bilbao", "Granada", "Palma de Mallorca", "Las Palmas"],
+  Spain: [
+  "Barcelona", "Madrid", "Valencia", "Seville", "Bilbao", "Granada", "Zaragoza",
+  "Costa del Sol — Málaga", "Costa del Sol — Marbella", "Costa del Sol — Estepona",
+  "Costa del Sol — Fuengirola", "Costa del Sol — Torremolinos", "Costa del Sol — Nerja", "Costa del Sol — Benalmádena",
+  "Campo de Gibraltar — La Línea de la Concepción", "Campo de Gibraltar — Algeciras", "Campo de Gibraltar — San Roque", "Campo de Gibraltar — Tarifa",
+  "Costa Blanca — Alicante", "Costa Blanca — Benidorm", "Costa Blanca — Torrevieja", "Costa Blanca — Dénia",
+  "Canary Islands — Tenerife", "Canary Islands — Gran Canaria", "Canary Islands — Lanzarote", "Canary Islands — Fuerteventura",
+  "Balearic Islands — Palma de Mallorca", "Balearic Islands — Ibiza", "Balearic Islands — Menorca",
+  "Galicia — Santiago de Compostela", "Cádiz", "Jerez de la Frontera", "Ronda",
+],
   Portugal: ["Lisbon", "Porto", "Algarve", "Cascais", "Braga", "Funchal", "Coimbra", "Setúbal"],
   Italy: ["Rome", "Milan", "Florence", "Bologna", "Naples", "Turin", "Palermo", "Catania", "Bari", "Lecce"],
   Gibraltar: ["Gibraltar City", "La Línea de la Concepción (Spain)"],
