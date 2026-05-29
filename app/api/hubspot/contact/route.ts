@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { email, firstName, lastName, nationality, income, lifeStage, industry, topCountry, source } = body;
+    const { email, firstName, lastName, nationality, income, lifeStage, industry, topCountry, source, marketingOptIn } = body;
 
     const apiKey = process.env.HUBSPOT_API_KEY;
     if (!apiKey) {
@@ -48,6 +48,7 @@ export async function POST(req: NextRequest) {
       ...(industry && { industry: industry }),
       ...(topCountry && { top_country_match__relocate2day_: topCountry }),
       ...(source && { lead_source: source }),
+      ...(marketingOptIn !== undefined && { marketing_opt_in__relocate2day_: marketingOptIn ? 'true' : 'false' }),
     };
 
     if (existingContact) {
