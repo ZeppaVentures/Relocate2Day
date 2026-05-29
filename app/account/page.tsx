@@ -166,6 +166,41 @@ export default function AccountPage() {
             </div>
           )}
         </div>
+        
+{/* Quick links */}
+        <div className="rounded-[28px] bg-white border-2 border-gray-100 p-8 shadow-lg mb-6">
+          <h2 className="text-xl font-black mb-6">Quick links</h2>
+          <div className="grid gap-3 md:grid-cols-2">
+            <Link href="/checklist" className="flex items-center gap-3 rounded-2xl bg-[#f8f7ff] px-5 py-4 text-sm font-bold hover:bg-violet-50 transition">
+              <span className="text-2xl">📋</span>
+              <div>
+                <div>My Relocation Checklist</div>
+                <div className="text-gray-400 font-normal text-xs">Track your move step by step</div>
+              </div>
+            </Link>
+            <Link href="/tax-calculator" className="flex items-center gap-3 rounded-2xl bg-[#f8f7ff] px-5 py-4 text-sm font-bold hover:bg-violet-50 transition">
+              <span className="text-2xl">💶</span>
+              <div>
+                <div>Tax Calculator</div>
+                <div className="text-gray-400 font-normal text-xs">Compare taxes across Europe</div>
+              </div>
+            </Link>
+            <Link href="/#countries" className="flex items-center gap-3 rounded-2xl bg-[#f8f7ff] px-5 py-4 text-sm font-bold hover:bg-violet-50 transition">
+              <span className="text-2xl">🌍</span>
+              <div>
+                <div>Country Guides</div>
+                <div className="text-gray-400 font-normal text-xs">Explore your destination</div>
+              </div>
+            </Link>
+            <Link href="/" className="flex items-center gap-3 rounded-2xl bg-[#f8f7ff] px-5 py-4 text-sm font-bold hover:bg-violet-50 transition">
+              <span className="text-2xl">🧭</span>
+              <div>
+                <div>Retake the Quiz</div>
+                <div className="text-gray-400 font-normal text-xs">Find your perfect country</div>
+              </div>
+            </Link>
+          </div>
+        </div>
 
         {/* Danger zone */}
         <div className="rounded-[28px] bg-red-50 border border-red-200 p-8">
