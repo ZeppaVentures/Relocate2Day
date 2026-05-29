@@ -348,6 +348,10 @@ Order results from highest to lowest score.`;
           </span>
         </div>
         <p className="mt-4">© {new Date().getFullYear()} Relocate2Day. All rights reserved.</p>
+        <div className="mt-3 flex justify-center gap-6">
+          <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
+        </div>
         <p className="mt-2 text-white/30 text-xs">
           Results are AI-generated suggestions for informational purposes only.
         </p>

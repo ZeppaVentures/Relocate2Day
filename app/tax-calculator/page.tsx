@@ -561,6 +561,10 @@ Order results from HIGHEST net income to LOWEST (most money in pocket first).`;
           </span>
         </div>
         <p className="mt-4">© {new Date().getFullYear()} Relocate2Day. All rights reserved.</p>
+        <div className="mt-3 flex justify-center gap-6">
+          <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
+        </div>
       </footer>
 
     </div>

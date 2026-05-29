@@ -389,6 +389,10 @@ export default function ChecklistPage() {
           <span className="bg-gradient-to-r from-violet-400 via-pink-400 to-orange-300 bg-clip-text text-transparent">Relocate2Day</span>
         </div>
         <p className="mt-4">© {new Date().getFullYear()} Relocate2Day. All rights reserved.</p>
+        <div className="mt-3 flex justify-center gap-6">
+          <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
+        </div>
       </footer>
     </div>
   );

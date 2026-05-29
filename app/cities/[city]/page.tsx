@@ -473,6 +473,10 @@ Include exactly 3 neighbourhoods, 3 visa steps, 3 tax steps, 3 healthcare steps,
           </span>
         </div>
         <p className="mt-4">© {new Date().getFullYear()} Relocate2Day. All rights reserved.</p>
+        <div className="mt-3 flex justify-center gap-6">
+          <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
+        </div>
         <p className="mt-2 text-white/30 text-xs">
           This guide is AI-generated for informational purposes only and does not constitute legal, tax or financial advice. Always consult a qualified professional.
         </p>
