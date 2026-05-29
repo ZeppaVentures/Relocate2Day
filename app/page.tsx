@@ -204,10 +204,11 @@ export default function Home() {
             </span>
           </div>
           <nav className="hidden items-center gap-8 text-sm font-semibold md:flex">
-            <a href="#countries" className="hover:text-violet-600 transition">Countries</a>
-            <a href="#features" className="hover:text-violet-600 transition">Features</a>
-            <a href="#pricing" className="hover:text-violet-600 transition">Pricing</a>
-            <a href="#faq" className="hover:text-violet-600 transition">FAQ</a>
+  <a href="#countries" className="hover:text-violet-600 transition">Countries</a>
+  <a href="#features" className="hover:text-violet-600 transition">Features</a>
+  <a href="#pricing" className="hover:text-violet-600 transition">Pricing</a>
+  <a href="#faq" className="hover:text-violet-600 transition">FAQ</a>
+  <Link href="/checklist" className="hover:text-violet-600 transition">My Checklist</Link>
           </nav>
           <div className="hidden md:flex items-center gap-4">
             {user ? (
@@ -255,6 +256,7 @@ export default function Home() {
               <a href="#features" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">Features</a>
               <a href="#pricing" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">Pricing</a>
               <a href="#faq" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">FAQ</a>
+              <Link href="/checklist" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">My Checklist</Link>
             </nav>
             <div className="px-6 py-8 border-t border-gray-100 flex flex-col gap-4">
               {user ? (
