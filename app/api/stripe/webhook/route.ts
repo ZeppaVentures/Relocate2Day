@@ -11,6 +11,30 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_ROLE_KEY!
 );
 
+
+async function updateHubSpotContact(email: string, properties: Record<string, string>) {
+  const apiKey = process.env.HUBSPOT_API_KEY;
+  if (!apiKey || !email) return;
+  try {
+    const searchRes = await fetch('https://api.hubapi.com/crm/v3/objects/contacts/search', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+      body: JSON.stringify({ filterGroups: [{ filters: [{ propertyName: 'email', operator: 'EQ', value: email }] }] }),
+    });
+    const searchData = await searchRes.json();
+    const contactId = searchData?.results?.[0]?.id;
+    if (contactId) {
+      await fetch(`https://api.hubapi.com/crm/v3/objects/contacts/${contactId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+        body: JSON.stringify({ properties }),
+      });
+    }
+  } catch (err) {
+    console.error('HubSpot update error:', err);
+  }
+}
+
 export async function POST(req: NextRequest) {
   const body = await req.text();
   const signature = req.headers.get("stripe-signature")!;
@@ -46,6 +70,14 @@ export async function POST(req: NextRequest) {
         })
         .eq("id", session.metadata?.userId);
 
+      // Notify HubSpot — subscription started
+      const customerEmail1 = session.customer_details?.email || session.customer_email;
+      if (customerEmail1) {
+        await updateHubSpotContact(customerEmail1, {
+          subscription_status__relocate2day_: 'premium',
+          subscription_start_date__relocate2day_: new Date().toISOString().split('T')[0],
+        });
+      }
       break;
     }
 
@@ -78,6 +110,18 @@ export async function POST(req: NextRequest) {
         })
         .eq("stripe_customer_id", customerId);
 
+      // Notify HubSpot — subscription cancelled
+      const { data: cancelledProfile } = await supabase
+        .from("profiles")
+        .select("email")
+        .eq("stripe_customer_id", customerId)
+        .single();
+      if (cancelledProfile?.email) {
+        await updateHubSpotContact(cancelledProfile.email, {
+          subscription_status__relocate2day_: 'cancelled',
+          cancellation_date__relocate2day_: new Date().toISOString().split('T')[0],
+        });
+      }
       break;
     }
   }
