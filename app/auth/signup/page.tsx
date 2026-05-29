@@ -13,6 +13,7 @@ export default function SignUpPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
+  const [marketingOptIn, setMarketingOptIn] = useState(false);
 
   const handleSignUp = async () => {
     setError("");
@@ -49,6 +50,7 @@ await fetch("/api/hubspot/contact", {
   body: JSON.stringify({
     email,
     source: "Sign up",
+    marketingOptIn,
   }),
 });
 
@@ -171,7 +173,19 @@ await fetch("/api/hubspot/contact", {
             </div>
           )}
 
-          <button
+          <label className="flex items-start gap-3 cursor-pointer mt-4">
+            <input
+              type="checkbox"
+              checked={marketingOptIn}
+              onChange={(e) => setMarketingOptIn(e.target.checked)}
+              className="mt-0.5 h-4 w-4 rounded border-gray-300 text-violet-600"
+            />
+            <span className="text-sm text-gray-500 leading-snug">
+              Yes, keep me updated with relocation tips, country guides, and exclusive offers from Relocate2Day. You can unsubscribe at any time.
+            </span>
+          </label>
+
+                    <button
             onClick={handleSignUp}
             disabled={loading}
             className="mt-6 w-full rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-4 text-sm font-bold text-white shadow-xl transition hover:scale-[1.02] disabled:opacity-50"

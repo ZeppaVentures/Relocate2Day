@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import DeleteAccountButton from "@/components/DeleteAccountButton";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 
@@ -211,6 +212,9 @@ export default function AccountPage() {
           >
             Log out
           </button>
+          <div className="mt-6">
+            <DeleteAccountButton />
+          </div>
         </div>
 
       </div>
