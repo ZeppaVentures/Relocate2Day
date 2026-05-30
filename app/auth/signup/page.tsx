@@ -14,6 +14,7 @@ export default function SignUpPage() {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
   const [marketingOptIn, setMarketingOptIn] = useState(false);
+  const [firstName, setFirstName] = useState("");
 
   const handleSignUp = async () => {
     setError("");
@@ -50,6 +51,7 @@ await fetch("/api/hubspot/contact", {
   body: JSON.stringify({
     email,
     source: "Sign up",
+    firstName,
     marketingOptIn,
   }),
 });
@@ -136,6 +138,16 @@ await fetch("/api/hubspot/contact", {
           {/* Email & Password */}
           <div className="space-y-4">
             <div>
+              <label className="block text-sm font-semibold mb-2">First name</label>
+              <input
+                type="text"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+                placeholder="Your first name"
+                className="w-full rounded-2xl border-2 border-gray-200 px-5 py-4 text-sm font-semibold outline-none focus:border-violet-500 transition"
+              />
+            </div>
+                        <div>
               <label className="block text-sm font-semibold mb-2">Email</label>
               <input
                 type="email"
