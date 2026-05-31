@@ -77,6 +77,12 @@ export async function POST(req: NextRequest) {
           subscription_status__relocate2day_: 'premium',
           subscription_start_date__relocate2day_: new Date().toISOString().split('T')[0],
         });
+        // Send premium welcome email
+        await fetch(process.env.NEXT_PUBLIC_SITE_URL + '/api/email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ type: 'welcome_premium', email: customerEmail1 }),
+        });
       }
       break;
     }
@@ -120,6 +126,12 @@ export async function POST(req: NextRequest) {
         await updateHubSpotContact(cancelledProfile.email, {
           subscription_status__relocate2day_: 'cancelled',
           cancellation_date__relocate2day_: new Date().toISOString().split('T')[0],
+        });
+        // Send cancellation email
+        await fetch(process.env.NEXT_PUBLIC_SITE_URL + '/api/email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ type: 'cancellation', email: cancelledProfile.email }),
         });
       }
       break;

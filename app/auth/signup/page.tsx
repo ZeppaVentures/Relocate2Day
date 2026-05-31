@@ -56,6 +56,13 @@ await fetch("/api/hubspot/contact", {
   }),
 });
 
+// Send welcome email via Resend
+await fetch("/api/email", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ type: "welcome_free", email, firstName }),
+});
+
     setSuccess(true);
     setLoading(false);
   };
