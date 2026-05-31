@@ -198,11 +198,13 @@ export default function Home() {
       {/* NAVIGATION */}
       <header className="sticky top-0 z-50 border-b border-white/30 bg-white/70 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <div className="text-3xl font-black tracking-tight">
-            <span className="bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
-              Relocate2Day
-            </span>
-          </div>
+          <Link href="/">
+            <img
+              src="/Relocate2day_logo_transparent_v2.png"
+              alt="Relocate2Day"
+              className="h-12 w-auto"
+            />
+          </Link>
           <nav className="hidden items-center gap-8 text-sm font-semibold md:flex">
   <a href="#countries" className="hover:text-violet-600 transition">Countries</a>
   <a href="#features" className="hover:text-violet-600 transition">Features</a>
@@ -246,9 +248,11 @@ export default function Home() {
           <div style={{ flex: 1, backgroundColor: "rgba(0,0,0,0.7)" }} onClick={() => setMobileMenuOpen(false)} />
           <div style={{ width: "288px", backgroundColor: "white", height: "100%", boxShadow: "0 25px 50px rgba(0,0,0,0.3)", display: "flex", flexDirection: "column" }}>
             <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
-              <span className="text-xl font-black bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
-                Relocate2Day
-              </span>
+              <img
+                src="/Relocate2day_logo_transparent_v2.png"
+                alt="Relocate2Day"
+                className="h-10 w-auto"
+              />
               <button onClick={() => setMobileMenuOpen(false)} className="text-gray-400 hover:text-gray-600 text-2xl">✕</button>
             </div>
             <nav className="flex flex-col px-6 py-8 gap-6 text-[#0B1957] font-semibold text-lg flex-1">
