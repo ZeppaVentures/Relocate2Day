@@ -202,7 +202,7 @@ export default function Home() {
             <img
               src="/Relocate2day_logo_transparent_v2.png"
               alt="Relocate2Day"
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
           <nav className="hidden items-center gap-8 text-sm font-semibold md:flex">
