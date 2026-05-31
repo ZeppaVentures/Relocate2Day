@@ -202,7 +202,7 @@ export default function Home() {
             <img
               src="/logo_tight.png"
               alt="Relocate2Day"
-              className="h-14 w-auto object-contain"
+              className="h-20 w-auto object-contain"
             />
           </Link>
           <nav className="hidden items-center gap-8 text-sm font-semibold md:flex">
