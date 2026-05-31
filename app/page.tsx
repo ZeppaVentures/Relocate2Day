@@ -200,7 +200,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
           <Link href="/">
             <img
-              src="/Relocate2day_logo_transparent_v2.png"
+              src="/logo_tight.png"
               alt="Relocate2Day"
               className="h-14 w-auto object-contain"
             />
@@ -249,7 +249,7 @@ export default function Home() {
           <div style={{ width: "288px", backgroundColor: "white", height: "100%", boxShadow: "0 25px 50px rgba(0,0,0,0.3)", display: "flex", flexDirection: "column" }}>
             <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
               <img
-                src="/Relocate2day_logo_transparent_v2.png"
+                src="/logo_tight.png"
                 alt="Relocate2Day"
                 className="h-12 w-auto object-contain"
               />
