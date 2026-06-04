@@ -60,7 +60,7 @@ export async function POST(req: NextRequest) {
         session.subscription as string
       ) as any;
 
-      await supabase
+      const { error: supabaseError } = await supabase
         .from("profiles")
         .update({
           stripe_customer_id: session.customer as string,
@@ -69,6 +69,12 @@ export async function POST(req: NextRequest) {
           subscription_end_date: new Date(subscription.current_period_end * 1000).toISOString(),
         })
         .eq("id", session.metadata?.userId);
+
+      if (supabaseError) {
+        console.error("Supabase update failed:", JSON.stringify(supabaseError));
+      } else {
+        console.log("Supabase update succeeded for userId:", session.metadata?.userId);
+      }
 
       // Notify HubSpot — subscription started
       const customerEmail1 = session.customer_details?.email || session.customer_email;
@@ -91,7 +97,7 @@ export async function POST(req: NextRequest) {
       const subscription = event.data.object as any;
       const customerId = subscription.customer as string;
 
-      await supabase
+      const { error: updateError } = await supabase
         .from("profiles")
         .update({
           subscription_status: subscription.status,
@@ -100,6 +106,12 @@ export async function POST(req: NextRequest) {
         })
         .eq("stripe_customer_id", customerId);
 
+      if (updateError) {
+        console.error("Supabase subscription.updated failed:", JSON.stringify(updateError));
+      } else {
+        console.log("Supabase subscription.updated succeeded for customerId:", customerId);
+      }
+
       break;
     }
 
@@ -107,7 +119,7 @@ export async function POST(req: NextRequest) {
       const subscription = event.data.object as any;
       const customerId = subscription.customer as string;
 
-      await supabase
+      const { error: deleteError } = await supabase
         .from("profiles")
         .update({
           subscription_status: "free",
@@ -115,6 +127,12 @@ export async function POST(req: NextRequest) {
           subscription_end_date: null,
         })
         .eq("stripe_customer_id", customerId);
+
+      if (deleteError) {
+        console.error("Supabase subscription.deleted failed:", JSON.stringify(deleteError));
+      } else {
+        console.log("Supabase subscription.deleted succeeded for customerId:", customerId);
+      }
 
       // Notify HubSpot — subscription cancelled
       const { data: cancelledProfile } = await supabase

@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
         <div className="mb-12">
           <p className="text-sm font-medium text-blue-600 uppercase tracking-widest mb-3">Legal</p>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
-          <p className="text-gray-500 text-sm">Last updated: 1 June 2025 &nbsp;·&nbsp; Effective date: 1 June 2025</p>
+          <p className="text-gray-500 text-sm">Last updated: 29 May 2026 &nbsp;·&nbsp; Effective date: 1 June 2025</p>
         </div>
 
         <div className="prose prose-gray max-w-none space-y-10 text-gray-700 leading-relaxed">
