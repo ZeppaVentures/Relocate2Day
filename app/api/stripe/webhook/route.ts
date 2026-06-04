@@ -60,13 +60,18 @@ export async function POST(req: NextRequest) {
         session.subscription as string
       ) as any;
 
+      const periodEnd = subscription?.current_period_end;
+      const subscriptionEndDate = periodEnd
+        ? new Date(periodEnd * 1000).toISOString()
+        : null;
+
       const { error: supabaseError } = await supabase
         .from("profiles")
         .update({
           stripe_customer_id: session.customer as string,
           subscription_status: "active",
           subscription_plan: subscription.items.data[0].price.recurring?.interval === "year" ? "annual" : "monthly",
-          subscription_end_date: new Date(subscription.current_period_end * 1000).toISOString(),
+          subscription_end_date: subscriptionEndDate,
         })
         .eq("id", session.metadata?.userId);
 
@@ -97,12 +102,17 @@ export async function POST(req: NextRequest) {
       const subscription = event.data.object as any;
       const customerId = subscription.customer as string;
 
+      const periodEnd = subscription?.current_period_end;
+      const subscriptionEndDate = periodEnd
+        ? new Date(periodEnd * 1000).toISOString()
+        : null;
+
       const { error: updateError } = await supabase
         .from("profiles")
         .update({
           subscription_status: subscription.status,
           subscription_plan: subscription.items.data[0].price.recurring?.interval === "year" ? "annual" : "monthly",
-          subscription_end_date: new Date(subscription.current_period_end * 1000).toISOString(),
+          subscription_end_date: subscriptionEndDate,
         })
         .eq("stripe_customer_id", customerId);
 
