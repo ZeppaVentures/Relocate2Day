@@ -42,14 +42,12 @@ Scene: Lisbon colourful streets
 Unsplash ID: photo-1548707309-dcebeab9ea9b
 
 ### italy-hero.jpg
-URL: https://images.unsplash.com/photo-1515542622106-078bda23543c?auto=format&fit=crop&w=1920&q=80
-Scene: Amalfi Coast
-Unsplash ID: photo-1515542622106-078bda23543c
+URL: https://unsplash.com/photos/landscape-photo-of-village-houses-near-ocean-kAE6Kd7W2UA
+Unsplash ID: kAE6Kd7W2UA
 
 ### italy-card.jpg
-URL: https://images.unsplash.com/photo-1515542622106-078bda23543c?auto=format&fit=crop&w=800&q=80
-Scene: Amalfi Coast
-Unsplash ID: photo-1515542622106-078bda23543c
+URL: https://unsplash.com/photos/landscape-photo-of-village-houses-near-ocean-kAE6Kd7W2UA
+Unsplash ID: kAE6Kd7W2UA
 
 ### gibraltar-hero.jpg
 URL: https://images.unsplash.com/photo-1586861203927-800a5acdcc4d?auto=format&fit=crop&w=1920&q=80
@@ -62,24 +60,20 @@ Scene: Rock of Gibraltar
 Unsplash ID: photo-1586861203927-800a5acdcc4d
 
 ### malta-hero.jpg
-URL: https://images.unsplash.com/photo-1602562737290-3f5b7e5cfd82?auto=format&fit=crop&w=1920&q=80
-Scene: Valletta Grand Harbour
-Unsplash ID: photo-1602562737290-3f5b7e5cfd82
+URL: https://unsplash.com/photos/brown-dome-building-inaz3Iqs0LQ
+Unsplash ID: inaz3Iqs0LQ
 
 ### malta-card.jpg
-URL: https://images.unsplash.com/photo-1602562737290-3f5b7e5cfd82?auto=format&fit=crop&w=800&q=80
-Scene: Valletta Grand Harbour
-Unsplash ID: photo-1602562737290-3f5b7e5cfd82
+URL: https://unsplash.com/photos/brown-dome-building-inaz3Iqs0LQ
+Unsplash ID: inaz3Iqs0LQ
 
 ### bulgaria-hero.jpg
-URL: https://images.unsplash.com/photo-1555521144-e864c2dbf5e8?auto=format&fit=crop&w=1920&q=80
-Scene: Sofia Alexander Nevsky Cathedral
-Unsplash ID: photo-1555521144-e864c2dbf5e8
+URL: https://unsplash.com/photos/a-bridge-over-a-river-with-buildings-on-either-side-of-it-WAwnlT5MeDA
+Unsplash ID: WAwnlT5MeDA
 
 ### bulgaria-card.jpg
-URL: https://images.unsplash.com/photo-1555521144-e864c2dbf5e8?auto=format&fit=crop&w=800&q=80
-Scene: Sofia Alexander Nevsky Cathedral
-Unsplash ID: photo-1555521144-e864c2dbf5e8
+URL: https://unsplash.com/photos/a-bridge-over-a-river-with-buildings-on-either-side-of-it-WAwnlT5MeDA
+Unsplash ID: WAwnlT5MeDA
 
 ---
 
