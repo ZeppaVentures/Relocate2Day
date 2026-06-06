@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Relocate2Day | Your New Chapter in Europe Starts Here",
   description: "Thinking of moving to Europe? Compare countries, understand your visa options and plan your relocation — all in one place.",
+  manifest: "/manifest.json",
   icons: {
     icon: [
       { url: "/favicon_32.png", sizes: "32x32", type: "image/png" },
