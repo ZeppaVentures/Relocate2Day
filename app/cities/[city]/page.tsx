@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useSearchParams } from "next/navigation";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 
@@ -275,21 +276,7 @@ Include exactly 3 neighbourhoods, 3 visa steps, 3 tax steps, 3 healthcare steps,
     <div className="min-h-screen bg-white text-[#0B1957]">
 
       {/* NAVIGATION */}
-      <header className="sticky top-0 z-50 border-b border-white/30 bg-white/70 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <Link href="/" className="text-3xl font-black tracking-tight">
-            <span className="bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
-              Relocate2Day
-            </span>
-          </Link>
-          <Link
-            href={`/countries/${country.toLowerCase()}`}
-            className="text-sm font-semibold hover:text-violet-600 transition"
-          >
-            ← Back to {country}
-          </Link>
-        </div>
-      </header>
+      <Navbar variant="content" backHref="/" backLabel="← Back to all countries" />
 
       {/* HERO */}
       <section className="bg-gradient-to-br from-[#0B1957] via-violet-900 to-pink-900 px-6 py-24 text-white text-center">

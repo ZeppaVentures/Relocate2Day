@@ -1,6 +1,7 @@
 "use client";
 
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -40,18 +41,7 @@ export default function PortugalPage() {
     <div className="min-h-screen bg-white text-[#0B1957]">
 
       {/* NAVIGATION */}
-      <header className="sticky top-0 z-50 border-b border-white/30 bg-white/70 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <Link href="/" className="text-3xl font-black tracking-tight">
-            <span className="bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
-              Relocate2Day
-            </span>
-          </Link>
-          <Link href="/" className="text-sm font-semibold hover:text-violet-600 transition">
-            ← Back to all countries
-          </Link>
-        </div>
-      </header>
+      <Navbar variant="content" backHref="/" backLabel="← Back to all countries" />
 
       {/* HERO */}
       <section className="relative overflow-hidden">

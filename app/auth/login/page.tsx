@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/navigation";
@@ -40,15 +41,7 @@ export default function LoginPage() {
     <div className="min-h-screen bg-white text-[#0B1957] flex flex-col">
 
       {/* NAVIGATION */}
-      <header className="border-b border-gray-100 px-6 py-5">
-        <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <Link href="/" className="text-3xl font-black tracking-tight">
-            <span className="bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
-              Relocate2Day
-            </span>
-          </Link>
-        </div>
-      </header>
+      <Navbar variant="simple" />
 
       {/* FORM */}
       <div className="flex-1 flex items-center justify-center px-6 py-20">

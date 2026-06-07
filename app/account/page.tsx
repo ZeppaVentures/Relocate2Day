@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import DeleteAccountButton from "@/components/DeleteAccountButton";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 
@@ -74,21 +75,7 @@ export default function AccountPage() {
     <div className="min-h-screen bg-white text-[#0B1957]">
 
       {/* NAVIGATION */}
-      <header className="border-b border-gray-100 px-6 py-5">
-        <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <Link href="/" className="text-3xl font-black tracking-tight">
-            <span className="bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
-              Relocate2Day
-            </span>
-          </Link>
-          <button
-            onClick={handleLogout}
-            className="text-sm font-semibold text-gray-500 hover:text-red-500 transition"
-          >
-            Log out
-          </button>
-        </div>
-      </header>
+      <Navbar variant="account" onLogout={handleLogout} />
 
       <div className="mx-auto max-w-3xl px-6 py-16">
 

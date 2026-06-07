@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 
@@ -195,14 +196,7 @@ export default function ChecklistPage() {
 
   return (
     <div className="min-h-screen bg-white text-[#0B1957]">
-      <header className="sticky top-0 z-50 border-b border-white/30 bg-white/70 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <Link href="/" className="text-3xl font-black tracking-tight">
-            <span className="bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">Relocate2Day</span>
-          </Link>
-          <Link href="/account" className="text-sm font-semibold hover:text-violet-600 transition">← My Account</Link>
-        </div>
-      </header>
+      <Navbar variant="content" backHref="/" backLabel="← Back to all countries" />
 
       <section className="bg-gradient-to-br from-[#0B1957] via-violet-900 to-pink-900 px-6 py-16 text-white text-center">
         <div className="inline-flex rounded-full bg-orange-400 px-4 py-1 text-xs font-bold uppercase tracking-wide mb-6">Your Relocation Checklist</div>
