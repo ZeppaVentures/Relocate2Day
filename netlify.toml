@@ -3,3 +3,6 @@ package = "@netlify/plugin-nextjs"
 
 [functions."*"]
   timeout = 60
+
+[functions."scheduled-emails"]
+  schedule = "0 9 * * *"
