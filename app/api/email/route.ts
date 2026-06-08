@@ -154,6 +154,22 @@ const emails: Record<string, (name: string) => { subject: string; html: string }
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
+
+    // Handle Supabase Database Webhook (new profile INSERT)
+    if (body.type === "INSERT" && body.table === "profiles" && body.record) {
+      const { email, full_name } = body.record;
+      if (!email) return NextResponse.json({ error: "No email" }, { status: 400 });
+      const firstName = full_name?.split(" ")[0] || "there";
+      const { subject, html } = emails["welcome_free"](firstName);
+      const { error: resendError } = await resend.emails.send({ from: FROM, to: email, subject, html });
+      if (resendError) {
+        console.error("Resend error (welcome_free):", resendError);
+        return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
+      }
+      return NextResponse.json({ success: true });
+    }
+
+    // Handle internal API calls (scheduled emails, Stripe webhook, etc.)
     const { type, email, firstName } = body;
 
     if (!type || !email) {
