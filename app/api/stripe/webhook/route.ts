@@ -68,14 +68,15 @@ export async function POST(req: NextRequest) {
         : null;
 
       const { error: supabaseError } = await supabase
-        .from("profiles")
-        .update({
-          stripe_customer_id: session.customer as string,
-          subscription_status: "active",
-          subscription_plan: subscription.items.data[0].price.recurring?.interval === "year" ? "annual" : "monthly",
-          subscription_end_date: subscriptionEndDate,
-        })
-        .eq("id", session.metadata?.userId);
+  .from("profiles")
+  .update({
+    stripe_customer_id: session.customer as string,
+    subscription_status: "active",
+    subscription_plan: subscription.items.data[0].price.recurring?.interval === "year" ? "annual" : "monthly",
+    subscription_end_date: subscriptionEndDate,
+    subscription_start_date: new Date().toISOString(),
+  })
+  .eq("id", session.metadata?.userId);
 
       if (supabaseError) {
         console.error("Supabase update failed:", JSON.stringify(supabaseError));
