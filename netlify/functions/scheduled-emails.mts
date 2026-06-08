@@ -51,6 +51,57 @@ export default async function handler() {
     console.log("Sending review_request to:", user.email);
     await sendEmail("review_request", user.email, user.full_name?.split(" ")[0] || "there");
   }
+
+  // FOLLOWUP DAY 2 — free users who signed up 2 days ago
+  const day2Date = new Date(now);
+  day2Date.setDate(day2Date.getDate() - 2);
+  const day2Day = day2Date.toISOString().split("T")[0];
+
+  const { data: day2Users } = await supabase
+    .from("profiles")
+    .select("email, full_name")
+    .eq("subscription_status", "free")
+    .gte("created_at", `${day2Day}T00:00:00`)
+    .lte("created_at", `${day2Day}T23:59:59`);
+
+  for (const user of day2Users ?? []) {
+    console.log("Sending followup_day2 to:", user.email);
+    await sendEmail("followup_day2", user.email, user.full_name?.split(" ")[0] || "there");
+  }
+
+  // FOLLOWUP DAY 7 — free users who signed up 7 days ago
+  const day7Date = new Date(now);
+  day7Date.setDate(day7Date.getDate() - 7);
+  const day7Day = day7Date.toISOString().split("T")[0];
+
+  const { data: day7Users } = await supabase
+    .from("profiles")
+    .select("email, full_name")
+    .eq("subscription_status", "free")
+    .gte("created_at", `${day7Day}T00:00:00`)
+    .lte("created_at", `${day7Day}T23:59:59`);
+
+  for (const user of day7Users ?? []) {
+    console.log("Sending followup_day7 to:", user.email);
+    await sendEmail("followup_day7", user.email, user.full_name?.split(" ")[0] || "there");
+  }
+
+  // PREMIUM DAY 3 — premium users whose subscription started 3 days ago
+  const premiumDay3Date = new Date(now);
+  premiumDay3Date.setDate(premiumDay3Date.getDate() - 3);
+  const premiumDay3Day = premiumDay3Date.toISOString().split("T")[0];
+
+  const { data: premiumDay3Users } = await supabase
+    .from("profiles")
+    .select("email, full_name")
+    .eq("subscription_status", "active")
+    .gte("subscription_start_date", `${premiumDay3Day}T00:00:00`)
+    .lte("subscription_start_date", `${premiumDay3Day}T23:59:59`);
+
+  for (const user of premiumDay3Users ?? []) {
+    console.log("Sending premium_day3 to:", user.email);
+    await sendEmail("premium_day3", user.email, user.full_name?.split(" ")[0] || "there");
+  }
 }
 
 export const config = {

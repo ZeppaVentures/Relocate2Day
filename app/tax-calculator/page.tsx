@@ -1,8 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 
@@ -138,6 +136,7 @@ ${mixedBreakdown}
 - Nationality: ${nationality || "Not specified"}
 - Social contributions: ${socialContributions}
 - Countries to calculate: ${selectedCountries.join(", ")}
+Important note: Bulgaria adopted the Euro (€) on 1 January 2026 and no longer uses the Bulgarian Lev (BGN). All calculations should use EUR.
 
 Social contributions instruction: ${socialContributionsNote}
 
@@ -207,7 +206,18 @@ Order results from HIGHEST net income to LOWEST (most money in pocket first).`;
     <div className="min-h-screen bg-white text-[#0B1957]">
 
       {/* NAVIGATION */}
-      <Navbar variant="content" backHref="/" backLabel="← Back to all countries" />
+      <header className="sticky top-0 z-50 border-b border-white/30 bg-white/70 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+          <Link href="/" className="text-3xl font-black tracking-tight">
+            <span className="bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
+              Relocate2Day
+            </span>
+          </Link>
+          <Link href="/" className="text-sm font-semibold hover:text-violet-600 transition">
+            ← Back to homepage
+          </Link>
+        </div>
+      </header>
 
       {/* HERO */}
       <section className="bg-gradient-to-br from-[#0B1957] via-violet-900 to-pink-900 px-6 py-20 text-white text-center">
@@ -545,7 +555,14 @@ Order results from HIGHEST net income to LOWEST (most money in pocket first).`;
       )}
 
       {/* FOOTER */}
-      <Footer />
+      <footer className="bg-[#0B1957] px-6 py-12 text-center text-sm text-white/50 mt-20">
+        <div className="text-2xl font-black">
+          <span className="bg-gradient-to-r from-violet-400 via-pink-400 to-orange-300 bg-clip-text text-transparent">
+            Relocate2Day
+          </span>
+        </div>
+        <p className="mt-4">© {new Date().getFullYear()} Relocate2Day. All rights reserved.</p>
+      </footer>
 
     </div>
   );
