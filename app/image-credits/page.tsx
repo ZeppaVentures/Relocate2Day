@@ -82,6 +82,33 @@ export default function ImageCreditsPage() {
             Read the full Unsplash License ↗
           </a>
         </div>
+
+        <div className="mt-8 rounded-[24px] bg-[#f8f7ff] p-8">
+          <h2 className="text-xl font-black mb-3">Original Artwork</h2>
+          <p className="text-gray-600 text-sm leading-relaxed mb-6">
+            The following original illustrations and designs were created exclusively for Relocate2Day.
+          </p>
+          <div className="overflow-x-auto rounded-[16px] border border-gray-100">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-white border-b border-gray-100">
+                  <th className="text-left px-6 py-4 font-black text-[#0B1957]">Artwork</th>
+                  <th className="text-left px-6 py-4 font-black text-[#0B1957]">Artist</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-50 bg-white">
+                  <td className="px-6 py-4 font-semibold">Logo</td>
+                  <td className="px-6 py-4 text-gray-600">Marina Babeva</td>
+                </tr>
+                <tr className="bg-[#fafafa]">
+                  <td className="px-6 py-4 font-semibold">Banner illustration</td>
+                  <td className="px-6 py-4 text-gray-600">Sofia Babeva Zlatinova</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </main>
 
       <Footer />
