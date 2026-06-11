@@ -122,16 +122,44 @@ Order results from highest to lowest score.`;
     fetchResults();
   }, [country, lifestyle, family, budget, priorities, lifeStage, nationality, income, industry]);
 
+  const loadingSteps = [
+    { icon: "🧭", text: "Analysing your profile..." },
+    { icon: "🏙️", text: `Exploring cities in ${country}...` },
+    { icon: "🏘️", text: "Comparing neighbourhoods..." },
+    { icon: "💶", text: "Checking cost of living..." },
+    { icon: "✈️", text: "Almost there..." },
+  ];
+  const [loadingStep, setLoadingStep] = useState(0);
+
+  useEffect(() => {
+    if (!loading) return;
+    const interval = setInterval(() => {
+      setLoadingStep((prev) => (prev < loadingSteps.length - 1 ? prev + 1 : prev));
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [loading]);
+
   if (loading) {
     return (
-      <div className="min-h-screen bg-white flex flex-col items-center justify-center text-[#0B1957]">
+      <div className="min-h-screen bg-gradient-to-br from-[#0B1957] via-violet-900 to-pink-900 flex flex-col items-center justify-center text-white">
         <div className="text-center max-w-md px-6">
-          <div className="text-6xl mb-6 animate-bounce">🏙️</div>
+          <div className="text-7xl mb-8 animate-bounce">{loadingSteps[loadingStep].icon}</div>
           <h2 className="text-3xl font-black mb-4">Finding your perfect city...</h2>
-          <p className="text-gray-500 text-lg">Analysing cities and towns across {country}</p>
-          <div className="mt-8 flex justify-center gap-2">
-            {[1,2,3,4].map((i) => (
-              <div key={i} className="w-2 h-2 rounded-full bg-violet-400 animate-pulse" style={{ animationDelay: `${i * 0.2}s` }} />
+          <p className="text-white/70 text-lg mb-8">{loadingSteps[loadingStep].text}</p>
+          <div className="space-y-3 text-left">
+            {loadingSteps.map((step, i) => (
+              <div key={i} className={`flex items-center gap-3 rounded-2xl px-5 py-3 transition-all duration-500 ${i === loadingStep ? "bg-white/20 text-white" : i < loadingStep ? "text-white/40" : "text-white/20"}`}>
+                <span className="text-xl">{step.icon}</span>
+                <span className="text-sm font-semibold">{step.text}</span>
+                {i < loadingStep && <span className="ml-auto text-green-400">✓</span>}
+                {i === loadingStep && (
+                  <div className="ml-auto flex gap-1">
+                    {[0,1,2].map((j) => (
+                      <div key={j} className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" style={{ animationDelay: `${j * 0.2}s` }} />
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
         </div>
