@@ -133,6 +133,52 @@ export default function Home() {
   const [aspirations, setAspirations] = useState("Not applicable");
   const [errors, setErrors] = useState<Record<string, boolean>>({});
 
+  // City quiz states
+  const [cityCountry, setCityCountry] = useState("");
+  const [cityLifestyle, setCityLifestyle] = useState("");
+  const [cityFamily, setCityFamily] = useState("");
+  const [cityBudget, setCityBudget] = useState("");
+  const [cityPriorities, setCityPriorities] = useState("");
+  const [cityLifeStage, setCityLifeStage] = useState("");
+  const [cityNationality, setCityNationality] = useState("");
+  const [cityIncome, setCityIncome] = useState("");
+  const [cityIndustry, setCityIndustry] = useState("");
+  const [cityErrors, setCityErrors] = useState<Record<string, boolean>>({});
+
+  const AVAILABLE_COUNTRIES = ["Spain", "Gibraltar", "Portugal", "Italy", "Malta", "Bulgaria"];
+
+  const handleCityQuiz = () => {
+    const newErrors: Record<string, boolean> = {};
+    if (!cityCountry) newErrors.cityCountry = true;
+    if (!cityLifestyle) newErrors.cityLifestyle = true;
+    if (!cityFamily) newErrors.cityFamily = true;
+    if (!cityBudget) newErrors.cityBudget = true;
+    if (!cityPriorities) newErrors.cityPriorities = true;
+    if (!cityLifeStage) newErrors.cityLifeStage = true;
+    if (!cityNationality) newErrors.cityNationality = true;
+    if (!cityIncome) newErrors.cityIncome = true;
+    if (!cityIndustry) newErrors.cityIndustry = true;
+    setCityErrors(newErrors);
+    if (Object.keys(newErrors).length > 0) return;
+    const params = new URLSearchParams({
+      country: cityCountry,
+      lifestyle: cityLifestyle,
+      family: cityFamily,
+      budget: cityBudget,
+      priorities: cityPriorities,
+      lifeStage: cityLifeStage,
+      nationality: cityNationality,
+      income: cityIncome,
+      industry: cityIndustry,
+    });
+    router.push(`/quiz/city-results?${params.toString()}`);
+  };
+
+  const cityFieldClass = (key: string) =>
+    `rounded-2xl p-5 text-white transition-all ${
+      cityErrors[key] ? "bg-red-500/30 ring-2 ring-red-400" : "bg-white/10"
+    }`;
+
   const filteredCountries = COUNTRIES.filter((c) =>
     c.toLowerCase().includes(countrySearch.toLowerCase())
   );
@@ -459,7 +505,125 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FEATURES */}
+      {/* CITY QUIZ */}
+      <section className="bg-[#081B57] px-6 py-28">
+        <div className="mx-auto max-w-5xl">
+          <div className="text-center mb-12">
+            <div className="text-sm font-bold uppercase tracking-[0.3em] text-orange-400 mb-4">Already know your country?</div>
+            <h2 className="text-5xl font-black text-white">Find your perfect city</h2>
+            <p className="mt-4 text-xl text-gray-300">Tell us about yourself and we'll match you to the best cities and towns in your chosen country.</p>
+          </div>
+
+          <div className="rounded-[36px] bg-white/10 backdrop-blur-xl p-8 shadow-2xl">
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className={cityFieldClass("cityCountry")}>
+                <div className="text-sm text-gray-300 mb-2">I want to move to</div>
+                <select value={cityCountry} onChange={(e) => { setCityCountry(e.target.value); setCityErrors((er) => ({ ...er, cityCountry: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
+                  <option value="" className="text-black bg-white">Select country...</option>
+                  {AVAILABLE_COUNTRIES.map((c) => <option key={c} value={c} className="text-black bg-white">{c}</option>)}
+                </select>
+              </div>
+              <div className={cityFieldClass("cityNationality")}>
+                <div className="text-sm text-gray-300 mb-2">I'm from</div>
+                <select value={cityNationality} onChange={(e) => { setCityNationality(e.target.value); setCityErrors((er) => ({ ...er, cityNationality: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
+                  <option value="" className="text-black bg-white">Select nationality...</option>
+                  {COUNTRIES.map((c) => <option key={c} value={c} className="text-black bg-white">{c}</option>)}
+                </select>
+              </div>
+              <div className={cityFieldClass("cityIncome")}>
+                <div className="text-sm text-gray-300 mb-2">Annual income</div>
+                <select value={cityIncome} onChange={(e) => { setCityIncome(e.target.value); setCityErrors((er) => ({ ...er, cityIncome: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
+                  <option value="" className="text-black bg-white">Select bracket...</option>
+                  {INCOME_BRACKETS.map((b) => <option key={b} value={b} className="text-black bg-white">{b}</option>)}
+                </select>
+              </div>
+              <div className={cityFieldClass("cityBudget")}>
+                <div className="text-sm text-gray-300 mb-2">Monthly rent budget</div>
+                <select value={cityBudget} onChange={(e) => { setCityBudget(e.target.value); setCityErrors((er) => ({ ...er, cityBudget: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
+                  <option value="" className="text-black bg-white">Select budget...</option>
+                  <option value="Under €500" className="text-black bg-white">Under €500</option>
+                  <option value="€500 – €800" className="text-black bg-white">€500 – €800</option>
+                  <option value="€800 – €1,200" className="text-black bg-white">€800 – €1,200</option>
+                  <option value="€1,200 – €1,800" className="text-black bg-white">€1,200 – €1,800</option>
+                  <option value="€1,800 – €2,500" className="text-black bg-white">€1,800 – €2,500</option>
+                  <option value="Over €2,500" className="text-black bg-white">Over €2,500</option>
+                </select>
+              </div>
+              <div className={cityFieldClass("cityLifeStage")}>
+                <div className="text-sm text-gray-300 mb-2">Life stage</div>
+                <select value={cityLifeStage} onChange={(e) => { setCityLifeStage(e.target.value); setCityErrors((er) => ({ ...er, cityLifeStage: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
+                  <option value="" className="text-black bg-white">Select...</option>
+                  <option value="Employee relocating with a company" className="text-black bg-white">Employee relocating with a company</option>
+                  <option value="Remote worker / freelancer" className="text-black bg-white">Remote worker / freelancer</option>
+                  <option value="Self-employed / entrepreneur" className="text-black bg-white">Self-employed / entrepreneur</option>
+                  <option value="Retiree" className="text-black bg-white">Retiree</option>
+                  <option value="Student" className="text-black bg-white">Student</option>
+                  <option value="Looking for work" className="text-black bg-white">Looking for work</option>
+                </select>
+              </div>
+              <div className={cityFieldClass("cityFamily")}>
+                <div className="text-sm text-gray-300 mb-2">Family situation</div>
+                <select value={cityFamily} onChange={(e) => { setCityFamily(e.target.value); setCityErrors((er) => ({ ...er, cityFamily: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
+                  <option value="" className="text-black bg-white">Select...</option>
+                  <option value="Single" className="text-black bg-white">Single</option>
+                  <option value="Couple (no children)" className="text-black bg-white">Couple (no children)</option>
+                  <option value="Family with young children" className="text-black bg-white">Family with young children</option>
+                  <option value="Family with teenagers" className="text-black bg-white">Family with teenagers</option>
+                  <option value="Single parent" className="text-black bg-white">Single parent</option>
+                </select>
+              </div>
+              <div className={cityFieldClass("cityLifestyle")}>
+                <div className="text-sm text-gray-300 mb-2">Lifestyle preference</div>
+                <select value={cityLifestyle} onChange={(e) => { setCityLifestyle(e.target.value); setCityErrors((er) => ({ ...er, cityLifestyle: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
+                  <option value="" className="text-black bg-white">Select...</option>
+                  <option value="Bustling city life" className="text-black bg-white">Bustling city life</option>
+                  <option value="Coastal / beach lifestyle" className="text-black bg-white">Coastal / beach lifestyle</option>
+                  <option value="Quiet rural or village life" className="text-black bg-white">Quiet rural or village life</option>
+                  <option value="Mix of city and nature" className="text-black bg-white">Mix of city and nature</option>
+                </select>
+              </div>
+              <div className={cityFieldClass("cityPriorities")}>
+                <div className="text-sm text-gray-300 mb-2">Top priority</div>
+                <select value={cityPriorities} onChange={(e) => { setCityPriorities(e.target.value); setCityErrors((er) => ({ ...er, cityPriorities: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
+                  <option value="" className="text-black bg-white">Select...</option>
+                  <option value="Low cost of living" className="text-black bg-white">Low cost of living</option>
+                  <option value="Good weather" className="text-black bg-white">Good weather</option>
+                  <option value="Safety" className="text-black bg-white">Safety</option>
+                  <option value="English spoken widely" className="text-black bg-white">English spoken widely</option>
+                  <option value="Good schools" className="text-black bg-white">Good schools</option>
+                  <option value="Strong expat community" className="text-black bg-white">Strong expat community</option>
+                  <option value="Fast internet / remote work infrastructure" className="text-black bg-white">Fast internet / remote work infrastructure</option>
+                  <option value="Healthcare quality" className="text-black bg-white">Healthcare quality</option>
+                  <option value="Nightlife & culture" className="text-black bg-white">Nightlife & culture</option>
+                </select>
+              </div>
+              <div className={`md:col-span-2 ${cityFieldClass("cityIndustry")}`}>
+                <div className="text-sm text-gray-300 mb-2">Industry</div>
+                <select value={cityIndustry} onChange={(e) => { setCityIndustry(e.target.value); setCityErrors((er) => ({ ...er, cityIndustry: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
+                  <option value="" className="text-black bg-white">Select industry...</option>
+                  {INDUSTRIES.map((ind) => <option key={ind} value={ind} className="text-black bg-white">{ind}</option>)}
+                </select>
+              </div>
+            </div>
+
+            {Object.keys(cityErrors).length > 0 && (
+              <p className="mt-4 text-center text-sm text-red-300">Please fill in all highlighted fields before continuing.</p>
+            )}
+
+            <button onClick={handleCityQuiz} className="mt-6 w-full rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-6 py-5 text-lg font-bold text-white shadow-2xl transition hover:scale-[1.02]">
+              Find my perfect city →
+            </button>
+
+            <div className="mt-8 flex flex-wrap justify-center gap-8 text-sm text-gray-300">
+              <div>🏙️ 4 city matches</div>
+              <div>🏘️ Neighbourhood recommendations</div>
+              <div>✅ 100% personalised</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FEATURES */}}
       <section id="features" className="bg-[#f8f7ff] px-6 py-28">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
