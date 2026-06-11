@@ -623,7 +623,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FEATURES */}}
+      {/* FEATURES */}
       <section id="features" className="bg-[#f8f7ff] px-6 py-28">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
