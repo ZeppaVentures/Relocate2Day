@@ -509,7 +509,7 @@ export default function Home() {
 
       
       {/* BANNER ILLUSTRATION */}
-      <section className="bg-[#e8f7fc] px-6 py-16 overflow-hidden">
+      <section className="bg-[#baf4f0] px-6 py-16 overflow-hidden">
         <div className="mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="text-left max-w-lg">
             <div className="text-sm font-bold uppercase tracking-[0.3em] text-violet-500 mb-4">Your adventure awaits</div>
