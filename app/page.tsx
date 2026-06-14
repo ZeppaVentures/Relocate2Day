@@ -517,7 +517,7 @@ export default function Home() {
             <p className="text-gray-600 text-lg mb-8">Join thousands of people who have already found their perfect home in Europe. Your new life is just a few questions away.</p>
             <a href="#countries" className="inline-block rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-8 py-4 text-sm font-bold text-white shadow-xl transition hover:scale-105">Explore countries →</a>
           </div>
-          <img src="/images/banner-illustration.png" alt="Relocate2Day illustration" className="w-full max-w-lg object-contain self-end translate-x-8" />
+          <img src="/images/banner-illustration.png" alt="Relocate2Day illustration" className="w-full max-w-xl object-contain self-end -mr-6" />
         </div>
       </section>
 
