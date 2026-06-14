@@ -105,7 +105,7 @@ export default function ImageCreditsPage() {
                 </tr>
                 <tr className="bg-[#fafafa]">
                   <td className="px-6 py-4 font-semibold">Banner illustration</td>
-                  <td className="px-6 py-4 text-gray-600">Sofia Babeva Zlatinova</td>
+                  <td className="px-6 py-4 text-gray-600">Sofia Babeva</td>
                 </tr>
               </tbody>
             </table>
