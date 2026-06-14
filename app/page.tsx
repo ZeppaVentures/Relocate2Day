@@ -518,7 +518,7 @@ export default function Home() {
             <a href="#countries" className="inline-block rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-8 py-4 text-sm font-bold text-white shadow-xl transition hover:scale-105">Explore countries →</a>
           </div>
         </div>
-        <img src="/images/banner-illustration.png" alt="Relocate2Day illustration" className="absolute bottom-0 right-0 w-[600px] object-contain" />
+        <img src="/images/banner-illustration.png" alt="Relocate2Day illustration" className="absolute bottom-0 right-0 w-[380px] object-contain" />
       </section>
 
 {/* CITY QUIZ */}
