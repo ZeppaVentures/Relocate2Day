@@ -509,12 +509,16 @@ export default function Home() {
 
       
       {/* BANNER ILLUSTRATION */}
-      <section className="bg-white py-12 flex justify-center">
-        <img
-          src="/images/banner-illustration.png"
-          alt="Relocate2Day illustration — plane flying over the ocean"
-          className="w-full max-w-2xl px-6 object-contain"
-        />
+      <section className="bg-[#e8f7fc] px-6 py-16 overflow-hidden">
+        <div className="mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="text-left max-w-lg">
+            <div className="text-sm font-bold uppercase tracking-[0.3em] text-violet-500 mb-4">Your adventure awaits</div>
+            <h2 className="text-4xl font-black text-[#0B1957] mb-4">Ready to take off?</h2>
+            <p className="text-gray-600 text-lg mb-8">Join thousands of people who have already found their perfect home in Europe. Your new life is just a few questions away.</p>
+            <a href="#countries" className="inline-block rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-8 py-4 text-sm font-bold text-white shadow-xl transition hover:scale-105">Explore countries →</a>
+          </div>
+          <img src="/images/banner-illustration.png" alt="Relocate2Day illustration" className="w-full max-w-sm object-contain" />
+        </div>
       </section>
 
 {/* CITY QUIZ */}
