@@ -17,6 +17,8 @@ const credits = [
   { location: "Bulgaria guide", scene: "Sofia, Alexander Nevsky Cathedral", source: "Unsplash", url: "https://unsplash.com/photos/1555521144-e864c2dbf5e8" },
   { location: "Greece guide", scene: "Athens, Acropolis at Golden Hour", source: "Unsplash", url: "https://unsplash.com/photos/acropolis-of-athens-at-golden-hour-yqBvJJ8jGBQ" },
   { location: "Netherlands guide", scene: "Tulips in Amsterdam", source: "Unsplash", url: "https://unsplash.com/photos/pink-flowers-near-city-buildings-during-daytime-RRl_m_fQzNY" },
+  { location: "Romania guide (hero)", scene: "Brasov Old Town at sunset", source: "Unsplash", url: "https://unsplash.com/photos/a-view-of-a-city-from-the-top-of-a-hill-H7Vhf8GVUNE" },
+  { location: "Romania guide (card)", scene: "Calea Victoriei, Bucharest Old Town", source: "Unsplash", url: "https://unsplash.com/photos/a-city-street-filled-with-lots-of-tall-buildings-WziMWpMfGEY" },
 ];
 
 export default function ImageCreditsPage() {
