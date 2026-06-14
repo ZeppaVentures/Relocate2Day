@@ -507,7 +507,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CITY QUIZ */}
+      
+      {/* BANNER ILLUSTRATION */}
+      <section className="bg-white py-12 flex justify-center">
+        <img
+          src="/images/banner-illustration.png"
+          alt="Relocate2Day illustration — plane flying over the ocean"
+          className="w-full max-w-2xl px-6 object-contain"
+        />
+      </section>
+
+{/* CITY QUIZ */}
       <section className="bg-[#081B57] px-6 py-28">
         <div className="mx-auto max-w-5xl">
           <div className="text-center mb-12">
