@@ -224,7 +224,6 @@ export default function Home() {
     { name: "Greece", slug: "greece", image: "/images/countries/greece-card.jpg", description: "Mediterranean sunshine, ancient culture and generous expat tax incentives — including a 50% tax break for digital nomads." },
     { name: "Netherlands", slug: "netherlands", image: "/images/countries/netherlands-card.jpg", description: "95% English proficiency, world-class cycling, and the famous 30% tax ruling for skilled professionals." },
     { name: "Romania", slug: "romania", image: "/images/countries/romania-card.jpg", description: "Flat 10% income tax, world-class internet, medieval castles and a cost of living that goes twice as far as Western Europe." },
-    { name: "Romania", slug: "romania", image: "/images/countries/romania-card.jpg", description: "Flat 10% income tax, world-class internet, medieval castles and a cost of living that goes twice as far as Western Europe." },
   ];
 
   const features = [
