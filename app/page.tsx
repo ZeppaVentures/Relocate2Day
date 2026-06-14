@@ -145,7 +145,7 @@ export default function Home() {
   const [cityIndustry, setCityIndustry] = useState("");
   const [cityErrors, setCityErrors] = useState<Record<string, boolean>>({});
 
-  const AVAILABLE_COUNTRIES = ["Spain", "Gibraltar", "Portugal", "Italy", "Malta", "Bulgaria"];
+  const AVAILABLE_COUNTRIES = ["Spain", "Gibraltar", "Portugal", "Italy", "Malta", "Bulgaria", "Greece", "Netherlands"];
 
   const handleCityQuiz = () => {
     const newErrors: Record<string, boolean> = {};
@@ -221,6 +221,8 @@ export default function Home() {
     { name: "Italy", slug: "italy", image: "/images/countries/italy-card.jpg", description: "Beautiful coastline, amazing food and relaxed lifestyle." },
     { name: "Malta", slug: "malta", image: "/images/countries/malta-card.jpg", description: "English-speaking, sunny and one of Europe's most welcoming residency programmes." },
     { name: "Bulgaria", slug: "bulgaria", image: "/images/countries/bulgaria-card.jpg", description: "Low flat tax, affordable living and a fast-growing expat community in the heart of the Balkans." },
+    { name: "Greece", slug: "greece", image: "/images/countries/greece-card.jpg", description: "Mediterranean sunshine, ancient culture and generous expat tax incentives — including a 50% tax break for digital nomads." },
+    { name: "Netherlands", slug: "netherlands", image: "/images/countries/netherlands-card.jpg", description: "95% English proficiency, world-class cycling, and the famous 30% tax ruling for skilled professionals." },
   ];
 
   const features = [

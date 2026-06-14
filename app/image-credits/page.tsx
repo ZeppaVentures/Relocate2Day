@@ -15,6 +15,8 @@ const credits = [
   { location: "Gibraltar guide", scene: "Rock of Gibraltar", source: "Unsplash", url: "https://unsplash.com/photos/1586861203927-800a5acdcc4d" },
   { location: "Malta guide", scene: "Valletta Grand Harbour", source: "Unsplash", url: "https://unsplash.com/photos/1602562737290-3f5b7e5cfd82" },
   { location: "Bulgaria guide", scene: "Sofia, Alexander Nevsky Cathedral", source: "Unsplash", url: "https://unsplash.com/photos/1555521144-e864c2dbf5e8" },
+  { location: "Greece guide", scene: "Athens, Acropolis", source: "Unsplash", url: "REPLACE_WITH_GREECE_URL" },
+  { location: "Netherlands guide", scene: "Amsterdam canals", source: "Unsplash", url: "REPLACE_WITH_NETHERLANDS_URL" },
 ];
 
 export default function ImageCreditsPage() {
