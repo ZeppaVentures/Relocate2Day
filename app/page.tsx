@@ -509,18 +509,17 @@ export default function Home() {
 
       
       {/* BANNER ILLUSTRATION */}
-      <section className="bg-[#baf4f0] overflow-hidden">
-        <div className="mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between px-12 py-16">
-          <div className="text-left max-w-lg shrink-0">
+      <section className="bg-[#baf4f0] overflow-hidden relative min-h-[400px] flex items-center">
+        <div className="mx-auto max-w-7xl w-full px-12 py-16 relative z-10">
+          <div className="text-left max-w-lg">
             <div className="text-sm font-bold uppercase tracking-[0.3em] text-violet-500 mb-4">Your adventure awaits</div>
             <h2 className="text-4xl font-black text-[#0B1957] mb-4">Ready to take off?</h2>
             <p className="text-gray-600 text-lg mb-8">Join thousands of people who have already found their perfect home in Europe. Your new life is just a few questions away.</p>
             <a href="#countries" className="inline-block rounded-2xl bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 px-8 py-4 text-sm font-bold text-white shadow-xl transition hover:scale-105">Explore countries →</a>
           </div>
-          <img src="/images/banner-illustration.png" alt="Relocate2Day illustration" className="w-full max-w-lg object-cover self-end mb-0 translate-y-4" />
         </div>
+        <img src="/images/banner-illustration.png" alt="Relocate2Day illustration" className="absolute bottom-0 right-0 w-[600px] object-contain" />
       </section>
-
 
 {/* CITY QUIZ */}
       <section className="bg-[#081B57] px-6 py-28">
