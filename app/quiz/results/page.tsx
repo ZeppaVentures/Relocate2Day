@@ -14,6 +14,9 @@ const countryFlags: Record<string, string> = {
   Gibraltar: "🇬🇮",
   Malta: "🇲🇹",
   Bulgaria: "🇧🇬",
+  Greece: "🇬🇷",
+  Netherlands: "🇳🇱",
+  Romania: "🇷🇴",
 };
 
 const countryImages: Record<string, string> = {
@@ -23,6 +26,9 @@ const countryImages: Record<string, string> = {
   Gibraltar: "/images/countries/gibraltar-card.jpg",
   Malta: "/images/countries/malta-card.jpg",
   Bulgaria: "/images/countries/bulgaria-card.jpg",
+  Greece: "/images/countries/greece-card.jpg",
+  Netherlands: "/images/countries/netherlands-card.jpg",
+  Romania: "/images/countries/romania-card.jpg",
 };
 
 interface CountryResult {
@@ -51,16 +57,20 @@ function ResultsContent() {
   const lifestyle = searchParams.get("lifestyle") || "";
   const industry = searchParams.get("industry") || "";
   const aspirations = searchParams.get("aspirations") || "";
+  const currentCountry = searchParams.get("currentCountry") || "";
 
   useEffect(() => {
     const fetchResults = async () => {
       try {
-        const prompt = `You are a European relocation expert. Based on the following user profile, rank exactly 5 countries for relocation from this list: Spain, Portugal, Italy, Gibraltar, Malta, and Bulgaria.
+        const prompt = `You are a European relocation expert. Based on the following user profile, rank exactly 5 countries for relocation from this list: Spain, Portugal, Italy, Gibraltar, Malta, Bulgaria, Greece, Netherlands, and Romania.
 
 Important rules:
-- If the user's nationality matches any of these countries (e.g. if they are Spanish, exclude Spain; if Bulgarian, exclude Bulgaria etc.), exclude that country from the results entirely
 - Always return exactly 5 countries in the ranked results
 - The user's nationality is: ${nationality}
+- The user currently lives in: ${currentCountry}
+- If the user's nationality matches any country on the list (e.g. Spanish → exclude Spain, Bulgarian → exclude Bulgaria, Greek → exclude Greece, Dutch → exclude Netherlands, Romanian → exclude Romania), exclude that country
+- If the user currently lives in any country on the list, exclude that country too
+- Apply both exclusions — if both apply, exclude both and still return exactly 5 results from the remaining countries
 
 User profile:
 - Nationality: ${nationality}
@@ -133,7 +143,7 @@ Order the results array from highest to lowest score.`;
     };
 
     fetchResults();
-  }, [nationality, income, lifeStage, family, lifestyle, industry, aspirations]);
+  }, [nationality, currentCountry, income, lifeStage, family, lifestyle, industry, aspirations]);
 
   if (loading) {
     return (
@@ -141,9 +151,9 @@ Order the results array from highest to lowest score.`;
         <div className="text-center max-w-md px-6">
           <div className="text-6xl mb-6 animate-bounce">🌍</div>
           <h2 className="text-3xl font-black mb-4">Finding your perfect match...</h2>
-          <p className="text-gray-500 text-lg">Analysing your profile across 6 European countries</p>
+          <p className="text-gray-500 text-lg">Analysing your profile across 9 European countries</p>
           <div className="mt-8 flex justify-center gap-2">
-            {["Spain", "Portugal", "Italy", "Gibraltar", "Malta", "Bulgaria"].map((country, i) => (
+            {["Spain", "Portugal", "Italy", "Gibraltar", "Malta", "Bulgaria", "Greece", "Netherlands", "Romania"].map((country, i) => (
               <div key={country} className="w-2 h-2 rounded-full bg-violet-400 animate-pulse" style={{ animationDelay: `${i * 0.2}s` }} />
             ))}
           </div>
@@ -325,7 +335,7 @@ Order the results array from highest to lowest score.`;
                   defaultValue={results?.results[0]?.country || ""}
                   className="w-full bg-transparent font-bold text-[#0B1957] outline-none cursor-pointer"
                 >
-                  {["Spain", "Portugal", "Italy", "Gibraltar", "Malta", "Bulgaria"].map((c) => (
+                  {["Spain", "Portugal", "Italy", "Gibraltar", "Malta", "Bulgaria", "Greece", "Netherlands", "Romania"].map((c) => (
                     <option key={c} value={c}>{c}</option>
                   ))}
                 </select>
@@ -384,6 +394,7 @@ Order the results array from highest to lowest score.`;
                   nationality,
                   income,
                   industry,
+                  currentCountry,
                 });
                 window.location.href = `/quiz/city-results?${params.toString()}`;
               }}

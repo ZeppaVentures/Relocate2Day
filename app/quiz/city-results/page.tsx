@@ -39,6 +39,7 @@ function CityResultsContent() {
   const nationality = searchParams.get("nationality") || "";
   const income = searchParams.get("income") || "";
   const industry = searchParams.get("industry") || "";
+  const currentCountry = searchParams.get("currentCountry") || "";
 
   useEffect(() => {
     const checkPremium = async () => {
@@ -60,6 +61,10 @@ function CityResultsContent() {
           ? `Important note for Gibraltar: Include "La Línea de la Concepción (Spain)" as one of the city options. This is the Spanish town directly across the border from Gibraltar, where many Gibraltar workers choose to live due to significantly lower rents (50-70% cheaper). Clearly note that residents of La Línea work in Gibraltar but live in Spain, and will need to register as Spanish residents and manage tax obligations in both jurisdictions.`
           : "";
 
+        const currentCountryNote = currentCountry
+          ? `Current residence exclusion: The user currently lives in ${currentCountry}. Do NOT recommend any cities or towns in ${currentCountry} under any circumstances — the whole purpose of this quiz is to help them leave. Only recommend places in ${country}.`
+          : "";
+
         const nationalityContext = nationality
           ? `Nationality context: The user is from ${nationality}. Consider whether they are an EU/EEA citizen (free movement), a UK citizen (post-Brexit restrictions apply), or a non-EU citizen (visa requirements apply). This should influence which cities you recommend — for example, non-EU citizens may benefit from being near major cities with consulates and immigration offices for easier paperwork. UK citizens relocating to Gibraltar have a simpler process than to EU countries. EU citizens have freedom of movement everywhere.`
           : "";
@@ -76,6 +81,8 @@ User profile:
 - City lifestyle preference: ${lifestyle}
 - Top priority: ${priorities}
 - Industry: ${industry || "Not specified"}
+
+${currentCountryNote}
 
 ${nationalityContext}
 
@@ -120,7 +127,7 @@ Order results from highest to lowest score.`;
 
     checkPremium();
     fetchResults();
-  }, [country, lifestyle, family, budget, priorities, lifeStage, nationality, income, industry]);
+  }, [country, currentCountry, lifestyle, family, budget, priorities, lifeStage, nationality, income, industry]);
 
   const loadingSteps = [
     { icon: "🧭", text: "Analysing your profile..." },

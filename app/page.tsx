@@ -131,6 +131,9 @@ export default function Home() {
   const [lifestyle, setLifestyle] = useState("");
   const [industry, setIndustry] = useState("");
   const [aspirations, setAspirations] = useState("Not applicable");
+  const [currentCountry, setCurrentCountry] = useState("");
+  const [currentCountrySearch, setCurrentCountrySearch] = useState("");
+  const [showCurrentCountryList, setShowCurrentCountryList] = useState(false);
   const [errors, setErrors] = useState<Record<string, boolean>>({});
 
   // City quiz states
@@ -143,6 +146,7 @@ export default function Home() {
   const [cityNationality, setCityNationality] = useState("");
   const [cityIncome, setCityIncome] = useState("");
   const [cityIndustry, setCityIndustry] = useState("");
+  const [cityCurrentCountry, setCityCurrentCountry] = useState("");
   const [cityErrors, setCityErrors] = useState<Record<string, boolean>>({});
 
   const AVAILABLE_COUNTRIES = ["Spain", "Gibraltar", "Portugal", "Italy", "Malta", "Bulgaria", "Greece", "Netherlands", "Romania"];
@@ -158,6 +162,7 @@ export default function Home() {
     if (!cityNationality) newErrors.cityNationality = true;
     if (!cityIncome) newErrors.cityIncome = true;
     if (!cityIndustry) newErrors.cityIndustry = true;
+    if (!cityCurrentCountry) newErrors.cityCurrentCountry = true;
     setCityErrors(newErrors);
     if (Object.keys(newErrors).length > 0) return;
     const params = new URLSearchParams({
@@ -170,6 +175,7 @@ export default function Home() {
       nationality: cityNationality,
       income: cityIncome,
       industry: cityIndustry,
+      currentCountry: cityCurrentCountry,
     });
     router.push(`/quiz/city-results?${params.toString()}`);
   };
@@ -191,6 +197,7 @@ export default function Home() {
     if (!family) newErrors.family = true;
     if (!lifestyle) newErrors.lifestyle = true;
     if (!industry) newErrors.industry = true;
+    if (!currentCountry) newErrors.currentCountry = true;
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -205,6 +212,7 @@ export default function Home() {
       lifestyle,
       industry,
       aspirations,
+      currentCountry,
     });
     router.push(`/quiz/results?${params.toString()}`);
   };
@@ -392,6 +400,29 @@ export default function Home() {
                     {filteredCountries.map((country) => (
                       <li key={country} onMouseDown={() => { setNationality(country); setCountrySearch(country); setShowCountryList(false); setErrors((e) => ({ ...e, nationality: false })); }} className="px-4 py-2 text-sm text-white cursor-pointer hover:bg-white/10">
                         {country}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+
+              {/* CURRENT COUNTRY */}
+              <div className={`relative z-[90] ${fieldClass("currentCountry")}`}>
+                <div className="text-sm text-gray-300 mb-2">I currently live in</div>
+                <input
+                  type="text"
+                  placeholder="Search country..."
+                  value={currentCountrySearch || currentCountry}
+                  onChange={(e) => { setCurrentCountrySearch(e.target.value); setCurrentCountry(""); setShowCurrentCountryList(true); }}
+                  onFocus={() => setShowCurrentCountryList(true)}
+                  onBlur={() => setTimeout(() => setShowCurrentCountryList(false), 150)}
+                  className="w-full bg-transparent font-semibold placeholder-white/40 outline-none text-white"
+                />
+                {showCurrentCountryList && COUNTRIES.filter(c => c.toLowerCase().includes(currentCountrySearch.toLowerCase())).length > 0 && (
+                  <ul className="absolute left-0 right-0 top-full mt-1 z-[200] max-h-52 overflow-y-auto rounded-2xl bg-[#0d1f6e] border border-white/20 shadow-2xl">
+                    {COUNTRIES.filter(c => c.toLowerCase().includes(currentCountrySearch.toLowerCase())).map((c) => (
+                      <li key={c} onMouseDown={() => { setCurrentCountry(c); setCurrentCountrySearch(c); setShowCurrentCountryList(false); setErrors((e) => ({ ...e, currentCountry: false })); }} className="px-4 py-2 text-sm text-white cursor-pointer hover:bg-white/10">
+                        {c}
                       </li>
                     ))}
                   </ul>
@@ -619,6 +650,13 @@ export default function Home() {
                 <select value={cityIndustry} onChange={(e) => { setCityIndustry(e.target.value); setCityErrors((er) => ({ ...er, cityIndustry: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
                   <option value="" className="text-black bg-white">Select industry...</option>
                   {INDUSTRIES.map((ind) => <option key={ind} value={ind} className="text-black bg-white">{ind}</option>)}
+                </select>
+              </div>
+              <div className={`md:col-span-2 ${cityFieldClass("cityCurrentCountry")}`}>
+                <div className="text-sm text-gray-300 mb-2">I currently live in</div>
+                <select value={cityCurrentCountry} onChange={(e) => { setCityCurrentCountry(e.target.value); setCityErrors((er) => ({ ...er, cityCurrentCountry: false })); }} className="w-full bg-transparent font-semibold outline-none text-white cursor-pointer">
+                  <option value="" className="text-black bg-white">Select country...</option>
+                  {COUNTRIES.map((c) => <option key={c} value={c} className="text-black bg-white">{c}</option>)}
                 </select>
               </div>
             </div>
