@@ -109,13 +109,15 @@ export default function CountryPageTemplate({ content, heroImage, slug, sectionL
   };
 
   const { hero, sections } = content;
-  const visas = sections.visas;
-  const taxes = sections.taxes;
-  const col = sections.costOfLiving;
-  const health = sections.healthcare;
-  const bank = sections.banking;
-  const pc = sections.prosCons;
-  const cta = sections.cta;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const s = sections as any;
+  const visas = s.visas;
+  const taxes = s.taxes;
+  const col = s.costOfLiving;
+  const health = s.healthcare;
+  const bank = s.banking;
+  const pc = s.prosCons;
+  const cta = s.cta;
 
   return (
     <div className="min-h-screen bg-white text-[#0B1957]">
