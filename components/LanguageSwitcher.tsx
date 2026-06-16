@@ -1,7 +1,6 @@
 "use client";
 
-import { useRouter, usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const LANGUAGES = [
   { code: "en", label: "English", flag: "🇬🇧" },
@@ -11,26 +10,35 @@ const LANGUAGES = [
 ];
 
 export default function LanguageSwitcher() {
-  const router = useRouter();
-  const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [currentLocale, setCurrentLocale] = useState("en");
 
-  // Detect current locale from pathname
-  const currentLocale = LANGUAGES.find((l) => pathname.startsWith(`/${l.code}`))?.code || "en";
+  useEffect(() => {
+    const path = window.location.pathname;
+    if (path.startsWith("/es")) setCurrentLocale("es");
+    else if (path.startsWith("/pt")) setCurrentLocale("pt");
+    else if (path.startsWith("/zh")) setCurrentLocale("zh");
+    else {
+      const cookieMatch = document.cookie.match(/NEXT_LOCALE=([^;]+)/);
+      if (cookieMatch) setCurrentLocale(cookieMatch[1]);
+    }
+  }, []);
+
   const current = LANGUAGES.find((l) => l.code === currentLocale) || LANGUAGES[0];
 
   const switchLanguage = (code: string) => {
-    // Remove existing locale prefix if present
-    const strippedPath = LANGUAGES.reduce((path, lang) => {
-      if (path.startsWith(`/${lang.code}`)) return path.slice(lang.code.length + 1) || "/";
-      return path;
-    }, pathname);
-
-    const newPath = code === "en" ? strippedPath : `/${code}${strippedPath}`;
-
-    // Set cookie so middleware remembers preference
+    // Set cookie
     document.cookie = `NEXT_LOCALE=${code}; path=/; max-age=31536000`;
-    router.push(newPath);
+    
+    // Build new path
+    const path = window.location.pathname;
+    const stripped = LANGUAGES.reduce((p, lang) => {
+      if (p.startsWith(`/${lang.code}`)) return p.slice(lang.code.length + 1) || "/";
+      return p;
+    }, path);
+    
+    const newPath = code === "en" ? stripped : `/${code}${stripped}`;
+    window.location.href = newPath;
     setOpen(false);
   };
 
