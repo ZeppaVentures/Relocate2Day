@@ -40,7 +40,7 @@ export interface CountryContent {
       eyebrow: string;
       title: string;
       intro: string;
-      cities: CostCity[];
+      cities?: CostCity[];
       expenses: { title: string; items: string[][]; };
       [key: string]: unknown;
     };
