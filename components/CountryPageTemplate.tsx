@@ -41,7 +41,7 @@ export interface CountryContent {
       title: string;
       intro: string;
       cities: CostCity[];
-      expenses: { title: string; items: [string, string][]; };
+      expenses: { title: string; items: string[][]; };
       [key: string]: unknown;
     };
     healthcare: {
