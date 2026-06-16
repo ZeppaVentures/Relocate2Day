@@ -1,0 +1,159 @@
+{
+  "nav": {
+    "countries": "Countries",
+    "features": "Features",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "checklist": "My Checklist",
+    "blog": "Blog",
+    "login": "Log in",
+    "getStarted": "Get started",
+    "myAccount": "My Account"
+  },
+  "hero": {
+    "title1": "Move to Europe.",
+    "title2": "Live your",
+    "titleHighlight": "best life.",
+    "subtitle": "Relocate2Day is your all-in-one guide to relocating to Spain, Portugal and beyond.",
+    "cta1": "Compare countries",
+    "cta2": "Understand taxes",
+    "cta3": "Plan your move"
+  },
+  "quiz": {
+    "title": "Where should you relocate?",
+    "subtitle": "Answer a few questions and get your personalised country ranking.",
+    "fromLabel": "I'm from",
+    "searchCountry": "Search country...",
+    "incomeLabel": "Annual income",
+    "selectBracket": "Select bracket...",
+    "lifeStageLabel": "Life stage",
+    "familyLabel": "Family situation",
+    "lifestyleLabel": "Lifestyle preference",
+    "industryLabel": "Industry",
+    "aspirationsLabel": "Career aspirations",
+    "aspirationsOptional": "(optional)",
+    "currentCountryLabel": "I currently live in",
+    "searchCurrentCountry": "Search country...",
+    "submitButton": "Find my best options →",
+    "free": "100% Free",
+    "noCard": "No credit card required",
+    "personalised": "Personalised results in 30 seconds",
+    "errorMessage": "Please fill in all highlighted fields before continuing.",
+    "lifeStages": {
+      "employee": "Employee relocating with a company",
+      "remote": "Remote worker / freelancer",
+      "selfEmployed": "Self-employed / entrepreneur",
+      "retiree": "Retiree",
+      "student": "Student",
+      "lookingForWork": "Looking for work"
+    },
+    "familySituations": {
+      "single": "Single",
+      "couple": "Couple (no children)",
+      "youngChildren": "Family with young children",
+      "teenagers": "Family with teenagers",
+      "singleParent": "Single parent"
+    },
+    "lifestyles": {
+      "city": "Bustling city life",
+      "coastal": "Coastal / beach lifestyle",
+      "rural": "Quiet rural or village life",
+      "mix": "Mix of city and nature"
+    }
+  },
+  "cityQuiz": {
+    "eyebrow": "Already know your country?",
+    "title": "Find your perfect city",
+    "subtitle": "Tell us about yourself and we'll match you to the best cities and towns in your chosen country.",
+    "countryLabel": "I want to move to",
+    "selectCountry": "Select country...",
+    "budgetLabel": "Monthly rent budget",
+    "selectBudget": "Select budget...",
+    "priorityLabel": "Top priority",
+    "submitButton": "Find my perfect city →",
+    "match1": "4 city matches",
+    "match2": "Neighbourhood recommendations",
+    "match3": "100% personalised"
+  },
+  "countries": {
+    "eyebrow": "Popular destinations",
+    "title": "Find your perfect place in Europe",
+    "subtitle": "Explore the best countries for your new life abroad.",
+    "exploreButton": "Explore {{country}} →"
+  },
+  "banner": {
+    "eyebrow": "Your adventure awaits",
+    "title": "Ready to take off?",
+    "subtitle": "Join thousands of people who have already found their perfect home in Europe. Your new life is just a few questions away.",
+    "cta": "Explore countries →"
+  },
+  "features": {
+    "eyebrow": "Everything you need",
+    "title": "Your relocation toolkit",
+    "subtitle": "All the tools and guides you need to make your move with confidence.",
+    "items": {
+      "visa": { "title": "Visa & Residency", "description": "Up-to-date visa guides and residency requirements." },
+      "taxes": { "title": "Taxes Made Simple", "description": "Compare taxes, social contributions and savings." },
+      "cost": { "title": "Cost of Living", "description": "Real living expenses for Europe's top cities." },
+      "healthcare": { "title": "Healthcare", "description": "Find the best healthcare systems and options." },
+      "banking": { "title": "Banking & Finance", "description": "Open accounts, transfer money and manage finances." },
+      "community": { "title": "Community Support", "description": "Connect with experts and expats abroad." }
+    }
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Simple, transparent pricing",
+    "subtitle": "Start for free. Upgrade when you need more.",
+    "free": {
+      "name": "Free",
+      "price": "€0",
+      "period": "Forever free",
+      "features": ["Country comparisons", "Basic visa guides", "Cost of living data", "Relocation quiz"],
+      "cta": "Get started free"
+    },
+    "monthly": {
+      "name": "Premium",
+      "price": "€12",
+      "period": "per month · 14-day free trial",
+      "cta": "Start 14-day free trial"
+    },
+    "annual": {
+      "name": "Premium Annual",
+      "price": "€99",
+      "period": "per year",
+      "badge": "Best value — save €45",
+      "saving": "31% cheaper than monthly",
+      "cta": "Start 14-day free trial"
+    },
+    "premiumFeatures": ["Everything in Free", "Full tax calculator", "Detailed visa guides", "Healthcare & banking guides", "Expert community access"]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Common questions",
+    "items": [
+      {
+        "question": "Which countries does Relocate2Day cover?",
+        "answer": "We currently cover Spain, Gibraltar, Portugal, Italy, Malta, Bulgaria, Greece, Netherlands and Romania, with more countries coming soon."
+      },
+      {
+        "question": "Is Relocate2Day free to use?",
+        "answer": "Yes — our core tools are free. We also offer a premium plan with deeper guides, tax calculators and expert support."
+      },
+      {
+        "question": "Can Relocate2Day help me with visa applications?",
+        "answer": "We provide up-to-date guides on visa requirements and processes, but we are not a legal service. We recommend consulting a local immigration lawyer for your specific situation."
+      },
+      {
+        "question": "How accurate is the tax information?",
+        "answer": "Our tax guides are regularly updated, but tax laws change frequently. Always verify with a local tax advisor before making financial decisions."
+      }
+    ]
+  },
+  "language": {
+    "switcher": "Language",
+    "en": "English",
+    "es": "Español",
+    "pt": "Português",
+    "zh": "中文"
+  }
+}

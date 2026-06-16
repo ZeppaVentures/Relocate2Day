@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 type NavbarProps =
   | { variant: "simple" }
@@ -26,20 +27,22 @@ export default function Navbar(props: NavbarProps) {
             Blog
           </Link>
         </div>
-
-        {props.variant === "content" && (
-          <Link href={props.backHref} className="text-sm font-semibold hover:text-violet-600 transition">
-            {props.backLabel}
-          </Link>
-        )}
-        {props.variant === "account" && (
-          <button
-            onClick={props.onLogout}
-            className="text-sm font-semibold text-gray-500 hover:text-red-500 transition"
-          >
-            Log out
-          </button>
-        )}
+        <div className="flex items-center gap-4">
+          {props.variant === "content" && (
+            <Link href={props.backHref} className="text-sm font-semibold hover:text-violet-600 transition">
+              {props.backLabel}
+            </Link>
+          )}
+          {props.variant === "account" && (
+            <button
+              onClick={props.onLogout}
+              className="text-sm font-semibold text-gray-500 hover:text-red-500 transition"
+            >
+              Log out
+            </button>
+          )}
+          <LanguageSwitcher />
+        </div>
       </div>
     </header>
   );

@@ -1,0 +1,188 @@
+{
+  "nav": {
+    "countries": "国家",
+    "features": "功能",
+    "pricing": "价格",
+    "faq": "常见问题",
+    "checklist": "我的清单",
+    "blog": "博客",
+    "login": "登录",
+    "getStarted": "立即开始",
+    "myAccount": "我的账户"
+  },
+  "hero": {
+    "title1": "移居欧洲。",
+    "title2": "享受",
+    "titleHighlight": "理想生活。",
+    "subtitle": "Relocate2Day 是您移居西班牙、葡萄牙及其他欧洲国家的一站式指南。",
+    "cta1": "比较国家",
+    "cta2": "了解税务",
+    "cta3": "规划搬迁"
+  },
+  "quiz": {
+    "title": "您应该移居哪里？",
+    "subtitle": "回答几个问题，获取专属国家排名推荐。",
+    "fromLabel": "我来自",
+    "searchCountry": "搜索国家...",
+    "incomeLabel": "年收入",
+    "selectBracket": "选择区间...",
+    "lifeStageLabel": "生活阶段",
+    "familyLabel": "家庭状况",
+    "lifestyleLabel": "生活方式偏好",
+    "industryLabel": "所在行业",
+    "aspirationsLabel": "职业目标",
+    "aspirationsOptional": "（可选）",
+    "currentCountryLabel": "我目前居住在",
+    "searchCurrentCountry": "搜索国家...",
+    "submitButton": "找到最适合我的选择 →",
+    "free": "完全免费",
+    "noCard": "无需信用卡",
+    "personalised": "30秒内获取个性化结果",
+    "errorMessage": "请填写所有标注的必填项后再继续。",
+    "lifeStages": {
+      "employee": "随公司外派的员工",
+      "remote": "远程工作者／自由职业者",
+      "selfEmployed": "个体经营者／创业者",
+      "retiree": "退休人员",
+      "student": "学生",
+      "lookingForWork": "正在求职"
+    },
+    "familySituations": {
+      "single": "单身",
+      "couple": "伴侣（无子女）",
+      "youngChildren": "有幼龄子女的家庭",
+      "teenagers": "有青少年子女的家庭",
+      "singleParent": "单亲家长"
+    },
+    "lifestyles": {
+      "city": "繁华都市生活",
+      "coastal": "海滨／海滩生活",
+      "rural": "宁静的乡村或小镇生活",
+      "mix": "城市与自然兼得"
+    }
+  },
+  "cityQuiz": {
+    "eyebrow": "已经确定目标国家了？",
+    "title": "找到您的理想城市",
+    "subtitle": "告诉我们您的情况，我们将为您匹配所选国家中最适合的城市和城镇。",
+    "countryLabel": "我想移居",
+    "selectCountry": "选择国家...",
+    "budgetLabel": "每月租房预算",
+    "selectBudget": "选择预算...",
+    "priorityLabel": "首要考量",
+    "submitButton": "找到我的理想城市 →",
+    "match1": "4个城市匹配",
+    "match2": "社区推荐",
+    "match3": "100% 个性化定制"
+  },
+  "countries": {
+    "eyebrow": "热门目的地",
+    "title": "在欧洲找到您的理想之地",
+    "subtitle": "探索最适合您海外新生活的国家。",
+    "exploreButton": "探索 {{country}} →"
+  },
+  "banner": {
+    "eyebrow": "冒险正在等待您",
+    "title": "准备好出发了吗？",
+    "subtitle": "加入已在欧洲找到理想家园的数千人行列。您的新生活只需回答几个问题即可开启。",
+    "cta": "探索各国 →"
+  },
+  "features": {
+    "eyebrow": "一切尽在掌握",
+    "title": "您的移居工具箱",
+    "subtitle": "所有工具和指南，助您从容迈出搬迁每一步。",
+    "items": {
+      "visa": {
+        "title": "签证与居留",
+        "description": "最新签证指南及居留要求。"
+      },
+      "taxes": {
+        "title": "轻松搞懂税务",
+        "description": "比较税率、社会保险缴纳及节税方案。"
+      },
+      "cost": {
+        "title": "生活成本",
+        "description": "欧洲顶级城市的真实生活开销。"
+      },
+      "healthcare": {
+        "title": "医疗保健",
+        "description": "了解最优质的医疗体系与保障选项。"
+      },
+      "banking": {
+        "title": "银行与金融",
+        "description": "开户、汇款及财务管理一站搞定。"
+      },
+      "community": {
+        "title": "社群支持",
+        "description": "与海外专家及外籍人士建立联系。"
+      }
+    }
+  },
+  "pricing": {
+    "eyebrow": "价格",
+    "title": "简单透明的定价",
+    "subtitle": "免费开始使用，按需升级。",
+    "free": {
+      "name": "免费版",
+      "price": "€0",
+      "period": "永久免费",
+      "features": [
+        "国家对比",
+        "基础签证指南",
+        "生活成本数据",
+        "移居测评"
+      ],
+      "cta": "免费开始使用"
+    },
+    "monthly": {
+      "name": "高级版",
+      "price": "€12",
+      "period": "每月 · 14天免费试用",
+      "cta": "开始14天免费试用"
+    },
+    "annual": {
+      "name": "高级年度版",
+      "price": "€99",
+      "period": "每年",
+      "badge": "超值之选 — 节省€45",
+      "saving": "比月付便宜31%",
+      "cta": "开始14天免费试用"
+    },
+    "premiumFeatures": [
+      "包含免费版全部功能",
+      "完整税务计算器",
+      "详细签证指南",
+      "医疗与银行指南",
+      "专家社群访问权限"
+    ]
+  },
+  "faq": {
+    "eyebrow": "常见问题",
+    "title": "常见疑问解答",
+    "items": [
+      {
+        "question": "Relocate2Day 涵盖哪些国家？",
+        "answer": "我们目前涵盖西班牙、直布罗陀、葡萄牙、意大利、马耳他、保加利亚、希腊、荷兰和罗马尼亚，更多国家即将上线。"
+      },
+      {
+        "question": "Relocate2Day 是否免费使用？",
+        "answer": "是的——我们的核心工具完全免费。我们还提供高级套餐，包含更深入的指南、税务计算器及专家支持。"
+      },
+      {
+        "question": "Relocate2Day 能帮助我办理签证申请吗？",
+        "answer": "我们提供最新的签证要求和办理流程指南，但我们并非法律服务机构。建议您就具体情况咨询当地移民律师。"
+      },
+      {
+        "question": "税务信息的准确性如何？",
+        "answer": "我们的税务指南定期更新，但税法变动频繁。在做出任何财务决策前，请务必向当地税务顾问进行核实。"
+      }
+    ]
+  },
+  "language": {
+    "switcher": "语言",
+    "en": "English",
+    "es": "Español",
+    "pt": "Português",
+    "zh": "中文"
+  }
+}

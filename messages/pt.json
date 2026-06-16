@@ -1,0 +1,188 @@
+{
+  "nav": {
+    "countries": "Países",
+    "features": "Recursos",
+    "pricing": "Preços",
+    "faq": "FAQ",
+    "checklist": "Minha Lista",
+    "blog": "Blog",
+    "login": "Entrar",
+    "getStarted": "Começar",
+    "myAccount": "Minha Conta"
+  },
+  "hero": {
+    "title1": "Mude-se para a Europa.",
+    "title2": "Viva sua",
+    "titleHighlight": "melhor vida.",
+    "subtitle": "Relocate2Day é o seu guia completo para se mudar para a Espanha, Portugal e muito mais.",
+    "cta1": "Comparar países",
+    "cta2": "Entender impostos",
+    "cta3": "Planejar sua mudança"
+  },
+  "quiz": {
+    "title": "Para onde você deveria se mudar?",
+    "subtitle": "Responda algumas perguntas e receba seu ranking personalizado de países.",
+    "fromLabel": "Sou de",
+    "searchCountry": "Buscar país...",
+    "incomeLabel": "Renda anual",
+    "selectBracket": "Selecionar faixa...",
+    "lifeStageLabel": "Momento de vida",
+    "familyLabel": "Situação familiar",
+    "lifestyleLabel": "Preferência de estilo de vida",
+    "industryLabel": "Setor",
+    "aspirationsLabel": "Aspirações de carreira",
+    "aspirationsOptional": "(opcional)",
+    "currentCountryLabel": "Atualmente moro em",
+    "searchCurrentCountry": "Buscar país...",
+    "submitButton": "Encontrar minhas melhores opções →",
+    "free": "100% Gratuito",
+    "noCard": "Sem necessidade de cartão de crédito",
+    "personalised": "Resultados personalizados em 30 segundos",
+    "errorMessage": "Por favor, preencha todos os campos destacados antes de continuar.",
+    "lifeStages": {
+      "employee": "Funcionário se mudando com uma empresa",
+      "remote": "Trabalhador remoto / freelancer",
+      "selfEmployed": "Autônomo / empreendedor",
+      "retiree": "Aposentado",
+      "student": "Estudante",
+      "lookingForWork": "Em busca de emprego"
+    },
+    "familySituations": {
+      "single": "Solteiro(a)",
+      "couple": "Casal (sem filhos)",
+      "youngChildren": "Família com filhos pequenos",
+      "teenagers": "Família com adolescentes",
+      "singleParent": "Pai ou mãe solo(a)"
+    },
+    "lifestyles": {
+      "city": "Vida urbana agitada",
+      "coastal": "Estilo de vida costeiro / praiano",
+      "rural": "Vida rural ou em vila tranquila",
+      "mix": "Combinação de cidade e natureza"
+    }
+  },
+  "cityQuiz": {
+    "eyebrow": "Já sabe para qual país ir?",
+    "title": "Encontre sua cidade ideal",
+    "subtitle": "Conte-nos sobre você e vamos indicar as melhores cidades e municípios no país escolhido.",
+    "countryLabel": "Quero me mudar para",
+    "selectCountry": "Selecionar país...",
+    "budgetLabel": "Orçamento mensal de aluguel",
+    "selectBudget": "Selecionar orçamento...",
+    "priorityLabel": "Prioridade principal",
+    "submitButton": "Encontrar minha cidade ideal →",
+    "match1": "4 cidades compatíveis",
+    "match2": "Recomendações de bairros",
+    "match3": "100% personalizado"
+  },
+  "countries": {
+    "eyebrow": "Destinos populares",
+    "title": "Encontre seu lugar perfeito na Europa",
+    "subtitle": "Explore os melhores países para sua nova vida no exterior.",
+    "exploreButton": "Explorar {{country}} →"
+  },
+  "banner": {
+    "eyebrow": "Sua aventura está esperando",
+    "title": "Pronto para decolar?",
+    "subtitle": "Junte-se a milhares de pessoas que já encontraram seu lar ideal na Europa. Sua nova vida está a algumas perguntas de distância.",
+    "cta": "Explorar países →"
+  },
+  "features": {
+    "eyebrow": "Tudo o que você precisa",
+    "title": "Seu kit de ferramentas para mudança",
+    "subtitle": "Todas as ferramentas e guias necessários para realizar sua mudança com confiança.",
+    "items": {
+      "visa": {
+        "title": "Visto e Residência",
+        "description": "Guias atualizados sobre vistos e requisitos de residência."
+      },
+      "taxes": {
+        "title": "Impostos Simplificados",
+        "description": "Compare impostos, contribuições sociais e economias."
+      },
+      "cost": {
+        "title": "Custo de Vida",
+        "description": "Despesas reais de vida nas principais cidades da Europa."
+      },
+      "healthcare": {
+        "title": "Saúde",
+        "description": "Encontre os melhores sistemas e opções de saúde."
+      },
+      "banking": {
+        "title": "Banco e Finanças",
+        "description": "Abra contas, transfira dinheiro e gerencie suas finanças."
+      },
+      "community": {
+        "title": "Suporte da Comunidade",
+        "description": "Conecte-se com especialistas e expatriados no exterior."
+      }
+    }
+  },
+  "pricing": {
+    "eyebrow": "Preços",
+    "title": "Preços simples e transparentes",
+    "subtitle": "Comece de graça. Faça upgrade quando precisar de mais.",
+    "free": {
+      "name": "Gratuito",
+      "price": "€0",
+      "period": "Sempre gratuito",
+      "features": [
+        "Comparações de países",
+        "Guias básicos de visto",
+        "Dados de custo de vida",
+        "Quiz de mudança"
+      ],
+      "cta": "Começar gratuitamente"
+    },
+    "monthly": {
+      "name": "Premium",
+      "price": "€12",
+      "period": "por mês · teste grátis de 14 dias",
+      "cta": "Iniciar teste grátis de 14 dias"
+    },
+    "annual": {
+      "name": "Premium Anual",
+      "price": "€99",
+      "period": "por ano",
+      "badge": "Melhor custo-benefício — economize €45",
+      "saving": "31% mais barato que o mensal",
+      "cta": "Iniciar teste grátis de 14 dias"
+    },
+    "premiumFeatures": [
+      "Tudo do plano Gratuito",
+      "Calculadora completa de impostos",
+      "Guias detalhados de visto",
+      "Guias de saúde e banco",
+      "Acesso à comunidade de especialistas"
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Perguntas frequentes",
+    "items": [
+      {
+        "question": "Quais países o Relocate2Day cobre?",
+        "answer": "Atualmente cobrimos Espanha, Gibraltar, Portugal, Itália, Malta, Bulgária, Grécia, Países Baixos e Romênia, com mais países chegando em breve."
+      },
+      {
+        "question": "O Relocate2Day é gratuito?",
+        "answer": "Sim — nossas ferramentas principais são gratuitas. Também oferecemos um plano premium com guias mais detalhados, calculadoras de impostos e suporte especializado."
+      },
+      {
+        "question": "O Relocate2Day pode me ajudar com pedidos de visto?",
+        "answer": "Fornecemos guias atualizados sobre requisitos e processos de visto, mas não somos um serviço jurídico. Recomendamos consultar um advogado de imigração local para a sua situação específica."
+      },
+      {
+        "question": "Quão precisas são as informações sobre impostos?",
+        "answer": "Nossos guias fiscais são atualizados regularmente, mas as leis tributárias mudam com frequência. Sempre verifique com um consultor fiscal local antes de tomar decisões financeiras."
+      }
+    ]
+  },
+  "language": {
+    "switcher": "Idioma",
+    "en": "English",
+    "es": "Español",
+    "pt": "Português",
+    "zh": "中文"
+  }
+}
