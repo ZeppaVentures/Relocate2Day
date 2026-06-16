@@ -1,0 +1,305 @@
+{
+  "country": "España",
+  "hero": {
+    "badge": "España",
+    "title": "Múdate a España",
+    "subtitle": "Sol, cultura, gastronomía de primer nivel y uno de los regímenes fiscales más atractivos de Europa para los recién llegados. Aquí encontrarás todo lo que necesitas saber.",
+    "stats": [
+      {
+        "label": "Costo de vida",
+        "value": "Desde €1,200/mes"
+      },
+      {
+        "label": "Impuesto fijo (Beckham Law)",
+        "value": "24%"
+      },
+      {
+        "label": "Clima",
+        "value": "300+ días de sol"
+      },
+      {
+        "label": "Idioma oficial",
+        "value": "Español"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Visas y Residencia",
+      "title": "Cómo mudarse a España",
+      "intro": "España ofrece varias opciones de visa según tu situación: ya sea que trabajes en relación de dependencia, seas autónomo, estés jubilado o seas estudiante. Los ciudadanos de la UE/EEE pueden trasladarse libremente y solo necesitan registrar su residencia. Los ciudadanos no pertenecientes a la UE deberán tramitar una de las siguientes visas.",
+      "visas": [
+        {
+          "title": "Digital Nomad Visa (Telework Visa)",
+          "badge": "Trabajadores remotos y freelancers",
+          "points": [
+            "Para ciudadanos no pertenecientes a la UE que trabajan de forma remota para empresas o clientes fuera de España",
+            "Requiere un ingreso mínimo de aprox. €2,850/mes (200% del salario mínimo de España)",
+            "Válida por 1 año mediante consulado, o hasta 3 años si se solicita desde dentro de España",
+            "Renovable hasta 5 años en total, con posibilidad de obtener la residencia permanente tras 5 años",
+            "Permite incluir al cónyuge, pareja e hijos dependientes",
+            "Tarifa de solicitud: aprox. €80"
+          ]
+        },
+        {
+          "title": "Non-Lucrative Visa (NLV)",
+          "badge": "Jubilados e ingresos pasivos",
+          "points": [
+            "Para quienes no tienen intención de trabajar en España — ideal para jubilados",
+            "Se debe demostrar aprox. €2,400/mes en ingresos pasivos o ahorros",
+            "Requiere seguro médico privado válido en España",
+            "Visa inicial de 1 año, renovable en períodos de 2 años hasta cumplir 5 años",
+            "No permite trabajar de forma local",
+            "Tras 5 años, se puede solicitar la residencia permanente"
+          ]
+        },
+        {
+          "title": "Visa de Estudiante",
+          "badge": "Estudiantes",
+          "points": [
+            "Para ciudadanos no pertenecientes a la UE matriculados en una institución educativa española reconocida",
+            "Válida durante toda la duración del curso aprobado",
+            "Permite trabajo a tiempo parcial de hasta 30 horas por semana",
+            "Al finalizar los estudios, se puede convertir en permiso de trabajo sin salir de España (excepto los estudiantes de cursos de idiomas)",
+            "Los estudiantes de cursos de idiomas no pueden convertirla en permiso de trabajo"
+          ]
+        },
+        {
+          "title": "Visa de Trabajo (Reubicación de Empleados)",
+          "badge": "Empleados reubicados por una empresa",
+          "points": [
+            "Para empleados no pertenecientes a la UE trasladados a una sucursal o filial española",
+            "El empleador patrocina la solicitud y se encarga de gran parte del papeleo",
+            "Existe un permiso de Transferencia Intraempresarial (ICT) para empleados de empresas multinacionales",
+            "Puede ser elegible para el régimen fiscal de la Beckham Law (ver sección de Impuestos más abajo)"
+          ]
+        }
+      ],
+      "disclaimer": "La Golden Visa de España (modalidad de inversión inmobiliaria) fue oficialmente eliminada en abril de 2025. Las normas de inmigración cambian con frecuencia — verifica siempre los requisitos con un abogado de inmigración español calificado antes de presentar tu solicitud."
+    },
+    "taxes": {
+      "eyebrow": "Impuestos",
+      "title": "Entendiendo los impuestos en España",
+      "intro": "Las tasas estándar del impuesto sobre la renta en España son progresivas y pueden llegar hasta el 47% para los contribuyentes de altos ingresos. Sin embargo, los recién llegados pueden calificar para una importante reducción fiscal conocida como la Beckham Law.",
+      "highlight": {
+        "title": "La Beckham Law",
+        "subtitle": "El régimen fiscal especial de España para recién llegados — llamado así en honor a David Beckham, quien fue uno de los primeros en utilizarlo al fichar por el Real Madrid en 2003.",
+        "items": [
+          {
+            "label": "Tasa impositiva fija",
+            "value": "24% sobre ingresos en España hasta €600,000"
+          },
+          {
+            "label": "Duración",
+            "value": "Hasta 6 años"
+          },
+          {
+            "label": "Ingresos en el extranjero",
+            "value": "Generalmente exentos del impuesto español"
+          },
+          {
+            "label": "Plazo de solicitud",
+            "value": "Dentro de los 6 meses posteriores al inicio del trabajo"
+          }
+        ]
+      },
+      "beckhameEligibility": {
+        "title": "¿Quién califica para la Beckham Law?",
+        "points": [
+          "No debes haber sido residente fiscal en España en los 10 años previos a tu llegada",
+          "Debes mudarte a España por motivos laborales (empleo, emprendimiento o como profesional altamente cualificado)",
+          "Aplica a titulares de la Digital Nomad Visa, empleados reubicados por una empresa y emprendedores",
+          "Tu cónyuge e hijos menores de 25 años también pueden beneficiarse de las tasas preferenciales"
+        ]
+      },
+      "standardRates": {
+        "title": "Tasas estándar del impuesto sobre la renta (sin Beckham Law)",
+        "brackets": [
+          [
+            "Hasta €12,450",
+            "19%"
+          ],
+          [
+            "€12,450 – €20,200",
+            "24%"
+          ],
+          [
+            "€20,200 – €35,200",
+            "30%"
+          ],
+          [
+            "€35,200 – €60,000",
+            "37%"
+          ],
+          [
+            "€60,000 – €300,000",
+            "45%"
+          ],
+          [
+            "Más de €300,000",
+            "47%"
+          ]
+        ]
+      },
+      "disclaimer": "Las leyes fiscales cambian con frecuencia y dependen de tu situación personal, el tipo de ingresos y tu país de origen. Consulta siempre con un asesor fiscal español calificado antes de tomar cualquier decisión."
+    },
+    "costOfLiving": {
+      "eyebrow": "Costo de Vida",
+      "title": "¿Cuánto cuesta vivir en España?",
+      "intro": "España es en general entre un 25–34% más barata que Estados Unidos o el norte de Europa. Una persona soltera puede vivir cómodamente con €1,200–€2,000/mes, mientras que una familia normalmente necesita entre €3,000–€3,500/mes. Los costos varían considerablemente según la ciudad.",
+      "cities": [
+        {
+          "city": "Madrid y Barcelona",
+          "level": "Las más caras",
+          "items": [
+            "Apartamento de 1 habitación (centro): €1,400–€1,800/mes",
+            "Presupuesto para una persona: €2,000+/mes",
+            "Abono mensual de transporte: €55"
+          ]
+        },
+        {
+          "city": "Valencia, Málaga, Sevilla",
+          "level": "Rango medio",
+          "items": [
+            "Apartamento de 1 habitación (centro): €750–€900/mes",
+            "Presupuesto para una persona: €1,500–€1,750/mes",
+            "Abono mensual de transporte: €40–€50"
+          ]
+        },
+        {
+          "city": "Ciudades más pequeñas y zonas rurales",
+          "level": "Las más asequibles",
+          "items": [
+            "Apartamento de 1 habitación: €350–€700/mes",
+            "Presupuesto para una persona: €950–€1,200/mes",
+            "Generalmente se necesita coche"
+          ]
+        }
+      ],
+      "expenses": {
+        "title": "Gastos mensuales típicos (fuera de Madrid/Barcelona)",
+        "items": [
+          [
+            "Alquiler (1 habitación, centro de la ciudad)",
+            "€700 – €1,000"
+          ],
+          [
+            "Servicios (electricidad, agua, gas)",
+            "€100 – €150"
+          ],
+          [
+            "Supermercado",
+            "€200 – €350"
+          ],
+          [
+            "Salidas a restaurantes (gama media)",
+            "€150 – €300"
+          ],
+          [
+            "Abono de transporte público",
+            "€40 – €55"
+          ],
+          [
+            "Seguro médico privado",
+            "€50 – €120"
+          ],
+          [
+            "Membresía de gimnasio",
+            "€20 – €50"
+          ],
+          [
+            "Plan de telefonía móvil",
+            "€10 – €30"
+          ]
+        ]
+      }
+    },
+    "healthcare": {
+      "eyebrow": "Salud",
+      "title": "La sanidad en España",
+      "intro": "El sistema de salud de España, el Sistema Nacional de Salud (SNS), está considerado uno de los mejores del mundo, y cubre a más del 99% de los residentes. Como expatriado, tu acceso dependerá de tu situación de residencia y de tu cotización a la seguridad social.",
+      "public": {
+        "title": "Sanidad pública (SNS)",
+        "points": [
+          "Gratuita en el punto de atención para los residentes legales que cotizan a la seguridad social",
+          "Cubre consultas con el médico de cabecera, consultas con especialistas, hospitalización, urgencias, atención a la maternidad y vacunas",
+          "La atención dental y oftalmológica NO está cubierta — se paga de forma privada",
+          "Se aplican algunos copagos en medicamentos",
+          "Los tiempos de espera para atención especializada no urgente pueden ser largos",
+          "Existe el Convenio Especial para quienes no cotizan a la seguridad social: aprox. €60/mes (menores de 65 años)"
+        ]
+      },
+      "private": {
+        "title": "Seguro Médico Privado",
+        "points": [
+          "Requerido para la mayoría de las solicitudes de visa (Digital Nomad Visa, Non-Lucrative Visa)",
+          "Cuesta aprox. €50–€120/mes por persona para un plan completo",
+          "Proporciona acceso más rápido a especialistas y menores tiempos de espera",
+          "Muchos proveedores ofrecen médicos que hablan inglés, especialmente en las grandes ciudades",
+          "Incluye atención dental, oftalmológica y servicios no cubiertos por el sistema público",
+          "Proveedores populares: Sanitas, Adeslas, Asisa, Caser"
+        ]
+      },
+      "tip": "La mayoría de los expatriados comienzan con un seguro privado para cumplir los requisitos de la visa y acceder más rápidamente a la atención, y luego se registran en la sanidad pública una vez que reúnen los requisitos. Para acceder al SNS, necesitarás tu NIE (número de identificación de extranjero) y registrarte en tu ayuntamiento local (empadronamiento)."
+    },
+    "banking": {
+      "eyebrow": "Banca y Finanzas",
+      "title": "La banca en España",
+      "intro": "Abrir una cuenta bancaria en España es sencillo una vez que tienes tu NIE (Número de Identificación de Extranjero). Necesitarás una cuenta bancaria española para pagar el alquiler, los servicios y recibir tu salario.",
+      "requirements": {
+        "title": "Qué necesitas para abrir una cuenta",
+        "points": [
+          "NIE (Número de Identificación de Extranjero) — tu número de identificación como extranjero",
+          "Pasaporte vigente",
+          "Comprobante de domicilio en España (certificado de empadronamiento)",
+          "Comprobante de empleo o ingresos (según el banco)"
+        ]
+      },
+      "banks": {
+        "title": "Bancos populares entre expatriados",
+        "points": [
+          "Santander — el banco español más grande, con buen soporte en inglés",
+          "BBVA — excelente aplicación y banca en línea",
+          "CaixaBank — amplia red de sucursales en toda España",
+          "N26 / Revolut — solo en línea, ideales para los recién llegados antes de obtener el NIE",
+          "Sabadell — popular entre los expatriados en zonas costeras"
+        ]
+      },
+      "tip": "Abre una cuenta en Revolut o N26 antes de mudarte — te permite gastar en euros sin comisiones mientras tramitas tu NIE y cuenta bancaria española, lo cual puede tardar varias semanas."
+    },
+    "prosCons": {
+      "eyebrow": "Resumen",
+      "title": "¿Es España la opción adecuada para ti?",
+      "pros": {
+        "title": "Razones para mudarse a España",
+        "points": [
+          "Beckham Law — uno de los regímenes fiscales más atractivos de Europa para los recién llegados",
+          "Más de 300 días de sol al año",
+          "Gastronomía, cultura y calidad de vida de primer nivel",
+          "Excelente sistema de salud pública",
+          "Costo de vida más bajo que en la mayor parte de Europa occidental",
+          "Excelentes conexiones de transporte dentro de Europa",
+          "Comunidades de expatriados acogedoras en la mayoría de las grandes ciudades",
+          "Vía de acceso a la residencia y ciudadanía de la UE"
+        ]
+      },
+      "cons": {
+        "title": "Aspectos a tener en cuenta",
+        "points": [
+          "La burocracia española puede ser lenta y compleja",
+          "Las solicitudes del NIE pueden tardar semanas — planifica con anticipación",
+          "El mercado inmobiliario es muy competitivo en Madrid y Barcelona",
+          "El español es esencial fuera de las grandes ciudades",
+          "Las tasas impositivas estándar pueden ser elevadas (hasta el 47%) si no calificas para la Beckham Law",
+          "Largos tiempos de espera para la atención pública no urgente",
+          "La Golden Visa (modalidad inmobiliaria) fue eliminada en 2025"
+        ]
+      }
+    },
+    "cta": {
+      "title": "¿Listo para dar el paso?",
+      "subtitle": "Usa nuestra herramienta gratuita para comparar España con otros países europeos y encontrar la mejor opción para tu situación.",
+      "button": "Comparar todos los países →"
+    }
+  }
+}

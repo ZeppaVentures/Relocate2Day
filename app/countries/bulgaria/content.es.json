@@ -1,0 +1,324 @@
+{
+  "country": "Bulgaria",
+  "hero": {
+    "badge": "Bulgaria",
+    "title": "Múdate a Bulgaria",
+    "subtitle": "El destino más eficiente en materia fiscal de Europa: un impuesto sobre la renta fijo del 10%, comunidades de expatriados en rápido crecimiento, una naturaleza impresionante y un costo de vida que rinde más que en casi cualquier otro país de la UE.",
+    "stats": [
+      {
+        "label": "Impuesto sobre la renta fijo",
+        "value": "10%"
+      },
+      {
+        "label": "Costo de vida",
+        "value": "Desde €700/mes"
+      },
+      {
+        "label": "Miembro de la UE desde",
+        "value": "2007"
+      },
+      {
+        "label": "Idioma oficial",
+        "value": "Búlgaro"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Visas y Residencia",
+      "title": "Cómo mudarte a Bulgaria",
+      "intro": "Los ciudadanos de la UE/EEE pueden trasladarse a Bulgaria libremente y registrar su residencia en el municipio local. Los nacionales de países no pertenecientes a la UE disponen de varias vías — Bulgaria lanzó su primer Digital Nomad Residence Permit oficial en diciembre de 2025.",
+      "visas": [
+        {
+          "title": "Digital Nomad Residence Permit",
+          "badge": "Trabajadores remotos y freelancers",
+          "points": [
+            "El nuevo programa de nómadas digitales de Bulgaria — las solicitudes se abrieron el 20 de diciembre de 2025",
+            "Para nacionales de países no pertenecientes a la UE que trabajan de forma remota para empleadores o clientes con sede fuera de la UE, el EEE y Suiza",
+            "Requisito mínimo de ingresos: €31,000/año (50 veces el salario mínimo mensual de Bulgaria)",
+            "Tres categorías elegibles: trabajadores remotos en relación de dependencia, freelancers/contratistas y propietarios de empresas que trabajan de forma remota",
+            "Proceso: solicitar una Type D long-stay visa en un consulado búlgaro y luego solicitar el permiso de residencia tras llegar a Bulgaria",
+            "Permiso de residencia válido por 1 año, renovable una vez por un año adicional (máximo 2 años en total)",
+            "Actualmente no ofrece una vía directa hacia la residencia permanente",
+            "Los familiares pueden incluirse bajo la normativa de inmigración búlgara"
+          ]
+        },
+        {
+          "title": "Long-Stay Type D Visa (Ingresos Pasivos / Jubilados)",
+          "badge": "Jubilados e ingresos pasivos",
+          "points": [
+            "Para nacionales de países no pertenecientes a la UE con ingresos pasivos suficientes — pensiones, ingresos por alquiler, dividendos o ahorros",
+            "Debe demostrarse capacidad económica suficiente para sostenerse sin trabajar en Bulgaria",
+            "Requiere prueba de alojamiento, seguro médico y certificado de antecedentes penales",
+            "Visa inicial válida por hasta 1 año, ampliable como permiso de residencia de larga duración",
+            "Tras 5 años de residencia legal continua, se es elegible para la residencia permanente"
+          ]
+        },
+        {
+          "title": "Investor Visa",
+          "badge": "Inversores",
+          "points": [
+            "Para nacionales de países no pertenecientes a la UE que realicen una inversión calificada en Bulgaria",
+            "Una inversión de BGN 1 million (~€510,000) en proyectos empresariales o fondos de inversión cumple los requisitos",
+            "Otorga la residencia permanente tras la aprobación — una de las vías más rápidas hacia la residencia permanente en la UE",
+            "Elegible para la ciudadanía búlgara después de aproximadamente 5 años"
+          ]
+        },
+        {
+          "title": "Ciudadanos de la UE / EEE",
+          "badge": "Libre circulación",
+          "points": [
+            "Los ciudadanos de la UE/EEE tienen derecho a vivir y trabajar en Bulgaria sin necesidad de visa",
+            "Deben registrarse en el municipio local dentro de los 3 meses posteriores a su llegada",
+            "Recibirán un certificado de registro que confirma los derechos de residencia en la UE",
+            "Tras 5 años de residencia legal continua, se es elegible para la residencia permanente"
+          ]
+        }
+      ],
+      "disclaimer": "El Digital Nomad Residence Permit de Bulgaria es completamente nuevo (lanzado en diciembre de 2025) y los procedimientos aún están siendo establecidos. Verifica siempre los requisitos vigentes con el Ministerio del Interior de Bulgaria o con un abogado de inmigración búlgaro calificado antes de presentar tu solicitud."
+    },
+    "taxes": {
+      "eyebrow": "Impuestos",
+      "title": "Entendiendo el sistema fiscal en Bulgaria",
+      "intro": "Bulgaria tiene la tasa de impuesto sobre la renta fija más baja de la UE, de tan solo el 10%, aplicada a todos los ingresos independientemente de su monto. También existe una tasa fija del 10% para el impuesto de sociedades. Bulgaria se incorporó a la Eurozona en enero de 2026, adoptando el Euro como su moneda.",
+      "highlight": {
+        "title": "Impuesto fijo del 10% — El más bajo de la UE",
+        "subtitle": "El impuesto sobre la renta fijo del 10% de Bulgaria es único en la UE — no existen tramos ni tasas progresivas. Ya sea que ganes €20,000 o €200,000, pagas el 10%.",
+        "items": [
+          {
+            "label": "Impuesto sobre la renta de las personas físicas",
+            "value": "10% fijo — sobre todos los ingresos independientemente del monto"
+          },
+          {
+            "label": "Impuesto de sociedades",
+            "value": "10% fijo — una de las tasas corporativas más bajas de la UE"
+          },
+          {
+            "label": "Impuesto sobre dividendos",
+            "value": "5% — muy competitivo para propietarios de empresas"
+          },
+          {
+            "label": "Impuesto sobre las ganancias de capital",
+            "value": "10% sobre la mayoría de las ganancias — se aplican algunas exenciones"
+          }
+        ]
+      },
+      "nomadTax": {
+        "title": "Tratamiento fiscal para los titulares del Digital Nomad Permit",
+        "points": [
+          "Si permaneces más de 183 días al año en Bulgaria, te conviertes en residente fiscal búlgaro",
+          "Como residente fiscal búlgaro, tus ingresos mundiales están sujetos al impuesto fijo del 10%",
+          "Bulgaria tiene tratados de doble imposición con más de 70 países",
+          "Los titulares del Digital Nomad Permit que permanezcan menos de 183 días al año en Bulgaria podrían no ser considerados residentes fiscales",
+          "Las normas de residencia fiscal son complejas — consulta siempre con un asesor fiscal búlgaro calificado"
+        ]
+      },
+      "comparison": {
+        "title": "Cómo se compara Bulgaria con otros países de la UE",
+        "brackets": [
+          [
+            "Bulgaria",
+            "10% (fijo)"
+          ],
+          [
+            "Malta",
+            "35% (máx.)"
+          ],
+          [
+            "Portugal",
+            "48% (máx.)"
+          ],
+          [
+            "España",
+            "47% (máx.)"
+          ],
+          [
+            "Italia",
+            "43% (máx.)"
+          ],
+          [
+            "Alemania",
+            "45% (máx.)"
+          ],
+          [
+            "Francia",
+            "45% (máx.)"
+          ]
+        ]
+      },
+      "disclaimer": "Bulgaria adoptó el Euro en enero de 2026 y su panorama fiscal está evolucionando. Consulta siempre con un asesor fiscal búlgaro calificado antes de tomar cualquier decisión."
+    },
+    "costOfLiving": {
+      "eyebrow": "Costo de Vida",
+      "title": "¿Cuánto cuesta vivir en Bulgaria?",
+      "intro": "Bulgaria sigue siendo uno de los países más asequibles de la UE — aunque los precios en Sofía han subido significativamente desde la adopción del Euro en enero de 2026. Una persona soltera puede vivir cómodamente con €700–€1,200/mes dependiendo de la ciudad.",
+      "euroNote": "Bulgaria adoptó el Euro en enero de 2026. Los primeros informes sugieren que los precios subieron entre un 20–50% en algunas categorías tras la adopción — especialmente en Sofía. Verifica los precios actuales a nivel local mientras el mercado se ajusta.",
+      "cities": [
+        {
+          "city": "Sofía",
+          "level": "La más cara",
+          "items": [
+            "Apartamento de 1 habitación (centro): €500–€900/mes",
+            "Presupuesto para una persona: €1,000–€1,500/mes",
+            "Ideal para el desarrollo profesional y la vida urbana"
+          ]
+        },
+        {
+          "city": "Plovdiv y Varna",
+          "level": "Rango medio",
+          "items": [
+            "Apartamento de 1 habitación (centro): €350–€600/mes",
+            "Presupuesto para una persona: €800–€1,200/mes",
+            "Excelente calidad de vida a menor costo"
+          ]
+        },
+        {
+          "city": "Bansko y ciudades más pequeñas",
+          "level": "La más asequible",
+          "items": [
+            "Apartamento de 1 habitación: €200–€400/mes",
+            "Presupuesto para una persona: €600–€900/mes",
+            "Popular entre los nómadas digitales"
+          ]
+        }
+      ],
+      "expenses": {
+        "title": "Gastos mensuales típicos en Sofía",
+        "items": [
+          [
+            "Alquiler (1 habitación, centro de la ciudad)",
+            "€500 – €900"
+          ],
+          [
+            "Servicios básicos (electricidad, calefacción, agua)",
+            "€60 – €150"
+          ],
+          [
+            "Internet (fibra)",
+            "€10 – €20"
+          ],
+          [
+            "Supermercado",
+            "€150 – €300"
+          ],
+          [
+            "Comer fuera (rango medio)",
+            "€100 – €200"
+          ],
+          [
+            "Abono de transporte público",
+            "€25 – €35"
+          ],
+          [
+            "Seguro médico privado",
+            "€50 – €150"
+          ],
+          [
+            "Membresía de gimnasio",
+            "€20 – €40"
+          ],
+          [
+            "Plan de telefonía móvil",
+            "€10 – €20"
+          ]
+        ]
+      },
+      "banskoTip": "Bansko se ha convertido en uno de los destinos de nómadas digitales más populares de Europa — una estación de esquí de montaña con internet de fibra rápida, una vibrante comunidad internacional, alquileres muy asequibles y paisajes espectaculares."
+    },
+    "healthcare": {
+      "eyebrow": "Salud",
+      "title": "Sistema de salud en Bulgaria",
+      "intro": "Bulgaria cuenta con un sistema de salud público financiado mediante contribuciones obligatorias al seguro médico. La mayoría de los expatriados opta por un seguro médico privado para acceder a una mejor atención, tiempos de espera más cortos y médicos de habla inglesa. La atención médica privada en Bulgaria es muy asequible en comparación con los estándares occidentales.",
+      "public": {
+        "title": "Salud Pública",
+        "points": [
+          "Disponible para todos los residentes legales que contribuyan al National Health Insurance Fund (NHIF)",
+          "Las contribuciones son de aproximadamente el 8% del salario, compartidas entre empleador y empleado",
+          "Cubre visitas al médico de cabecera, hospitalización, maternidad y servicios de urgencias",
+          "La atención dental es mayoritariamente privada",
+          "La calidad varía considerablemente — Sofía y las ciudades más grandes cuentan con mejores instalaciones",
+          "Los tiempos de espera prolongados para atención especializada son habituales",
+          "Los ciudadanos de la UE pueden utilizar su EHIC para tratamiento de urgencias",
+          "Número de emergencias: 112"
+        ]
+      },
+      "private": {
+        "title": "Seguro Médico Privado",
+        "points": [
+          "Obligatorio para el Digital Nomad Permit y la mayoría de las solicitudes de visa de larga estancia",
+          "Muy asequible — generalmente entre €50–€150/mes por persona",
+          "Una consulta con médico privado cuesta tan solo €29–€57 sin seguro",
+          "Ofrece acceso más rápido, médicos de habla inglesa y mejores instalaciones",
+          "Proveedores populares: Allianz, Bupa International, AXA, y el proveedor local DZI"
+        ]
+      },
+      "tip": "La atención médica privada en Bulgaria es genuinamente asequible. Una consulta con un especialista suele costar entre €30–€80 de forma privada — mucho menos que en Europa Occidental."
+    },
+    "banking": {
+      "eyebrow": "Banca y Finanzas",
+      "title": "Banca en Bulgaria",
+      "intro": "Bulgaria adoptó el Euro en enero de 2026, reemplazando al Lev búlgaro (BGN). Los trámites bancarios son sencillos para los residentes, con varios bancos internacionales importantes que operan junto a instituciones locales.",
+      "requirements": {
+        "title": "Qué necesitarás para abrir una cuenta",
+        "points": [
+          "Pasaporte válido o documento nacional de identidad",
+          "Comprobante de domicilio en Bulgaria (contrato de alquiler)",
+          "Permiso de residencia o certificado de registro",
+          "Número de identificación personal búlgaro (EGN o LNC para extranjeros)",
+          "Depósito inicial de aproximadamente €50–€200"
+        ]
+      },
+      "banks": {
+        "title": "Bancos que operan en Bulgaria",
+        "points": [
+          "UniCredit Bulbank — el banco más grande de Bulgaria, con buen soporte internacional",
+          "DSK Bank — muy popular entre los residentes, amplia red de sucursales",
+          "Fibank (First Investment Bank) — popular entre expatriados",
+          "OTP Bank Bulgaria — sólida banca minorista",
+          "Revolut / Wise — ampliamente utilizados por expatriados y nómadas digitales para la banca del día a día"
+        ]
+      },
+      "tip": "Abre una cuenta en Revolut o Wise antes de mudarte — te permitirá gastar en euros de inmediato mientras configuras tu cuenta bancaria búlgara, lo que puede tardar algunas semanas para residentes no pertenecientes a la UE."
+    },
+    "prosCons": {
+      "eyebrow": "Resumen",
+      "title": "¿Es Bulgaria la opción correcta para ti?",
+      "pros": {
+        "title": "Razones para mudarte a Bulgaria",
+        "points": [
+          "El impuesto sobre la renta fijo más bajo de la UE — solo el 10% sobre todos los ingresos",
+          "10% de impuesto de sociedades — muy atractivo para emprendedores y propietarios de empresas",
+          "Uno de los países más asequibles de la UE",
+          "Nuevo Digital Nomad Residence Permit (diciembre de 2025)",
+          "Estado miembro de la UE — vía hacia la residencia y ciudadanía europea",
+          "Miembro de pleno derecho del Espacio Schengen desde marzo de 2024",
+          "Ahora utiliza el Euro — sin riesgo cambiario para quienes perciben ingresos en la Eurozona",
+          "Bansko es uno de los principales centros de nómadas digitales de Europa",
+          "Naturaleza impresionante — montañas, costa del Mar Negro y parques nacionales",
+          "Comunidades de expatriados en crecimiento y muy acogedoras en Sofía, Plovdiv y Bansko",
+          "Atención médica privada muy asequible",
+          "Infraestructura de internet rápida y económica"
+        ]
+      },
+      "cons": {
+        "title": "Aspectos a tener en cuenta",
+        "points": [
+          "La adopción del Euro (enero de 2026) ha provocado importantes subidas de precios — especialmente en Sofía",
+          "El Digital Nomad Permit es completamente nuevo — los procedimientos aún están siendo establecidos",
+          "El permiso es válido por un máximo de 2 años sin vía directa hacia la residencia permanente",
+          "El idioma búlgaro utiliza el alfabeto cirílico — una curva de aprendizaje considerable",
+          "El inglés no está ampliamente extendido fuera de las grandes ciudades y zonas turísticas",
+          "La calidad de la salud pública es variable — se recomienda encarecidamente contratar un seguro privado",
+          "La burocracia puede ser lenta y compleja",
+          "Las infraestructuras fuera de las grandes ciudades pueden ser deficientes",
+          "Los inviernos en Sofía pueden ser fríos y grises"
+        ]
+      }
+    },
+    "cta": {
+      "title": "¿Listo para dar el paso?",
+      "subtitle": "Usa nuestra herramienta gratuita para comparar Bulgaria con otros países europeos y encontrar la mejor opción para tu situación.",
+      "button": "Comparar todos los países →"
+    }
+  }
+}

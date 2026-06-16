@@ -1,0 +1,342 @@
+{
+  "country": "Romania",
+  "hero": {
+    "badge": "Romênia",
+    "title": "Mude-se para a Romênia",
+    "subtitle": "O segredo mais bem guardado da Europa — imposto de renda fixo de 10%, internet de altíssima velocidade, castelos medievais e um custo de vida que faz o seu dinheiro render o dobro em comparação com a Europa Ocidental.",
+    "stats": [
+      {
+        "label": "Imposto de renda fixo",
+        "value": "10%"
+      },
+      {
+        "label": "Custo de vida",
+        "value": "A partir de €800/mês"
+      },
+      {
+        "label": "Membro da UE desde",
+        "value": "2007"
+      },
+      {
+        "label": "Membro do Schengen",
+        "value": "Desde 2025"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Vistos & Residência",
+      "title": "Como se mudar para a Romênia",
+      "intro": "Cidadãos da UE/EEE podem se mudar para a Romênia livremente — sem necessidade de visto, bastando registrar-se junto às autoridades locais caso a estadia ultrapasse 3 meses. Cidadãos de países fora da UE precisam de um visto de longa duração Type D antes de chegar, seguido de uma autorização de residência. A Romênia aderiu ao Schengen em 2025.",
+      "visas": [
+        {
+          "title": "Cidadãos da UE / EEE",
+          "badge": "Livre circulação",
+          "points": [
+            "Cidadãos da UE/EEE têm o direito de viver e trabalhar na Romênia sem necessidade de visto",
+            "Registre-se junto ao General Inspectorate for Immigration (IGI) caso a estadia ultrapasse 3 meses",
+            "Receba um Certificado de Registo, geralmente válido por até 5 anos",
+            "Após 5 anos de residência legal contínua, é possível solicitar a residência permanente",
+            "A adesão da Romênia ao Schengen (desde 2025) significa que sua autorização de residência romena permite viajar por toda a área Schengen"
+          ]
+        },
+        {
+          "title": "Digital Nomad Visa",
+          "badge": "Trabalhadores remotos e freelancers",
+          "points": [
+            "Para cidadãos de países fora da UE que trabalham remotamente para empregadores ou clientes com sede fora da Romênia",
+            "Requisito mínimo de renda: aproximadamente €4.100/mês (3x o salário bruto médio nacional da Romênia)",
+            "Solicite em um consulado ou embaixada romena no seu país de origem um visto de longa duração Type D",
+            "Autorização de residência válida por 1 ano, renovável",
+            "A residência fiscal é aplicável caso você permaneça mais de 183 dias por ano na Romênia — imposto fixo de 10% sobre a renda mundial",
+            "Familiares podem ser incluídos com base nas disposições de reunificação familiar"
+          ]
+        },
+        {
+          "title": "Long-Stay Type D Visa (Passive Income / Retirees)",
+          "badge": "Aposentados e renda passiva",
+          "points": [
+            "Para cidadãos de países fora da UE com renda passiva suficiente — pensões, rendimentos de aluguel, dividendos ou poupanças",
+            "É necessário comprovar meios financeiros adequados para se sustentar sem trabalhar na Romênia",
+            "Visto inicial válido por 90 dias; solicite a autorização de residência junto ao IGI após a chegada",
+            "Autorização de residência geralmente emitida por 1 ano, renovável anualmente",
+            "Após 5 anos de residência legal contínua, é possível solicitar a residência permanente"
+          ]
+        },
+        {
+          "title": "Visto de Emprego",
+          "badge": "Trabalhadores com vínculo empregatício",
+          "points": [
+            "Para cidadãos de países fora da UE que se mudam para trabalhar para um empregador romeno",
+            "O empregador deve obter uma autorização de trabalho em seu nome antes que você solicite o visto",
+            "Autorização de residência emitida pela duração do contrato de trabalho, inicialmente por até 1 ano",
+            "O crescente setor de tecnologia em Bucareste e Cluj-Napoca atrai cada vez mais talentos internacionais"
+          ]
+        },
+        {
+          "title": "Visto de Investidor e Empresarial",
+          "badge": "Empreendedores e investidores",
+          "points": [
+            "Para cidadãos de países fora da UE que estejam criando ou investindo em um negócio romeno",
+            "O regime de microempresa da Romênia (imposto corporativo de 1% sobre o faturamento até determinados limites) é extremamente atrativo para empreendedores",
+            "Caminho para a residência permanente após 5 anos",
+            "A adesão da Romênia à UE e o acesso ao Schengen fazem do país uma base estratégica para negócios em toda a Europa"
+          ]
+        }
+      ],
+      "disclaimer": "Os procedimentos de imigração romenos podem ser lentos e exigir muita documentação. Inicie o processo de visto com bastante antecedência e consulte um advogado de imigração romeno qualificado para a sua situação específica. Verifique todos os requisitos atuais junto ao General Inspectorate for Immigration (igi.mai.gov.ro/en/)."
+    },
+    "taxes": {
+      "eyebrow": "Impostos",
+      "title": "Entendendo o sistema tributário da Romênia",
+      "intro": "A Romênia possui um dos sistemas tributários mais atrativos da UE — uma alíquota fixa de 10% de imposto de renda pessoal, empatada com a Bulgária como a mais baixa do bloco. Para empreendedores, o regime de microempresa oferece imposto corporativo de apenas 1% sobre o faturamento.",
+      "highlight": {
+        "title": "Imposto Fixo de 10% — Empatado como o Mais Baixo da UE",
+        "subtitle": "O imposto de renda fixo de 10% da Romênia significa que quem ganha €100.000 paga a mesma alíquota de quem ganha €20.000. Sem faixas, sem complexidade.",
+        "items": [
+          {
+            "label": "Imposto de renda pessoal",
+            "value": "10% fixo — sobre toda a renda"
+          },
+          {
+            "label": "Imposto corporativo (padrão)",
+            "value": "16%"
+          },
+          {
+            "label": "Imposto de microempresa",
+            "value": "1% sobre o faturamento (empresas qualificadas)"
+          },
+          {
+            "label": "Imposto sobre dividendos",
+            "value": "16% (aumentado de 10% em 2026)"
+          },
+          {
+            "label": "Imposto sobre ganhos de capital",
+            "value": "16% (aumentado de 10% em 2026)"
+          },
+          {
+            "label": "IVA (padrão)",
+            "value": "19%"
+          }
+        ]
+      },
+      "socialContributions": {
+        "title": "Contribuições sociais — o que os funcionários pagam",
+        "points": [
+          "CAS (seguro de pensão): 25% do salário bruto — pago pelo funcionário",
+          "CASS (seguro de saúde): 10% do salário bruto — pago pelo funcionário",
+          "Total de contribuições sociais do funcionário: 35% do salário bruto",
+          "O imposto de renda de 10% é aplicado após a dedução das contribuições sociais",
+          "Valor líquido efetivo sobre €40.000 bruto: aproximadamente 58,5% (€23.400)",
+          "A Romênia possui tratados de bitributação com mais de 80 países"
+        ]
+      },
+      "comparison": {
+        "title": "Como a Romênia se compara a outros países da UE",
+        "brackets": [
+          [
+            "Romênia",
+            "10% (fixo)"
+          ],
+          [
+            "Bulgária",
+            "10% (fixo)"
+          ],
+          [
+            "Malta",
+            "35% (máx.)"
+          ],
+          [
+            "Portugal",
+            "48% (máx.)"
+          ],
+          [
+            "Espanha",
+            "47% (máx.)"
+          ],
+          [
+            "Itália",
+            "43% (máx.)"
+          ],
+          [
+            "Países Baixos",
+            "49,5% (máx.)"
+          ]
+        ]
+      },
+      "disclaimer": "A reforma tributária romena de 2026 aumentou o imposto sobre dividendos e ganhos de capital de 10% para 16%. As leis tributárias mudam com frequência — consulte sempre um consultor fiscal romeno qualificado antes de tomar decisões."
+    },
+    "costOfLiving": {
+      "eyebrow": "Custo de Vida",
+      "title": "Quanto custa viver na Romênia?",
+      "intro": "A Romênia oferece um valor excepcional para expatriados que recebem salários ocidentais. Um estilo de vida confortável em Bucareste custa em torno de €1.000–€1.500/mês, enquanto cidades menores como Cluj-Napoca, Timișoara e Iași são ainda mais acessíveis.",
+      "cities": [
+        {
+          "city": "Bucareste",
+          "level": "Mais cara",
+          "items": [
+            "Apartamento de 1 quarto (centro): €450–€700/mês",
+            "Orçamento para uma pessoa: €1.000–€1.500/mês",
+            "Ideal para carreira, vida noturna e vida urbana"
+          ]
+        },
+        {
+          "city": "Cluj-Napoca e Timișoara",
+          "level": "Intermediária",
+          "items": [
+            "Apartamento de 1 quarto (centro): €350–€550/mês",
+            "Orçamento para uma pessoa: €800–€1.200/mês",
+            "Cenas tecnológicas e universitárias vibrantes"
+          ]
+        },
+        {
+          "city": "Iași, Brașov e cidades menores",
+          "level": "Mais acessível",
+          "items": [
+            "Apartamento de 1 quarto: €250–€400/mês",
+            "Orçamento para uma pessoa: €600–€900/mês",
+            "Paisagens deslumbrantes, custos mais baixos"
+          ]
+        }
+      ],
+      "expenses": {
+        "title": "Despesas mensais típicas em Bucareste",
+        "items": [
+          [
+            "Aluguel (1 quarto, centro da cidade)",
+            "€450 – €700"
+          ],
+          [
+            "Serviços públicos (eletricidade, aquecimento, água)",
+            "€80 – €150"
+          ],
+          [
+            "Internet (fibra, 1Gbps)",
+            "€10 – €15"
+          ],
+          [
+            "Supermercado",
+            "€200 – €350"
+          ],
+          [
+            "Refeições fora (restaurante intermediário)",
+            "€100 – €200"
+          ],
+          [
+            "Passe de transporte público",
+            "€10 – €20"
+          ],
+          [
+            "Plano de saúde privado",
+            "€30 – €100"
+          ],
+          [
+            "Mensalidade de academia",
+            "€20 – €40"
+          ],
+          [
+            "Plano de celular",
+            "€5 – €15"
+          ]
+        ]
+      },
+      "internetTip": "A Romênia figura consistentemente entre os 5 países com a internet mais rápida do mundo — com conexões domésticas médias de 200+ Mbps disponíveis por menos de €15/mês. Para trabalhadores remotos, essa é uma grande vantagem."
+    },
+    "healthcare": {
+      "eyebrow": "Saúde",
+      "title": "Saúde na Romênia",
+      "intro": "A Romênia possui um sistema de saúde público financiado por contribuições obrigatórias ao CASS (10% do salário). A maioria dos expatriados opta por um plano de saúde privado para ter melhor acesso, médicos que falam inglês e menor tempo de espera.",
+      "public": {
+        "title": "Saúde Pública",
+        "points": [
+          "Disponível para todos os residentes legais que contribuem para o sistema nacional de saúde (CASS)",
+          "Gratuito no ponto de atendimento para contribuintes registrados",
+          "A qualidade varia bastante — Bucareste e Cluj-Napoca possuem as melhores instalações",
+          "Longas filas de espera para consultas com especialistas são comuns",
+          "Atendimento de emergência disponível para todos — ligue 112",
+          "Cidadãos da UE podem utilizar o EHIC para tratamento de emergência",
+          "O atendimento odontológico é majoritariamente privado"
+        ]
+      },
+      "private": {
+        "title": "Plano de Saúde Privado",
+        "points": [
+          "Muito acessível — tipicamente €30–€100/mês por pessoa",
+          "Oferece acesso mais rápido, médicos que falam inglês e instalações de melhor qualidade",
+          "Exigido para o Digital Nomad Visa e para a maioria das solicitações de visto de longa duração",
+          "Uma consulta com clínico geral particular custa aproximadamente €20–€50 sem seguro",
+          "Provedores internacionais populares: Allianz, Bupa, Cigna, AXA",
+          "A maioria dos expatriados e nômades digitais utiliza exclusivamente plano de saúde privado"
+        ]
+      },
+      "tip": "A saúde privada na Romênia é genuinamente acessível. Muitos expatriados dispensam o seguro para cuidados de rotina e pagam do próprio bolso — uma consulta com clínico geral por €20–€50 e com especialista por €30–€80 torna isso uma opção realista."
+    },
+    "banking": {
+      "eyebrow": "Bancos e Finanças",
+      "title": "Serviços bancários na Romênia",
+      "intro": "A Romênia utiliza o Leu romeno (RON) — o país ainda não adotou o Euro, embora a adesão à moeda única esteja planejada para o futuro. Os serviços bancários são simples para residentes, com vários grandes bancos internacionais operando ao lado de instituições locais.",
+      "currencyNote": "A Romênia ainda utiliza o Leu romeno (RON). O Leu é uma moeda relativamente fechada — em geral, é mais fácil e vantajoso trocar dinheiro após chegar à Romênia ou utilizar um cartão com baixas tarifas de câmbio, como Revolut ou Wise.",
+      "requirements": {
+        "title": "O que você precisará para abrir uma conta",
+        "points": [
+          "Passaporte válido ou documento de identidade nacional",
+          "Comprovante de endereço na Romênia (contrato de aluguel ou conta de serviços públicos)",
+          "Autorização de residência ou certificado de registo",
+          "Número de identificação fiscal romeno (CIF/CNP) — obtenha junto ao ANAF",
+          "Depósito inicial de aproximadamente €50–€200"
+        ]
+      },
+      "banks": {
+        "title": "Bancos que operam na Romênia",
+        "points": [
+          "Banca Transilvania — maior banco romeno, ampla rede de agências",
+          "BCR (Erste Group) — popular entre expatriados, com forte serviço de banco digital",
+          "BRD (Société Générale) — serviços bancários de varejo confiáveis",
+          "ING Romania — excelente aplicativo e atendimento em inglês",
+          "Raiffeisen Bank — forte suporte internacional",
+          "Revolut / Wise — amplamente utilizados por expatriados e nômades digitais para gastos do dia a dia"
+        ]
+      },
+      "tip": "Abra uma conta no Revolut ou Wise antes de se mudar — isso permite que você gaste em RON imediatamente à taxa de câmbio real enquanto configura sua conta bancária romena. O ING Romania é especialmente popular entre expatriados pelo seu aplicativo em inglês."
+    },
+    "prosCons": {
+      "eyebrow": "Resumo",
+      "title": "A Romênia é a escolha certa para você?",
+      "pros": {
+        "title": "Motivos para se mudar para a Romênia",
+        "points": [
+          "Imposto de renda fixo de 10% — empatado com a Bulgária como o mais baixo da UE",
+          "Imposto corporativo de microempresa a partir de 1% sobre o faturamento",
+          "Internet de altíssima velocidade (200+ Mbps) por menos de €15/mês",
+          "Custo de vida extremamente acessível — vida confortável a partir de €800/mês",
+          "Membro da UE desde 2007 — plena liberdade de circulação e direitos",
+          "Membro do Schengen desde 2025 — viagens sem visto por toda a Europa",
+          "Crescente cena tecnológica e de startups — Bucareste e Cluj-Napoca são grandes polos",
+          "Belas cidades medievais, castelos, montanhas e costa do Mar Negro",
+          "Saúde privada muito acessível (€30–€100/mês)",
+          "Inglês amplamente falado entre as gerações mais jovens e nas principais cidades",
+          "Digital Nomad Visa disponível para trabalhadores remotos qualificados"
+        ]
+      },
+      "cons": {
+        "title": "Pontos a considerar",
+        "points": [
+          "Altas contribuições sociais (35% do salário bruto) reduzem o salário líquido",
+          "O imposto sobre dividendos e ganhos de capital aumentou de 10% para 16% em 2026",
+          "A burocracia é lenta e complexa — a papelada de imigração pode ser desafiadora",
+          "O idioma romeno é essencial para uma integração completa",
+          "A qualidade do sistema público de saúde é variável — plano de saúde privado é fortemente recomendado",
+          "A infraestrutura fora das grandes cidades pode ser precária — a qualidade das estradas é irregular",
+          "A Romênia ainda utiliza o Leu (RON) — ainda não adotou o Euro",
+          "A corrupção continua sendo uma preocupação em algumas áreas da vida pública",
+          "Os invernos em Bucareste podem ser frios — temperaturas abaixo de zero são frequentes"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Pronto para dar o próximo passo?",
+      "subtitle": "Use nossa ferramenta gratuita para comparar a Romênia com outros países europeus e encontrar a melhor opção para a sua situação.",
+      "button": "Comparar todos os países →"
+    }
+  }
+}

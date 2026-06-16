@@ -1,0 +1,347 @@
+{
+  "country": "Netherlands",
+  "hero": {
+    "badge": "Países Baixos",
+    "title": "Mude-se para os Países Baixos",
+    "subtitle": "A nação mais internacional da Europa — 95% de proficiência em inglês, infraestrutura de ciclismo de classe mundial e a famosa regra dos 30% que a torna um dos destinos financeiramente mais atrativos para profissionais qualificados.",
+    "stats": [
+      {
+        "label": "Imposto de renda (a partir de)",
+        "value": "36.93%"
+      },
+      {
+        "label": "Custo de vida",
+        "value": "A partir de €2,000/mês"
+      },
+      {
+        "label": "Membro da UE desde",
+        "value": "1957"
+      },
+      {
+        "label": "Proficiência em inglês",
+        "value": "95%+"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Vistos e Residência",
+      "title": "Como se mudar para os Países Baixos",
+      "intro": "Cidadãos da UE/EEE se mudam para os Países Baixos livremente — sem visto, sem autorização, basta registrar-se no município local dentro de 4 meses. Cidadãos não pertencentes à UE têm várias opções sólidas, sendo o visto de Migrante Altamente Qualificado (Kennismigrant) a rota mais comum para profissionais.",
+      "visas": [
+        {
+          "title": "Cidadãos da UE / EEE",
+          "badge": "Livre circulação",
+          "points": [
+            "Cidadãos da UE/EEE têm o direito de viver e trabalhar nos Países Baixos sem visto ou autorização",
+            "Registre-se no município local (gemeente) dentro de 4 meses após a chegada",
+            "Você receberá um BSN (Burgerservicenummer) — seu número de identificação essencial para impostos, saúde, serviços bancários e emprego",
+            "Após 5 anos de residência legal contínua, é possível solicitar residência permanente",
+            "O seguro de saúde é obrigatório para todos os residentes"
+          ]
+        },
+        {
+          "title": "Autorização de Migrante Altamente Qualificado (Kennismigrant)",
+          "badge": "Profissionais qualificados",
+          "points": [
+            "A principal via para profissionais não pertencentes à UE — patrocinada pelo empregador",
+            "Exige um empregador patrocinador reconhecido (a maioria das multinacionais e empresas de tecnologia se qualifica)",
+            "Salário mínimo exigido: €4.840/mês bruto para candidatos com 30 anos ou mais (2026)",
+            "Limite inferior: €3.549/mês para candidatos com menos de 30 anos",
+            "Prazo de processamento: geralmente 2 a 4 semanas — um dos mais rápidos da Europa",
+            "Cônjuge ou parceiro recebe autorização de residência com permissão de trabalho irrestrita",
+            "Caminho para a residência permanente após 5 anos",
+            "Qualifica-se para a regra dos 30% — veja a seção de impostos abaixo"
+          ]
+        },
+        {
+          "title": "DAFT Visa (Dutch-American Friendship Treaty)",
+          "badge": "Cidadãos americanos",
+          "points": [
+            "Exclusivo para cidadãos americanos — permite trabalho autônomo e propriedade de empresas nos Países Baixos",
+            "Investimento mínimo de €4.500 em uma empresa holandesa",
+            "Não requer patrocínio de empregador",
+            "Válido por 2 anos inicialmente, renovável",
+            "Popular entre freelancers, consultores e empreendedores americanos",
+            "Caminho para a residência permanente após 5 anos"
+          ]
+        },
+        {
+          "title": "Autorização de Ano de Orientação",
+          "badge": "Recém-formados",
+          "points": [
+            "Para recém-formados em universidades de prestígio ao redor do mundo",
+            "Permite 1 ano para encontrar trabalho ou abrir um negócio nos Países Baixos",
+            "É necessário ter se formado dentro de 3 anos antes da candidatura",
+            "Em uma universidade classificada entre as 200 melhores do mundo",
+            "Pode transitar para a autorização de Migrante Altamente Qualificado ou de trabalho autônomo após encontrar emprego"
+          ]
+        },
+        {
+          "title": "Reunificação Familiar",
+          "badge": "Parceiros e famílias",
+          "points": [
+            "Parceiros e filhos dependentes de residentes podem solicitar reunificação familiar",
+            "Parceiros de Migrantes Altamente Qualificados recebem direitos de trabalho irrestritos",
+            "Solicite através do IND — o processamento geralmente leva 3 meses"
+          ]
+        }
+      ],
+      "disclaimer": "Obter o seu número BSN é o passo mais importante — sem ele, você não pode abrir uma conta bancária, acessar serviços de saúde ou ser incluído na folha de pagamento. Registre-se no seu gemeente dentro de 4 meses após a chegada. Verifique sempre os limites salariais atuais com o IND (ind.nl/en) antes de se candidatar."
+    },
+    "taxes": {
+      "eyebrow": "Impostos",
+      "title": "Entendendo os impostos nos Países Baixos",
+      "intro": "Os Países Baixos possuem um sistema de imposto de renda com duas faixas: 36,93% para rendimentos de até aproximadamente €73.000 e 49,50% acima desse valor. No entanto, a famosa regra dos 30% permite que expatriados qualificados recebam 30% do salário bruto isento de imposto por até 5 anos.",
+      "highlight": {
+        "title": "A Regra dos 30% — O Melhor Benefício Fiscal para Expatriados da Europa",
+        "subtitle": "Migrantes qualificados contratados no exterior podem receber 30% do salário bruto totalmente isento de imposto por até 5 anos. Para um salário de €80.000, isso representa uma economia de aproximadamente €7.000 a €10.000 por ano em impostos.",
+        "items": [
+          {
+            "label": "Isenção fiscal",
+            "value": "30% do salário bruto"
+          },
+          {
+            "label": "Teto salarial máximo",
+            "value": "€262.000 (limite WNT)"
+          },
+          {
+            "label": "Salário mínimo (30+)",
+            "value": "€48.013/ano"
+          },
+          {
+            "label": "Salário mínimo (menos de 30, mestrado)",
+            "value": "€36.497/ano"
+          },
+          {
+            "label": "Duração",
+            "value": "Máximo de 5 anos"
+          },
+          {
+            "label": "A partir de 2027",
+            "value": "Reduz permanentemente para 27%"
+          }
+        ]
+      },
+      "eligibility": {
+        "title": "Regra dos 30% — requisitos de elegibilidade",
+        "points": [
+          "É necessário ter sido contratado no exterior — ter residido a pelo menos 150 km da fronteira holandesa por 16 dos 24 meses anteriores ao emprego",
+          "É necessário ganhar acima do salário mínimo exigido (€48.013/ano para maiores de 30 anos)",
+          "É necessário estar empregado por um empregador patrocinador reconhecido",
+          "Candidate-se dentro de 4 meses após o início do seu emprego nos Países Baixos",
+          "A regra ainda é de 30% em 2026 — cai permanentemente para 27% a partir de 2027"
+        ]
+      },
+      "taxRates": {
+        "title": "Principais alíquotas fiscais holandesas (2026)",
+        "brackets": [
+          [
+            "Imposto de renda (Box 1, até ~€73.000)",
+            "36,93%"
+          ],
+          [
+            "Imposto de renda (Box 1, acima de ~€73.000)",
+            "49,50%"
+          ],
+          [
+            "Poupança e investimentos (Box 3)",
+            "Com base no patrimônio (aprox. 31–34%)"
+          ],
+          [
+            "Dividendos / participação substancial (Box 2)",
+            "24,5% (primeiros €67 mil) / 31% acima"
+          ],
+          [
+            "Imposto corporativo (até €200.000)",
+            "19%"
+          ],
+          [
+            "Imposto corporativo (acima de €200.000)",
+            "25,8%"
+          ],
+          [
+            "IVA (padrão)",
+            "21%"
+          ],
+          [
+            "Contribuição de saúde (empregador)",
+            "~6,57% sobre o salário bruto"
+          ]
+        ]
+      },
+      "disclaimer": "A residência fiscal holandesa não é determinada por uma simples contagem de dias — depende das suas circunstâncias específicas. Consulte sempre um consultor fiscal holandês qualificado antes de tomar decisões."
+    },
+    "costOfLiving": {
+      "eyebrow": "Custo de Vida",
+      "title": "Quanto custa viver nos Países Baixos?",
+      "intro": "Os Países Baixos são mais caros do que o sul da Europa, mas oferecem uma qualidade de vida excepcional. Amsterdã é a cidade mais cara — mas Rotterdam e Utrecht custam de 20 a 30% menos com qualidade comparável.",
+      "cities": [
+        {
+          "city": "Amsterdã",
+          "level": "Mais cara",
+          "items": [
+            "Apartamento de 1 quarto: €1.400–€2.200/mês",
+            "Orçamento para solteiro: €2.800–€3.800/mês",
+            "Ideal para finanças, tecnologia e cultura"
+          ]
+        },
+        {
+          "city": "Rotterdam e Haia",
+          "level": "Preço intermediário",
+          "items": [
+            "Apartamento de 1 quarto: €1.000–€1.600/mês",
+            "Orçamento para solteiro: €2.000–€2.800/mês",
+            "Moderna, internacional, 20% mais barata"
+          ]
+        },
+        {
+          "city": "Utrecht e Eindhoven",
+          "level": "Melhor custo-benefício",
+          "items": [
+            "Apartamento de 1 quarto: €900–€1.400/mês",
+            "Orçamento para solteiro: €1.800–€2.500/mês",
+            "Forte cena tecnológica, ótima qualidade de vida"
+          ]
+        }
+      ],
+      "expenses": {
+        "title": "Despesas mensais típicas em Amsterdã",
+        "items": [
+          [
+            "Aluguel (1 quarto, centro da cidade)",
+            "€1.400 – €2.200"
+          ],
+          [
+            "Serviços públicos (eletricidade, aquecimento, água)",
+            "€150 – €250"
+          ],
+          [
+            "Internet (fibra)",
+            "€30 – €50"
+          ],
+          [
+            "Supermercado",
+            "€300 – €450"
+          ],
+          [
+            "Refeições fora (restaurante intermediário)",
+            "€200 – €350"
+          ],
+          [
+            "Passe de transporte público",
+            "€100 – €150"
+          ],
+          [
+            "Seguro de saúde obrigatório",
+            "€150 – €200"
+          ],
+          [
+            "Academia",
+            "€30 – €60"
+          ],
+          [
+            "Plano de celular",
+            "€20 – €40"
+          ]
+        ]
+      },
+      "housingTip": "O mercado imobiliário holandês está entre os mais disputados da Europa — a disponibilidade média é limitada, em torno de 35%. Comece a busca por moradia com antecedência, tenha todos os documentos prontos e aja rapidamente quando encontrar algo. Rotterdam e Utrecht oferecem chances muito maiores de encontrar acomodação do que Amsterdã."
+    },
+    "healthcare": {
+      "eyebrow": "Saúde",
+      "title": "Saúde nos Países Baixos",
+      "intro": "Os Países Baixos têm um dos melhores sistemas de saúde da Europa — mas não é gratuito. O seguro de saúde é obrigatório para todos os residentes e deve ser contratado de forma privada dentro de 4 meses após o registro.",
+      "public": {
+        "title": "Como Funciona o Sistema de Saúde Holandês",
+        "points": [
+          "O seguro de saúde (basisverzekering) é obrigatório para todos os residentes — deve ser contratado dentro de 4 meses após o registro",
+          "Custo médio do seguro básico: €150–€200/mês em 2026",
+          "Franquia anual (eigen risico): €385 — você paga os primeiros €385 de custos com cuidados de saúde não relacionados ao clínico geral a cada ano",
+          "Consultas com o clínico geral (huisarts) são cobertas — ele é o seu ponto de entrada para o atendimento especializado",
+          "Número de emergência: 112",
+          "Inglês amplamente falado por todos os profissionais de saúde holandeses",
+          "Classificado consistentemente entre os 5 melhores sistemas de saúde da Europa"
+        ]
+      },
+      "private": {
+        "title": "Passos Práticos para Expatriados",
+        "points": [
+          "Obtenha primeiro o seu número BSN — necessário para se registrar no seguro de saúde",
+          "Registre-se com um clínico geral local (huisarts) na sua área — ele coordena o seu atendimento",
+          "Escolha uma seguradora de saúde — opções populares incluem Zilveren Kruis, VGZ, CZ e Menzis",
+          "Considere um seguro complementar (aanvullende verzekering) para dentista, fisioterapia e atendimento especializado",
+          "Se perder o prazo de registro de 4 meses, poderá enfrentar cobranças retroativas e penalidades"
+        ]
+      },
+      "warning": "Não adie a contratação do seu seguro de saúde. Deixar de se registrar dentro de 4 meses após a chegada pode resultar em prêmios retroativos e penalidades financeiras. Providencie isso imediatamente após obter o seu BSN."
+    },
+    "banking": {
+      "eyebrow": "Serviços Bancários e Finanças",
+      "title": "Serviços bancários nos Países Baixos",
+      "intro": "Os Países Baixos possuem um sistema bancário moderno e eficiente e é um dos países mais fáceis da Europa para expatriados abrirem uma conta bancária. Você precisará primeiro do seu número BSN — sem ele, a maioria dos bancos holandeses não consegue abrir uma conta.",
+      "requirements": {
+        "title": "O que você precisará para abrir uma conta",
+        "points": [
+          "Passaporte válido ou documento de identidade nacional",
+          "BSN (Burgerservicenummer) — essencial, obtenha este primeiro",
+          "Comprovante de endereço holandês (contrato de aluguel)",
+          "Para cidadãos não pertencentes à UE: autorização de residência válida",
+          "A maioria dos principais bancos holandeses oferece atendimento em inglês",
+          "Abertura de conta online disponível em vários bancos — ING e Bunq são totalmente digitais"
+        ]
+      },
+      "banks": {
+        "title": "Bancos que operam nos Países Baixos",
+        "points": [
+          "ING — maior banco, excelente aplicativo e atendimento em inglês",
+          "ABN AMRO — popular entre expatriados e profissionais",
+          "Rabobank — forte em serviços bancários para pessoas físicas, especialmente fora das cidades",
+          "SNS Bank — acessível e direto ao ponto",
+          "Bunq — totalmente digital, amigável para expatriados, rápido para abrir conta",
+          "Revolut / Wise — ideais enquanto você aguarda o seu BSN e conta local"
+        ]
+      },
+      "tip": "Os Países Baixos são uma das sociedades mais sem dinheiro em espécie da Europa — muitas lojas e restaurantes não aceitam dinheiro em espécie. Configure um cartão por aproximação (Revolut ou Wise funciona imediatamente) antes de chegar."
+    },
+    "prosCons": {
+      "eyebrow": "Resumo",
+      "title": "Os Países Baixos são a escolha certa para você?",
+      "pros": {
+        "title": "Motivos para se mudar para os Países Baixos",
+        "points": [
+          "Regra dos 30% — 30% do salário isento de imposto por 5 anos para expatriados qualificados",
+          "Mais de 95% de proficiência em inglês — o país não anglófono mais fácil da Europa para expatriados",
+          "Infraestrutura de ciclismo de classe mundial — as bicicletas substituem completamente os carros na maioria das cidades",
+          "Um dos melhores sistemas de saúde da Europa",
+          "Membro da UE — plena liberdade de circulação e direitos",
+          "Mercado de trabalho forte — polos de finanças, tecnologia, logística e farmácia",
+          "85% das empresas aceitam trabalho remoto",
+          "Cidades altamente internacionais com comunidades de expatriados vibrantes",
+          "Transporte público rápido e eficiente",
+          "Portal para o restante da Europa — o Aeroporto de Amsterdã Schiphol é um dos hubs mais movimentados da Europa",
+          "Parceiros de Migrantes Altamente Qualificados recebem direitos de trabalho plenos"
+        ]
+      },
+      "cons": {
+        "title": "Pontos a considerar",
+        "points": [
+          "Altas alíquotas de imposto de renda (36,93–49,50%) sem a regra dos 30%",
+          "A regra dos 30% cai para 27% a partir de 2027 — leve isso em conta no planejamento de longo prazo",
+          "O mercado imobiliário é extremamente disputado — especialmente em Amsterdã",
+          "O custo de vida é significativamente mais alto do que no sul da Europa",
+          "O seguro de saúde obrigatório adiciona €150–200/mês às suas despesas",
+          "O clima é cinzento e chuvoso durante grande parte do ano",
+          "O imposto sobre o patrimônio do Box 3 pode impactar quem tem poupanças ou investimentos significativos",
+          "O idioma holandês é necessário para cargos no setor público e para a integração plena",
+          "Preços de imóveis elevados — média de €5.200/m²"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Pronto para dar o próximo passo?",
+      "subtitle": "Use nossa ferramenta gratuita para comparar os Países Baixos com outros países europeus e encontrar a melhor opção para a sua situação.",
+      "button": "Comparar todos os países →"
+    }
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "country": "Gibraltar",
+  "hero": {
+    "badge": "Gibraltar",
+    "title": "Move to Gibraltar",
+    "subtitle": "A unique British Overseas Territory at the tip of Europe — English-speaking, tax-efficient, Mediterranean, and unlike anywhere else in the world.",
+    "stats": [
+      {
+        "label": "Max income tax",
+        "value": "25%"
+      },
+      {
+        "label": "Capital gains tax",
+        "value": "None"
+      },
+      {
+        "label": "Inheritance tax",
+        "value": "None"
+      },
+      {
+        "label": "Official language",
+        "value": "English"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Visas & Residency",
+      "title": "How to move to Gibraltar",
+      "intro": "Gibraltar is a British Overseas Territory with its own immigration system, entirely separate from both the UK and the EU. The residency rules vary significantly by nationality.",
+      "warning": "In October 2025, the Government of Gibraltar temporarily suspended new long-term residency applications from UK and EEA nationals following an unprecedented surge in demand. Applications submitted before 6 October 2025 continue to be processed. New applications may only be approved on a discretionary basis, requiring personal authorisation by the Chief Minister. New residency criteria with a 'very high financial standard' are expected to be announced. Always verify the current status with the Gibraltar Immigration Authority (DIHA) or a qualified adviser before making any plans.",
+      "visas": [
+        {
+          "title": "UK Nationals",
+          "badge": "No visa required",
+          "points": [
+            "UK citizens do not need a visa to enter or work in Gibraltar",
+            "However, long-term residency is not automatic — you must apply for and be approved under a Gibraltar residency category",
+            "You will need a Gibraltar work permit if employed locally (the employer handles this)",
+            "Residency requires proof of accommodation, income or employment, and compliance with local rules",
+            "Note: new residency applications are currently subject to the October 2025 suspension — verify current status before applying"
+          ]
+        },
+        {
+          "title": "EU / EEA Nationals",
+          "badge": "Residence permit required",
+          "points": [
+            "Since Brexit, EU/EEA nationals no longer have automatic freedom of movement in Gibraltar",
+            "EU nationals need a residence permit to live long-term in Gibraltar",
+            "Must demonstrate employment, self-sufficiency, or meet another approved residency criterion",
+            "Also subject to the October 2025 residency suspension for new applications"
+          ]
+        },
+        {
+          "title": "Category 2 Residency (High Net Worth Individuals)",
+          "badge": "HNWIs",
+          "points": [
+            "Designed for individuals with net assets of at least £2 million",
+            "Must rent or purchase a qualifying property in Gibraltar",
+            "Tax is capped — only the first £118,000 of worldwide income is taxed, with a minimum tax of £37,000 and maximum of £42,380 per year",
+            "Application fee: £1,000 plus a £15,000 due diligence and processing fee",
+            "Family members including spouse, children, siblings, and parents can be included",
+            "Particularly attractive for wealthy individuals seeking a tax-capped Mediterranean lifestyle"
+          ]
+        },
+        {
+          "title": "HEPSS (High Executive Possessing Specialist Skills)",
+          "badge": "Senior professionals",
+          "points": [
+            "For highly qualified professionals employed in Gibraltar in specialist roles",
+            "Common in financial services, fintech, online gaming, and legal sectors",
+            "Tax is charged only on the first £160,000 of income",
+            "Must be employed by a Gibraltar company and meet salary thresholds",
+            "Popular with executives relocating to Gibraltar's growing tech and finance sectors"
+          ]
+        },
+        {
+          "title": "Non-EU / Non-EEA Nationals (e.g. US, Canada)",
+          "badge": "Visa & work permit required",
+          "points": [
+            "Typically need a visa and a work permit to relocate",
+            "Usually requires a job offer from a Gibraltar employer, who applies for the work permit",
+            "Entry clearance visa must be obtained before moving",
+            "Self-sufficiency route available for those with sufficient financial means",
+            "Always verify requirements with DIHA — Gibraltar's Department for Immigration and Home Affairs"
+          ]
+        }
+      ],
+      "disclaimer": "Gibraltar's residency rules are changing rapidly. A new residency framework with stricter financial requirements is expected in 2026. Always consult a qualified Gibraltar immigration adviser and verify current rules with DIHA before making any decisions."
+    },
+    "taxes": {
+      "eyebrow": "Taxes",
+      "title": "Understanding tax in Gibraltar",
+      "intro": "Gibraltar's tax system is one of the most attractive in Europe. There is no VAT, no capital gains tax, no inheritance tax, and no wealth tax. Income tax rates are low and capped at 25% for most residents. Only income earned in or derived from Gibraltar is generally taxed.",
+      "noTaxItems": [
+        {
+          "title": "No Capital Gains Tax",
+          "desc": "Profits from selling assets, shares, or property (primary residence) are not taxed"
+        },
+        {
+          "title": "No Inheritance Tax",
+          "desc": "Estates pass to heirs without any inheritance, estate duty, or wealth tax"
+        },
+        {
+          "title": "No VAT",
+          "desc": "Gibraltar has no Value Added Tax — making many goods notably cheaper than in the UK or EU"
+        }
+      ],
+      "twoSystems": {
+        "title": "Two ways to be taxed — you choose the lower one",
+        "intro": "Gibraltar gives residents a choice between two tax systems. You are automatically assessed under whichever results in a lower tax bill:",
+        "gibs": {
+          "title": "Gross Income Based System (GIBS)",
+          "desc": "Tax calculated on gross income in bands — no allowances. Rates range from 6% to 28% on income up to £25,000, and 16% to 28% on income above £25,000. Maximum effective rate is capped at 25% on incomes up to £100,000."
+        },
+        "abs": {
+          "title": "Allowances Based System (ABS)",
+          "desc": "Tax calculated on income after personal allowances and deductions. Progressive rates up to 39%, but with allowances for mortgage interest, pension contributions, medical insurance, and more — effective rates are usually much lower."
+        }
+      },
+      "specialRegimes": {
+        "title": "Special Tax Regimes",
+        "subtitle": "Gibraltar offers two powerful capped tax regimes for high earners and specialists.",
+        "items": [
+          {
+            "label": "Category 2 (HNWIs)",
+            "value": "Tax capped at £37,000–£42,380/year on first £118,000 of worldwide income. Requires £2M+ in net assets."
+          },
+          {
+            "label": "HEPSS (Specialists)",
+            "value": "Tax charged only on first £160,000 of income. For senior professionals in key sectors like finance, gaming, and fintech."
+          }
+        ]
+      },
+      "disclaimer": "Gibraltar's tax rules are complex and depend on your residency status, income type, and personal circumstances. Always consult a qualified Gibraltar tax adviser before making any decisions."
+    },
+    "costOfLiving": {
+      "eyebrow": "Cost of Living",
+      "title": "What does life in Gibraltar cost?",
+      "intro": "Gibraltar is one of the more expensive places in Southern Europe, primarily due to its tiny landmass and high demand for housing. However, the absence of VAT makes everyday goods and electronics noticeably cheaper than in the UK, and many residents shop across the border in Spain for groceries at 20–40% lower prices.",
+      "tip": "Many Gibraltar residents live across the border in La Línea de la Concepción, Spain, where rents are 50–70% lower. The border crossing on foot typically takes 5–15 minutes.",
+      "expenses": {
+        "title": "Typical monthly expenses in Gibraltar",
+        "items": [
+          [
+            "Rent (1-bed apartment, centre)",
+            "£1,250 – £1,850"
+          ],
+          [
+            "Rent (room in shared flat)",
+            "£650 – £950"
+          ],
+          [
+            "Utilities (electricity & water combined)",
+            "£120 – £180"
+          ],
+          [
+            "Groceries (shopping in Gibraltar)",
+            "£250 – £400"
+          ],
+          [
+            "Groceries (shopping in Spain)",
+            "£150 – £250"
+          ],
+          [
+            "Dining out (mid-range, per person)",
+            "£15 – £25"
+          ],
+          [
+            "Monthly bus pass",
+            "~£30"
+          ],
+          [
+            "Private health insurance",
+            "£50 – £150"
+          ],
+          [
+            "Mobile plan",
+            "£15 – £40"
+          ]
+        ]
+      },
+      "vatNote": "Electronics, alcohol, tobacco, and luxury goods are often significantly cheaper in Gibraltar than in the UK or Spain due to the absence of VAT. A new Transaction Tax is expected from April 2026, replacing import duties — verify current rates before making major purchases."
+    },
+    "healthcare": {
+      "eyebrow": "Healthcare",
+      "title": "Healthcare in Gibraltar",
+      "intro": "Gibraltar has a high-quality public healthcare system run by the Gibraltar Health Authority (GHA), modelled closely on the UK's NHS. All services are conducted in English. Registered residents are entitled to free healthcare at the point of use.",
+      "public": {
+        "title": "Public Healthcare (GHA)",
+        "points": [
+          "Free at point of use for registered Gibraltar residents",
+          "Closely modelled on the UK NHS — entirely English-speaking",
+          "Covers GP visits, specialist care, hospital treatment, maternity, and emergency services",
+          "St Bernard's Hospital is the main facility — modern and well-equipped",
+          "Dental care is mostly private",
+          "Register with GHA using your Gibraltar ID card once residency is established"
+        ]
+      },
+      "private": {
+        "title": "Private Health Insurance",
+        "points": [
+          "Recommended for faster access to specialists and broader coverage",
+          "Monthly premiums typically £50–£150 depending on age and plan",
+          "Covers dental, optical, and additional specialist services",
+          "Many residents use private insurance for non-urgent care to avoid waiting times",
+          "Popular providers include Bupa International and AXA",
+          "Useful while setting up residency before GHA access is established"
+        ]
+      },
+      "tip": "Gibraltar's healthcare is widely regarded as more accessible and efficient than the NHS, with shorter waiting times and a more compact, community-focused system. English is spoken throughout."
+    },
+    "banking": {
+      "eyebrow": "Banking & Finance",
+      "title": "Banking in Gibraltar",
+      "intro": "Gibraltar has a well-developed banking sector, regulated by the Gibraltar Financial Services Commission (GFSC). Opening a local account is straightforward for residents, and Gibraltar banks are very experienced in working with expats.",
+      "requirements": {
+        "title": "What you'll need to open an account",
+        "points": [
+          "Valid passport or national ID",
+          "Proof of Gibraltar residency (Gibraltar ID card or residency permit)",
+          "Proof of address in Gibraltar",
+          "Evidence of income or employment",
+          "Some banks may request references or financial background information"
+        ]
+      },
+      "banks": {
+        "title": "Banks operating in Gibraltar",
+        "points": [
+          "Barclays — major UK bank with a full Gibraltar presence",
+          "NatWest International — via its Gibraltar branch",
+          "Jyske Bank — popular with international residents",
+          "EFG Private Bank — for high-net-worth clients",
+          "Revolut / Wise — useful for new arrivals before opening a local account"
+        ]
+      },
+      "tip": "Gibraltar's financial sector is regulated under British common law and is a well-respected international finance centre. The currency is the Gibraltar Pound (GIP), which is pegged 1:1 to the British Pound (GBP) and interchangeable in Gibraltar."
+    },
+    "prosCons": {
+      "eyebrow": "Summary",
+      "title": "Is Gibraltar right for you?",
+      "pros": {
+        "title": "Reasons to move to Gibraltar",
+        "points": [
+          "No capital gains tax, no inheritance tax, no VAT",
+          "Income tax capped at 25% — well below most European countries",
+          "Special regimes (Category 2, HEPSS) for HNWIs and senior professionals",
+          "English-speaking — official language and used everywhere",
+          "British legal system and governance — familiar to UK nationals",
+          "Mediterranean climate with 300+ sunny days per year",
+          "One of the safest places to live in Europe",
+          "New Schengen agreement gives residents free movement across Europe",
+          "Strong expat community, especially British",
+          "World-class financial services sector with career opportunities"
+        ]
+      },
+      "cons": {
+        "title": "Things to consider",
+        "points": [
+          "New residency applications suspended since October 2025 — situation evolving",
+          "New residency criteria expected to set a 'very high financial standard'",
+          "Extremely limited housing supply — rents are high and availability is tight",
+          "Very small territory (6.7 km²) — can feel restrictive long-term",
+          "Higher cost of living than neighbouring Spain",
+          "Limited schooling and entertainment options compared to larger cities",
+          "No longer part of the EU — some implications for EU travel and business",
+          "Property market is supply-constrained with high prices"
+        ]
+      }
+    },
+    "laLinea": {
+      "eyebrow": "The Cross-Border Option",
+      "title": "Live in La Línea, Work in Gibraltar",
+      "intro": "Every working day, around 15,000 people cross the Gibraltar–Spain border. Many Gibraltar workers choose to live in La Línea de la Concepción — the Spanish town directly across the border — where rents are 50–70% cheaper. It's one of the most popular living arrangements in the region, but it comes with important administrative and tax obligations on both sides of the border.",
+      "disclaimer": "The cross-border living arrangement is popular and manageable, but the tax and administrative requirements are complex. We strongly recommend consulting a qualified Spanish tax adviser (gestor) and a Gibraltar tax adviser before making the move."
+    },
+    "cta": {
+      "title": "Ready to make your move?",
+      "subtitle": "Use our free tool to compare Gibraltar with other European countries and find the best fit for your situation.",
+      "button": "Compare all countries →"
+    }
+  }
+}

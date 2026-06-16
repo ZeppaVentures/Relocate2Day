@@ -1,0 +1,338 @@
+{
+  "country": "Greece",
+  "hero": {
+    "badge": "Grecia",
+    "title": "Múdate a Grecia",
+    "subtitle": "Sol mediterráneo, cultura milenaria y uno de los estilos de vida más asequibles de Europa — Grecia se ha convertido en un destino top para jubilados, trabajadores remotos e inversores que buscan residencia en la UE.",
+    "stats": [
+      {
+        "label": "Impuesto sobre la renta (desde)",
+        "value": "9%"
+      },
+      {
+        "label": "Costo de vida",
+        "value": "From €1,150/mo"
+      },
+      {
+        "label": "Miembro de la UE desde",
+        "value": "1981"
+      },
+      {
+        "label": "Idioma oficial",
+        "value": "Griego"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Visas y Residencia",
+      "title": "Cómo mudarse a Grecia",
+      "intro": "Los ciudadanos de la UE/EEE pueden mudarse a Grecia libremente sin necesidad de visa. Los ciudadanos de países no pertenecientes a la UE tienen varias alternativas sólidas, entre ellas la Golden Visa, la Digital Nomad Visa y el permiso Financially Independent Person (FIP). En 2026, Grecia unificó su proceso de visa y permiso de residencia en una sola solicitud.",
+      "visas": [
+        {
+          "title": "Ciudadanos de la UE / EEE",
+          "badge": "Libre circulación",
+          "points": [
+            "Los ciudadanos de la UE/EEE tienen derecho a vivir y trabajar en Grecia sin visa",
+            "Regístrate en el municipio local (KEP) al llegar",
+            "Obtén tu número de identificación fiscal griego (AFM) y tu número de seguridad social (AMKA) cuanto antes — son imprescindibles para abrir cuentas bancarias, acceder a la sanidad y trabajar",
+            "Tras 5 años de residencia legal continua, puedes solicitar la residencia permanente"
+          ]
+        },
+        {
+          "title": "Digital Nomad Visa (E33A)",
+          "badge": "Trabajadores remotos y freelancers",
+          "points": [
+            "Para ciudadanos no pertenecientes a la UE que trabajan de forma remota para empleadores o clientes con sede fuera de Grecia",
+            "Ingreso mínimo requerido: €3,500/mes netos (después de impuestos)",
+            "A partir de febrero de 2026 (Ley 5275/2026), las solicitudes deben realizarse desde fuera de Grecia",
+            "Solicita en el consulado griego de tu país de origen antes de viajar",
+            "Permiso inicial válido por 2 años, renovable",
+            "Exención del 50% del impuesto sobre la renta por hasta 7 años — un beneficio económico muy significativo",
+            "Los familiares pueden incluirse en la solicitud"
+          ]
+        },
+        {
+          "title": "Financially Independent Person (FIP) Visa",
+          "badge": "Jubilados e ingresos pasivos",
+          "points": [
+            "Para ciudadanos no pertenecientes a la UE con ingresos pasivos suficientes — pensiones, dividendos, ingresos por alquiler o ahorros",
+            "Ingreso mínimo requerido: €2,000/mes (más un 20% por cada dependiente)",
+            "No se permite trabajar ni gestionar un negocio en Grecia",
+            "Solicita en el consulado griego antes de viajar a Grecia",
+            "Permiso de residencia válido por 3 años, renovable",
+            "Grecia ocupó el primer lugar en el Índice Global de Jubilación 2026",
+            "Impuesto fijo especial del 7% sobre los ingresos de pensiones extranjeras para jubilados que cumplan los requisitos"
+          ]
+        },
+        {
+          "title": "Golden Visa",
+          "badge": "Inversores",
+          "points": [
+            "Residencia mediante inversión inmobiliaria u otras inversiones calificadas",
+            "Umbrales de inversión según la Ley 5100/2024: €800,000 en la Zona A (Atenas, Tesalónica, Mykonos, Santorini), €400,000 en la Zona B, €250,000 para reconversiones de uso comercial a residencial",
+            "Sin requisito mínimo de residencia",
+            "Permiso de residencia renovable de 5 años",
+            "Vía hacia la ciudadanía griega tras 7 años de residencia"
+          ]
+        },
+        {
+          "title": "Startup & Tech Visa (2026)",
+          "badge": "Fundadores y profesionales tecnológicos",
+          "points": [
+            "Novedad en 2026 — Grecia lanzó categorías de visa específicas para profesionales tecnológicos cualificados y fundadores de startups",
+            "Orientada a atraer talento al creciente ecosistema tecnológico y de startups de Grecia",
+            "Consulta el Ministerio de Migración griego para conocer los requisitos actuales"
+          ]
+        }
+      ],
+      "disclaimer": "Las normas de inmigración de Grecia han cambiado significativamente en 2026, incluida la nueva ley que elimina la posibilidad de solicitar la Digital Nomad Visa desde dentro del país como turista. Verifica siempre los requisitos vigentes con el Ministerio de Migración griego o con un abogado de inmigración griego cualificado antes de solicitar."
+    },
+    "taxes": {
+      "eyebrow": "Impuestos",
+      "title": "Entendiendo el sistema fiscal en Grecia",
+      "intro": "Grecia aplica un sistema de impuesto sobre la renta progresivo con tasas que van del 9% al 44%. Sin embargo, el país ofrece algunos de los incentivos fiscales para expatriados más generosos de Europa — entre ellos una exención del 50% del impuesto sobre la renta para titulares de la Digital Nomad Visa, un impuesto fijo del 7% para jubilados calificados y un impuesto fijo de €100,000 para personas de alto patrimonio bajo el régimen non-dom.",
+      "highlight": {
+        "title": "Tramos del impuesto sobre la renta 2026",
+        "subtitle": "Grecia reformó sus tasas impositivas en 2026 mediante la Ley 5246/2025, reduciendo las tasas de los tramos medios y elevando el umbral para la tasa máxima del 44% de €40,000 a €60,000.",
+        "items": [
+          {
+            "label": "Hasta €10,000",
+            "value": "9%"
+          },
+          {
+            "label": "€10,001 – €20,000",
+            "value": "20%"
+          },
+          {
+            "label": "€20,001 – €30,000",
+            "value": "26%"
+          },
+          {
+            "label": "€30,001 – €40,000",
+            "value": "34%"
+          },
+          {
+            "label": "€40,001 – €60,000",
+            "value": "39%"
+          },
+          {
+            "label": "Por encima de €60,000",
+            "value": "44%"
+          }
+        ]
+      },
+      "specialRegimes": {
+        "title": "Regímenes fiscales especiales para expatriados",
+        "points": [
+          "Titulares de la Digital Nomad Visa: exención del 50% del impuesto sobre la renta por hasta 7 años",
+          "Jubilados que trasladen su residencia fiscal a Grecia: impuesto fijo del 7% sobre todos los ingresos de pensiones extranjeras por hasta 15 años",
+          "Personas de alto patrimonio bajo el régimen non-dom: impuesto fijo anual de €100,000 sobre todos los ingresos extranjeros mundiales durante 15 años (requiere una inversión de €500,000 en Grecia)",
+          "Impuesto sobre dividendos: solo el 5% — el más bajo de la UE",
+          "Jóvenes profesionales menores de 25 años: 0% de impuesto sobre ingresos de hasta €20,000",
+          "Recargo de solidaridad: suspendido desde 2023 y continúa suspendido en 2026"
+        ]
+      },
+      "otherTaxes": {
+        "title": "Otros impuestos clave",
+        "brackets": [
+          [
+            "Impuesto sobre la renta de sociedades",
+            "22%"
+          ],
+          [
+            "Impuesto sobre dividendos",
+            "5% (el más bajo de la UE)"
+          ],
+          [
+            "IVA (estándar)",
+            "24%"
+          ],
+          [
+            "Impuesto sobre ganancias de capital",
+            "15% sobre la mayoría de los activos"
+          ],
+          [
+            "Seguridad social (empleado)",
+            "14% del salario bruto"
+          ],
+          [
+            "Tope de seguridad social",
+            "€93,143/año"
+          ]
+        ]
+      },
+      "disclaimer": "La legislación fiscal griega cambió de manera significativa en 2026. La residencia fiscal se aplica si permaneces más de 183 días al año en Grecia. Consulta siempre con un asesor fiscal griego cualificado antes de tomar cualquier decisión."
+    },
+    "costOfLiving": {
+      "eyebrow": "Costo de Vida",
+      "title": "¿Cuánto cuesta vivir en Grecia?",
+      "intro": "Grecia ofrece uno de los estilos de vida más asequibles de Europa Occidental — aproximadamente un 51% más barato que en EE. UU. Una persona soltera puede vivir cómodamente con €1,150–€1,400/mes, incluido el alquiler.",
+      "cities": [
+        {
+          "city": "Atenas",
+          "level": "La más cara",
+          "items": [
+            "Apartamento de 1 habitación (centro): €700–€1,200/mes",
+            "Presupuesto para una persona: €1,400–€2,000/mes",
+            "Ideal para la vida profesional, cultural y urbana"
+          ]
+        },
+        {
+          "city": "Tesalónica y Heraklion",
+          "level": "Rango medio",
+          "items": [
+            "Apartamento de 1 habitación (centro): €400–€700/mes",
+            "Presupuesto para una persona: €1,100–€1,500/mes",
+            "Excelente calidad de vida a menor costo"
+          ]
+        },
+        {
+          "city": "Islas y ciudades más pequeñas",
+          "level": "La más asequible",
+          "items": [
+            "Apartamento de 1 habitación: €300–€600/mes",
+            "Presupuesto para una persona: €800–€1,200/mes",
+            "Ideal para jubilados y trabajadores remotos"
+          ]
+        }
+      ],
+      "expenses": {
+        "title": "Gastos mensuales típicos en Atenas",
+        "items": [
+          [
+            "Alquiler (1 habitación, centro)",
+            "€700 – €1,200"
+          ],
+          [
+            "Servicios (electricidad, calefacción, agua)",
+            "€80 – €150"
+          ],
+          [
+            "Internet (fibra)",
+            "€20 – €35"
+          ],
+          [
+            "Supermercado",
+            "€200 – €350"
+          ],
+          [
+            "Comer fuera (rango medio)",
+            "€150 – €250"
+          ],
+          [
+            "Abono de transporte público",
+            "€30"
+          ],
+          [
+            "Seguro médico privado",
+            "€60 – €250"
+          ],
+          [
+            "Membresía de gimnasio",
+            "€25 – €50"
+          ],
+          [
+            "Plan de telefonía móvil",
+            "€15 – €30"
+          ]
+        ]
+      },
+      "islandTip": "Islas griegas como Creta, Rodas y Corfú ofrecen una calidad de vida extraordinaria a costos significativamente más bajos que Atenas — especialmente fuera de la temporada turística."
+    },
+    "healthcare": {
+      "eyebrow": "Sanidad",
+      "title": "Sistema de salud en Grecia",
+      "intro": "Grecia cuenta con un sistema de salud público (ESY) accesible para los residentes registrados. La mayoría de los expatriados optan por un seguro médico privado para la atención rutinaria, debido a los tiempos de espera y la calidad variable fuera de las grandes ciudades.",
+      "public": {
+        "title": "Sanidad pública (ESY)",
+        "points": [
+          "Accesible para todos los residentes registrados en el sistema de seguridad social (EFKA/AMKA)",
+          "La atención de urgencias es gratuita para todos — llama al 112",
+          "Los ciudadanos de la UE pueden utilizar su tarjeta EHIC para recibir tratamiento de urgencias",
+          "La calidad varía considerablemente — Atenas y Tesalónica cuentan con los mejores hospitales",
+          "Los tiempos de espera para citas con especialistas son largos con frecuencia",
+          "Los medicamentos con receta están subvencionados",
+          "La atención dental es mayoritariamente privada"
+        ]
+      },
+      "private": {
+        "title": "Seguro médico privado",
+        "points": [
+          "Obligatorio para la Digital Nomad Visa y la mayoría de las solicitudes de visa de larga estancia",
+          "Asequible — generalmente entre €60 y €250/mes por persona, dependiendo de la edad y la cobertura",
+          "Una consulta con médico de cabecera privado cuesta entre €60 y €150 sin seguro",
+          "Médicos con dominio del inglés ampliamente disponibles en ciudades y zonas turísticas",
+          "Proveedores populares: Allianz, Bupa International, AXA, y el proveedor local Interamerican"
+        ]
+      },
+      "tip": "Obtén tu AMKA (número de seguridad social) lo antes posible tras llegar — es necesario para acceder a la sanidad pública, abrir una cuenta bancaria y realizar la mayoría de los trámites en Grecia."
+    },
+    "banking": {
+      "eyebrow": "Banca y Finanzas",
+      "title": "Banca en Grecia",
+      "intro": "Grecia utiliza el euro y cuenta con un sector bancario bien establecido regulado bajo estándares de la UE. Abrir una cuenta bancaria local requiere tu AFM (número fiscal) y tu AMKA (número de seguridad social), así que asegúrate de obtenerlos primero.",
+      "requirements": {
+        "title": "Lo que necesitarás para abrir una cuenta",
+        "points": [
+          "Pasaporte válido o documento de identidad nacional",
+          "AFM (número de identificación fiscal griego) — imprescindible",
+          "AMKA (número de seguridad social) — generalmente requerido",
+          "Comprobante de domicilio en Grecia (contrato de alquiler o factura de servicios)",
+          "Permiso de residencia o certificado de registro para ciudadanos no pertenecientes a la UE",
+          "Algunos bancos requieren un depósito inicial de €50–€300"
+        ]
+      },
+      "banks": {
+        "title": "Bancos que operan en Grecia",
+        "points": [
+          "National Bank of Greece — el banco más grande, amplia red de sucursales y cajeros automáticos",
+          "Piraeus Bank — popular entre expatriados, buena banca en línea",
+          "Alpha Bank — sólido soporte internacional",
+          "Eurobank — banca minorista fiable con servicio en inglés",
+          "Revolut / Wise — muy utilizados por expatriados y nómadas digitales para la banca del día a día"
+        ]
+      },
+      "tip": "Obtén tu AFM (número fiscal) en la oficina tributaria local (AADE) como primer paso al llegar — lo necesitarás para casi todo, incluida la apertura de una cuenta bancaria y la firma de un contrato de alquiler."
+    },
+    "prosCons": {
+      "eyebrow": "Resumen",
+      "title": "¿Es Grecia la opción adecuada para ti?",
+      "pros": {
+        "title": "Razones para mudarse a Grecia",
+        "points": [
+          "Clasificada en el #1 del Índice Global de Jubilación 2026",
+          "Exención del 50% del impuesto sobre la renta para titulares de la Digital Nomad Visa durante 7 años",
+          "Impuesto fijo del 7% sobre los ingresos de pensiones extranjeras para jubilados calificados",
+          "Impuesto sobre dividendos del 5% — el más bajo de la UE",
+          "Costo de vida aproximadamente un 51% más bajo que en EE. UU.",
+          "Estado miembro de la UE — plena libertad de circulación y derechos",
+          "Clima espectacular — más de 300 días de sol al año",
+          "Rica cultura, historia, gastronomía y estilo de vida isleño",
+          "El inglés se habla ampliamente en ciudades y zonas turísticas",
+          "Sanidad privada asequible",
+          "La Golden Visa ofrece residencia sin requisito mínimo de estancia",
+          "Comunidades de expatriados y nómadas digitales en crecimiento en Atenas y Creta"
+        ]
+      },
+      "cons": {
+        "title": "Aspectos a tener en cuenta",
+        "points": [
+          "La burocracia es notoriamente lenta y compleja — se requiere paciencia",
+          "Las normas de la Digital Nomad Visa cambiaron en febrero de 2026 — hay que solicitarla antes de llegar",
+          "Los alquileres en Atenas han subido considerablemente — menos asequible que hace 5 años",
+          "La calidad de la sanidad pública es variable fuera de las grandes ciudades",
+          "El griego utiliza un alfabeto diferente — supone una curva de aprendizaje",
+          "Oportunidades laborales limitadas para quienes no hablan griego en el mercado laboral local",
+          "Los veranos en Atenas pueden ser extremadamente calurosos (más de 40°C)",
+          "Las tasas impositivas progresivas estándar (hasta el 44%) se aplican sin un régimen especial"
+        ]
+      }
+    },
+    "cta": {
+      "title": "¿Listo para dar el paso?",
+      "subtitle": "Usa nuestra herramienta gratuita para comparar Grecia con otros países europeos y encontrar la opción que mejor se adapte a tu situación.",
+      "button": "Comparar todos los países →"
+    }
+  }
+}

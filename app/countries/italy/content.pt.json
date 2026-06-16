@@ -1,0 +1,352 @@
+{
+  "country": "Italy",
+  "hero": {
+    "badge": "Itália",
+    "title": "Mude-se para a Itália",
+    "subtitle": "Gastronomia, arte, história e litoral de classe mundial — além de alguns dos incentivos fiscais mais generosos da Europa para recém-chegados. Aqui está tudo o que você precisa saber sobre como se mudar para a Itália.",
+    "stats": [
+      {
+        "label": "Imposto fixo para aposentados",
+        "value": "7%"
+      },
+      {
+        "label": "Isenção Impatriati",
+        "value": "Up to 90%"
+      },
+      {
+        "label": "Imposto fixo para HNWI",
+        "value": "€300,000/yr"
+      },
+      {
+        "label": "Idioma oficial",
+        "value": "Italiano"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Vistos & Residência",
+      "title": "Como se mudar para a Itália",
+      "intro": "Cidadãos da UE/EEE podem se mudar para a Itália livremente e registrar a residência na sua municipalidade local (Comune). Cidadãos de fora da UE precisam de um visto antes de chegar — a Itália oferece várias opções dependendo se você planeja trabalhar, se aposentar, investir ou estudar.",
+      "visas": [
+        {
+          "title": "Digital Nomad Visa",
+          "badge": "Trabalhadores remotos e freelancers",
+          "points": [
+            "Lançado em 2024 — um dos programas de visto para nômades digitais mais recentes da Europa",
+            "Para cidadãos de fora da UE que trabalham remotamente para empregadores ou clientes fora da Itália",
+            "Renda mínima exigida: €32,400/year (aprox. €2,700/month)",
+            "É necessário comprovar economias de pelo menos €30,000",
+            "É necessário ter pelo menos 6 meses de experiência comprovada em trabalho remoto",
+            "É necessário alugar ou comprar um imóvel na Itália antes de solicitar",
+            "Válido por 1 ano, renovável por mais 2 anos",
+            "Cônjuge, filhos menores de 18 anos e pais podem ser incluídos",
+            "Caminho para a residência permanente após 5 anos e cidadania após 10 anos"
+          ]
+        },
+        {
+          "title": "Elective Residency Visa",
+          "badge": "Aposentados e financeiramente independentes",
+          "points": [
+            "Para cidadãos de fora da UE que conseguem se sustentar inteiramente com renda passiva — pensões, investimentos, renda de aluguel",
+            "É estritamente um visto sem permissão para trabalhar — a Itália aplica essa condição com rigor",
+            "Renda passiva mínima exigida: aprox. €31,000/year para um solicitante individual",
+            "Acrescente aprox. 20% para o cônjuge e 5% por filho dependente",
+            "É necessário comprovar que possui acomodação na Itália (alugada ou própria)",
+            "Visto inicial de 1 ano, renovável anualmente",
+            "Após 5 anos, elegível para residência de longa duração na UE"
+          ]
+        },
+        {
+          "title": "Student Visa (Type D)",
+          "badge": "Estudantes",
+          "points": [
+            "Para cidadãos de fora da UE que se matriculam em uma universidade italiana ou escola de idiomas",
+            "Válido pela duração do curso matriculado",
+            "Permite trabalho em tempo parcial de até 20 horas por semana",
+            "A Itália tem universidades de renome mundial — Bologna (a mais antiga do mundo), La Sapienza, Bocconi",
+            "As taxas de matrícula nas universidades públicas italianas são muito acessíveis — tipicamente €900–€4,000/year",
+            "Possibilidade de conversão para um visto de trabalho após a formatura"
+          ]
+        },
+        {
+          "title": "Golden Visa (Investor Visa)",
+          "badge": "Investidores",
+          "points": [
+            "Programa de residência por investimento da Itália para cidadãos de fora da UE",
+            "Opções de investimento: €250,000 em uma startup inovadora, €500,000 em uma empresa italiana, €1M em um projeto filantrópico, ou €2M em títulos do governo italiano",
+            "Concede uma permissão de residência renovável de 2 anos",
+            "Sem requisito de permanência mínima para manter a permissão",
+            "Caminho para a residência permanente após 5 anos e cidadania após 10 anos"
+          ]
+        },
+        {
+          "title": "Cidadãos da UE / EEE",
+          "badge": "Livre circulação",
+          "points": [
+            "Cidadãos da UE/EEE têm o direito de viver e trabalhar na Itália sem visto",
+            "Devem se registrar no Comune local (prefeitura) dentro de 3 meses após a chegada",
+            "Após 5 anos de residência legal contínua, tornam-se elegíveis para a residência permanente"
+          ]
+        }
+      ],
+      "disclaimer": "O sistema de imigração italiano é conhecido pela sua complexidade e burocracia. Os prazos de processamento de vistos podem ser longos e os requisitos são aplicados com rigor. Sempre solicite com bastante antecedência e considere trabalhar com um advogado de imigração italiano qualificado."
+    },
+    "taxes": {
+      "eyebrow": "Impostos",
+      "title": "Entendendo os impostos na Itália",
+      "intro": "O imposto de renda padrão da Itália (IRPEF) é progressivo e pode chegar a 43% para quem ganha mais. No entanto, a Itália oferece vários regimes de incentivos fiscais generosos para recém-chegados.",
+      "regimes": [
+        {
+          "title": "Imposto Fixo de 7% para Aposentados",
+          "desc": "Para aposentados estrangeiros que se mudam para pequenas cidades no sul da Itália. Uma das menores alíquotas de imposto fixo na Europa."
+        },
+        {
+          "title": "Regime Impatriati",
+          "desc": "Isenção de imposto de renda de até 90% para trabalhadores que se mudam para o sul da Itália. Isenção de 70% nas demais regiões."
+        },
+        {
+          "title": "Imposto Fixo de €300,000 para HNWI",
+          "desc": "Imposto anual fixo sobre toda a renda estrangeira mundial. Para indivíduos com patrimônio líquido ultralto."
+        }
+      ],
+      "retireeFlat": {
+        "title": "O Imposto Fixo de 7% para Aposentados — Sul da Itália",
+        "subtitle": "Um dos regimes fiscais para aposentados mais generosos da Europa. Pague apenas 7% sobre toda a renda de origem estrangeira por até 10 anos.",
+        "items": [
+          {
+            "label": "Alíquota de imposto fixo",
+            "value": "7% sobre toda a renda de origem estrangeira"
+          },
+          {
+            "label": "Duração",
+            "value": "Até 10 anos"
+          },
+          {
+            "label": "Onde",
+            "value": "Municípios com menos de 20,000 habitantes em Abruzzo, Molise, Campania, Puglia, Basilicata, Calabria, Sardinia, Sicily e vilarejos qualificados do centro da Itália"
+          },
+          {
+            "label": "Quem se qualifica",
+            "value": "Aposentados estrangeiros que recebem pensão de fora da Itália, que não residiam na Itália nos últimos 5 anos ou mais, e que se mudam de um país com tratado fiscal com a Itália"
+          }
+        ]
+      },
+      "impatriati": {
+        "title": "Regime Impatriati — para trabalhadores que se mudam para a Itália",
+        "intro": "O regime de Trabalhadores Estrangeiros (Impatriati) oferece uma grande isenção de imposto de renda para profissionais qualificados que se mudam para a Itália para trabalhar. Você não deve ter sido residente fiscal na Itália nos últimos 3 anos.",
+        "items": [
+          {
+            "label": "Isenção padrão",
+            "value": "70% da renda de emprego ou trabalho autônomo na Itália está isenta de impostos"
+          },
+          {
+            "label": "Bônus do sul da Itália",
+            "value": "Isenção de 90% se você mora em Abruzzo, Molise, Campania, Puglia, Basilicata, Calabria, Sardinia ou Sicily"
+          },
+          {
+            "label": "Duração",
+            "value": "5 anos, prorrogável em alguns casos"
+          },
+          {
+            "label": "Quem se qualifica",
+            "value": "Trabalhadores empregados ou autônomos na Itália, não residentes na Itália há 3 anos ou mais, com compromisso de permanecer por pelo menos 2 anos"
+          }
+        ]
+      },
+      "hnwi": {
+        "title": "Imposto Fixo de €300,000 para HNWI",
+        "intro": "O principal incentivo fiscal da Itália para os ultra-ricos. Pague um valor fixo de €300,000 por ano sobre toda a renda estrangeira mundial — independentemente de quanto você ganha. A alíquota foi aumentada de €200,000 em janeiro de 2026.",
+        "points": [
+          "Não deve ter sido residente fiscal italiano por 9 dos 10 anos anteriores",
+          "Cobre toda a renda de origem estrangeira com um pagamento anual fixo de €300,000",
+          "Familiares podem ser incluídos a €50,000 por pessoa por ano",
+          "Válido por até 15 anos",
+          "Isenta ativos offshore de impostos italianos sobre patrimônio, herança e doações",
+          "Beneficiários existentes com a antiga alíquota de €200,000 mantêm seus direitos adquiridos"
+        ]
+      },
+      "standardRates": {
+        "title": "Alíquotas padrão de imposto de renda (IRPEF) — sem nenhum regime",
+        "brackets": [
+          [
+            "Até €28,000",
+            "23%"
+          ],
+          [
+            "€28,000 – €50,000",
+            "35%"
+          ],
+          [
+            "Acima de €50,000",
+            "43%"
+          ]
+        ],
+        "note": "Sobretaxas regionais e municipais de aprox. 1–3% também se aplicam além do IRPEF."
+      },
+      "disclaimer": "Os regimes de incentivos fiscais da Itália são complexos e a elegibilidade depende da sua situação específica, tipo de renda e histórico de residência. Sempre consulte um consultor fiscal italiano qualificado (commercialista) antes de tomar qualquer decisão."
+    },
+    "costOfLiving": {
+      "eyebrow": "Custo de Vida",
+      "title": "Quanto custa a vida na Itália?",
+      "intro": "A Itália oferece uma enorme variedade no custo de vida — desde cidades do norte caras como Milão e Roma até pequenas cidades notavelmente acessíveis no sul. Uma pessoa solteira pode viver confortavelmente com €1,200–€1,500/month em cidades de médio porte, e menos de €1,000/month no interior do sul da Itália.",
+      "cities": [
+        {
+          "city": "Milão, Roma e Florença",
+          "level": "Mais caras",
+          "items": [
+            "Apartamento de 1 quarto (centro): €1,200–€1,800/mo",
+            "Orçamento para uma pessoa: €2,000–€3,000/mo",
+            "Passe mensal de transporte: €35–€55"
+          ]
+        },
+        {
+          "city": "Bolonha, Turim, Nápoles",
+          "level": "Preço médio",
+          "items": [
+            "Apartamento de 1 quarto (centro): €700–€1,000/mo",
+            "Orçamento para uma pessoa: €1,400–€1,800/mo",
+            "Passe mensal de transporte: €30–€45"
+          ]
+        },
+        {
+          "city": "Sul da Itália e pequenas cidades",
+          "level": "Mais acessível",
+          "items": [
+            "Apartamento de 1 quarto: €300–€700/mo",
+            "Orçamento para uma pessoa: €800–€1,200/mo",
+            "Carro frequentemente necessário em áreas rurais"
+          ]
+        }
+      ],
+      "expenses": {
+        "title": "Despesas mensais típicas (cidade de médio porte)",
+        "items": [
+          [
+            "Aluguel (1 quarto, centro da cidade)",
+            "€700 – €1,100"
+          ],
+          [
+            "Serviços públicos (eletricidade, gás, água)",
+            "€100 – €200"
+          ],
+          [
+            "Alimentação",
+            "€200 – €350"
+          ],
+          [
+            "Refeições fora (restaurante médio)",
+            "€150 – €300"
+          ],
+          [
+            "Passe de transporte público",
+            "€30 – €45"
+          ],
+          [
+            "Plano de saúde privado",
+            "€60 – €150"
+          ],
+          [
+            "Academia",
+            "€30 – €60"
+          ],
+          [
+            "Plano de celular",
+            "€10 – €30"
+          ]
+        ]
+      },
+      "southernNote": "Várias regiões no sul da Itália — incluindo Calabria, Sardinia e Sicily — oferecem ativamente subsídios de até €30,000 para estrangeiros que se mudam permanentemente para pequenas cidades em processo de despovoamento."
+    },
+    "healthcare": {
+      "eyebrow": "Saúde",
+      "title": "Saúde na Itália",
+      "intro": "O sistema público de saúde da Itália, o Servizio Sanitario Nazionale (SSN), é consistentemente classificado entre os melhores do mundo. Está disponível para todos os residentes legais e é em grande parte gratuito ou fortemente subsidiado.",
+      "public": {
+        "title": "Saúde Pública (SSN)",
+        "points": [
+          "Gratuito ou fortemente subsidiado para todos os residentes legais",
+          "Cadastre-se no escritório local da ASL (Azienda Sanitaria Locale) com seu codice fiscale (número fiscal) e permissão de residência",
+          "Cobre consultas com clínico geral, internação hospitalar, maternidade, serviços de emergência e receitas subsidiadas",
+          "Pequenas copagamentos (ticket) se aplicam a algumas consultas com especialistas — tipicamente €15–€50",
+          "A assistência odontológica em grande parte NÃO é coberta — é necessário pagar de forma particular",
+          "A qualidade varia significativamente entre o norte da Itália (excelente) e o sul da Itália (mais variável)",
+          "Número de emergência: 118 (médico), 112 (geral)"
+        ]
+      },
+      "private": {
+        "title": "Plano de Saúde Privado",
+        "points": [
+          "Exigido para a maioria das solicitações de visto antes de chegar à Itália",
+          "Custa aprox. €60–€150/month por pessoa, dependendo da idade e cobertura",
+          "Proporciona acesso mais rápido a especialistas e evita os tempos de espera do SSN",
+          "Particularmente recomendado no sul da Itália, onde a capacidade do SSN pode ser mais limitada",
+          "Operadoras populares: Generali, Allianz, UniSalute, Previmedical"
+        ]
+      },
+      "tip": "Obtenha seu codice fiscale (código fiscal) como primeiro passo — você precisa dele para se registrar no SSN, abrir uma conta bancária, assinar um contrato de aluguel e quase tudo mais."
+    },
+    "banking": {
+      "eyebrow": "Bancos e Finanças",
+      "title": "Serviços bancários na Itália",
+      "intro": "Abrir uma conta bancária na Itália requer seu codice fiscale (código fiscal) e comprovante de residência. Muitos expatriados usam bancos digitais como Revolut ou N26 inicialmente enquanto abrem sua conta italiana.",
+      "requirements": {
+        "title": "O que você precisará para abrir uma conta",
+        "points": [
+          "Codice fiscale — seu número de identificação fiscal italiano (obtenha este primeiro)",
+          "Passaporte válido ou documento de identidade nacional",
+          "Comprovante de endereço italiano (contrato de aluguel ou conta de serviços públicos)",
+          "Permissão de residência (permesso di soggiorno) para cidadãos de fora da UE"
+        ]
+      },
+      "banks": {
+        "title": "Bancos populares para expatriados",
+        "points": [
+          "Intesa Sanpaolo — o maior banco da Itália, com ampla rede de agências",
+          "UniCredit — grande banco internacional com bom suporte em inglês",
+          "Banca Mediolanum — popular entre expatriados e trabalhadores remotos",
+          "Fineco Bank — excelente serviço bancário online/aplicativo, taxas baixas",
+          "N26 / Revolut — ideal enquanto aguarda a abertura da conta italiana",
+          "Wise — recomendado para transferências internacionais e necessidades de múltiplas moedas"
+        ]
+      },
+      "tip": "Seu codice fiscale é o documento mais importante na Itália — obtenha-o antes de chegar, se possível, por meio de um consulado italiano no seu país de origem."
+    },
+    "prosCons": {
+      "eyebrow": "Resumo",
+      "title": "A Itália é a escolha certa para você?",
+      "pros": {
+        "title": "Razões para se mudar para a Itália",
+        "points": [
+          "Imposto fixo de 7% para aposentados no sul da Itália — um dos melhores da Europa",
+          "Regime Impatriati: isenção de imposto de renda de até 90% para trabalhadores qualificados",
+          "Imposto fixo de €300,000 para HNWI com patrimônio líquido ultralto",
+          "Gastronomia, vinhos, arte e cultura de classe mundial",
+          "Litoral, montanhas, lagos e campo deslumbrantes",
+          "Excelente saúde pública classificada entre as melhores do mundo",
+          "Muito acessível no sul da Itália e em áreas rurais",
+          "Fortes comunidades de expatriados em Roma, Florença, Milão e regiões costeiras",
+          "Caminho para a residência na UE e cidadania após 5 a 10 anos",
+          "Subsídios de realocação no sul da Itália de até €30,000 disponíveis"
+        ]
+      },
+      "cons": {
+        "title": "Pontos a considerar",
+        "points": [
+          "A burocracia italiana é notoriamente complexa e lenta",
+          "A barreira do idioma é significativa fora das grandes cidades e áreas turísticas",
+          "O Digital Nomad Visa tem requisitos relativamente altos de renda (€32,400/year) e economias (€30,000)",
+          "O Elective Residency Visa exige renda passiva elevada (€31,000+/year) e proíbe estritamente o trabalho",
+          "O imposto fixo para HNWI foi aumentado para €300,000 em janeiro de 2026 — menos atrativo do que antes",
+          "A qualidade da saúde varia significativamente entre o norte e o sul",
+          "As grandes cidades (Milão, Roma, Florença) são caras"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Pronto para dar o próximo passo?",
+      "subtitle": "Use nossa ferramenta gratuita para comparar a Itália com outros países europeus e encontrar a melhor opção para a sua situação.",
+      "button": "Comparar todos os países →"
+    }
+  }
+}

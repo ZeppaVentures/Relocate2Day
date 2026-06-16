@@ -1,0 +1,375 @@
+{
+  "country": "Malta",
+  "hero": {
+    "badge": "Malta",
+    "title": "Múdate a Malta",
+    "subtitle": "De habla inglesa, soleada y estratégicamente ubicada en el corazón del Mediterráneo — Malta ofrece una combinación única de estilo de vida europeo, generosos programas fiscales y una de las bienvenidas más cálidas para los recién llegados en Europa.",
+    "stats": [
+      {
+        "label": "Impuesto nómada",
+        "value": "0% ingresos extranjeros"
+      },
+      {
+        "label": "Impuesto fijo para jubilados",
+        "value": "15%"
+      },
+      {
+        "label": "Impuesto de herencia",
+        "value": "Ninguno"
+      },
+      {
+        "label": "Idiomas oficiales",
+        "value": "Maltés e inglés"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Visas y Residencia",
+      "title": "Cómo mudarse a Malta",
+      "intro": "Los ciudadanos de la UE/EEE pueden mudarse a Malta libremente y registrar su residencia en el consejo local. Los ciudadanos no comunitarios tienen varias opciones sólidas según si trabajan de forma remota, se están jubilando, invirtiendo o estudiando. Malta es notablemente de habla inglesa en todos los ámbitos, lo que hace que el proceso administrativo sea más accesible que en la mayoría de los países europeos.",
+      "visas": [
+        {
+          "title": "Nomad Residence Permit",
+          "badge": "Trabajadores remotos y freelancers",
+          "points": [
+            "La visa oficial de nómada digital de Malta — una de las más consolidadas de Europa, lanzada en 2021",
+            "Para ciudadanos no comunitarios que trabajan de forma remota para empleadores o clientes con sede fuera de Malta",
+            "Requisito de ingresos mínimos: €42,000/año brutos (aprox. €3,500/mes) — aumentado desde €32,400 en abril de 2024",
+            "Debe estar empleado, ser autónomo o freelance con trabajo remoto comprobado",
+            "Válida por 1 año, renovable hasta 3 veces — un total de 4 años",
+            "El cónyuge, pareja e hijos dependientes pueden ser incluidos",
+            "Incluye una visa Schengen — que permite viajar sin visa por 27 países europeos",
+            "Malta cuenta con 5G a nivel nacional y la cobertura de fibra óptica más amplia de la UE",
+            "Los ingresos extranjeros no remitidos a Malta generalmente no están sujetos a impuestos malteses"
+          ]
+        },
+        {
+          "title": "Malta Retirement Programme (MRP)",
+          "badge": "Jubilados",
+          "points": [
+            "Para jubilados no pertenecientes a la UE/EEE que deseen vivir en Malta con ingresos de pensión",
+            "Al menos el 75% de los ingresos remitidos a Malta deben provenir de una pensión reconocida",
+            "Debe ser propietario de un inmueble valorado en al menos €275,000 o alquilar por un mínimo de €9,600/año",
+            "Debe contar con seguro médico mundial que cubra tanto Malta como la UE",
+            "Impuesto fijo del 15% sobre los ingresos de pensión extranjera remitidos a Malta",
+            "Impuesto anual mínimo: €7,500 más €500 por dependiente",
+            "Debe permanecer al menos 90 días al año en Malta",
+            "Tarifa de solicitud: €2,500",
+            "Se permiten roles no ejecutivos en Malta"
+          ]
+        },
+        {
+          "title": "Global Residence Programme (GRP)",
+          "badge": "Ciudadanos no comunitarios",
+          "points": [
+            "Para ciudadanos no comunitarios que deseen residir en Malta sin los requisitos específicos de jubilación del MRP",
+            "Debe ser propietario de un inmueble valorado en al menos €275,000 (o €220,000 en Gozo/Sur de Malta) o alquilar por €9,600+/año",
+            "Debe contar con seguro médico mundial e ingresos regulares estables",
+            "Impuesto fijo del 15% sobre los ingresos de fuente extranjera remitidos a Malta",
+            "Impuesto anual mínimo: €15,000",
+            "Sin requisito de estancia mínima — más flexible que el MRP",
+            "Puede trabajar o ser autónomo en Malta"
+          ]
+        },
+        {
+          "title": "Malta Permanent Residence Programme (MPRP)",
+          "badge": "Inversores",
+          "points": [
+            "El equivalente de la Golden Visa en Malta — otorga residencia permanente en la UE a través de una inversión",
+            "Requiere una contribución gubernamental de €28,000 (si alquila) o €58,000 (si compra una propiedad)",
+            "Más una donación de €2,000 a una ONG registrada",
+            "Debe alquilar una propiedad por €10,000/año+ o comprar por €300,000+ (€270,000 en Gozo/Sur de Malta)",
+            "Sin requisito de estancia mínima",
+            "Otorga residencia permanente — no ciudadanía",
+            "El cónyuge, hijos, padres y abuelos pueden ser incluidos",
+            "Se requiere un agente con licencia para las solicitudes"
+          ]
+        },
+        {
+          "title": "Ciudadanos de la UE / EEE",
+          "badge": "Libre circulación",
+          "points": [
+            "Los ciudadanos de la UE/EEE tienen derecho a vivir y trabajar en Malta sin necesidad de visa",
+            "Deben registrarse en el consejo local (Kunsill Lokali) dentro de los 3 meses siguientes a su llegada",
+            "Solicitar una tarjeta eResidence en Identity Malta",
+            "Después de 5 años de residencia legal continua, son elegibles para la residencia permanente",
+            "Sin requisitos de ingresos ni de seguro para los ciudadanos de la UE"
+          ]
+        },
+        {
+          "title": "Visa de Estudiante",
+          "badge": "Estudiantes",
+          "points": [
+            "Para ciudadanos no comunitarios matriculados en una institución educativa maltesa",
+            "Malta es muy popular para cursos de inglés — uno de los principales destinos de aprendizaje del inglés en Europa",
+            "Válida durante la duración del programa en el que está inscrito",
+            "Se permite trabajar a tiempo parcial junto con los estudios",
+            "La Universidad de Malta (University of Malta) ofrece programas de grado completamente en inglés",
+            "Posibilidad de convertirla en un permiso de trabajo tras la graduación"
+          ]
+        }
+      ],
+      "disclaimer": "Los programas de residencia de Malta son gestionados por la Residency Malta Agency. Las decisiones son definitivas — no existe un derecho formal de apelación para las solicitudes denegadas. Verifique siempre los requisitos vigentes y considere recurrir a un asesor de inmigración maltés con licencia para los programas de inversión y jubilación."
+    },
+    "taxes": {
+      "eyebrow": "Impuestos",
+      "title": "Entendiendo los impuestos en Malta",
+      "intro": "El sistema fiscal de Malta es uno de los más favorables de Europa para los recién llegados. El concepto clave es la base de remesas — los residentes no domiciliados solo pagan impuestos sobre los ingresos generados en Malta o los ingresos extranjeros que sean remitidos (traídos) a Malta. Los ingresos extranjeros que permanecen fuera de Malta generalmente no tributan. No existe impuesto sobre el patrimonio, impuesto de herencia ni impuesto sobre donaciones.",
+      "highlights": [
+        {
+          "title": "Sin impuesto de herencia",
+          "desc": "Los bienes pasan a los herederos sin ningún impuesto de herencia, sucesión ni donación"
+        },
+        {
+          "title": "Base de remesas",
+          "desc": "Los residentes no domiciliados solo tributan sobre los ingresos traídos a Malta — los ingresos extranjeros mantenidos en el exterior no se gravan"
+        },
+        {
+          "title": "Más de 70 tratados fiscales",
+          "desc": "Malta cuenta con tratados de doble imposición con más de 70 países — lo que evita que sea gravado dos veces"
+        }
+      ],
+      "nomadTax": {
+        "title": "Nomad Residence Permit — Tratamiento Fiscal",
+        "subtitle": "Los titulares del Nomad Residence Permit disfrutan de un tratamiento fiscal muy favorable. Dado que sus ingresos se generan fuera de Malta y pueden no ser remitidos a Malta, generalmente quedan completamente fuera del ámbito fiscal maltés.",
+        "items": [
+          {
+            "label": "Ingresos extranjeros (no remitidos)",
+            "value": "Generalmente 0% — fuera del ámbito fiscal maltés"
+          },
+          {
+            "label": "Ingresos extranjeros (remitidos a Malta)",
+            "value": "Sujetos a impuestos malteses a tasas progresivas o régimen fijo"
+          },
+          {
+            "label": "Seguridad social",
+            "value": "Los titulares del permiso nómada NO están obligados a pagar contribuciones a la seguridad social maltesa"
+          },
+          {
+            "label": "Impuesto en el país de origen",
+            "value": "Es posible que aún deba impuestos en su país de origen — verifique siempre con un asesor fiscal"
+          }
+        ]
+      },
+      "specialProgrammes": [
+        {
+          "title": "Malta Retirement Programme (MRP)",
+          "detail": "Impuesto fijo del 15% sobre los ingresos de pensión extranjera remitidos a Malta. Impuesto anual mínimo: €7,500 + €500 por dependiente. Aplica a jubilados que reciben al menos el 75% de sus ingresos de una pensión extranjera.",
+          "label": "Jubilados"
+        },
+        {
+          "title": "Global Residence Programme (GRP)",
+          "detail": "Impuesto fijo del 15% sobre todos los ingresos de fuente extranjera remitidos a Malta. Impuesto anual mínimo: €15,000. Disponible para ciudadanos no comunitarios que sean propietarios o alquilen una propiedad que cumpla los requisitos.",
+          "label": "Residentes no comunitarios"
+        },
+        {
+          "title": "Highly Qualified Persons (HQP) Rules",
+          "detail": "Impuesto fijo del 15% sobre los ingresos laborales de hasta €5 millones para profesionales de alto nivel en sectores regulados, incluyendo servicios financieros, aviación e iGaming. Muy atractivo para ejecutivos.",
+          "label": "Profesionales de alto nivel"
+        }
+      ],
+      "standardRates": {
+        "title": "Tasas estándar del impuesto sobre la renta (progresivas)",
+        "brackets": [
+          [
+            "Hasta €9,100",
+            "0%"
+          ],
+          [
+            "€9,100 – €14,500",
+            "15%"
+          ],
+          [
+            "€14,500 – €19,500",
+            "25%"
+          ],
+          [
+            "€19,500 – €60,000",
+            "25%"
+          ],
+          [
+            "Más de €60,000",
+            "35%"
+          ]
+        ],
+        "note": "Las tasas mostradas corresponden a personas solteras. Las tasas para casados y padres difieren ligeramente. La tasa máxima es del 35% sobre ingresos superiores a €60,000."
+      },
+      "disclaimer": "Las normas fiscales de Malta son complejas y dependen en gran medida de su estatus de residencia, domicilio y si los ingresos son remitidos a Malta. Consulte siempre a un asesor fiscal maltés calificado antes de tomar cualquier decisión."
+    },
+    "costOfLiving": {
+      "eyebrow": "Costo de Vida",
+      "title": "¿Cuánto cuesta vivir en Malta?",
+      "intro": "El costo de vida en Malta es moderado — aproximadamente un 30% más barato que en el Reino Unido y alrededor de un 41% más barato que en Estados Unidos. Una persona sola necesita aproximadamente €1,300–€2,200 al mes incluyendo el alquiler, según la ubicación y el estilo de vida.",
+      "cities": [
+        {
+          "city": "Valletta, Sliema y St. Julian's",
+          "level": "Los más caros",
+          "items": [
+            "Apartamento de 1 habitación: €900–€1,600/mes",
+            "Presupuesto para una persona: €1,700–€2,200/mes",
+            "Ideal para la comunidad expat y la vida nocturna"
+          ]
+        },
+        {
+          "city": "Gzira, Msida y Birkirkara",
+          "level": "Mejor relación calidad-precio",
+          "items": [
+            "Apartamento de 1 habitación: €750–€1,100/mes",
+            "Presupuesto para una persona: €1,300–€1,700/mes",
+            "A 10 minutos a pie de Sliema — el punto ideal para expats"
+          ]
+        },
+        {
+          "city": "Gozo y el sur de Malta",
+          "level": "Los más asequibles",
+          "items": [
+            "Apartamento de 1 habitación: €500–€800/mes",
+            "Presupuesto para una persona: €1,000–€1,400/mes",
+            "Estilo de vida más tranquilo, se recomienda tener coche"
+          ]
+        }
+      ],
+      "expenses": {
+        "title": "Gastos mensuales típicos en Malta",
+        "items": [
+          [
+            "Alquiler (1 habitación, zona intermedia)",
+            "€750 – €1,100"
+          ],
+          [
+            "Servicios públicos (electricidad y agua)",
+            "€60 – €150"
+          ],
+          [
+            "Internet (fibra)",
+            "€25 – €40"
+          ],
+          [
+            "Supermercado",
+            "€200 – €350"
+          ],
+          [
+            "Comer fuera (gama media)",
+            "€100 – €250"
+          ],
+          [
+            "Abono de transporte público",
+            "~€26/mes (gratuito para residentes menores de 21 años)"
+          ],
+          [
+            "Seguro médico privado",
+            "€50 – €150"
+          ],
+          [
+            "Membresía de gimnasio",
+            "€30 – €60"
+          ],
+          [
+            "Plan de telefonía móvil",
+            "€10 – €30"
+          ]
+        ]
+      },
+      "tip": "Gzira y Msida son donde la mayoría de los expats más avezados terminan instalándose — obtienes un descuento del 20–30% respecto a los precios de Sliema mientras estás a 10 minutos a pie del paseo marítimo y de todo lo que la isla tiene para ofrecer. Es ampliamente considerado el punto ideal entre valor y calidad de vida."
+    },
+    "healthcare": {
+      "eyebrow": "Salud",
+      "title": "Salud en Malta",
+      "intro": "Malta cuenta con un sistema de salud dual — un Servicio Nacional de Salud público (equivalente al NHS) y un sector privado en crecimiento. La OMS clasifica el sistema de salud maltés entre los cinco mejores del mundo. Todos los servicios se realizan en inglés.",
+      "public": {
+        "title": "Salud Pública",
+        "points": [
+          "Gratuita en el punto de atención para todos los residentes legales registrados en el sistema público",
+          "Regístrese en el Mater Dei Hospital (el principal hospital público) o en su centro de salud local",
+          "Cubre consultas médicas generales, atención especializada, hospitalización, maternidad y servicios de emergencia",
+          "Los ciudadanos de la UE pueden utilizar la Tarjeta Sanitaria Europea (EHIC) en las instalaciones públicas",
+          "Completamente en inglés — una de las mayores ventajas del sistema de salud maltés",
+          "El Mater Dei Hospital es una instalación moderna y bien equipada, inaugurada en 2007",
+          "La atención dental es mayoritariamente privada",
+          "Número de emergencias: 112"
+        ]
+      },
+      "private": {
+        "title": "Seguro Médico Privado",
+        "points": [
+          "Obligatorio para el Malta Retirement Programme y el Global Residence Programme",
+          "Primas mensuales típicamente entre €50 y €150, según la edad y la cobertura",
+          "Proporciona acceso más rápido a especialistas y clínicas privadas",
+          "Muchas clínicas privadas en Sliema, St. Julian's y Valletta ofrecen citas el mismo día",
+          "Generalmente más asequible que un seguro privado comparable en el Reino Unido o Estados Unidos",
+          "Proveedores populares: Bupa International, AXA, GasanMamo, Atlas Insurance",
+          "Especialmente recomendado mientras se tramita el registro de residencia"
+        ]
+      },
+      "tip": "El sistema de salud de Malta es completamente en inglés — a diferencia de la mayoría de los demás países europeos. Esto representa un beneficio práctico significativo para los expats, eliminando la barrera del idioma que en otros lugares puede dificultar la navegación por los sistemas de salud."
+    },
+    "banking": {
+      "eyebrow": "Banca y Finanzas",
+      "title": "Banca en Malta",
+      "intro": "Malta cuenta con un sector bancario bien regulado, supervisado por la Malta Financial Services Authority (MFSA). La banca se realiza completamente en inglés. Para abrir una cuenta se requiere comprobante de residencia e identificación.",
+      "requirements": {
+        "title": "Lo que necesitará para abrir una cuenta",
+        "points": [
+          "Pasaporte válido o documento nacional de identidad",
+          "Comprobante de domicilio en Malta (contrato de alquiler o factura de servicios)",
+          "Comprobante de estatus de residencia (tarjeta eResidence, permiso de residencia o Nomad Residence Permit)",
+          "Comprobante de ingresos o empleo",
+          "Algunos bancos pueden requerir una referencia o una declaración del origen de los fondos",
+          "Toda la comunicación y documentación es en inglés"
+        ]
+      },
+      "banks": {
+        "title": "Bancos y servicios en Malta",
+        "points": [
+          "Bank of Valletta (BOV) — el banco más grande de Malta, con sucursales de servicio completo en toda la isla",
+          "HSBC Malta — banca internacional sólida con buen soporte en inglés",
+          "APS Bank — popular entre los residentes para la banca personal",
+          "Medirect — banco enfocado en lo digital, popular entre expats e inversores",
+          "Revolut / Wise — ampliamente utilizados por los expats para gastos cotidianos y transferencias internacionales",
+          "Lombard Bank — banco más pequeño, popular entre clientes empresariales"
+        ]
+      },
+      "tip": "Malta utiliza el Euro (€) y forma parte de la Eurozona. La banca es completamente en inglés y más sencilla en comparación con muchos otros países europeos. La MFSA es un regulador muy respetado — el sector financiero maltés goza de reconocimiento y confianza a nivel internacional."
+    },
+    "prosCons": {
+      "eyebrow": "Resumen",
+      "title": "¿Es Malta la opción adecuada para ti?",
+      "pros": {
+        "title": "Razones para mudarse a Malta",
+        "points": [
+          "El inglés es un idioma oficial — sin barreras idiomáticas en ningún ámbito",
+          "Los ingresos extranjeros no remitidos a Malta generalmente están libres de impuestos para los titulares del permiso nómada",
+          "Sin impuesto de herencia, sin impuesto al patrimonio, sin impuesto sobre donaciones",
+          "Impuesto fijo del 15% para jubilados y titulares del Global Residence Programme",
+          "Tasa fija del 15% del HQP para profesionales de alto nivel en finanzas, gaming y aviación",
+          "Sistema de salud clasificado entre los 5 mejores del mundo por la OMS — completamente en inglés",
+          "Clima mediterráneo — inviernos suaves, veranos cálidos",
+          "El Nomad Residence Permit incluye visa Schengen — viaja libremente por Europa",
+          "Una comunidad expat muy grande y acogedora — el 30% de la población nació en el extranjero",
+          "Estado miembro de la UE — camino hacia la residencia y la ciudadanía europea",
+          "Sólido mercado laboral en iGaming, fintech y servicios financieros",
+          "Excelente infraestructura de internet — la cobertura de fibra óptica más amplia de la UE"
+        ]
+      },
+      "cons": {
+        "title": "Aspectos a considerar",
+        "points": [
+          "Isla muy pequeña (316 km²) — puede resultar estrecha, especialmente en verano",
+          "El requisito de ingresos del permiso nómada aumentó a €42,000/año en 2024 — más alto que en muchos otros países",
+          "Los precios de la vivienda han aumentado significativamente debido a la demanda de expats y empresas de gaming",
+          "La congestión del tráfico es un problema importante — Malta tiene una de las tasas más altas de propiedad de vehículos en Europa",
+          "Paisajes naturales limitados en comparación con otros destinos mediterráneos",
+          "Los veranos pueden ser muy calurosos y secos (35°C+), y la isla se llena de turistas",
+          "Las denegaciones del Nomad Residence Permit no tienen derecho de apelación",
+          "Las obligaciones fiscales en el país de origen pueden seguir aplicándose incluso si Malta no le grava"
+        ]
+      }
+    },
+    "cta": {
+      "title": "¿Listo para dar el paso?",
+      "subtitle": "Usa nuestra herramienta gratuita para comparar Malta con otros países europeos y encontrar la mejor opción para tu situación.",
+      "button": "Comparar todos los países →"
+    }
+  }
+}

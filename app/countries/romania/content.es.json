@@ -1,0 +1,342 @@
+{
+  "country": "Romania",
+  "hero": {
+    "badge": "Rumanía",
+    "title": "Múdate a Rumanía",
+    "subtitle": "El secreto mejor guardado de Europa: un impuesto sobre la renta fijo del 10%, velocidades de internet de primer nivel mundial, castillos medievales y un costo de vida que hace rendir tu dinero el doble que en Europa Occidental.",
+    "stats": [
+      {
+        "label": "Impuesto sobre la renta fijo",
+        "value": "10%"
+      },
+      {
+        "label": "Costo de vida",
+        "value": "Desde €800/mes"
+      },
+      {
+        "label": "Miembro de la UE desde",
+        "value": "2007"
+      },
+      {
+        "label": "Miembro de Schengen",
+        "value": "Desde 2025"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Visas y Residencia",
+      "title": "Cómo mudarse a Rumanía",
+      "intro": "Los ciudadanos de la UE/EEE pueden mudarse a Rumanía libremente — no se requiere visa, solo registrarse con las autoridades locales si la estadía supera los 3 meses. Los ciudadanos no comunitarios necesitan una visa de larga estancia Type D antes de llegar, seguida de un permiso de residencia. Rumanía se incorporó a Schengen en 2025.",
+      "visas": [
+        {
+          "title": "Ciudadanos de la UE / EEE",
+          "badge": "Libre circulación",
+          "points": [
+            "Los ciudadanos de la UE/EEE tienen derecho a vivir y trabajar en Rumanía sin visa",
+            "Registrarse ante la Inspección General de Inmigración (IGI) si la estadía supera los 3 meses",
+            "Recibir un Certificado de Registro, generalmente válido por hasta 5 años",
+            "Después de 5 años de residencia legal continua, se puede solicitar la residencia permanente",
+            "La membresía de Rumanía en Schengen (desde 2025) significa que tu permiso de residencia rumano permite viajar por toda el área Schengen"
+          ]
+        },
+        {
+          "title": "Digital Nomad Visa",
+          "badge": "Trabajadores remotos y freelancers",
+          "points": [
+            "Para ciudadanos no comunitarios que trabajan de forma remota para empleadores o clientes con base fuera de Rumanía",
+            "Requisito de ingresos mínimos: aproximadamente €4,100/mes (3 veces el salario bruto promedio nacional de Rumanía)",
+            "Solicitar en un consulado o embajada rumana en tu país de origen una visa de larga estancia Type D",
+            "Permiso de residencia válido por 1 año, renovable",
+            "La residencia fiscal aplica si permaneces más de 183 días al año en Rumanía — impuesto fijo del 10% sobre ingresos mundiales",
+            "Los familiares pueden incluirse bajo las disposiciones de reagrupación familiar"
+          ]
+        },
+        {
+          "title": "Long-Stay Type D Visa (Ingresos Pasivos / Jubilados)",
+          "badge": "Jubilados e ingresos pasivos",
+          "points": [
+            "Para ciudadanos no comunitarios con ingresos pasivos suficientes — pensiones, rentas, dividendos o ahorros",
+            "Debes demostrar medios económicos adecuados para mantenerte sin trabajar en Rumanía",
+            "Visa inicial válida por 90 días; solicitar el permiso de residencia en la IGI al llegar",
+            "Permiso de residencia emitido generalmente por 1 año, renovable anualmente",
+            "Después de 5 años de residencia legal continua, se puede solicitar la residencia permanente"
+          ]
+        },
+        {
+          "title": "Visa de Empleo",
+          "badge": "Empleados",
+          "points": [
+            "Para ciudadanos no comunitarios que se trasladan a trabajar para un empleador rumano",
+            "El empleador debe obtener un permiso de trabajo en tu nombre antes de que solicites la visa",
+            "Permiso de residencia emitido por la duración del contrato laboral, hasta 1 año inicialmente",
+            "El creciente sector tecnológico de Bucarest y Cluj-Napoca atrae cada vez más talento internacional"
+          ]
+        },
+        {
+          "title": "Visa de Inversor y Negocios",
+          "badge": "Emprendedores e inversores",
+          "points": [
+            "Para ciudadanos no comunitarios que establecen o invierten en un negocio rumano",
+            "El régimen tributario de microempresas de Rumanía (1% de impuesto corporativo sobre la facturación hasta ciertos umbrales) es muy atractivo para emprendedores",
+            "Camino hacia la residencia permanente después de 5 años",
+            "La membresía de Rumanía en la UE y su acceso a Schengen la convierten en una base estratégica para los negocios en toda Europa"
+          ]
+        }
+      ],
+      "disclaimer": "Los procedimientos de inmigración rumanos pueden ser lentos y requerir mucha documentación. Comienza siempre el proceso de visa con bastante anticipación y consulta a un abogado de inmigración rumano calificado para tu situación específica. Verifica todos los requisitos vigentes con la Inspección General de Inmigración (IGI) (igi.mai.gov.ro/en/)."
+    },
+    "taxes": {
+      "eyebrow": "Impuestos",
+      "title": "Entendiendo los impuestos en Rumanía",
+      "intro": "Rumanía tiene uno de los sistemas fiscales más atractivos de la UE — una tasa fija del 10% de impuesto sobre la renta personal, empatada con Bulgaria como la más baja del bloque. Para los emprendedores, el régimen de microempresas ofrece un impuesto corporativo tan bajo como el 1% sobre la facturación.",
+      "highlight": {
+        "title": "Impuesto Fijo del 10% — Empatado como el más bajo de la UE",
+        "subtitle": "El impuesto sobre la renta fijo del 10% de Rumanía significa que alguien que gana €100,000 paga la misma tasa que alguien que gana €20,000. Sin tramos, sin complicaciones.",
+        "items": [
+          {
+            "label": "Impuesto sobre la renta personal",
+            "value": "10% fijo — sobre todos los ingresos"
+          },
+          {
+            "label": "Impuesto corporativo (estándar)",
+            "value": "16%"
+          },
+          {
+            "label": "Impuesto de microempresa",
+            "value": "1% sobre la facturación (empresas que califican)"
+          },
+          {
+            "label": "Impuesto sobre dividendos",
+            "value": "16% (aumentado desde el 10% en 2026)"
+          },
+          {
+            "label": "Impuesto sobre ganancias de capital",
+            "value": "16% (aumentado desde el 10% en 2026)"
+          },
+          {
+            "label": "IVA (estándar)",
+            "value": "19%"
+          }
+        ]
+      },
+      "socialContributions": {
+        "title": "Contribuciones sociales — lo que pagan los empleados",
+        "points": [
+          "CAS (seguro de pensión): 25% del salario bruto — pagado por el empleado",
+          "CASS (seguro de salud): 10% del salario bruto — pagado por el empleado",
+          "Total de contribuciones sociales del empleado: 35% del salario bruto",
+          "El impuesto sobre la renta del 10% se aplica después de deducir las contribuciones sociales",
+          "Ingreso neto efectivo sobre €40,000 brutos: aproximadamente el 58.5% (€23,400)",
+          "Rumanía tiene tratados de doble imposición con más de 80 países"
+        ]
+      },
+      "comparison": {
+        "title": "Cómo se compara Rumanía con otros países de la UE",
+        "brackets": [
+          [
+            "Rumanía",
+            "10% (fijo)"
+          ],
+          [
+            "Bulgaria",
+            "10% (fijo)"
+          ],
+          [
+            "Malta",
+            "35% (máx.)"
+          ],
+          [
+            "Portugal",
+            "48% (máx.)"
+          ],
+          [
+            "España",
+            "47% (máx.)"
+          ],
+          [
+            "Italia",
+            "43% (máx.)"
+          ],
+          [
+            "Países Bajos",
+            "49.5% (máx.)"
+          ]
+        ]
+      },
+      "disclaimer": "La reforma fiscal de Rumanía de 2026 incrementó el impuesto sobre dividendos y ganancias de capital del 10% al 16%. Las leyes fiscales cambian con frecuencia — consulta siempre a un asesor fiscal rumano calificado antes de tomar decisiones."
+    },
+    "costOfLiving": {
+      "eyebrow": "Costo de Vida",
+      "title": "¿Cuánto cuesta vivir en Rumanía?",
+      "intro": "Rumanía ofrece un valor excepcional para los expatriados que perciben salarios occidentales. Un estilo de vida cómodo en Bucarest cuesta alrededor de €1,000–€1,500/mes, mientras que ciudades más pequeñas como Cluj-Napoca, Timișoara e Iași son aún más asequibles.",
+      "cities": [
+        {
+          "city": "Bucarest",
+          "level": "La más cara",
+          "items": [
+            "Apartamento de 1 habitación (centro): €450–€700/mes",
+            "Presupuesto para una persona: €1,000–€1,500/mes",
+            "Ideal para el ámbito laboral, la vida nocturna y la vida urbana"
+          ]
+        },
+        {
+          "city": "Cluj-Napoca y Timișoara",
+          "level": "Rango medio",
+          "items": [
+            "Apartamento de 1 habitación (centro): €350–€550/mes",
+            "Presupuesto para una persona: €800–€1,200/mes",
+            "Escenas tecnológicas y estudiantiles vibrantes"
+          ]
+        },
+        {
+          "city": "Iași, Brașov y ciudades más pequeñas",
+          "level": "Las más asequibles",
+          "items": [
+            "Apartamento de 1 habitación: €250–€400/mes",
+            "Presupuesto para una persona: €600–€900/mes",
+            "Paisajes hermosos y costos más bajos"
+          ]
+        }
+      ],
+      "expenses": {
+        "title": "Gastos mensuales típicos en Bucarest",
+        "items": [
+          [
+            "Alquiler (1 habitación, centro de la ciudad)",
+            "€450 – €700"
+          ],
+          [
+            "Servicios (electricidad, calefacción, agua)",
+            "€80 – €150"
+          ],
+          [
+            "Internet (fibra óptica, 1Gbps)",
+            "€10 – €15"
+          ],
+          [
+            "Supermercado",
+            "€200 – €350"
+          ],
+          [
+            "Salir a comer (rango medio)",
+            "€100 – €200"
+          ],
+          [
+            "Abono de transporte público",
+            "€10 – €20"
+          ],
+          [
+            "Seguro médico privado",
+            "€30 – €100"
+          ],
+          [
+            "Membresía de gimnasio",
+            "€20 – €40"
+          ],
+          [
+            "Plan de telefonía móvil",
+            "€5 – €15"
+          ]
+        ]
+      },
+      "internetTip": "Rumanía se ubica de manera consistente entre los 5 mejores países del mundo en velocidad de internet — con conexiones domésticas promedio de 200+ Mbps disponibles por menos de €15/mes. Para los trabajadores remotos, esta es una ventaja significativa."
+    },
+    "healthcare": {
+      "eyebrow": "Salud",
+      "title": "La salud en Rumanía",
+      "intro": "Rumanía cuenta con un sistema de salud público financiado mediante contribuciones obligatorias al CASS (10% del salario). La mayoría de los expatriados optan por un seguro médico privado para tener mejor acceso, médicos que hablen inglés y tiempos de espera más cortos.",
+      "public": {
+        "title": "Atención Médica Pública",
+        "points": [
+          "Disponible para todos los residentes legales que contribuyen al sistema nacional de salud (CASS)",
+          "Gratuita en el punto de atención para los contribuyentes registrados",
+          "La calidad varía considerablemente — Bucarest y Cluj-Napoca cuentan con las mejores instalaciones",
+          "Los tiempos de espera prolongados para citas con especialistas son habituales",
+          "La atención de urgencias está disponible para todos — marca el 112",
+          "Los ciudadanos de la UE pueden utilizar su EHIC para tratamientos de urgencia",
+          "La atención dental es principalmente privada"
+        ]
+      },
+      "private": {
+        "title": "Seguro Médico Privado",
+        "points": [
+          "Muy asequible — generalmente €30–€100/mes por persona",
+          "Brinda acceso más rápido, médicos que hablan inglés e instalaciones de mejor calidad",
+          "Requerido para la Digital Nomad Visa y la mayoría de las solicitudes de visa de larga estancia",
+          "Una consulta con médico de cabecera privado cuesta aproximadamente €20–€50 sin seguro",
+          "Proveedores internacionales populares: Allianz, Bupa, Cigna, AXA",
+          "La mayoría de los expatriados y nómadas digitales utilizan exclusivamente seguro privado"
+        ]
+      },
+      "tip": "La atención médica privada en Rumanía es genuinamente asequible. Muchos expatriados prescinden del seguro para la atención de rutina y pagan de su bolsillo — una consulta con el médico de cabecera por €20–€50 y con un especialista por €30–€80 hace que esta sea una opción realista."
+    },
+    "banking": {
+      "eyebrow": "Banca y Finanzas",
+      "title": "La banca en Rumanía",
+      "intro": "Rumanía utiliza el Leu rumano (RON) — no ha adoptado el Euro, aunque la adopción del Euro está prevista para el futuro. La banca es sencilla para los residentes, con varios grandes bancos internacionales que operan junto a instituciones locales.",
+      "currencyNote": "Rumanía todavía utiliza el Leu rumano (RON). El Leu es una moneda relativamente cerrada — generalmente es más fácil y más conveniente cambiar dinero después de llegar a Rumanía, o utilizar una tarjeta con bajas comisiones por transacciones en el extranjero como Revolut o Wise.",
+      "requirements": {
+        "title": "Lo que necesitarás para abrir una cuenta",
+        "points": [
+          "Pasaporte válido o documento de identidad nacional",
+          "Comprobante de domicilio en Rumanía (contrato de alquiler o factura de servicios)",
+          "Permiso de residencia o certificado de registro",
+          "Número de identificación fiscal rumano (CIF/CNP) — obténlo en ANAF",
+          "Depósito inicial generalmente de €50–€200"
+        ]
+      },
+      "banks": {
+        "title": "Bancos que operan en Rumanía",
+        "points": [
+          "Banca Transilvania — el banco rumano más grande, amplia red de sucursales",
+          "BCR (Erste Group) — popular entre expatriados, sólida banca digital",
+          "BRD (Société Générale) — banca minorista confiable",
+          "ING Romania — excelente aplicación y servicio en inglés",
+          "Raiffeisen Bank — sólido soporte internacional",
+          "Revolut / Wise — ampliamente utilizados por expatriados y nómadas digitales para gastos cotidianos"
+        ]
+      },
+      "tip": "Abre una cuenta en Revolut o Wise antes de mudarte — te permite gastar en RON de inmediato al tipo de cambio real mientras configuras tu cuenta bancaria rumana. ING Romania es especialmente popular entre los expatriados por su aplicación en inglés."
+    },
+    "prosCons": {
+      "eyebrow": "Resumen",
+      "title": "¿Es Rumanía la opción correcta para ti?",
+      "pros": {
+        "title": "Razones para mudarse a Rumanía",
+        "points": [
+          "Impuesto sobre la renta fijo del 10% — empatado como el más bajo de la UE junto con Bulgaria",
+          "Impuesto corporativo de microempresa tan bajo como el 1% sobre la facturación",
+          "Velocidades de internet de primer nivel mundial (200+ Mbps) por menos de €15/mes",
+          "Costo de vida extremadamente asequible — vida cómoda desde €800/mes",
+          "Miembro de la UE desde 2007 — plena libertad de movimiento y derechos",
+          "Miembro de Schengen desde 2025 — viajes sin visa por toda Europa",
+          "Creciente escena tecnológica y de startups — Bucarest y Cluj-Napoca son centros principales",
+          "Hermosas ciudades medievales, castillos, montañas y costa del Mar Negro",
+          "Atención médica privada muy asequible (€30–€100/mes)",
+          "El inglés es ampliamente hablado entre las generaciones más jóvenes y en las principales ciudades",
+          "Digital Nomad Visa disponible para trabajadores remotos que cumplan los requisitos"
+        ]
+      },
+      "cons": {
+        "title": "Aspectos a considerar",
+        "points": [
+          "Las altas contribuciones sociales (35% del salario bruto) reducen el ingreso neto",
+          "El impuesto sobre dividendos y ganancias de capital aumentó del 10% al 16% en 2026",
+          "La burocracia es lenta y compleja — el papeleo de inmigración puede ser complicado",
+          "El idioma rumano es esencial para una integración plena",
+          "La calidad de la atención médica pública es variable — se recomienda ampliamente el seguro privado",
+          "La infraestructura fuera de las grandes ciudades puede ser deficiente — la calidad de las carreteras es irregular",
+          "Rumanía todavía usa el Leu (RON) — aún no ha adoptado el Euro",
+          "La corrupción sigue siendo una preocupación en algunas áreas de la vida pública",
+          "Los inviernos en Bucarest pueden ser fríos — las temperaturas bajan regularmente por debajo de cero"
+        ]
+      }
+    },
+    "cta": {
+      "title": "¿Listo para hacer tu mudanza?",
+      "subtitle": "Usa nuestra herramienta gratuita para comparar Rumanía con otros países europeos y encontrar la mejor opción para tu situación.",
+      "button": "Comparar todos los países →"
+    }
+  }
+}

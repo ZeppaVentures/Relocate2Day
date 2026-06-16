@@ -1,0 +1,227 @@
+{
+  "country": "Spain",
+  "hero": {
+    "badge": "Spain",
+    "title": "Move to Spain",
+    "subtitle": "Sunshine, culture, world-class food and one of Europe's most attractive tax regimes for newcomers. Here's everything you need to know.",
+    "stats": [
+      { "label": "Cost of living", "value": "From €1,200/mo" },
+      { "label": "Flat tax (Beckham Law)", "value": "24%" },
+      { "label": "Climate", "value": "300+ sunny days" },
+      { "label": "Official language", "value": "Spanish" }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Visas & Residency",
+      "title": "How to move to Spain",
+      "intro": "Spain offers several visa routes depending on your situation — whether you're employed, self-employed, retired, or a student. EU/EEA citizens can move freely and simply need to register their residency. Non-EU nationals will need one of the following visas.",
+      "visas": [
+        {
+          "title": "Digital Nomad Visa (Telework Visa)",
+          "badge": "Remote workers & freelancers",
+          "points": [
+            "For non-EU nationals working remotely for companies or clients outside Spain",
+            "Requires a minimum income of approx. €2,850/month (200% of Spain's minimum wage)",
+            "Valid for 1 year via consulate, or up to 3 years if applied from within Spain",
+            "Renewable up to 5 years total, with a pathway to permanent residency after 5 years",
+            "Can bring spouse, partner, and dependent children",
+            "Application fee: approx. €80"
+          ]
+        },
+        {
+          "title": "Non-Lucrative Visa (NLV)",
+          "badge": "Retirees & passive income",
+          "points": [
+            "For those who do not intend to work in Spain — ideal for retirees",
+            "Must demonstrate approx. €2,400/month in passive income or savings",
+            "Requires private health insurance valid in Spain",
+            "Initial 1-year visa, renewable in 2-year periods up to 5 years",
+            "Does not permit local employment",
+            "After 5 years, eligible to apply for permanent residency"
+          ]
+        },
+        {
+          "title": "Student Visa",
+          "badge": "Students",
+          "points": [
+            "For non-EU nationals enrolled in a recognised Spanish educational institution",
+            "Valid for the full duration of the approved course",
+            "Permits part-time work of up to 30 hours per week",
+            "Upon completing studies, can convert to a work permit without leaving Spain (except language course students)",
+            "Language course students are not eligible to convert to a work permit"
+          ]
+        },
+        {
+          "title": "Work Visa (Employee Relocation)",
+          "badge": "Employees relocating with a company",
+          "points": [
+            "For non-EU employees transferred to a Spanish branch or subsidiary",
+            "The employer sponsors the application and handles much of the paperwork",
+            "Intra-Company Transfer (ICT) permit available for multinational employees",
+            "May be eligible for the Beckham Law tax regime (see Tax section below)"
+          ]
+        }
+      ],
+      "disclaimer": "Spain's Golden Visa (real estate investment route) was officially ended in April 2025. Immigration rules change regularly — always verify requirements with a qualified Spanish immigration lawyer before applying."
+    },
+    "taxes": {
+      "eyebrow": "Taxes",
+      "title": "Understanding tax in Spain",
+      "intro": "Spain's standard income tax rates are progressive and can reach up to 47% for high earners. However, newcomers may qualify for a significant tax break known as the Beckham Law.",
+      "highlight": {
+        "title": "The Beckham Law",
+        "subtitle": "Spain's special tax regime for newcomers — named after David Beckham, who was among the first to use it when joining Real Madrid in 2003.",
+        "items": [
+          { "label": "Flat tax rate", "value": "24% on Spanish income up to €600,000" },
+          { "label": "Duration", "value": "Up to 6 years" },
+          { "label": "Foreign income", "value": "Generally exempt from Spanish tax" },
+          { "label": "Application deadline", "value": "Within 6 months of starting work" }
+        ]
+      },
+      "beckhameEligibility": {
+        "title": "Who qualifies for the Beckham Law?",
+        "points": [
+          "You must not have been a Spanish tax resident in the 10 years prior to moving",
+          "You must be moving to Spain for work reasons (employment, entrepreneurship, or as a highly qualified professional)",
+          "Applies to Digital Nomad Visa holders, employees relocated by a company, and entrepreneurs",
+          "Your spouse and children under 25 can also benefit from the preferential rates"
+        ]
+      },
+      "standardRates": {
+        "title": "Standard income tax rates (without Beckham Law)",
+        "brackets": [
+          ["Up to €12,450", "19%"],
+          ["€12,450 – €20,200", "24%"],
+          ["€20,200 – €35,200", "30%"],
+          ["€35,200 – €60,000", "37%"],
+          ["€60,000 – €300,000", "45%"],
+          ["Over €300,000", "47%"]
+        ]
+      },
+      "disclaimer": "Tax laws change frequently and depend on your personal situation, income type, and country of origin. Always consult a qualified Spanish tax advisor before making any decisions."
+    },
+    "costOfLiving": {
+      "eyebrow": "Cost of Living",
+      "title": "What does life in Spain cost?",
+      "intro": "Spain is generally 25–34% cheaper than the US or Northern Europe. A single person can live comfortably on €1,200–€2,000/month, while families typically need €3,000–€3,500/month. Costs vary significantly by city.",
+      "cities": [
+        {
+          "city": "Madrid & Barcelona",
+          "level": "Most expensive",
+          "items": ["1-bed apartment (centre): €1,400–€1,800/mo", "Single person budget: €2,000+/mo", "Monthly transport pass: €55"]
+        },
+        {
+          "city": "Valencia, Málaga, Seville",
+          "level": "Mid-range",
+          "items": ["1-bed apartment (centre): €750–€900/mo", "Single person budget: €1,500–€1,750/mo", "Monthly transport pass: €40–€50"]
+        },
+        {
+          "city": "Smaller cities & rural areas",
+          "level": "Most affordable",
+          "items": ["1-bed apartment: €350–€700/mo", "Single person budget: €950–€1,200/mo", "Car often needed"]
+        }
+      ],
+      "expenses": {
+        "title": "Typical monthly expenses (outside Madrid/Barcelona)",
+        "items": [
+          ["Rent (1-bed, city centre)", "€700 – €1,000"],
+          ["Utilities (electricity, water, gas)", "€100 – €150"],
+          ["Groceries", "€200 – €350"],
+          ["Dining out (mid-range)", "€150 – €300"],
+          ["Public transport pass", "€40 – €55"],
+          ["Private health insurance", "€50 – €120"],
+          ["Gym membership", "€20 – €50"],
+          ["Mobile plan", "€10 – €30"]
+        ]
+      }
+    },
+    "healthcare": {
+      "eyebrow": "Healthcare",
+      "title": "Healthcare in Spain",
+      "intro": "Spain's healthcare system, the Sistema Nacional de Salud (SNS), is ranked among the best in the world — covering over 99% of residents. As an expat, your access depends on your residency status and how you contribute to social security.",
+      "public": {
+        "title": "Public Healthcare (SNS)",
+        "points": [
+          "Free at point of use for legal residents contributing to social security",
+          "Covers GP visits, specialist consultations, hospital care, emergency services, maternity care, and vaccinations",
+          "Dental and optical care are NOT covered — you pay privately",
+          "Some prescription co-payments apply",
+          "Waiting times for non-urgent specialist care can be long",
+          "Convenio Especial available for those not contributing to social security: approx. €60/month (under 65)"
+        ]
+      },
+      "private": {
+        "title": "Private Health Insurance",
+        "points": [
+          "Required for most visa applications (Digital Nomad Visa, Non-Lucrative Visa)",
+          "Costs approx. €50–€120/month per person for a solid plan",
+          "Provides faster access to specialists and shorter waiting times",
+          "Many providers offer English-speaking doctors, especially in major cities",
+          "Covers dental, optical, and services not included in the public system",
+          "Popular providers: Sanitas, Adeslas, Asisa, Caser"
+        ]
+      },
+      "tip": "Most expats start with private insurance to meet visa requirements and for faster access, then register for public healthcare once eligible. To access the SNS, you'll need your NIE (foreigner ID number) and to register at your local town hall (empadronamiento)."
+    },
+    "banking": {
+      "eyebrow": "Banking & Finance",
+      "title": "Banking in Spain",
+      "intro": "Opening a bank account in Spain is straightforward once you have your NIE (Número de Identificación de Extranjero). You'll need a Spanish bank account for paying rent, utilities, and receiving your salary.",
+      "requirements": {
+        "title": "What you'll need to open an account",
+        "points": [
+          "NIE (Número de Identificación de Extranjero) — your foreigner ID",
+          "Valid passport",
+          "Proof of address in Spain (empadronamiento certificate)",
+          "Proof of employment or income (for some banks)"
+        ]
+      },
+      "banks": {
+        "title": "Popular banks for expats",
+        "points": [
+          "Santander — largest Spanish bank, good English support",
+          "BBVA — excellent app and online banking",
+          "CaixaBank — wide branch network across Spain",
+          "N26 / Revolut — online-only, great for new arrivals before getting a NIE",
+          "Sabadell — popular with expats in coastal areas"
+        ]
+      },
+      "tip": "Get a Revolut or N26 account before you move — it lets you spend in euros fee-free while you're setting up your NIE and Spanish bank account, which can take several weeks."
+    },
+    "prosCons": {
+      "eyebrow": "Summary",
+      "title": "Is Spain right for you?",
+      "pros": {
+        "title": "Reasons to move to Spain",
+        "points": [
+          "Beckham Law — one of Europe's most attractive tax regimes for newcomers",
+          "300+ days of sunshine per year",
+          "World-class food, culture and quality of life",
+          "Excellent public healthcare system",
+          "Lower cost of living than most of Western Europe",
+          "Great transport links within Europe",
+          "Welcoming expat communities in most major cities",
+          "Pathway to EU residency and citizenship"
+        ]
+      },
+      "cons": {
+        "title": "Things to consider",
+        "points": [
+          "Spanish bureaucracy can be slow and complex",
+          "NIE applications can take weeks — plan ahead",
+          "Housing market is tight in Madrid and Barcelona",
+          "Spanish language is essential outside major cities",
+          "Standard tax rates can be high (up to 47%) if you don't qualify for Beckham Law",
+          "Long waiting times for non-urgent public healthcare",
+          "Golden Visa (real estate route) was eliminated in 2025"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to make your move?",
+      "subtitle": "Use our free tool to compare Spain with other European countries and find the best fit for your situation.",
+      "button": "Compare all countries →"
+    }
+  }
+}

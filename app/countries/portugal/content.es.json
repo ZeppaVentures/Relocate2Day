@@ -1,0 +1,330 @@
+{
+  "country": "Portugal",
+  "hero": {
+    "badge": "Portugal",
+    "title": "Múdate a Portugal",
+    "subtitle": "Costo de vida accesible, habitantes amables, gastronomía y vinos de clase mundial, y uno de los países más acogedores de Europa para los recién llegados. Aquí encontrarás todo lo que necesitas saber.",
+    "stats": [
+      {
+        "label": "Costo de vida",
+        "value": "Desde €900/mes"
+      },
+      {
+        "label": "Tasa fija IFICI",
+        "value": "20%"
+      },
+      {
+        "label": "Clima",
+        "value": "300+ días de sol"
+      },
+      {
+        "label": "Idioma oficial",
+        "value": "Portugués"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Visas y Residencia",
+      "title": "Cómo mudarte a Portugal",
+      "intro": "Los ciudadanos de la UE/EEE pueden mudarse a Portugal libremente y solo necesitan registrar su residencia. Los ciudadanos de países no pertenecientes a la UE cuentan con varias opciones de visa según su situación.",
+      "visas": [
+        {
+          "title": "D7 Passive Income Visa",
+          "badge": "Jubilados e ingresos pasivos",
+          "points": [
+            "Para ciudadanos de países no pertenecientes a la UE con ingresos pasivos estables: pensiones, rentas, dividendos o inversiones",
+            "Ingreso mínimo requerido: aprox. €760/mes (el salario mínimo portugués) para el solicitante principal",
+            "Se agrega un 50% por cónyuge o pareja y un 30% por cada hijo dependiente",
+            "Se debe demostrar un ahorro de aprox. €10,440 por solicitante",
+            "Requiere seguro médico privado válido en Portugal",
+            "Permiso de residencia inicial de 2 años, renovable por períodos de 3 años",
+            "Vía hacia la residencia permanente después de 5 años y la ciudadanía después de 5 años",
+            "No permite trabajar en Portugal — solo ingresos pasivos"
+          ]
+        },
+        {
+          "title": "D8 Digital Nomad Visa",
+          "badge": "Trabajadores remotos y freelancers",
+          "points": [
+            "Para ciudadanos de países no pertenecientes a la UE que trabajan de forma remota para empleadores o clientes con base fuera de Portugal",
+            "Ingreso mínimo requerido: €3,680/mes (4 veces el salario mínimo de Portugal)",
+            "Se agrega un 50% por cónyuge o pareja y un 30% por cada hijo dependiente",
+            "Válida hasta 1 año inicialmente, renovable como permiso de residencia",
+            "Vía hacia la residencia permanente después de 5 años",
+            "Requiere un número NIF y una cuenta bancaria portuguesa como parte del proceso de solicitud",
+            "Una de las visas para nómadas digitales más populares de Europa"
+          ]
+        },
+        {
+          "title": "Golden Visa",
+          "badge": "Inversores",
+          "points": [
+            "El programa de residencia por inversión de Portugal — disponible a través de fondos de inversión, donaciones culturales o actividades de investigación",
+            "Nota: la modalidad inmobiliaria fue eliminada en 2023 y ya no está disponible",
+            "Inversión mínima: aprox. €500,000 en fondos de inversión calificados",
+            "Solo se requieren 7 días al año en Portugal para mantener el permiso",
+            "Vía hacia la residencia permanente después de 5 años y la ciudadanía después de 5 años"
+          ]
+        },
+        {
+          "title": "Student Visa (D4)",
+          "badge": "Estudiantes",
+          "points": [
+            "Para ciudadanos de países no pertenecientes a la UE matriculados en una institución educativa portuguesa reconocida",
+            "Válida por la duración del programa académico",
+            "Permite trabajar a tiempo parcial mientras se estudia",
+            "Portugal cuenta con excelentes universidades y un costo de vida accesible para estudiantes",
+            "Permite convertirla en un permiso de trabajo tras la graduación"
+          ]
+        },
+        {
+          "title": "Ciudadanos de la UE / EEE",
+          "badge": "Libre circulación",
+          "points": [
+            "Los ciudadanos de la UE/EEE tienen derecho a vivir y trabajar en Portugal sin necesidad de visa",
+            "Deben registrarse en la Câmara Municipal (ayuntamiento) local dentro de los 3 meses siguientes a su llegada",
+            "Recibirán un certificado de registro que confirma sus derechos de residencia como ciudadanos de la UE",
+            "Después de 5 años de residencia legal continua, son elegibles para la residencia permanente"
+          ]
+        }
+      ],
+      "disclaimer": "La agencia de inmigración de Portugal (AIMA) es conocida por sus largos tiempos de tramitación — en ocasiones de 6 a 12 meses para las citas de residencia. Solicita lo antes posible y considera contratar a un abogado de inmigración para evitar demoras."
+    },
+    "taxes": {
+      "eyebrow": "Impuestos",
+      "title": "Entendiendo el sistema fiscal en Portugal",
+      "intro": "El impuesto sobre la renta estándar en Portugal es progresivo y oscila entre el 14.5% y el 48%. Sin embargo, los recién llegados que cumplan los requisitos pueden beneficiarse del régimen IFICI (también conocido como NHR 2.0), que ofrece una tasa fija significativa durante hasta 10 años.",
+      "highlight": {
+        "title": "IFICI — El nuevo incentivo fiscal de Portugal (NHR 2.0)",
+        "subtitle": "El régimen original Non-Habitual Resident (NHR) finalizó en 2024. Ha sido reemplazado por el IFICI (Incentivo Fiscal à Investigação Científica e Inovação), que ofrece una tasa fija del 20% sobre los ingresos portugueses calificados durante hasta 10 años.",
+        "items": [
+          {
+            "label": "Tasa fija",
+            "value": "20% sobre los ingresos portugueses calificados"
+          },
+          {
+            "label": "Duración",
+            "value": "Hasta 10 años"
+          },
+          {
+            "label": "Quién califica",
+            "value": "Profesionales altamente calificados en tecnología, I+D, salud, educación superior y manufactura"
+          },
+          {
+            "label": "Ingresos extranjeros",
+            "value": "Pueden estar exentos o sujetos a tasas reducidas según el tipo y el origen"
+          }
+        ]
+      },
+      "nhrWarning": "El régimen original Non-Habitual Resident (NHR) estaba disponible para casi cualquier recién llegado y finalizó en 2024 (fecha límite transitoria final: 31 de marzo de 2025). El nuevo IFICI es considerablemente más restrictivo — está limitado a profesionales altamente calificados en sectores específicos. La mayoría de los jubilados, trabajadores remotos en general y perceptores de ingresos pasivos NO calificarán para el IFICI.",
+      "standardRates": {
+        "title": "Tasas estándar del impuesto sobre la renta (sin IFICI)",
+        "brackets": [
+          [
+            "Hasta €7,703",
+            "14.5%"
+          ],
+          [
+            "€7,703 – €11,623",
+            "21%"
+          ],
+          [
+            "€11,623 – €16,472",
+            "26.5%"
+          ],
+          [
+            "€16,472 – €21,321",
+            "28.5%"
+          ],
+          [
+            "€21,321 – €27,146",
+            "35%"
+          ],
+          [
+            "€27,146 – €39,791",
+            "37%"
+          ],
+          [
+            "€39,791 – €51,997",
+            "43.5%"
+          ],
+          [
+            "€51,997 – €81,199",
+            "45%"
+          ],
+          [
+            "Más de €81,199",
+            "48%"
+          ]
+        ]
+      },
+      "freelancerRegime": "Si eres trabajador independiente o freelancer con ingresos anuales de fuente extranjera inferiores a €200,000, Portugal ofrece un régimen fiscal simplificado en el que solo el 75% de los ingresos brutos está sujeto a impuestos — el 25% restante se trata como deducción por gastos empresariales.",
+      "disclaimer": "El panorama fiscal de Portugal ha cambiado significativamente en los últimos años. Consulta siempre a un asesor fiscal portugués calificado antes de tomar cualquier decisión — especialmente en lo que respecta a la elegibilidad para el IFICI, la tributación de pensiones y el tratamiento de los ingresos extranjeros."
+    },
+    "costOfLiving": {
+      "eyebrow": "Costo de Vida",
+      "title": "¿Cuánto cuesta vivir en Portugal?",
+      "intro": "Portugal es uno de los países más accesibles del oeste de Europa. Una persona soltera puede vivir cómodamente con €1,200–€1,800/mes en las principales ciudades, y con tan solo €900–€1,300/mes en ciudades más pequeñas y zonas rurales.",
+      "cities": [
+        {
+          "city": "Lisboa y Cascais",
+          "level": "Las más caras",
+          "items": [
+            "Apartamento de 1 habitación (centro): €1,200–€1,500/mes",
+            "Presupuesto para una persona: €1,750–€2,350/mes",
+            "Abono de transporte mensual: €40"
+          ]
+        },
+        {
+          "city": "Oporto, Algarve, Setúbal",
+          "level": "Rango medio",
+          "items": [
+            "Apartamento de 1 habitación (centro): €700–€1,000/mes",
+            "Presupuesto para una persona: €1,200–€1,800/mes",
+            "Abono de transporte mensual: €30–€40"
+          ]
+        },
+        {
+          "city": "Ciudades más pequeñas y zonas rurales",
+          "level": "Las más accesibles",
+          "items": [
+            "Apartamento de 1 habitación: €400–€700/mes",
+            "Presupuesto para una persona: €900–€1,300/mes",
+            "Coche frecuentemente necesario fuera de las ciudades"
+          ]
+        }
+      ],
+      "expenses": {
+        "title": "Gastos mensuales típicos (fuera de Lisboa)",
+        "items": [
+          [
+            "Alquiler (1 habitación, centro de la ciudad)",
+            "€600 – €900"
+          ],
+          [
+            "Servicios (electricidad, agua, internet)",
+            "€80 – €130"
+          ],
+          [
+            "Supermercado",
+            "€200 – €300"
+          ],
+          [
+            "Comer fuera (rango medio)",
+            "€100 – €200"
+          ],
+          [
+            "Abono de transporte público",
+            "€30 – €40"
+          ],
+          [
+            "Seguro médico privado",
+            "€50 – €150"
+          ],
+          [
+            "Membresía al gimnasio",
+            "€25 – €50"
+          ],
+          [
+            "Plan de telefonía móvil",
+            "€10 – €25"
+          ]
+        ]
+      }
+    },
+    "healthcare": {
+      "eyebrow": "Salud",
+      "title": "La salud en Portugal",
+      "intro": "El sistema público de salud de Portugal, el Serviço Nacional de Saúde (SNS), está considerado entre los mejores del mundo y está disponible para todos los residentes legales.",
+      "public": {
+        "title": "Salud pública (SNS)",
+        "points": [
+          "Gratuita o con subsidio considerable para todos los residentes legales",
+          "Regístrate en tu Centro de Saúde local con tu NIF, NISS y permiso de residencia",
+          "Se te asignará un médico de cabecera (médico de família)",
+          "Cubre consultas de medicina general, atención hospitalaria, maternidad, servicios de urgencias y recetas subsidiadas",
+          "La atención dental NO está cubierta — se paga de forma privada",
+          "Se aplican pequeños copagos (taxas moderadoras) en algunos servicios — normalmente €5 por una consulta de medicina general",
+          "Los tiempos de espera para citas con especialistas no urgentes pueden ser de 6 a 18 meses",
+          "Número de emergencias: 112"
+        ]
+      },
+      "private": {
+        "title": "Seguro médico privado",
+        "points": [
+          "Requerido para la mayoría de las solicitudes de visa (D7, D8, Golden Visa)",
+          "Cuesta aprox. €50–€150/mes por persona según la edad y la cobertura",
+          "Proporciona acceso más rápido a especialistas y evita las listas de espera del SNS",
+          "Muchas clínicas privadas cuentan con médicos que hablan inglés, especialmente en Lisboa, Oporto y el Algarve",
+          "Proveedores populares: Médis, Multicare, Fidelidade, AXA Portugal"
+        ]
+      },
+      "tip": "Obtén tu NIF y tu NISS lo antes posible tras llegar — de hecho, puedes solicitar ambos al mismo tiempo en una oficina de Finanças. Luego regístrate en tu Centro de Saúde local para activar tu acceso al SNS."
+    },
+    "banking": {
+      "eyebrow": "Banca y Finanzas",
+      "title": "Banca en Portugal",
+      "intro": "Una cuenta bancaria portuguesa es indispensable — es necesaria para la mayoría de las solicitudes de visa, para pagar el alquiler, recibir salarios o pensiones, y para acceder a la red de pagos Multibanco de Portugal.",
+      "requirements": {
+        "title": "Cómo obtener tu NIF",
+        "points": [
+          "El NIF (Número de Identificação Fiscal) es tu número fiscal portugués — necesario para casi todo",
+          "Solicítalo en persona en cualquier oficina de Finanças (agencia tributaria) con tu pasaporte y comprobante de domicilio",
+          "Los ciudadanos de países no pertenecientes a la UE necesitan un representante fiscal portugués hasta que obtengan la residencia",
+          "También puede obtenerse de forma remota a través de un abogado de inmigración o un servicio en línea",
+          "Se emite de forma inmediata en la oficina tributaria — sin costo alguno",
+          "Tu NIF es permanente y no caduca"
+        ]
+      },
+      "banks": {
+        "title": "Apertura de una cuenta bancaria",
+        "points": [
+          "Requiere: NIF, pasaporte, comprobante de domicilio y comprobante de ingresos",
+          "Normalmente se requiere un depósito inicial de €250",
+          "Bancos populares entre expatriados: Millennium BCP, Novo Banco, Caixa Geral, Bankinter",
+          "Usa Revolut o Wise mientras esperas — son buenas opciones para los gastos del día a día antes de que tu cuenta esté activa"
+        ]
+      },
+      "tip": "La red Multibanco de Portugal es uno de los sistemas de pago más avanzados de Europa — los cajeros automáticos permiten pagar facturas, recargar teléfonos, comprar entradas y mucho más."
+    },
+    "prosCons": {
+      "eyebrow": "Resumen",
+      "title": "¿Es Portugal la opción adecuada para ti?",
+      "pros": {
+        "title": "Razones para mudarte a Portugal",
+        "points": [
+          "Uno de los países más accesibles del oeste de Europa",
+          "Clima cálido con más de 300 días de sol al año",
+          "Habitantes amables y acogedores — constantemente clasificado como uno de los países más seguros del mundo",
+          "Excelente sistema público de salud",
+          "Amplia variedad de opciones de visa para todo tipo de recién llegados",
+          "Régimen fiscal IFICI para profesionales calificados (tasa fija del 20% durante 10 años)",
+          "Régimen fiscal simplificado para freelancers y trabajadores independientes",
+          "El inglés es ampliamente hablado, especialmente en ciudades y zonas turísticas",
+          "Excelente gastronomía, vinos y calidad de vida",
+          "Vía hacia la residencia y la ciudadanía de la UE después de 5 años",
+          "Sólida comunidad de expatriados — uno de los destinos más populares de Europa"
+        ]
+      },
+      "cons": {
+        "title": "Aspectos a considerar",
+        "points": [
+          "El régimen fiscal original Non-Habitual Resident (NHR) ya no existe — el IFICI es mucho más restrictivo",
+          "La AIMA (agencia de inmigración) es conocida por tiempos de tramitación muy largos — planifica con 6 a 12 meses de antelación",
+          "Los costos de vivienda en Lisboa y Oporto han aumentado considerablemente",
+          "La burocracia portuguesa puede ser lenta y compleja",
+          "Los tiempos de espera del SNS para atención especializada pueden ser muy largos",
+          "El portugués es importante para la vida cotidiana fuera de las zonas turísticas",
+          "La D8 Digital Nomad Visa requiere ingresos relativamente altos (€3,680/mes)",
+          "La modalidad inmobiliaria del Golden Visa fue eliminada en 2023"
+        ]
+      }
+    },
+    "cta": {
+      "title": "¿Listo para dar el paso?",
+      "subtitle": "Usa nuestra herramienta gratuita para comparar Portugal con otros países europeos y encontrar la mejor opción para tu situación.",
+      "button": "Comparar todos los países →"
+    }
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "country": "Spain",
+  "hero": {
+    "badge": "Espanha",
+    "title": "Mude-se para a Espanha",
+    "subtitle": "Sol, cultura, gastronomia de alto nível e um dos regimes fiscais mais atrativos da Europa para quem chega. Aqui está tudo o que você precisa saber.",
+    "stats": [
+      {
+        "label": "Custo de vida",
+        "value": "A partir de €1.200/mês"
+      },
+      {
+        "label": "Imposto fixo (Beckham Law)",
+        "value": "24%"
+      },
+      {
+        "label": "Clima",
+        "value": "300+ dias de sol"
+      },
+      {
+        "label": "Idioma oficial",
+        "value": "Espanhol"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Vistos e Residência",
+      "title": "Como se mudar para a Espanha",
+      "intro": "A Espanha oferece várias opções de visto de acordo com a sua situação — seja você empregado, autônomo, aposentado ou estudante. Cidadãos da UE/EEE podem se mudar livremente e apenas precisam registrar a residência. Cidadãos de fora da UE precisarão de um dos vistos a seguir.",
+      "visas": [
+        {
+          "title": "Digital Nomad Visa (Telework Visa)",
+          "badge": "Trabalhadores remotos e freelancers",
+          "points": [
+            "Para cidadãos de fora da UE que trabalham remotamente para empresas ou clientes fora da Espanha",
+            "Exige renda mínima de aproximadamente €2.850/mês (200% do salário mínimo espanhol)",
+            "Válido por 1 ano via consulado, ou até 3 anos se solicitado dentro da Espanha",
+            "Renovável por até 5 anos no total, com caminho para residência permanente após 5 anos",
+            "Permite trazer cônjuge, companheiro(a) e filhos dependentes",
+            "Taxa de solicitação: aproximadamente €80"
+          ]
+        },
+        {
+          "title": "Non-Lucrative Visa (NLV)",
+          "badge": "Aposentados e renda passiva",
+          "points": [
+            "Para quem não pretende trabalhar na Espanha — ideal para aposentados",
+            "É necessário comprovar aproximadamente €2.400/mês em renda passiva ou poupança",
+            "Exige seguro-saúde privado válido na Espanha",
+            "Visto inicial de 1 ano, renovável em períodos de 2 anos por até 5 anos",
+            "Não permite emprego local",
+            "Após 5 anos, é possível solicitar a residência permanente"
+          ]
+        },
+        {
+          "title": "Visto de Estudante",
+          "badge": "Estudantes",
+          "points": [
+            "Para cidadãos de fora da UE matriculados em uma instituição de ensino espanhola reconhecida",
+            "Válido pelo período completo do curso aprovado",
+            "Permite trabalho de meio período de até 30 horas por semana",
+            "Ao concluir os estudos, é possível converter para uma autorização de trabalho sem sair da Espanha (exceto para estudantes de cursos de idiomas)",
+            "Estudantes de cursos de idiomas não têm direito à conversão para autorização de trabalho"
+          ]
+        },
+        {
+          "title": "Visto de Trabalho (Transferência de Funcionário)",
+          "badge": "Funcionários transferidos por uma empresa",
+          "points": [
+            "Para funcionários de fora da UE transferidos para uma filial ou subsidiária espanhola",
+            "O empregador patrocina a solicitação e cuida de grande parte da documentação",
+            "Autorização de Transferência Intraempresarial (ICT) disponível para funcionários de multinacionais",
+            "Pode ser elegível para o regime fiscal Beckham Law (veja a seção de Impostos abaixo)"
+          ]
+        }
+      ],
+      "disclaimer": "O Golden Visa da Espanha (modalidade de investimento imobiliário) foi oficialmente encerrado em abril de 2025. As regras de imigração mudam com frequência — sempre verifique os requisitos com um advogado de imigração espanhol qualificado antes de solicitar."
+    },
+    "taxes": {
+      "eyebrow": "Impostos",
+      "title": "Entendendo os impostos na Espanha",
+      "intro": "As alíquotas padrão de imposto de renda na Espanha são progressivas e podem chegar a 47% para quem ganha mais. No entanto, os recém-chegados podem se qualificar para um benefício fiscal significativo conhecido como Beckham Law.",
+      "highlight": {
+        "title": "A Beckham Law",
+        "subtitle": "O regime fiscal especial da Espanha para recém-chegados — batizado em homenagem a David Beckham, que foi um dos primeiros a utilizá-lo ao se transferir para o Real Madrid em 2003.",
+        "items": [
+          {
+            "label": "Alíquota fixa",
+            "value": "24% sobre a renda espanhola de até €600.000"
+          },
+          {
+            "label": "Duração",
+            "value": "Até 6 anos"
+          },
+          {
+            "label": "Renda estrangeira",
+            "value": "Geralmente isenta de imposto espanhol"
+          },
+          {
+            "label": "Prazo para solicitação",
+            "value": "Dentro de 6 meses a partir do início do trabalho"
+          }
+        ]
+      },
+      "beckhameEligibility": {
+        "title": "Quem se qualifica para a Beckham Law?",
+        "points": [
+          "Você não pode ter sido residente fiscal na Espanha nos 10 anos anteriores à mudança",
+          "Você deve estar se mudando para a Espanha por motivos de trabalho (emprego, empreendedorismo ou como profissional altamente qualificado)",
+          "Aplica-se a titulares do Digital Nomad Visa, funcionários transferidos por empresas e empreendedores",
+          "Seu cônjuge e filhos menores de 25 anos também podem se beneficiar das alíquotas preferenciais"
+        ]
+      },
+      "standardRates": {
+        "title": "Alíquotas padrão de imposto de renda (sem a Beckham Law)",
+        "brackets": [
+          [
+            "Até €12.450",
+            "19%"
+          ],
+          [
+            "€12.450 – €20.200",
+            "24%"
+          ],
+          [
+            "€20.200 – €35.200",
+            "30%"
+          ],
+          [
+            "€35.200 – €60.000",
+            "37%"
+          ],
+          [
+            "€60.000 – €300.000",
+            "45%"
+          ],
+          [
+            "Acima de €300.000",
+            "47%"
+          ]
+        ]
+      },
+      "disclaimer": "As leis tributárias mudam com frequência e dependem da sua situação pessoal, tipo de renda e país de origem. Sempre consulte um consultor fiscal espanhol qualificado antes de tomar qualquer decisão."
+    },
+    "costOfLiving": {
+      "eyebrow": "Custo de Vida",
+      "title": "Quanto custa viver na Espanha?",
+      "intro": "A Espanha é, em geral, 25–34% mais barata do que os EUA ou o Norte da Europa. Uma pessoa solteira pode viver confortavelmente com €1.200–€2.000/mês, enquanto famílias geralmente precisam de €3.000–€3.500/mês. Os custos variam bastante dependendo da cidade.",
+      "cities": [
+        {
+          "city": "Madrid e Barcelona",
+          "level": "Mais caras",
+          "items": [
+            "Apartamento de 1 quarto (centro): €1.400–€1.800/mês",
+            "Orçamento para uma pessoa: €2.000+/mês",
+            "Passe mensal de transporte: €55"
+          ]
+        },
+        {
+          "city": "Valencia, Málaga, Sevilha",
+          "level": "Preço intermediário",
+          "items": [
+            "Apartamento de 1 quarto (centro): €750–€900/mês",
+            "Orçamento para uma pessoa: €1.500–€1.750/mês",
+            "Passe mensal de transporte: €40–€50"
+          ]
+        },
+        {
+          "city": "Cidades menores e áreas rurais",
+          "level": "Mais acessíveis",
+          "items": [
+            "Apartamento de 1 quarto: €350–€700/mês",
+            "Orçamento para uma pessoa: €950–€1.200/mês",
+            "Carro geralmente necessário"
+          ]
+        }
+      ],
+      "expenses": {
+        "title": "Despesas mensais típicas (fora de Madrid/Barcelona)",
+        "items": [
+          [
+            "Aluguel (1 quarto, centro da cidade)",
+            "€700 – €1.000"
+          ],
+          [
+            "Serviços públicos (eletricidade, água, gás)",
+            "€100 – €150"
+          ],
+          [
+            "Supermercado",
+            "€200 – €350"
+          ],
+          [
+            "Refeições fora (restaurante intermediário)",
+            "€150 – €300"
+          ],
+          [
+            "Passe de transporte público",
+            "€40 – €55"
+          ],
+          [
+            "Seguro-saúde privado",
+            "€50 – €120"
+          ],
+          [
+            "Academia",
+            "€20 – €50"
+          ],
+          [
+            "Plano de celular",
+            "€10 – €30"
+          ]
+        ]
+      }
+    },
+    "healthcare": {
+      "eyebrow": "Saúde",
+      "title": "Saúde na Espanha",
+      "intro": "O sistema de saúde da Espanha, o Sistema Nacional de Salud (SNS), está entre os melhores do mundo — atendendo mais de 99% dos residentes. Como expatriado, seu acesso depende do seu status de residência e de como você contribui para a previdência social.",
+      "public": {
+        "title": "Saúde Pública (SNS)",
+        "points": [
+          "Gratuito no ponto de atendimento para residentes legais que contribuem para a previdência social",
+          "Cobre consultas com clínico geral, consultas com especialistas, atendimento hospitalar, serviços de emergência, cuidados de maternidade e vacinações",
+          "Cuidados dentários e oftalmológicos NÃO são cobertos — você paga de forma privada",
+          "Alguns copagamentos para medicamentos se aplicam",
+          "Os tempos de espera para atendimento com especialistas não urgentes podem ser longos",
+          "Convenio Especial disponível para quem não contribui para a previdência social: aproximadamente €60/mês (com menos de 65 anos)"
+        ]
+      },
+      "private": {
+        "title": "Seguro-Saúde Privado",
+        "points": [
+          "Obrigatório para a maioria das solicitações de visto (Digital Nomad Visa, Non-Lucrative Visa)",
+          "Custa aproximadamente €50–€120/mês por pessoa para um plano completo",
+          "Oferece acesso mais rápido a especialistas e menores tempos de espera",
+          "Muitas operadoras oferecem médicos que falam inglês, especialmente nas grandes cidades",
+          "Cobre serviços odontológicos, oftalmológicos e outros não incluídos no sistema público",
+          "Operadoras populares: Sanitas, Adeslas, Asisa, Caser"
+        ]
+      },
+      "tip": "A maioria dos expatriados começa com seguro privado para atender aos requisitos do visto e ter acesso mais rápido aos serviços, e depois se cadastra no sistema público de saúde quando se tornar elegível. Para acessar o SNS, você precisará do seu NIE (número de identificação de estrangeiro) e de se registrar na prefeitura local (empadronamiento)."
+    },
+    "banking": {
+      "eyebrow": "Bancos e Finanças",
+      "title": "Sistema bancário na Espanha",
+      "intro": "Abrir uma conta bancária na Espanha é simples quando você já tem o NIE (Número de Identificación de Extranjero). Você precisará de uma conta bancária espanhola para pagar aluguel, serviços públicos e receber seu salário.",
+      "requirements": {
+        "title": "O que você precisará para abrir uma conta",
+        "points": [
+          "NIE (Número de Identificación de Extranjero) — seu número de identificação de estrangeiro",
+          "Passaporte válido",
+          "Comprovante de endereço na Espanha (certificado de empadronamiento)",
+          "Comprovante de emprego ou renda (exigido por alguns bancos)"
+        ]
+      },
+      "banks": {
+        "title": "Bancos populares entre expatriados",
+        "points": [
+          "Santander — maior banco espanhol, bom suporte em inglês",
+          "BBVA — excelente aplicativo e serviços de banco online",
+          "CaixaBank — ampla rede de agências por toda a Espanha",
+          "N26 / Revolut — apenas online, ótimo para recém-chegados antes de obter o NIE",
+          "Sabadell — popular entre expatriados nas regiões costeiras"
+        ]
+      },
+      "tip": "Abra uma conta no Revolut ou no N26 antes de se mudar — isso permite que você gaste em euros sem taxas enquanto está providenciando seu NIE e sua conta bancária espanhola, o que pode levar várias semanas."
+    },
+    "prosCons": {
+      "eyebrow": "Resumo",
+      "title": "A Espanha é a escolha certa para você?",
+      "pros": {
+        "title": "Motivos para se mudar para a Espanha",
+        "points": [
+          "Beckham Law — um dos regimes fiscais mais atrativos da Europa para recém-chegados",
+          "300+ dias de sol por ano",
+          "Gastronomia, cultura e qualidade de vida de nível mundial",
+          "Excelente sistema público de saúde",
+          "Custo de vida mais baixo do que a maior parte da Europa Ocidental",
+          "Ótimas conexões de transporte dentro da Europa",
+          "Comunidades de expatriados acolhedoras na maioria das grandes cidades",
+          "Caminho para residência e cidadania na UE"
+        ]
+      },
+      "cons": {
+        "title": "Pontos a considerar",
+        "points": [
+          "A burocracia espanhola pode ser lenta e complexa",
+          "As solicitações de NIE podem levar semanas — planeje com antecedência",
+          "O mercado imobiliário está bastante aquecido em Madrid e Barcelona",
+          "O espanhol é essencial fora das grandes cidades",
+          "As alíquotas padrão de imposto podem ser elevadas (até 47%) se você não se qualificar para a Beckham Law",
+          "Longos tempos de espera para atendimento não urgente no sistema público de saúde",
+          "O Golden Visa (modalidade imobiliária) foi encerrado em 2025"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Pronto para dar o próximo passo?",
+      "subtitle": "Use nossa ferramenta gratuita para comparar a Espanha com outros países europeus e encontrar a melhor opção para a sua situação.",
+      "button": "Comparar todos os países →"
+    }
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "country": "Greece",
+  "hero": {
+    "badge": "Greece",
+    "title": "Move to Greece",
+    "subtitle": "Mediterranean sunshine, ancient culture, and one of Europe's most affordable lifestyles — Greece has become a top destination for retirees, remote workers, and investors seeking EU residency.",
+    "stats": [
+      {
+        "label": "Income tax (from)",
+        "value": "9%"
+      },
+      {
+        "label": "Cost of living",
+        "value": "From €1,150/mo"
+      },
+      {
+        "label": "EU member since",
+        "value": "1981"
+      },
+      {
+        "label": "Official language",
+        "value": "Greek"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Visas & Residency",
+      "title": "How to move to Greece",
+      "intro": "EU/EEA citizens can move to Greece freely with no visa required. Non-EU nationals have several strong pathways, including the Golden Visa, the Digital Nomad Visa, and the Financially Independent Person (FIP) permit. In 2026, Greece unified its visa and residence permit process under one application.",
+      "visas": [
+        {
+          "title": "EU / EEA Citizens",
+          "badge": "Free movement",
+          "points": [
+            "EU/EEA citizens have the right to live and work in Greece without a visa",
+            "Register at the local municipality (KEP) upon arrival",
+            "Obtain a Greek tax number (AFM) and social security number (AMKA) early — essential for banking, healthcare, and employment",
+            "After 5 years of continuous legal residence, eligible for permanent residency"
+          ]
+        },
+        {
+          "title": "Digital Nomad Visa (E33A)",
+          "badge": "Remote workers & freelancers",
+          "points": [
+            "For non-EU nationals working remotely for employers or clients based outside Greece",
+            "Minimum income requirement: €3,500/month net (after tax)",
+            "As of February 2026 (Law 5275/2026), applications must be made from outside Greece",
+            "Apply at a Greek consulate in your home country before travelling",
+            "Initial permit valid for 2 years, renewable",
+            "50% income tax exemption for up to 7 years — a major financial benefit",
+            "Family members can be included in the application"
+          ]
+        },
+        {
+          "title": "Financially Independent Person (FIP) Visa",
+          "badge": "Retirees & passive income",
+          "points": [
+            "For non-EU nationals with sufficient passive income — pensions, dividends, rental income, or savings",
+            "Minimum income requirement: €2,000/month (plus 20% per dependent)",
+            "Must not work or operate a business in Greece",
+            "Apply at a Greek consulate before travelling to Greece",
+            "Residence permit valid for 3 years, renewable",
+            "Greece ranked number one in the 2026 Global Retirement Index",
+            "Special 7% flat tax on foreign pension income for qualifying retirees"
+          ]
+        },
+        {
+          "title": "Golden Visa",
+          "badge": "Investors",
+          "points": [
+            "Residency through property or other qualifying investment",
+            "Investment thresholds under Law 5100/2024: €800,000 in Zone A (Athens, Thessaloniki, Mykonos, Santorini), €400,000 in Zone B, €250,000 for commercial-to-residential conversions",
+            "No minimum residency requirement",
+            "5-year renewable residence permit",
+            "Pathway to Greek citizenship after 7 years of residency"
+          ]
+        },
+        {
+          "title": "Startup & Tech Visa (2026)",
+          "badge": "Founders & tech professionals",
+          "points": [
+            "New in 2026 — Greece launched targeted visa categories for skilled tech professionals and startup founders",
+            "Aimed at attracting talent to Greece's growing tech and startup ecosystem",
+            "Consult the Greek Ministry of Migration for current requirements"
+          ]
+        }
+      ],
+      "disclaimer": "Greece's immigration rules have changed significantly in 2026, including the new law abolishing tourist-based Digital Nomad Visa applications. Always verify current requirements with the Greek Ministry of Migration or a qualified Greek immigration lawyer before applying."
+    },
+    "taxes": {
+      "eyebrow": "Taxes",
+      "title": "Understanding tax in Greece",
+      "intro": "Greece uses a progressive income tax system with rates from 9% to 44%. However, the country offers some of the most generous expat tax incentives in Europe — including a 50% tax exemption for Digital Nomad Visa holders, a 7% flat tax for qualifying retirees, and a €100,000 non-dom flat tax for high-net-worth individuals.",
+      "highlight": {
+        "title": "2026 Income Tax Brackets",
+        "subtitle": "Greece reformed its tax rates in 2026 under Law 5246/2025, cutting middle-bracket rates and raising the threshold for the top 44% rate from €40,000 to €60,000.",
+        "items": [
+          {
+            "label": "Up to €10,000",
+            "value": "9%"
+          },
+          {
+            "label": "€10,001 – €20,000",
+            "value": "20%"
+          },
+          {
+            "label": "€20,001 – €30,000",
+            "value": "26%"
+          },
+          {
+            "label": "€30,001 – €40,000",
+            "value": "34%"
+          },
+          {
+            "label": "€40,001 – €60,000",
+            "value": "39%"
+          },
+          {
+            "label": "Above €60,000",
+            "value": "44%"
+          }
+        ]
+      },
+      "specialRegimes": {
+        "title": "Special expat tax regimes",
+        "points": [
+          "Digital Nomad Visa holders: 50% income tax exemption for up to 7 years",
+          "Retirees transferring tax residency to Greece: 7% flat tax on all foreign pension income for up to 15 years",
+          "High-net-worth non-doms: €100,000 annual flat tax on all worldwide foreign income for 15 years (requires €500,000 investment in Greece)",
+          "Dividend tax: just 5% — the lowest in the EU",
+          "Young professionals under 25: 0% tax on income up to €20,000",
+          "Solidarity surcharge: suspended since 2023 and remains suspended in 2026"
+        ]
+      },
+      "otherTaxes": {
+        "title": "Other key taxes",
+        "brackets": [
+          [
+            "Corporate income tax",
+            "22%"
+          ],
+          [
+            "Dividend tax",
+            "5% (lowest in EU)"
+          ],
+          [
+            "VAT (standard)",
+            "24%"
+          ],
+          [
+            "Capital gains tax",
+            "15% on most assets"
+          ],
+          [
+            "Social security (employee)",
+            "14% of gross salary"
+          ],
+          [
+            "Social security cap",
+            "€93,143/year"
+          ]
+        ]
+      },
+      "disclaimer": "Greek tax law changed significantly in 2026. Tax residency applies if you spend more than 183 days per year in Greece. Always consult a qualified Greek tax adviser before making any decisions."
+    },
+    "costOfLiving": {
+      "eyebrow": "Cost of Living",
+      "title": "What does life in Greece cost?",
+      "intro": "Greece offers one of the most affordable lifestyles in Western Europe — roughly 51% cheaper than the USA. A single person can live comfortably on €1,150–€1,400/month including rent.",
+      "cities": [
+        {
+          "city": "Athens",
+          "level": "Most expensive",
+          "items": [
+            "1-bed apartment (centre): €700–€1,200/mo",
+            "Single person budget: €1,400–€2,000/mo",
+            "Best for careers, culture & city life"
+          ]
+        },
+        {
+          "city": "Thessaloniki & Heraklion",
+          "level": "Mid-range",
+          "items": [
+            "1-bed apartment (centre): €400–€700/mo",
+            "Single person budget: €1,100–€1,500/mo",
+            "Great lifestyle at lower cost"
+          ]
+        },
+        {
+          "city": "Islands & smaller cities",
+          "level": "Most affordable",
+          "items": [
+            "1-bed apartment: €300–€600/mo",
+            "Single person budget: €800–€1,200/mo",
+            "Ideal for retirees & remote workers"
+          ]
+        }
+      ],
+      "expenses": {
+        "title": "Typical monthly expenses in Athens",
+        "items": [
+          [
+            "Rent (1-bed, city centre)",
+            "€700 – €1,200"
+          ],
+          [
+            "Utilities (electricity, heating, water)",
+            "€80 – €150"
+          ],
+          [
+            "Internet (fibre)",
+            "€20 – €35"
+          ],
+          [
+            "Groceries",
+            "€200 – €350"
+          ],
+          [
+            "Dining out (mid-range)",
+            "€150 – €250"
+          ],
+          [
+            "Public transport pass",
+            "€30"
+          ],
+          [
+            "Private health insurance",
+            "€60 – €250"
+          ],
+          [
+            "Gym membership",
+            "€25 – €50"
+          ],
+          [
+            "Mobile plan",
+            "€15 – €30"
+          ]
+        ]
+      },
+      "islandTip": "Greek islands like Crete, Rhodes, and Corfu offer a stunning quality of life at significantly lower costs than Athens — especially outside tourist season."
+    },
+    "healthcare": {
+      "eyebrow": "Healthcare",
+      "title": "Healthcare in Greece",
+      "intro": "Greece has a public healthcare system (ESY) accessible to registered residents. Most expats opt for private health insurance for routine care due to waiting times and variable quality outside major cities.",
+      "public": {
+        "title": "Public Healthcare (ESY)",
+        "points": [
+          "Accessible to all residents registered with the social security system (EFKA/AMKA)",
+          "Emergency care is free for all — dial 112",
+          "EU citizens can use their EHIC for emergency treatment",
+          "Quality varies significantly — Athens and Thessaloniki have the best hospitals",
+          "Long waiting times for specialist appointments are common",
+          "Prescription medications are subsidised",
+          "Dental care is mostly private"
+        ]
+      },
+      "private": {
+        "title": "Private Health Insurance",
+        "points": [
+          "Required for Digital Nomad Visa and most long-stay visa applications",
+          "Affordable — typically €60–€250/month per person depending on age and coverage",
+          "A private GP consultation costs just €60–€150 without insurance",
+          "English-speaking doctors widely available in cities and tourist areas",
+          "Popular providers: Allianz, Bupa International, AXA, local provider Interamerican"
+        ]
+      },
+      "tip": "Get your AMKA (social security number) as early as possible after arriving — it's required to access public healthcare, open a bank account, and complete most bureaucratic processes in Greece."
+    },
+    "banking": {
+      "eyebrow": "Banking & Finance",
+      "title": "Banking in Greece",
+      "intro": "Greece uses the Euro and has a well-established banking sector regulated under EU standards. Opening a local bank account requires your AFM (tax number) and AMKA (social security number), so get these sorted first.",
+      "requirements": {
+        "title": "What you'll need to open an account",
+        "points": [
+          "Valid passport or national ID",
+          "AFM (Greek tax identification number) — essential",
+          "AMKA (social security number) — usually required",
+          "Proof of Greek address (rental contract or utility bill)",
+          "Residence permit or registration certificate for non-EU nationals",
+          "Some banks require an initial deposit of €50–€300"
+        ]
+      },
+      "banks": {
+        "title": "Banks operating in Greece",
+        "points": [
+          "National Bank of Greece — largest bank, wide branch and ATM network",
+          "Piraeus Bank — popular with expats, good online banking",
+          "Alpha Bank — strong international support",
+          "Eurobank — reliable retail banking with English service",
+          "Revolut / Wise — widely used by expats and digital nomads for day-to-day banking"
+        ]
+      },
+      "tip": "Get your AFM (tax number) from the local tax office (AADE) as your very first step after arriving — you'll need it for almost everything, including opening a bank account and signing a rental contract."
+    },
+    "prosCons": {
+      "eyebrow": "Summary",
+      "title": "Is Greece right for you?",
+      "pros": {
+        "title": "Reasons to move to Greece",
+        "points": [
+          "Ranked #1 in the 2026 Global Retirement Index",
+          "50% income tax exemption for Digital Nomad Visa holders for 7 years",
+          "7% flat tax on foreign pension income for qualifying retirees",
+          "5% dividend tax — the lowest in the EU",
+          "Cost of living roughly 51% lower than the USA",
+          "EU member state — full freedom of movement and rights",
+          "Stunning climate — 300+ days of sunshine per year",
+          "Rich culture, history, food, and island lifestyle",
+          "English widely spoken in cities and tourist areas",
+          "Affordable private healthcare",
+          "Golden Visa offers residency with no minimum stay requirement",
+          "Growing expat and digital nomad communities in Athens and Crete"
+        ]
+      },
+      "cons": {
+        "title": "Things to consider",
+        "points": [
+          "Bureaucracy is notoriously slow and complex — patience required",
+          "Digital Nomad Visa rules changed in February 2026 — must apply before arriving",
+          "Athens rents have risen sharply — less affordable than 5 years ago",
+          "Public healthcare quality is variable outside major cities",
+          "Greek language uses a different alphabet — a learning curve",
+          "Limited job opportunities for non-Greek speakers in local employment",
+          "Summers in Athens can be extremely hot (40°C+)",
+          "Standard progressive tax rates (up to 44%) apply without special regime"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to make your move?",
+      "subtitle": "Use our free tool to compare Greece with other European countries and find the best fit for your situation.",
+      "button": "Compare all countries →"
+    }
+  }
+}
