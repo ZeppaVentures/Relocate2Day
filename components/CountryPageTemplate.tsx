@@ -111,8 +111,6 @@ export default function CountryPageTemplate({ content, heroImage, slug, sectionL
   const { hero, sections } = content;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const s = sections as any;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const s = sections as any;
   const visas = s.visas;
   const taxes = s.taxes;
   const col = s.costOfLiving;
