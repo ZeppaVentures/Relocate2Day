@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import { supabase } from "@/lib/supabase";
 import { useTranslations } from "@/lib/useTranslations";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
@@ -274,6 +275,7 @@ export default function Home() {
   <Link href="/blog" className="hover:text-violet-600 transition">Blog</Link>
           </nav>
           <div className="hidden md:flex items-center gap-4">
+            <LanguageSwitcher />
             {user ? (
               <Link href="/account" className="flex items-center gap-3 rounded-2xl border-2 border-gray-200 px-4 py-2 text-sm font-bold hover:border-violet-400 transition">
                 {user.user_metadata?.avatar_url ? (
@@ -325,6 +327,7 @@ export default function Home() {
               <Link href="/blog" onClick={() => setMobileMenuOpen(false)} className="hover:text-violet-600 transition">Blog</Link>
             </nav>
             <div className="px-6 py-8 border-t border-gray-100 flex flex-col gap-4">
+              <LanguageSwitcher />
               {user ? (
                 <Link href="/account" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3 rounded-2xl border-2 border-gray-200 px-4 py-3 text-sm font-bold hover:border-violet-400 transition">
                   {user.user_metadata?.avatar_url ? (
