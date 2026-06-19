@@ -20,61 +20,7 @@ export interface CountryContent {
     subtitle: string;
     stats: Stat[];
   };
-  sections: {
-    visas: {
-      eyebrow: string;
-      title: string;
-      intro: string;
-      warning?: string;
-      visas: VisaItem[];
-      disclaimer: string;
-    };
-    taxes: {
-      eyebrow: string;
-      title: string;
-      intro: string;
-      disclaimer: string;
-      [key: string]: unknown;
-    };
-    costOfLiving: {
-      eyebrow: string;
-      title: string;
-      intro: string;
-      cities?: CostCity[];
-      expenses: { title: string; items: string[][]; };
-      [key: string]: unknown;
-    };
-    healthcare: {
-      eyebrow: string;
-      title: string;
-      intro: string;
-      public: HealthCard;
-      private: HealthCard;
-      tip: string;
-      warning?: string;
-    };
-    banking: {
-      eyebrow: string;
-      title: string;
-      intro: string;
-      requirements: BankCard;
-      banks: BankCard;
-      tip: string;
-      [key: string]: unknown;
-    };
-    prosCons: {
-      eyebrow: string;
-      title: string;
-      pros: ProsCons;
-      cons: ProsCons;
-    };
-    cta: {
-      title: string;
-      subtitle: string;
-      button: string;
-    };
-    [key: string]: unknown;
-  };
+  sections: Record<string, any>;
 }
 
 interface Props {
