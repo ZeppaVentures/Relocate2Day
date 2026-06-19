@@ -53,7 +53,12 @@ export function middleware(request: NextRequest) {
   );
   if (pathnameHasLocale) return NextResponse.next();
 
-  // Redirect to detected locale
+  // Only auto-redirect for country pages, which have locale-aware content.
+  // The homepage and other pages are translated client-side and don't have
+  // dedicated locale routes, so redirecting them would 404.
+  const isCountryPage = pathname.startsWith("/countries/");
+  if (!isCountryPage) return NextResponse.next();
+
   const locale = getLocaleFromRequest(request);
   if (locale === "en") return NextResponse.next();
 
