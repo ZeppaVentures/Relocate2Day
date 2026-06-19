@@ -14,39 +14,16 @@ export default function LanguageSwitcher() {
   const [currentLocale, setCurrentLocale] = useState("en");
 
   useEffect(() => {
-    const path = window.location.pathname;
-    if (path.startsWith("/es")) setCurrentLocale("es");
-    else if (path.startsWith("/pt")) setCurrentLocale("pt");
-    else if (path.startsWith("/zh")) setCurrentLocale("zh");
-    else {
-      const cookieMatch = document.cookie.match(/NEXT_LOCALE=([^;]+)/);
-      if (cookieMatch) setCurrentLocale(cookieMatch[1]);
-    }
+    const cookieMatch = document.cookie.match(/NEXT_LOCALE=([^;]+)/);
+    if (cookieMatch) setCurrentLocale(cookieMatch[1]);
   }, []);
 
   const current = LANGUAGES.find((l) => l.code === currentLocale) || LANGUAGES[0];
 
   const switchLanguage = (code: string) => {
-    // Always set the cookie so client-side translation hooks (homepage, etc.) pick it up
     document.cookie = `NEXT_LOCALE=${code}; path=/; max-age=31536000`;
-
-    const path = window.location.pathname;
-    const isCountryPage = path.replace(/^\/(es|pt|zh)/, "").startsWith("/countries/");
-
-    if (isCountryPage) {
-      // Country pages have dedicated locale routes (/es/countries/spain etc.)
-      const stripped = LANGUAGES.reduce((p, lang) => {
-        if (p.startsWith(`/${lang.code}`)) return p.slice(lang.code.length + 1) || "/";
-        return p;
-      }, path);
-      const newPath = code === "en" ? stripped : `/${code}${stripped}`;
-      window.location.href = newPath;
-    } else {
-      // Other pages (homepage etc.) are translated client-side via cookie —
-      // no locale route exists, so just reload the current path.
-      window.location.reload();
-    }
     setOpen(false);
+    window.location.reload();
   };
 
   return (

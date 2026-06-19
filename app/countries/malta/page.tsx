@@ -23,15 +23,8 @@ export default function MaltaPage() {
   const [content, setContent] = useState<CountryContent>(contentEn as CountryContent);
 
   useEffect(() => {
-    const path = window.location.pathname;
-    let detected = "en";
-    if (path.startsWith("/es")) detected = "es";
-    else if (path.startsWith("/pt")) detected = "pt";
-    else if (path.startsWith("/zh")) detected = "zh";
-    else {
-      const cookie = document.cookie.match(/NEXT_LOCALE=([^;]+)/);
-      if (cookie) detected = cookie[1];
-    }
+    const cookie = document.cookie.match(/NEXT_LOCALE=([^;]+)/);
+    const detected = cookie ? cookie[1] : "en";
     setLocale(detected);
     if (detected === "es") setContent(contentEs as CountryContent);
     else if (detected === "pt") setContent(contentPt as CountryContent);
