@@ -27,18 +27,25 @@ export default function LanguageSwitcher() {
   const current = LANGUAGES.find((l) => l.code === currentLocale) || LANGUAGES[0];
 
   const switchLanguage = (code: string) => {
-    // Set cookie
+    // Always set the cookie so client-side translation hooks (homepage, etc.) pick it up
     document.cookie = `NEXT_LOCALE=${code}; path=/; max-age=31536000`;
-    
-    // Build new path
+
     const path = window.location.pathname;
-    const stripped = LANGUAGES.reduce((p, lang) => {
-      if (p.startsWith(`/${lang.code}`)) return p.slice(lang.code.length + 1) || "/";
-      return p;
-    }, path);
-    
-    const newPath = code === "en" ? stripped : `/${code}${stripped}`;
-    window.location.href = newPath;
+    const isCountryPage = path.replace(/^\/(es|pt|zh)/, "").startsWith("/countries/");
+
+    if (isCountryPage) {
+      // Country pages have dedicated locale routes (/es/countries/spain etc.)
+      const stripped = LANGUAGES.reduce((p, lang) => {
+        if (p.startsWith(`/${lang.code}`)) return p.slice(lang.code.length + 1) || "/";
+        return p;
+      }, path);
+      const newPath = code === "en" ? stripped : `/${code}${stripped}`;
+      window.location.href = newPath;
+    } else {
+      // Other pages (homepage etc.) are translated client-side via cookie —
+      // no locale route exists, so just reload the current path.
+      window.location.reload();
+    }
     setOpen(false);
   };
 
