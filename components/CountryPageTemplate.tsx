@@ -114,14 +114,14 @@ export default function CountryPageTemplate({ content, heroImage, slug, sectionL
               )}
               <p className="text-gray-600 text-lg mb-8">{visas.intro}</p>
               <div className="space-y-6">
-                {visas.visas.map((visa) => (
+                {(visas.visas || []).map((visa: any) => (
                   <div key={visa.title} className="rounded-[24px] border border-gray-100 bg-white p-8 shadow-lg">
                     <div className="flex flex-wrap items-center gap-3 mb-4">
                       <h3 className="text-xl font-black">{visa.title}</h3>
                       <span className="rounded-full px-3 py-1 text-xs font-bold bg-violet-100 text-violet-700">{visa.badge}</span>
                     </div>
                     <ul className="space-y-2">
-                      {visa.points.map((point) => (
+                      {(visa.points || []).map((point: string) => (
                         <li key={point} className="flex gap-3 text-gray-600">
                           <span className="text-violet-500 mt-0.5">✓</span>
                           <span>{point}</span>
@@ -149,7 +149,7 @@ export default function CountryPageTemplate({ content, heroImage, slug, sectionL
                     <h3 className="text-2xl font-black mb-2">{h.title}</h3>
                     <p className="text-white/80 mb-6">{h.subtitle}</p>
                     <div className="grid gap-4 md:grid-cols-2">
-                      {h.items.map((item) => (
+                      {(h.items || []).map((item: any) => (
                         <div key={item.label} className="rounded-2xl bg-white/15 p-4">
                           <div className="text-sm text-white/70">{item.label}</div>
                           <div className="mt-1 font-bold text-sm">{item.value}</div>
@@ -192,7 +192,7 @@ export default function CountryPageTemplate({ content, heroImage, slug, sectionL
               <h2 className="text-4xl font-black mb-8">{col.title}</h2>
               <p className="text-gray-600 text-lg mb-8">{col.intro}</p>
               <div className="grid gap-4 md:grid-cols-3 mb-8">
-                {col.cities.map((city, i) => {
+                {(col.cities || []).map((city: any, i: number) => {
                   const colors = [
                     "border-red-200 bg-red-50",
                     "border-yellow-200 bg-yellow-50",
@@ -208,7 +208,7 @@ export default function CountryPageTemplate({ content, heroImage, slug, sectionL
                       <span className={`rounded-full px-3 py-1 text-xs font-bold ${badges[i] || badges[0]}`}>{city.level}</span>
                       <h3 className="mt-3 font-black text-lg">{city.city}</h3>
                       <ul className="mt-4 space-y-2">
-                        {city.items.map((item) => (
+                        {(city.items || []).map((item: string) => (
                           <li key={item} className="text-sm text-gray-600 flex gap-2"><span>•</span><span>{item}</span></li>
                         ))}
                       </ul>
@@ -219,7 +219,7 @@ export default function CountryPageTemplate({ content, heroImage, slug, sectionL
               <div className="rounded-[24px] bg-[#f8f7ff] p-8 mb-6">
                 <h3 className="font-black text-xl mb-6">{col.expenses.title}</h3>
                 <div className="space-y-3">
-                  {col.expenses.items.map(([item, cost]) => (
+                  {(col.expenses?.items || []).map(([item, cost]: string[]) => (
                     <div key={item} className="flex justify-between items-center border-b border-gray-200 pb-3">
                       <span className="text-gray-600">{item}</span>
                       <span className="font-bold">{cost}</span>
@@ -243,7 +243,7 @@ export default function CountryPageTemplate({ content, heroImage, slug, sectionL
                     <div className="text-3xl mb-4">{card.icon}</div>
                     <h3 className="font-black text-xl mb-3">{card.title}</h3>
                     <ul className="space-y-2 text-gray-600">
-                      {card.points.map((point) => (
+                      {(card.points || []).map((point: string) => (
                         <li key={point} className="flex gap-3">
                           <span className="text-violet-500 mt-0.5">✓</span>
                           <span className="text-sm">{point}</span>
@@ -274,7 +274,7 @@ export default function CountryPageTemplate({ content, heroImage, slug, sectionL
                   <div key={card.title} className="rounded-[24px] bg-[#f8f7ff] p-8">
                     <h3 className="font-black text-xl mb-4">{card.title}</h3>
                     <ul className="space-y-2 text-gray-600">
-                      {card.points.map((point) => (
+                      {(card.points || []).map((point: string) => (
                         <li key={point} className="flex gap-3">
                           <span className="text-violet-500 mt-0.5">✓</span>
                           <span className="text-sm">{point}</span>
@@ -297,7 +297,7 @@ export default function CountryPageTemplate({ content, heroImage, slug, sectionL
                 <div className="rounded-[24px] bg-green-50 border-2 border-green-200 p-8">
                   <h3 className="font-black text-xl text-green-800 mb-4">✅ {pc.pros.title}</h3>
                   <ul className="space-y-3">
-                    {pc.pros.points.map((point) => (
+                    {(pc.pros?.points || []).map((point: string) => (
                       <li key={point} className="flex gap-3 text-green-800">
                         <span className="mt-0.5">•</span>
                         <span className="text-sm">{point}</span>
@@ -308,7 +308,7 @@ export default function CountryPageTemplate({ content, heroImage, slug, sectionL
                 <div className="rounded-[24px] bg-red-50 border-2 border-red-200 p-8">
                   <h3 className="font-black text-xl text-red-800 mb-4">⚠️ {pc.cons.title}</h3>
                   <ul className="space-y-3">
-                    {pc.cons.points.map((point) => (
+                    {(pc.cons?.points || []).map((point: string) => (
                       <li key={point} className="flex gap-3 text-red-800">
                         <span className="mt-0.5">•</span>
                         <span className="text-sm">{point}</span>
