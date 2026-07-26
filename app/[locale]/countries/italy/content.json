@@ -1,0 +1,352 @@
+{
+  "country": "Italy",
+  "hero": {
+    "badge": "Italy",
+    "title": "Move to Italy",
+    "subtitle": "World-class food, art, history, and coastline — plus some of Europe's most generous tax incentives for newcomers. Here's everything you need to know about relocating to Italy.",
+    "stats": [
+      {
+        "label": "Retiree flat tax",
+        "value": "7%"
+      },
+      {
+        "label": "Impatriati exemption",
+        "value": "Up to 90%"
+      },
+      {
+        "label": "HNWI flat tax",
+        "value": "€300,000/yr"
+      },
+      {
+        "label": "Official language",
+        "value": "Italian"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Visas & Residency",
+      "title": "How to move to Italy",
+      "intro": "EU/EEA citizens can move to Italy freely and register residency at their local municipality (Comune). Non-EU nationals need a visa before arriving — Italy offers several routes depending on whether you plan to work, retire, invest, or study.",
+      "visas": [
+        {
+          "title": "Digital Nomad Visa",
+          "badge": "Remote workers & freelancers",
+          "points": [
+            "Launched in 2024 — one of Europe's newest digital nomad visa programmes",
+            "For non-EU citizens working remotely for employers or clients outside Italy",
+            "Minimum income requirement: €32,400/year (approx. €2,700/month)",
+            "Must demonstrate savings of at least €30,000",
+            "Must have at least 6 months of proven remote work experience",
+            "Must rent or purchase property in Italy before applying",
+            "Valid for 1 year, renewable for a further 2 years",
+            "Spouse, children under 18, and parents can be included",
+            "Pathway to permanent residency after 5 years, citizenship after 10 years"
+          ]
+        },
+        {
+          "title": "Elective Residency Visa",
+          "badge": "Retirees & financially independent",
+          "points": [
+            "For non-EU nationals who can support themselves entirely from passive income — pensions, investments, rental income",
+            "Strictly a non-working visa — Italy enforces this condition rigorously",
+            "Minimum passive income required: approx. €31,000/year for a single applicant",
+            "Add approx. 20% for a spouse and 5% per dependent child",
+            "Must prove you have accommodation in Italy (rental or owned)",
+            "Initial 1-year visa, renewable annually",
+            "After 5 years, eligible for long-term EU residency"
+          ]
+        },
+        {
+          "title": "Student Visa (Type D)",
+          "badge": "Students",
+          "points": [
+            "For non-EU nationals enrolling at an Italian university or language school",
+            "Valid for the duration of the enrolled course",
+            "Permits part-time work of up to 20 hours per week",
+            "Italy has world-renowned universities — Bologna (the world's oldest), La Sapienza, Bocconi",
+            "Tuition fees at Italian public universities are very affordable — typically €900–€4,000/year",
+            "Pathway to convert to a work permit after graduation"
+          ]
+        },
+        {
+          "title": "Golden Visa (Investor Visa)",
+          "badge": "Investors",
+          "points": [
+            "Italy's residency-by-investment programme for non-EU nationals",
+            "Investment routes: €250,000 in an innovative startup, €500,000 in an Italian company, €1M in a philanthropic project, or €2M in Italian government bonds",
+            "Grants a 2-year renewable residence permit",
+            "No minimum stay requirement to maintain the permit",
+            "Pathway to permanent residency after 5 years and citizenship after 10 years"
+          ]
+        },
+        {
+          "title": "EU / EEA Citizens",
+          "badge": "Free movement",
+          "points": [
+            "EU/EEA citizens have the right to live and work in Italy without a visa",
+            "Must register at the local Comune (town hall) within 3 months of arrival",
+            "After 5 years of continuous legal residence, eligible for permanent residency"
+          ]
+        }
+      ],
+      "disclaimer": "Italy's immigration system is known for complexity and bureaucracy. Visa processing times can be long and requirements are enforced strictly. Always apply well in advance and consider working with a qualified Italian immigration lawyer."
+    },
+    "taxes": {
+      "eyebrow": "Taxes",
+      "title": "Understanding tax in Italy",
+      "intro": "Italy's standard income tax (IRPEF) is progressive and can reach 43% for high earners. However, Italy offers several generous tax incentive regimes for newcomers.",
+      "regimes": [
+        {
+          "title": "7% Retiree Flat Tax",
+          "desc": "For foreign retirees relocating to small towns in Southern Italy. One of the lowest flat tax rates in Europe."
+        },
+        {
+          "title": "Impatriati Regime",
+          "desc": "Up to 90% income tax exemption for workers relocating to Southern Italy. 70% exemption elsewhere."
+        },
+        {
+          "title": "€300,000 HNWI Flat Tax",
+          "desc": "Fixed annual tax on all worldwide foreign income. For ultra-high-net-worth individuals."
+        }
+      ],
+      "retireeFlat": {
+        "title": "The 7% Retiree Flat Tax — Southern Italy",
+        "subtitle": "One of the most generous retiree tax regimes in Europe. Pay just 7% on all foreign-sourced income for up to 10 years.",
+        "items": [
+          {
+            "label": "Flat tax rate",
+            "value": "7% on all foreign-sourced income"
+          },
+          {
+            "label": "Duration",
+            "value": "Up to 10 years"
+          },
+          {
+            "label": "Where",
+            "value": "Municipalities under 20,000 residents in Abruzzo, Molise, Campania, Puglia, Basilicata, Calabria, Sardinia, Sicily, and qualifying Central Italian villages"
+          },
+          {
+            "label": "Who qualifies",
+            "value": "Foreign retirees receiving a pension from outside Italy, not previously resident in Italy for 5+ years, moving from a country with a tax treaty with Italy"
+          }
+        ]
+      },
+      "impatriati": {
+        "title": "Impatriati Regime — for workers relocating to Italy",
+        "intro": "The Inbound Workers (Impatriati) regime offers a major income tax exemption for qualifying professionals who relocate to Italy to work. You must not have been a tax resident in Italy for the past 3 years.",
+        "items": [
+          {
+            "label": "Standard exemption",
+            "value": "70% of Italian employment or self-employment income is tax-exempt"
+          },
+          {
+            "label": "Southern Italy bonus",
+            "value": "90% exemption if you live in Abruzzo, Molise, Campania, Puglia, Basilicata, Calabria, Sardinia, or Sicily"
+          },
+          {
+            "label": "Duration",
+            "value": "5 years, extendable in some cases"
+          },
+          {
+            "label": "Who qualifies",
+            "value": "Workers employed or self-employed in Italy, not resident in Italy for 3+ years, committing to stay for at least 2 years"
+          }
+        ]
+      },
+      "hnwi": {
+        "title": "€300,000 HNWI Flat Tax",
+        "intro": "Italy's headline tax incentive for the ultra-wealthy. Pay a fixed €300,000 per year on all worldwide foreign-sourced income — regardless of how much you earn. The rate was raised from €200,000 in January 2026.",
+        "points": [
+          "Must not have been an Italian tax resident for 9 of the previous 10 years",
+          "Covers all foreign-sourced income for a fixed annual payment of €300,000",
+          "Family members can be included at €50,000 per person per year",
+          "Valid for up to 15 years",
+          "Exempts offshore assets from Italian wealth, inheritance, and gift taxes",
+          "Existing beneficiaries at the old €200,000 rate are grandfathered in"
+        ]
+      },
+      "standardRates": {
+        "title": "Standard income tax rates (IRPEF) — without any regime",
+        "brackets": [
+          [
+            "Up to €28,000",
+            "23%"
+          ],
+          [
+            "€28,000 – €50,000",
+            "35%"
+          ],
+          [
+            "Over €50,000",
+            "43%"
+          ]
+        ],
+        "note": "Regional and municipal surtaxes of approx. 1–3% also apply on top of IRPEF."
+      },
+      "disclaimer": "Italy's tax incentive regimes are complex and eligibility depends on your specific situation, income type, and residency history. Always consult a qualified Italian tax adviser (commercialista) before making any decisions."
+    },
+    "costOfLiving": {
+      "eyebrow": "Cost of Living",
+      "title": "What does life in Italy cost?",
+      "intro": "Italy offers enormous variety in cost of living — from expensive northern cities like Milan and Rome to remarkably affordable small towns in the South. A single person can live comfortably on €1,200–€1,500/month in mid-sized cities, and under €1,000/month in rural Southern Italy.",
+      "cities": [
+        {
+          "city": "Milan, Rome & Florence",
+          "level": "Most expensive",
+          "items": [
+            "1-bed apartment (centre): €1,200–€1,800/mo",
+            "Single person budget: €2,000–€3,000/mo",
+            "Monthly transport pass: €35–€55"
+          ]
+        },
+        {
+          "city": "Bologna, Turin, Naples",
+          "level": "Mid-range",
+          "items": [
+            "1-bed apartment (centre): €700–€1,000/mo",
+            "Single person budget: €1,400–€1,800/mo",
+            "Monthly transport pass: €30–€45"
+          ]
+        },
+        {
+          "city": "Southern Italy & small towns",
+          "level": "Most affordable",
+          "items": [
+            "1-bed apartment: €300–€700/mo",
+            "Single person budget: €800–€1,200/mo",
+            "Car often needed in rural areas"
+          ]
+        }
+      ],
+      "expenses": {
+        "title": "Typical monthly expenses (mid-sized city)",
+        "items": [
+          [
+            "Rent (1-bed, city centre)",
+            "€700 – €1,100"
+          ],
+          [
+            "Utilities (electricity, gas, water)",
+            "€100 – €200"
+          ],
+          [
+            "Groceries",
+            "€200 – €350"
+          ],
+          [
+            "Dining out (mid-range)",
+            "€150 – €300"
+          ],
+          [
+            "Public transport pass",
+            "€30 – €45"
+          ],
+          [
+            "Private health insurance",
+            "€60 – €150"
+          ],
+          [
+            "Gym membership",
+            "€30 – €60"
+          ],
+          [
+            "Mobile plan",
+            "€10 – €30"
+          ]
+        ]
+      },
+      "southernNote": "Several regions in Southern Italy — including Calabria, Sardinia, and Sicily — actively offer grants of up to €30,000 to foreigners who relocate permanently to depopulating small towns."
+    },
+    "healthcare": {
+      "eyebrow": "Healthcare",
+      "title": "Healthcare in Italy",
+      "intro": "Italy's public healthcare system, the Servizio Sanitario Nazionale (SSN), is consistently ranked among the best in the world. It is available to all legal residents and is largely free or heavily subsidised.",
+      "public": {
+        "title": "Public Healthcare (SSN)",
+        "points": [
+          "Free or heavily subsidised for all legal residents",
+          "Register at your local ASL (Azienda Sanitaria Locale) office with your codice fiscale (tax number) and residence permit",
+          "Covers GP visits, hospital care, maternity, emergency services, and subsidised prescriptions",
+          "Small co-payments (ticket) apply for some specialist visits — typically €15–€50",
+          "Dental care is mostly NOT covered — pay privately",
+          "Quality varies significantly between Northern Italy (excellent) and Southern Italy (more variable)",
+          "Emergency number: 118 (medical), 112 (general)"
+        ]
+      },
+      "private": {
+        "title": "Private Health Insurance",
+        "points": [
+          "Required for most visa applications before arriving in Italy",
+          "Costs approx. €60–€150/month per person depending on age and coverage",
+          "Provides faster access to specialists and avoids SSN waiting times",
+          "Particularly recommended in Southern Italy where SSN capacity can be more stretched",
+          "Popular providers: Generali, Allianz, UniSalute, Previmedical"
+        ]
+      },
+      "tip": "Get your codice fiscale (tax code) as your first step — you need it to register with the SSN, open a bank account, sign a rental contract, and almost everything else."
+    },
+    "banking": {
+      "eyebrow": "Banking & Finance",
+      "title": "Banking in Italy",
+      "intro": "Opening a bank account in Italy requires your codice fiscale (tax code) and proof of residency. Many expats use digital banks like Revolut or N26 initially while setting up their Italian account.",
+      "requirements": {
+        "title": "What you'll need to open an account",
+        "points": [
+          "Codice fiscale — your Italian tax identification number (get this first)",
+          "Valid passport or national ID",
+          "Proof of Italian address (rental contract or utility bill)",
+          "Residence permit (permesso di soggiorno) for non-EU nationals"
+        ]
+      },
+      "banks": {
+        "title": "Popular banks for expats",
+        "points": [
+          "Intesa Sanpaolo — Italy's largest bank, wide branch network",
+          "UniCredit — major international bank with good English support",
+          "Banca Mediolanum — popular with expats and remote workers",
+          "Fineco Bank — excellent online/app banking, low fees",
+          "N26 / Revolut — ideal while waiting for Italian account to open",
+          "Wise — recommended for international transfers and multi-currency needs"
+        ]
+      },
+      "tip": "Your codice fiscale is the single most important document in Italy — get it before you arrive if possible, through an Italian consulate in your home country."
+    },
+    "prosCons": {
+      "eyebrow": "Summary",
+      "title": "Is Italy right for you?",
+      "pros": {
+        "title": "Reasons to move to Italy",
+        "points": [
+          "7% flat tax for retirees in Southern Italy — one of Europe's best",
+          "Impatriati regime: up to 90% income tax exemption for qualifying workers",
+          "€300,000 HNWI flat tax for ultra-high-net-worth individuals",
+          "World-class food, wine, art, and culture",
+          "Beautiful coastline, mountains, lakes, and countryside",
+          "Excellent public healthcare ranked among the world's best",
+          "Very affordable in Southern Italy and rural areas",
+          "Strong expat communities in Rome, Florence, Milan, and coastal areas",
+          "Pathway to EU residency and citizenship after 5–10 years",
+          "Southern Italy relocation grants of up to €30,000 available"
+        ]
+      },
+      "cons": {
+        "title": "Things to consider",
+        "points": [
+          "Italian bureaucracy is notoriously complex and slow",
+          "Language barrier is significant outside major cities and tourist areas",
+          "Digital Nomad Visa has relatively high income (€32,400/year) and savings (€30,000) requirements",
+          "Elective Residency Visa requires high passive income (€31,000+/year) and strictly prohibits working",
+          "HNWI flat tax raised to €300,000 in January 2026 — less attractive than before",
+          "Healthcare quality varies significantly between North and South",
+          "Major cities (Milan, Rome, Florence) are expensive"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to make your move?",
+      "subtitle": "Use our free tool to compare Italy with other European countries and find the best fit for your situation.",
+      "button": "Compare all countries →"
+    }
+  }
+}

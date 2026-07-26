@@ -31,7 +31,7 @@ if (!countryArg) {
   process.exit(1);
 }
 
-const contentPath = path.join(process.cwd(), `app/countries/${countryArg}/content.json`);
+const contentPath = path.join(process.cwd(), `app/[locale]/countries/${countryArg}/content.json`);
 if (!fs.existsSync(contentPath)) {
   console.error(`❌ No content.json found at ${contentPath}`);
   process.exit(1);
@@ -112,7 +112,7 @@ ${JSON.stringify(content, null, 2)}`;
     },
     body: JSON.stringify({
       model: "claude-sonnet-4-6",
-      max_tokens: 8000,
+      max_tokens: 16000,
       messages: [{ role: "user", content: prompt }],
     }),
   });
@@ -134,7 +134,7 @@ ${JSON.stringify(content, null, 2)}`;
     throw new Error("JSON parse failed");
   }
 
-  const outPath = path.join(process.cwd(), `app/countries/${countryArg}/content.${langCode}.json`);
+  const outPath = path.join(process.cwd(), `app/[locale]/countries/${countryArg}/content.${langCode}.json`);
   fs.writeFileSync(outPath, JSON.stringify(parsed, null, 2));
   console.log(`  ✅ Saved content.${langCode}.json`);
 }
@@ -147,7 +147,7 @@ async function main() {
 
   console.log(`\n🌍 Translating ${countryName}...`);
   for (const lang of LANGUAGES) {
-    const outPath = path.join(process.cwd(), `app/countries/${countryArg}/content.${lang.code}.json`);
+    const outPath = path.join(process.cwd(), `app/[locale]/countries/${countryArg}/content.${lang.code}.json`);
     if (fs.existsSync(outPath)) {
       console.log(`  ⏭️  Skipping ${lang.code} — already exists`);
       continue;

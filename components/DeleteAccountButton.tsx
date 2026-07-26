@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useParams } from "next/navigation";
 
 export default function DeleteAccountButton() {
   const [step, setStep] = useState<"idle" | "confirm" | "deleting" | "done">("idle");
   const [error, setError] = useState<string | null>(null);
   const router = useRouter();
+  const params = useParams();
+  const locale = (params?.locale as string) || "en";
 
   const handleDelete = async () => {
     setStep("deleting");
@@ -16,7 +18,7 @@ export default function DeleteAccountButton() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Deletion failed");
       setStep("done");
-      setTimeout(() => router.push("/"), 3000);
+      setTimeout(() => router.push(`/${locale}`), 3000);
     } catch (err: any) {
       setError(err.message);
       setStep("confirm");

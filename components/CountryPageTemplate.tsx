@@ -2,7 +2,7 @@
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import { useState, useEffect } from "react";
 
 interface Stat { label: string; value: string; }

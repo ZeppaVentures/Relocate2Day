@@ -1,0 +1,324 @@
+{
+  "country": "Bulgaria",
+  "hero": {
+    "badge": "Bulgária",
+    "title": "Mude-se para a Bulgária",
+    "subtitle": "O destino mais eficiente em termos fiscais da Europa — imposto de renda fixo de 10%, comunidades de expatriados em rápido crescimento, natureza deslumbrante e um custo de vida que rende mais do que em quase qualquer outro lugar na UE.",
+    "stats": [
+      {
+        "label": "Imposto de renda fixo",
+        "value": "10%"
+      },
+      {
+        "label": "Custo de vida",
+        "value": "A partir de €700/mês"
+      },
+      {
+        "label": "Membro da UE desde",
+        "value": "2007"
+      },
+      {
+        "label": "Idioma oficial",
+        "value": "Búlgaro"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Vistos e Residência",
+      "title": "Como se mudar para a Bulgária",
+      "intro": "Cidadãos da UE/EEE podem se mudar para a Bulgária livremente e registrar sua residência no município local. Nacionais de países fora da UE dispõem de várias opções — a Bulgária lançou seu primeiro Digital Nomad Residence Permit oficial em dezembro de 2025.",
+      "visas": [
+        {
+          "title": "Digital Nomad Residence Permit",
+          "badge": "Trabalhadores remotos e freelancers",
+          "points": [
+            "O novo programa de nômades digitais da Bulgária — as inscrições foram abertas em 20 de dezembro de 2025",
+            "Para nacionais de países fora da UE que trabalham remotamente para empregadores ou clientes com sede fora da UE, EEE e Suíça",
+            "Renda mínima exigida: €31.000/ano (50 vezes o salário mínimo mensal da Bulgária)",
+            "Três categorias elegíveis: trabalhadores remotos com vínculo empregatício, freelancers/contratados independentes e proprietários de empresas que trabalham remotamente",
+            "Processo: solicitar um visto de longa duração Type D em um consulado búlgaro e, após a chegada à Bulgária, solicitar a autorização de residência",
+            "Autorização de residência válida por 1 ano, renovável por mais um ano (máximo de 2 anos no total)",
+            "Não oferece atualmente um caminho direto para a residência permanente",
+            "Familiares podem ser incluídos de acordo com as normas de imigração búlgaras"
+          ]
+        },
+        {
+          "title": "Visto de Longa Duração Type D (Renda Passiva / Aposentados)",
+          "badge": "Aposentados e renda passiva",
+          "points": [
+            "Para nacionais de países fora da UE com renda passiva suficiente — pensões, rendimentos de aluguel, dividendos ou poupanças",
+            "É necessário comprovar meios financeiros adequados para se sustentar sem trabalhar na Bulgária",
+            "Exige comprovante de moradia, seguro saúde e certidão de antecedentes criminais",
+            "Visto inicial válido por até 1 ano, extensível como autorização de residência de longa duração",
+            "Após 5 anos de residência legal contínua, é possível solicitar a residência permanente"
+          ]
+        },
+        {
+          "title": "Visto de Investidor",
+          "badge": "Investidores",
+          "points": [
+            "Para nacionais de países fora da UE que realizem um investimento qualificado na Bulgária",
+            "Investimento de BGN 1 million (~€510.000) em projetos empresariais ou fundos de investimento é elegível",
+            "Concede residência permanente mediante aprovação — uma das rotas mais rápidas para residência permanente na UE",
+            "Elegível para a cidadania búlgara após aproximadamente 5 anos"
+          ]
+        },
+        {
+          "title": "Cidadãos da UE / EEE",
+          "badge": "Livre circulação",
+          "points": [
+            "Cidadãos da UE/EEE têm o direito de viver e trabalhar na Bulgária sem necessidade de visto",
+            "Devem registrar-se no município local dentro de 3 meses após a chegada",
+            "Receberão um certificado de registro que confirma os direitos de residência na UE",
+            "Após 5 anos de residência legal contínua, é possível solicitar a residência permanente"
+          ]
+        }
+      ],
+      "disclaimer": "O Digital Nomad Residence Permit da Bulgária é completamente novo (lançado em dezembro de 2025) e os procedimentos ainda estão sendo definidos. Sempre verifique os requisitos atuais com o Ministério do Interior da Bulgária ou com um advogado de imigração búlgaro qualificado antes de se candidatar."
+    },
+    "taxes": {
+      "eyebrow": "Impostos",
+      "title": "Entendendo o sistema tributário da Bulgária",
+      "intro": "A Bulgária tem a menor alíquota flat de imposto de renda da UE, de apenas 10% — aplicada a toda a renda, independentemente do valor recebido. Há também uma alíquota flat de 10% para o imposto corporativo. A Bulgária ingressou na Zona do Euro em janeiro de 2026, adotando o Euro como moeda.",
+      "highlight": {
+        "title": "Imposto Flat de 10% — O Mais Baixo da UE",
+        "subtitle": "O imposto de renda flat de 10% da Bulgária é único na UE — não há faixas tributárias nem alíquotas progressivas. Se você ganha €20.000 ou €200.000, paga 10%.",
+        "items": [
+          {
+            "label": "Imposto de renda pessoa física",
+            "value": "10% flat — sobre toda a renda, independentemente do valor"
+          },
+          {
+            "label": "Imposto corporativo",
+            "value": "10% flat — uma das menores alíquotas corporativas da UE"
+          },
+          {
+            "label": "Imposto sobre dividendos",
+            "value": "5% — muito competitivo para proprietários de empresas"
+          },
+          {
+            "label": "Imposto sobre ganhos de capital",
+            "value": "10% sobre a maioria dos ganhos — algumas isenções se aplicam"
+          }
+        ]
+      },
+      "nomadTax": {
+        "title": "Tratamento fiscal para titulares do Digital Nomad Permit",
+        "points": [
+          "Se você passar mais de 183 dias por ano na Bulgária, torna-se residente fiscal búlgaro",
+          "Como residente fiscal búlgaro, sua renda mundial está sujeita ao imposto flat de 10%",
+          "A Bulgária possui tratados de dupla tributação com mais de 70 países",
+          "Titulares do Digital Nomad Permit que passem menos de 183 dias por ano na Bulgária podem não ser considerados residentes fiscais",
+          "As regras de residência fiscal são complexas — consulte sempre um consultor tributário búlgaro qualificado"
+        ]
+      },
+      "comparison": {
+        "title": "Como a Bulgária se compara a outros países da UE",
+        "brackets": [
+          [
+            "Bulgária",
+            "10% (flat)"
+          ],
+          [
+            "Malta",
+            "35% (máx.)"
+          ],
+          [
+            "Portugal",
+            "48% (máx.)"
+          ],
+          [
+            "Espanha",
+            "47% (máx.)"
+          ],
+          [
+            "Itália",
+            "43% (máx.)"
+          ],
+          [
+            "Alemanha",
+            "45% (máx.)"
+          ],
+          [
+            "França",
+            "45% (máx.)"
+          ]
+        ]
+      },
+      "disclaimer": "A Bulgária adotou o Euro em janeiro de 2026 e seu cenário tributário está em evolução. Consulte sempre um consultor tributário búlgaro qualificado antes de tomar qualquer decisão."
+    },
+    "costOfLiving": {
+      "eyebrow": "Custo de Vida",
+      "title": "Quanto custa viver na Bulgária?",
+      "intro": "A Bulgária continua sendo um dos países mais acessíveis da UE — embora os preços em Sófia tenham subido significativamente desde a adoção do Euro em janeiro de 2026. Uma pessoa solteira pode viver confortavelmente com €700–€1.200/mês, dependendo da cidade.",
+      "euroNote": "A Bulgária adotou o Euro em janeiro de 2026. Primeiros relatos indicam que os preços subiram 20–50% em algumas categorias após a adoção — especialmente em Sófia. Verifique os preços atuais localmente enquanto o mercado se ajusta.",
+      "cities": [
+        {
+          "city": "Sófia",
+          "level": "Mais cara",
+          "items": [
+            "Apartamento de 1 quarto (centro): €500–€900/mês",
+            "Orçamento para uma pessoa: €1.000–€1.500/mês",
+            "Ideal para carreira e vida urbana"
+          ]
+        },
+        {
+          "city": "Plovdiv e Varna",
+          "level": "Intermediário",
+          "items": [
+            "Apartamento de 1 quarto (centro): €350–€600/mês",
+            "Orçamento para uma pessoa: €800–€1.200/mês",
+            "Ótima qualidade de vida a um custo menor"
+          ]
+        },
+        {
+          "city": "Bansko e cidades menores",
+          "level": "Mais acessível",
+          "items": [
+            "Apartamento de 1 quarto: €200–€400/mês",
+            "Orçamento para uma pessoa: €600–€900/mês",
+            "Popular entre nômades digitais"
+          ]
+        }
+      ],
+      "expenses": {
+        "title": "Despesas mensais típicas em Sófia",
+        "items": [
+          [
+            "Aluguel (1 quarto, centro)",
+            "€500 – €900"
+          ],
+          [
+            "Contas de consumo (eletricidade, aquecimento, água)",
+            "€60 – €150"
+          ],
+          [
+            "Internet (fibra)",
+            "€10 – €20"
+          ],
+          [
+            "Supermercado",
+            "€150 – €300"
+          ],
+          [
+            "Refeições fora (intermediário)",
+            "€100 – €200"
+          ],
+          [
+            "Passe de transporte público",
+            "€25 – €35"
+          ],
+          [
+            "Plano de saúde privado",
+            "€50 – €150"
+          ],
+          [
+            "Academia",
+            "€20 – €40"
+          ],
+          [
+            "Plano de celular",
+            "€10 – €20"
+          ]
+        ]
+      },
+      "banskoTip": "Bansko tornou-se um dos destinos mais populares para nômades digitais na Europa — uma estação de esqui na montanha com internet de fibra rápida, uma comunidade internacional vibrante, aluguéis muito acessíveis e cenários deslumbrantes."
+    },
+    "healthcare": {
+      "eyebrow": "Saúde",
+      "title": "Saúde na Bulgária",
+      "intro": "A Bulgária possui um sistema de saúde público financiado por contribuições obrigatórias ao seguro de saúde. A maioria dos expatriados opta por um plano de saúde privado para ter melhor acesso, menores tempos de espera e médicos que falam inglês. A saúde privada na Bulgária é muito acessível para os padrões ocidentais.",
+      "public": {
+        "title": "Saúde Pública",
+        "points": [
+          "Disponível para todos os residentes legais que contribuem para o National Health Insurance Fund (NHIF)",
+          "As contribuições são de aproximadamente 8% do salário, divididas entre empregador e empregado",
+          "Cobre consultas com clínico geral, internação hospitalar, maternidade e serviços de emergência",
+          "O atendimento odontológico é majoritariamente privado",
+          "A qualidade varia bastante — Sófia e as cidades maiores têm melhores instalações",
+          "Longos tempos de espera para atendimento especializado são comuns",
+          "Cidadãos da UE podem usar o EHIC para tratamento de emergência",
+          "Número de emergência: 112"
+        ]
+      },
+      "private": {
+        "title": "Plano de Saúde Privado",
+        "points": [
+          "Exigido para o Digital Nomad Permit e para a maioria das solicitações de visto de longa duração",
+          "Muito acessível — tipicamente €50–€150/mês por pessoa",
+          "Uma consulta particular com clínico geral custa apenas €29–€57 sem seguro",
+          "Oferece acesso mais rápido, médicos que falam inglês e melhores instalações",
+          "Provedores populares: Allianz, Bupa International, AXA, operadora local DZI"
+        ]
+      },
+      "tip": "A saúde privada na Bulgária é genuinamente acessível. Uma consulta com especialista custa tipicamente €30–€80 no setor privado — muito menos do que na Europa Ocidental."
+    },
+    "banking": {
+      "eyebrow": "Finanças e Bancos",
+      "title": "Sistema bancário na Bulgária",
+      "intro": "A Bulgária adotou o Euro em janeiro de 2026, substituindo o Lev búlgaro (BGN). O sistema bancário é simples para residentes, com vários grandes bancos internacionais atuando ao lado de instituições locais.",
+      "requirements": {
+        "title": "O que você vai precisar para abrir uma conta",
+        "points": [
+          "Passaporte válido ou documento de identidade nacional",
+          "Comprovante de endereço na Bulgária (contrato de aluguel)",
+          "Autorização de residência ou certificado de registro",
+          "Número de identificação pessoal búlgaro (EGN ou LNC para estrangeiros)",
+          "Depósito inicial geralmente entre €50–€200"
+        ]
+      },
+      "banks": {
+        "title": "Bancos que operam na Bulgária",
+        "points": [
+          "UniCredit Bulbank — maior banco da Bulgária, com bom suporte internacional",
+          "DSK Bank — muito popular entre os residentes, ampla rede de agências",
+          "Fibank (First Investment Bank) — popular entre expatriados",
+          "OTP Bank Bulgaria — forte atuação em banco de varejo",
+          "Revolut / Wise — amplamente utilizados por expatriados e nômades digitais para o dia a dia financeiro"
+        ]
+      },
+      "tip": "Abra uma conta no Revolut ou Wise antes de se mudar — isso permite que você gaste em euros imediatamente enquanto configura sua conta bancária búlgara, o que pode levar algumas semanas para residentes de fora da UE."
+    },
+    "prosCons": {
+      "eyebrow": "Resumo",
+      "title": "A Bulgária é a escolha certa para você?",
+      "pros": {
+        "title": "Razões para se mudar para a Bulgária",
+        "points": [
+          "Menor imposto de renda flat da UE — apenas 10% sobre toda a renda",
+          "Imposto corporativo de 10% — muito atrativo para empreendedores e proprietários de empresas",
+          "Um dos países mais acessíveis da UE",
+          "Digital Nomad Residence Permit recém-lançado (dezembro de 2025)",
+          "Estado-membro da UE — caminho para residência e cidadania europeias",
+          "Membro pleno do Espaço Schengen desde março de 2024",
+          "Agora usa o Euro — sem risco cambial para quem recebe em euros",
+          "Bansko é um dos principais hubs de nômades digitais da Europa",
+          "Natureza deslumbrante — montanhas, costa do Mar Negro, parques nacionais",
+          "Comunidades de expatriados em crescimento e acolhedoras em Sófia, Plovdiv e Bansko",
+          "Saúde privada muito acessível",
+          "Infraestrutura de internet rápida e acessível"
+        ]
+      },
+      "cons": {
+        "title": "Pontos a considerar",
+        "points": [
+          "A adoção do Euro (janeiro de 2026) causou aumentos significativos de preços — especialmente em Sófia",
+          "O Digital Nomad Permit é completamente novo — os procedimentos ainda estão sendo definidos",
+          "A autorização é válida por no máximo 2 anos, sem caminho direto para a residência permanente",
+          "O idioma búlgaro usa o alfabeto cirílico — uma curva de aprendizado considerável",
+          "O inglês não é amplamente falado fora das grandes cidades e áreas turísticas",
+          "A qualidade da saúde pública é variável — plano de saúde privado é fortemente recomendado",
+          "A burocracia pode ser lenta e complexa",
+          "A infraestrutura fora das grandes cidades pode ser precária",
+          "Os invernos em Sófia podem ser frios e cinzentos"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Pronto para dar o próximo passo?",
+      "subtitle": "Use nossa ferramenta gratuita para comparar a Bulgária com outros países europeus e encontrar a melhor opção para a sua situação.",
+      "button": "Comparar todos os países →"
+    }
+  }
+}

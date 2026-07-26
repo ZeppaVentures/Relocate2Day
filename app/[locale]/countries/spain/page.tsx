@@ -1,0 +1,39 @@
+"use client";
+
+import { useParams } from "next/navigation";
+import CountryPageTemplate, { CountryContent } from "@/components/CountryPageTemplate";
+
+import contentEn from "./content.json";
+import contentEs from "./content.es.json";
+import contentPt from "./content.pt.json";
+import contentZh from "./content.zh.json";
+
+const sectionLabels = (locale: string) => [
+  { id: "visas", label: locale === "es" ? "Visas y Residencia" : locale === "pt" ? "Vistos e Residência" : locale === "zh" ? "签证与居留" : "Visas & Residency" },
+  { id: "taxes", label: locale === "es" ? "Impuestos" : locale === "pt" ? "Impostos" : locale === "zh" ? "税务" : "Taxes" },
+  { id: "cost-of-living", label: locale === "es" ? "Coste de Vida" : locale === "pt" ? "Custo de Vida" : locale === "zh" ? "生活成本" : "Cost of Living" },
+  { id: "healthcare", label: locale === "es" ? "Sanidad" : locale === "pt" ? "Saúde" : locale === "zh" ? "医疗" : "Healthcare" },
+  { id: "banking", label: locale === "es" ? "Banca y Finanzas" : locale === "pt" ? "Bancos e Finanças" : locale === "zh" ? "银行与金融" : "Banking & Finance" },
+  { id: "pros-cons", label: locale === "es" ? "¿Es España para ti?" : locale === "pt" ? "A Espanha é para si?" : locale === "zh" ? "西班牙适合你吗？" : "Is Spain right for you?" },
+
+];
+
+export default function SpainPage() {
+  const params = useParams();
+  const locale = (params?.locale as string) || "en";
+  const content: CountryContent =
+    locale === "es" ? (contentEs as CountryContent) :
+    locale === "pt" ? (contentPt as CountryContent) :
+    locale === "zh" ? (contentZh as CountryContent) :
+    (contentEn as CountryContent);
+
+  return (
+    <CountryPageTemplate
+      content={content}
+      heroImage="/images/countries/spain-hero.jpg"
+      slug="spain"
+      sectionLabels={sectionLabels(locale)}
+      zhDisclaimer={locale === "zh"}
+    />
+  );
+}

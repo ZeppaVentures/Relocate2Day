@@ -12,41 +12,11 @@ function getNestedValue(obj: Messages, key: string, vars?: Record<string, string
   for (const k of keys) {
     if (value && typeof value === "object" && k in (value as Record<string, unknown>)) {
       value = (value as Record<string, unknown>)[k];
-    } else {
-      return key;
-    }
+    } else return key;
   }
   let result = typeof value === "string" ? value : key;
-  if (vars) {
-    Object.entries(vars).forEach(([k, v]) => {
-      result = result.replace(`{{${k}}}`, v);
-    });
-  }
+  if (vars) Object.entries(vars).forEach(([k, v]) => { result = result.replace(`{{${k}}}`, v); });
   return result;
-}
-
-function detectLocale(): Locale {
-  if (typeof window === "undefined") return "en";
-  
-  // Check cookie first (user preference)
-  const cookieMatch = document.cookie.match(/NEXT_LOCALE=([^;]+)/);
-  if (cookieMatch && ["en","es","pt","zh"].includes(cookieMatch[1])) {
-    return cookieMatch[1] as Locale;
-  }
-  
-  // Check URL path
-  const path = window.location.pathname;
-  if (path.startsWith("/es")) return "es";
-  if (path.startsWith("/pt")) return "pt";
-  if (path.startsWith("/zh")) return "zh";
-  
-  // Check browser language
-  const lang = navigator.language.toLowerCase();
-  if (lang.startsWith("es")) return "es";
-  if (lang.startsWith("pt")) return "pt";
-  if (lang.startsWith("zh")) return "zh";
-  
-  return "en";
 }
 
 const messageCache: Record<string, Messages> = {};
@@ -58,26 +28,26 @@ async function loadMessages(locale: Locale): Promise<Messages> {
     messageCache[locale] = messages.default || messages;
     return messageCache[locale];
   } catch {
-    // Fallback to English
     const messages = await import(`../messages/en.json`);
     messageCache["en"] = messages.default || messages;
     return messageCache["en"];
   }
 }
 
-export function useTranslations() {
-  const [locale, setLocale] = useState<Locale>("en");
+export function useTranslations(locale: Locale = "en") {
   const [messages, setMessages] = useState<Messages>({});
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const detected = detectLocale();
-    setLocale(detected);
-    loadMessages(detected).then((msgs) => {
+    let cancelled = false;
+    setLoaded(false);
+    loadMessages(locale).then((msgs) => {
+      if (cancelled) return;
       setMessages(msgs);
       setLoaded(true);
     });
-  }, []);
+    return () => { cancelled = true; };
+  }, [locale]);
 
   function t(key: string, vars?: Record<string, string>): string {
     if (!loaded) return "";

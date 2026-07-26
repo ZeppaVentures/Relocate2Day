@@ -1,0 +1,338 @@
+{
+  "country": "Greece",
+  "hero": {
+    "badge": "Grécia",
+    "title": "Mude-se para a Grécia",
+    "subtitle": "Sol mediterrâneo, cultura milenar e um dos estilos de vida mais acessíveis da Europa — a Grécia tornou-se um dos destinos mais procurados por aposentados, trabalhadores remotos e investidores em busca de residência na UE.",
+    "stats": [
+      {
+        "label": "Imposto de renda (a partir de)",
+        "value": "9%"
+      },
+      {
+        "label": "Custo de vida",
+        "value": "A partir de €1.150/mês"
+      },
+      {
+        "label": "Membro da UE desde",
+        "value": "1981"
+      },
+      {
+        "label": "Idioma oficial",
+        "value": "Grego"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Vistos & Residência",
+      "title": "Como se mudar para a Grécia",
+      "intro": "Cidadãos da UE/EEE podem se mudar para a Grécia livremente, sem necessidade de visto. Cidadãos de países fora da UE contam com várias opções sólidas, incluindo o Golden Visa, o Digital Nomad Visa e o visto Financially Independent Person (FIP). Em 2026, a Grécia unificou o processo de visto e autorização de residência em uma única solicitação.",
+      "visas": [
+        {
+          "title": "Cidadãos da UE / EEE",
+          "badge": "Livre circulação",
+          "points": [
+            "Cidadãos da UE/EEE têm o direito de viver e trabalhar na Grécia sem necessidade de visto",
+            "Registre-se na municipalidade local (KEP) após a chegada",
+            "Obtenha o número de identificação fiscal grego (AFM) e o número de seguridade social (AMKA) o quanto antes — essenciais para abertura de conta bancária, acesso à saúde e emprego",
+            "Após 5 anos de residência legal contínua, é possível solicitar a residência permanente"
+          ]
+        },
+        {
+          "title": "Digital Nomad Visa (E33A)",
+          "badge": "Trabalhadores remotos e freelancers",
+          "points": [
+            "Para cidadãos de países fora da UE que trabalham remotamente para empregadores ou clientes sediados fora da Grécia",
+            "Renda mínima exigida: €3.500/mês líquidos (após impostos)",
+            "A partir de fevereiro de 2026 (Lei 5275/2026), as solicitações devem ser feitas fora da Grécia",
+            "Solicite em um consulado grego no seu país de origem antes de viajar",
+            "Autorização inicial válida por 2 anos, renovável",
+            "Isenção de 50% do imposto de renda por até 7 anos — um benefício financeiro significativo",
+            "Familiares podem ser incluídos na solicitação"
+          ]
+        },
+        {
+          "title": "Visto Financially Independent Person (FIP)",
+          "badge": "Aposentados e renda passiva",
+          "points": [
+            "Para cidadãos de países fora da UE com renda passiva suficiente — aposentadorias, dividendos, aluguéis ou poupanças",
+            "Renda mínima exigida: €2.000/mês (mais 20% por dependente)",
+            "Não é permitido trabalhar ou operar um negócio na Grécia",
+            "Solicite em um consulado grego antes de viajar para a Grécia",
+            "Autorização de residência válida por 3 anos, renovável",
+            "A Grécia ficou em primeiro lugar no Global Retirement Index de 2026",
+            "Imposto fixo especial de 7% sobre rendimentos de aposentadoria estrangeira para aposentados qualificados"
+          ]
+        },
+        {
+          "title": "Golden Visa",
+          "badge": "Investidores",
+          "points": [
+            "Residência por meio de imóvel ou outro investimento qualificado",
+            "Limites de investimento conforme a Lei 5100/2024: €800.000 na Zona A (Atenas, Tessalônica, Mykonos, Santorini), €400.000 na Zona B, €250.000 para conversão de imóveis comerciais em residenciais",
+            "Sem requisito de residência mínima",
+            "Autorização de residência renovável por 5 anos",
+            "Caminho para a cidadania grega após 7 anos de residência"
+          ]
+        },
+        {
+          "title": "Visto para Startups e Tecnologia (2026)",
+          "badge": "Fundadores e profissionais de tecnologia",
+          "points": [
+            "Novidade em 2026 — a Grécia lançou categorias de visto específicas para profissionais qualificados de tecnologia e fundadores de startups",
+            "Voltado para atrair talentos para o crescente ecossistema de tecnologia e startups da Grécia",
+            "Consulte o Ministério da Migração da Grécia para conhecer os requisitos atuais"
+          ]
+        }
+      ],
+      "disclaimer": "As regras de imigração da Grécia sofreram mudanças significativas em 2026, incluindo a nova lei que proibiu solicitações do Digital Nomad Visa com base em estadia turística. Sempre verifique os requisitos atuais junto ao Ministério da Migração da Grécia ou a um advogado de imigração grego qualificado antes de solicitar."
+    },
+    "taxes": {
+      "eyebrow": "Impostos",
+      "title": "Entendendo a tributação na Grécia",
+      "intro": "A Grécia adota um sistema de imposto de renda progressivo, com alíquotas de 9% a 44%. No entanto, o país oferece alguns dos incentivos fiscais para expatriados mais generosos da Europa — incluindo isenção de 50% do imposto de renda para titulares do Digital Nomad Visa, imposto fixo de 7% para aposentados qualificados e imposto fixo de €100.000 para pessoas de alto patrimônio no regime non-dom.",
+      "highlight": {
+        "title": "Faixas do Imposto de Renda em 2026",
+        "subtitle": "A Grécia reformou suas alíquotas de imposto em 2026 por meio da Lei 5246/2025, reduzindo as alíquotas das faixas intermediárias e elevando o limite da alíquota máxima de 44% de €40.000 para €60.000.",
+        "items": [
+          {
+            "label": "Até €10.000",
+            "value": "9%"
+          },
+          {
+            "label": "€10.001 – €20.000",
+            "value": "20%"
+          },
+          {
+            "label": "€20.001 – €30.000",
+            "value": "26%"
+          },
+          {
+            "label": "€30.001 – €40.000",
+            "value": "34%"
+          },
+          {
+            "label": "€40.001 – €60.000",
+            "value": "39%"
+          },
+          {
+            "label": "Acima de €60.000",
+            "value": "44%"
+          }
+        ]
+      },
+      "specialRegimes": {
+        "title": "Regimes fiscais especiais para expatriados",
+        "points": [
+          "Titulares do Digital Nomad Visa: isenção de 50% do imposto de renda por até 7 anos",
+          "Aposentados que transferem a residência fiscal para a Grécia: imposto fixo de 7% sobre toda a renda de aposentadoria estrangeira por até 15 anos",
+          "Non-doms de alto patrimônio: imposto fixo anual de €100.000 sobre toda a renda estrangeira mundial por 15 anos (exige investimento de €500.000 na Grécia)",
+          "Imposto sobre dividendos: apenas 5% — o mais baixo da UE",
+          "Jovens profissionais com menos de 25 anos: 0% de imposto sobre rendimentos de até €20.000",
+          "Sobretaxa de solidariedade: suspensa desde 2023 e continua suspensa em 2026"
+        ]
+      },
+      "otherTaxes": {
+        "title": "Outros impostos relevantes",
+        "brackets": [
+          [
+            "Imposto de renda corporativo",
+            "22%"
+          ],
+          [
+            "Imposto sobre dividendos",
+            "5% (o mais baixo da UE)"
+          ],
+          [
+            "IVA (alíquota padrão)",
+            "24%"
+          ],
+          [
+            "Imposto sobre ganhos de capital",
+            "15% sobre a maioria dos ativos"
+          ],
+          [
+            "Seguridade social (empregado)",
+            "14% do salário bruto"
+          ],
+          [
+            "Teto da seguridade social",
+            "€93.143/ano"
+          ]
+        ]
+      },
+      "disclaimer": "A legislação tributária grega sofreu mudanças significativas em 2026. A residência fiscal é aplicada caso você permaneça mais de 183 dias por ano na Grécia. Consulte sempre um consultor tributário grego qualificado antes de tomar qualquer decisão."
+    },
+    "costOfLiving": {
+      "eyebrow": "Custo de Vida",
+      "title": "Quanto custa viver na Grécia?",
+      "intro": "A Grécia oferece um dos estilos de vida mais acessíveis da Europa Ocidental — cerca de 51% mais barato do que os EUA. Uma pessoa solteira pode viver confortavelmente com €1.150–€1.400/mês, incluindo aluguel.",
+      "cities": [
+        {
+          "city": "Atenas",
+          "level": "Mais caro",
+          "items": [
+            "Apartamento de 1 quarto (centro): €700–€1.200/mês",
+            "Orçamento para uma pessoa: €1.400–€2.000/mês",
+            "Ideal para carreira, cultura e vida urbana"
+          ]
+        },
+        {
+          "city": "Tessalônica e Heraklion",
+          "level": "Intermediário",
+          "items": [
+            "Apartamento de 1 quarto (centro): €400–€700/mês",
+            "Orçamento para uma pessoa: €1.100–€1.500/mês",
+            "Ótima qualidade de vida com custo menor"
+          ]
+        },
+        {
+          "city": "Ilhas e cidades menores",
+          "level": "Mais acessível",
+          "items": [
+            "Apartamento de 1 quarto: €300–€600/mês",
+            "Orçamento para uma pessoa: €800–€1.200/mês",
+            "Ideal para aposentados e trabalhadores remotos"
+          ]
+        }
+      ],
+      "expenses": {
+        "title": "Despesas mensais típicas em Atenas",
+        "items": [
+          [
+            "Aluguel (1 quarto, centro)",
+            "€700 – €1.200"
+          ],
+          [
+            "Utilidades (eletricidade, aquecimento, água)",
+            "€80 – €150"
+          ],
+          [
+            "Internet (fibra)",
+            "€20 – €35"
+          ],
+          [
+            "Supermercado",
+            "€200 – €350"
+          ],
+          [
+            "Refeições fora (nível intermediário)",
+            "€150 – €250"
+          ],
+          [
+            "Passe de transporte público",
+            "€30"
+          ],
+          [
+            "Plano de saúde privado",
+            "€60 – €250"
+          ],
+          [
+            "Academia",
+            "€25 – €50"
+          ],
+          [
+            "Plano de celular",
+            "€15 – €30"
+          ]
+        ]
+      },
+      "islandTip": "Ilhas gregas como Creta, Rodes e Corfu oferecem uma qualidade de vida extraordinária a custos significativamente menores do que Atenas — especialmente fora da temporada turística."
+    },
+    "healthcare": {
+      "eyebrow": "Saúde",
+      "title": "Saúde na Grécia",
+      "intro": "A Grécia conta com um sistema público de saúde (ESY) acessível a residentes registrados. A maioria dos expatriados opta por um plano de saúde privado para consultas de rotina, devido aos tempos de espera e à qualidade variável fora das grandes cidades.",
+      "public": {
+        "title": "Saúde Pública (ESY)",
+        "points": [
+          "Acessível a todos os residentes registrados no sistema de seguridade social (EFKA/AMKA)",
+          "Atendimento de emergência é gratuito para todos — ligue 112",
+          "Cidadãos da UE podem utilizar o EHIC para tratamentos de emergência",
+          "A qualidade varia significativamente — Atenas e Tessalônica possuem os melhores hospitais",
+          "Longos tempos de espera para consultas com especialistas são comuns",
+          "Medicamentos prescritos são subsidiados",
+          "Atendimento odontológico é majoritariamente privado"
+        ]
+      },
+      "private": {
+        "title": "Plano de Saúde Privado",
+        "points": [
+          "Exigido para o Digital Nomad Visa e a maioria das solicitações de visto de longa permanência",
+          "Acessível — geralmente entre €60–€250/mês por pessoa, dependendo da idade e da cobertura",
+          "Uma consulta particular com clínico geral custa apenas €60–€150 sem seguro",
+          "Médicos que falam inglês estão amplamente disponíveis em cidades e áreas turísticas",
+          "Fornecedores populares: Allianz, Bupa International, AXA, e a operadora local Interamerican"
+        ]
+      },
+      "tip": "Obtenha seu AMKA (número de seguridade social) o mais cedo possível após a chegada — ele é necessário para acessar a saúde pública, abrir uma conta bancária e concluir a maioria dos processos burocráticos na Grécia."
+    },
+    "banking": {
+      "eyebrow": "Finanças e Bancos",
+      "title": "Sistema bancário na Grécia",
+      "intro": "A Grécia utiliza o Euro e possui um setor bancário bem consolidado, regulado pelas normas da UE. Para abrir uma conta bancária local, você precisará do AFM (número fiscal) e do AMKA (número de seguridade social), portanto providencie-os antes de mais nada.",
+      "requirements": {
+        "title": "O que você precisará para abrir uma conta",
+        "points": [
+          "Passaporte válido ou documento de identidade nacional",
+          "AFM (número de identificação fiscal grego) — essencial",
+          "AMKA (número de seguridade social) — geralmente exigido",
+          "Comprovante de endereço na Grécia (contrato de aluguel ou conta de serviços públicos)",
+          "Autorização de residência ou certificado de registro para cidadãos de países fora da UE",
+          "Alguns bancos exigem um depósito inicial de €50–€300"
+        ]
+      },
+      "banks": {
+        "title": "Bancos que operam na Grécia",
+        "points": [
+          "National Bank of Greece — maior banco, ampla rede de agências e caixas eletrônicos",
+          "Piraeus Bank — popular entre expatriados, bom serviço de internet banking",
+          "Alpha Bank — forte suporte internacional",
+          "Eurobank — banco de varejo confiável com atendimento em inglês",
+          "Revolut / Wise — amplamente utilizados por expatriados e nômades digitais para transações do dia a dia"
+        ]
+      },
+      "tip": "Obtenha seu AFM (número fiscal) na repartição fiscal local (AADE) como primeiro passo após a chegada — você precisará dele para quase tudo, incluindo abrir uma conta bancária e assinar um contrato de aluguel."
+    },
+    "prosCons": {
+      "eyebrow": "Resumo",
+      "title": "A Grécia é a escolha certa para você?",
+      "pros": {
+        "title": "Razões para se mudar para a Grécia",
+        "points": [
+          "Classificada em 1º lugar no Global Retirement Index de 2026",
+          "Isenção de 50% do imposto de renda para titulares do Digital Nomad Visa por 7 anos",
+          "Imposto fixo de 7% sobre renda de aposentadoria estrangeira para aposentados qualificados",
+          "Imposto sobre dividendos de 5% — o mais baixo da UE",
+          "Custo de vida cerca de 51% mais baixo do que nos EUA",
+          "Estado membro da UE — plena liberdade de circulação e direitos",
+          "Clima incrível — mais de 300 dias de sol por ano",
+          "Cultura rica, história, gastronomia e estilo de vida nas ilhas",
+          "Inglês amplamente falado em cidades e áreas turísticas",
+          "Saúde privada acessível",
+          "O Golden Visa oferece residência sem requisito de permanência mínima",
+          "Comunidades crescentes de expatriados e nômades digitais em Atenas e Creta"
+        ]
+      },
+      "cons": {
+        "title": "Pontos a considerar",
+        "points": [
+          "A burocracia é notoriamente lenta e complexa — é preciso ter paciência",
+          "As regras do Digital Nomad Visa mudaram em fevereiro de 2026 — a solicitação deve ser feita antes de chegar ao país",
+          "Os aluguéis em Atenas subiram bastante — menos acessível do que há 5 anos",
+          "A qualidade da saúde pública é variável fora das grandes cidades",
+          "O idioma grego usa um alfabeto diferente — exige uma curva de aprendizado",
+          "Oportunidades de emprego limitadas para quem não fala grego no mercado local",
+          "Os verões em Atenas podem ser extremamente quentes (40°C+)",
+          "As alíquotas progressivas padrão (até 44%) se aplicam sem regime especial"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Pronto para dar o próximo passo?",
+      "subtitle": "Use nossa ferramenta gratuita para comparar a Grécia com outros países europeus e encontrar a melhor opção para a sua situação.",
+      "button": "Comparar todos os países →"
+    }
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "country": "Gibraltar",
+  "hero": {
+    "badge": "Gibraltar",
+    "title": "Mude-se para Gibraltar",
+    "subtitle": "Um Território Britânico Ultramarino único na ponta da Europa — de língua inglesa, fiscalmente eficiente, mediterrâneo e diferente de qualquer outro lugar no mundo.",
+    "stats": [
+      {
+        "label": "Imposto de renda máximo",
+        "value": "25%"
+      },
+      {
+        "label": "Imposto sobre ganhos de capital",
+        "value": "Nenhum"
+      },
+      {
+        "label": "Imposto sobre herança",
+        "value": "Nenhum"
+      },
+      {
+        "label": "Idioma oficial",
+        "value": "Inglês"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Vistos e Residência",
+      "title": "Como se mudar para Gibraltar",
+      "intro": "Gibraltar é um Território Britânico Ultramarino com seu próprio sistema de imigração, completamente separado tanto do Reino Unido quanto da União Europeia. As regras de residência variam significativamente de acordo com a nacionalidade.",
+      "warning": "Em outubro de 2025, o Governo de Gibraltar suspendeu temporariamente os novos pedidos de residência de longa duração de cidadãos do Reino Unido e do EEE, após um aumento sem precedentes na demanda. Os pedidos enviados antes de 6 de outubro de 2025 continuam sendo processados. Novos pedidos só poderão ser aprovados em caráter discricionário, exigindo autorização pessoal do Primeiro-Ministro. Novos critérios de residência com um 'padrão financeiro muito elevado' devem ser anunciados em breve. Sempre verifique o status atual junto à Autoridade de Imigração de Gibraltar (DIHA) ou a um consultor qualificado antes de fazer qualquer plano.",
+      "visas": [
+        {
+          "title": "Cidadãos do Reino Unido",
+          "badge": "Sem necessidade de visto",
+          "points": [
+            "Cidadãos britânicos não precisam de visto para entrar ou trabalhar em Gibraltar",
+            "No entanto, a residência de longa duração não é automática — é necessário solicitar e ser aprovado em uma categoria de residência em Gibraltar",
+            "Você precisará de uma autorização de trabalho em Gibraltar se for empregado localmente (o empregador cuida disso)",
+            "A residência exige comprovante de acomodação, renda ou emprego, além do cumprimento das regras locais",
+            "Atenção: os novos pedidos de residência estão atualmente sujeitos à suspensão de outubro de 2025 — verifique o status atual antes de solicitar"
+          ]
+        },
+        {
+          "title": "Cidadãos da UE / EEE",
+          "badge": "Autorização de residência necessária",
+          "points": [
+            "Desde o Brexit, os cidadãos da UE/EEE não têm mais liberdade de circulação automática em Gibraltar",
+            "Cidadãos da UE precisam de uma autorização de residência para viver em Gibraltar por longo prazo",
+            "É necessário comprovar emprego, autossuficiência financeira ou atender a outro critério de residência aprovado",
+            "Também estão sujeitos à suspensão de residência de outubro de 2025 para novos pedidos"
+          ]
+        },
+        {
+          "title": "Category 2 Residency (Indivíduos de Alto Patrimônio Líquido)",
+          "badge": "HNWIs",
+          "points": [
+            "Destinada a indivíduos com patrimônio líquido de pelo menos £2 milhões",
+            "É necessário alugar ou adquirir um imóvel qualificado em Gibraltar",
+            "O imposto é limitado — apenas os primeiros £118.000 da renda mundial são tributados, com um imposto mínimo de £37.000 e máximo de £42.380 por ano",
+            "Taxa de inscrição: £1.000 mais uma taxa de diligência devida e processamento de £15.000",
+            "Familiares, incluindo cônjuge, filhos, irmãos e pais, podem ser incluídos",
+            "Particularmente atrativo para pessoas abastadas que buscam um estilo de vida mediterrâneo com imposto limitado"
+          ]
+        },
+        {
+          "title": "HEPSS (High Executive Possessing Specialist Skills)",
+          "badge": "Profissionais seniores",
+          "points": [
+            "Para profissionais altamente qualificados empregados em Gibraltar em funções especializadas",
+            "Comum nos setores de serviços financeiros, fintech, jogos online e jurídico",
+            "O imposto incide apenas sobre os primeiros £160.000 de renda",
+            "É necessário ser empregado por uma empresa de Gibraltar e atender aos limites salariais",
+            "Popular entre executivos que se mudam para os crescentes setores de tecnologia e finanças de Gibraltar"
+          ]
+        },
+        {
+          "title": "Cidadãos de países fora da UE / EEE (ex.: EUA, Canadá)",
+          "badge": "Visto e autorização de trabalho necessários",
+          "points": [
+            "Geralmente precisam de visto e autorização de trabalho para se mudar",
+            "Normalmente exige uma oferta de emprego de um empregador de Gibraltar, que solicita a autorização de trabalho",
+            "O visto de entrada deve ser obtido antes da mudança",
+            "Existe uma via de autossuficiência disponível para quem possui meios financeiros suficientes",
+            "Sempre verifique os requisitos com a DIHA — Departamento de Imigração e Assuntos Internos de Gibraltar"
+          ]
+        }
+      ],
+      "disclaimer": "As regras de residência em Gibraltar estão mudando rapidamente. Um novo marco regulatório de residência com requisitos financeiros mais rigorosos é esperado para 2026. Sempre consulte um consultor de imigração qualificado em Gibraltar e verifique as regras atuais junto à DIHA antes de tomar qualquer decisão."
+    },
+    "taxes": {
+      "eyebrow": "Impostos",
+      "title": "Entendendo o sistema fiscal de Gibraltar",
+      "intro": "O sistema fiscal de Gibraltar é um dos mais atrativos da Europa. Não há IVA, imposto sobre ganhos de capital, imposto sobre herança nem imposto sobre patrimônio. As alíquotas de imposto de renda são baixas e limitadas a 25% para a maioria dos residentes. Em geral, apenas a renda obtida em Gibraltar ou proveniente de Gibraltar é tributada.",
+      "noTaxItems": [
+        {
+          "title": "Sem Imposto sobre Ganhos de Capital",
+          "desc": "Os lucros obtidos com a venda de ativos, ações ou imóveis (residência principal) não são tributados"
+        },
+        {
+          "title": "Sem Imposto sobre Herança",
+          "desc": "Os bens são transmitidos aos herdeiros sem nenhum imposto sobre herança, imposto sobre espólio ou imposto sobre patrimônio"
+        },
+        {
+          "title": "Sem IVA",
+          "desc": "Gibraltar não tem Imposto sobre Valor Agregado — o que torna muitos produtos notavelmente mais baratos do que no Reino Unido ou na UE"
+        }
+      ],
+      "twoSystems": {
+        "title": "Dois sistemas de tributação — você escolhe o mais vantajoso",
+        "intro": "Gibraltar oferece aos residentes a possibilidade de escolher entre dois sistemas fiscais. Você é automaticamente avaliado pelo sistema que resultar em uma carga tributária menor:",
+        "gibs": {
+          "title": "Gross Income Based System (GIBS)",
+          "desc": "Imposto calculado sobre a renda bruta em faixas — sem deduções. As alíquotas variam de 6% a 28% sobre rendas de até £25.000, e de 16% a 28% sobre rendas acima de £25.000. A alíquota efetiva máxima é limitada a 25% para rendas de até £100.000."
+        },
+        "abs": {
+          "title": "Allowances Based System (ABS)",
+          "desc": "Imposto calculado sobre a renda após deduções e abatimentos pessoais. Alíquotas progressivas de até 39%, mas com deduções para juros de hipoteca, contribuições previdenciárias, seguro de saúde e muito mais — as alíquotas efetivas costumam ser bem mais baixas."
+        }
+      },
+      "specialRegimes": {
+        "title": "Regimes Fiscais Especiais",
+        "subtitle": "Gibraltar oferece dois poderosos regimes fiscais com teto para grandes contribuintes e especialistas.",
+        "items": [
+          {
+            "label": "Category 2 (HNWIs)",
+            "value": "Imposto limitado entre £37.000 e £42.380/ano sobre os primeiros £118.000 da renda mundial. Exige patrimônio líquido de £2M ou mais."
+          },
+          {
+            "label": "HEPSS (Especialistas)",
+            "value": "Imposto incide apenas sobre os primeiros £160.000 de renda. Para profissionais seniores em setores-chave como finanças, jogos e fintech."
+          }
+        ]
+      },
+      "disclaimer": "As regras fiscais de Gibraltar são complexas e dependem do seu status de residência, tipo de renda e circunstâncias pessoais. Sempre consulte um consultor fiscal qualificado em Gibraltar antes de tomar qualquer decisão."
+    },
+    "costOfLiving": {
+      "eyebrow": "Custo de Vida",
+      "title": "Quanto custa viver em Gibraltar?",
+      "intro": "Gibraltar é um dos lugares mais caros do sul da Europa, principalmente devido ao seu território minúsculo e à alta demanda por moradia. No entanto, a ausência de IVA torna bens do dia a dia e eletrônicos notavelmente mais baratos do que no Reino Unido, e muitos residentes fazem compras do lado espanhol da fronteira, pagando entre 20% e 40% a menos nas compras de supermercado.",
+      "tip": "Muitos residentes de Gibraltar moram do outro lado da fronteira, em La Línea de la Concepción, na Espanha, onde os aluguéis são entre 50% e 70% mais baixos. A travessia da fronteira a pé costuma levar entre 5 e 15 minutos.",
+      "expenses": {
+        "title": "Despesas mensais típicas em Gibraltar",
+        "items": [
+          [
+            "Aluguel (apartamento de 1 quarto, centro)",
+            "£1.250 – £1.850"
+          ],
+          [
+            "Aluguel (quarto em apartamento compartilhado)",
+            "£650 – £950"
+          ],
+          [
+            "Serviços públicos (eletricidade e água combinados)",
+            "£120 – £180"
+          ],
+          [
+            "Alimentação (compras em Gibraltar)",
+            "£250 – £400"
+          ],
+          [
+            "Alimentação (compras na Espanha)",
+            "£150 – £250"
+          ],
+          [
+            "Refeição fora (restaurante intermediário, por pessoa)",
+            "£15 – £25"
+          ],
+          [
+            "Passe mensal de ônibus",
+            "~£30"
+          ],
+          [
+            "Seguro de saúde privado",
+            "£50 – £150"
+          ],
+          [
+            "Plano de celular",
+            "£15 – £40"
+          ]
+        ]
+      },
+      "vatNote": "Eletrônicos, bebidas alcoólicas, tabaco e artigos de luxo costumam ser significativamente mais baratos em Gibraltar do que no Reino Unido ou na Espanha, devido à ausência de IVA. Um novo Imposto sobre Transações está previsto para abril de 2026, substituindo os direitos de importação — verifique as alíquotas vigentes antes de fazer compras de grande valor."
+    },
+    "healthcare": {
+      "eyebrow": "Saúde",
+      "title": "Saúde em Gibraltar",
+      "intro": "Gibraltar possui um sistema de saúde público de alta qualidade, administrado pela Gibraltar Health Authority (GHA), com um modelo muito próximo ao NHS do Reino Unido. Todos os serviços são realizados em inglês. Os residentes registrados têm direito a atendimento gratuito no momento do uso.",
+      "public": {
+        "title": "Saúde Pública (GHA)",
+        "points": [
+          "Gratuito no momento do uso para residentes registrados em Gibraltar",
+          "Baseado de perto no NHS do Reino Unido — totalmente em língua inglesa",
+          "Cobre consultas com clínicos gerais, atendimento especializado, tratamento hospitalar, maternidade e serviços de emergência",
+          "O Hospital St Bernard's é a principal unidade — moderno e bem equipado",
+          "O atendimento odontológico é majoritariamente privado",
+          "Registre-se na GHA com o seu cartão de identidade de Gibraltar assim que a residência estiver estabelecida"
+        ]
+      },
+      "private": {
+        "title": "Seguro de Saúde Privado",
+        "points": [
+          "Recomendado para acesso mais rápido a especialistas e cobertura mais ampla",
+          "Mensalidades geralmente entre £50 e £150, dependendo da idade e do plano",
+          "Cobre serviços odontológicos, oftalmológicos e especialidades adicionais",
+          "Muitos residentes utilizam o seguro privado para cuidados não urgentes e evitar filas de espera",
+          "Entre os provedores mais populares estão Bupa International e AXA",
+          "Útil enquanto se estabelece a residência, antes de obter acesso à GHA"
+        ]
+      },
+      "tip": "O sistema de saúde de Gibraltar é amplamente considerado mais acessível e eficiente do que o NHS, com tempos de espera menores e um sistema mais compacto e voltado para a comunidade. O inglês é o idioma utilizado em todo o atendimento."
+    },
+    "banking": {
+      "eyebrow": "Finanças e Serviços Bancários",
+      "title": "Serviços bancários em Gibraltar",
+      "intro": "Gibraltar possui um setor bancário bem desenvolvido, regulado pela Gibraltar Financial Services Commission (GFSC). Abrir uma conta local é simples para residentes, e os bancos de Gibraltar têm muita experiência em atender expatriados.",
+      "requirements": {
+        "title": "O que você precisará para abrir uma conta",
+        "points": [
+          "Passaporte válido ou documento de identidade nacional",
+          "Comprovante de residência em Gibraltar (cartão de identidade de Gibraltar ou autorização de residência)",
+          "Comprovante de endereço em Gibraltar",
+          "Comprovante de renda ou emprego",
+          "Alguns bancos podem solicitar referências ou informações sobre o histórico financeiro"
+        ]
+      },
+      "banks": {
+        "title": "Bancos que operam em Gibraltar",
+        "points": [
+          "Barclays — grande banco britânico com presença completa em Gibraltar",
+          "NatWest International — por meio de sua agência em Gibraltar",
+          "Jyske Bank — popular entre residentes internacionais",
+          "EFG Private Bank — para clientes de alto patrimônio líquido",
+          "Revolut / Wise — úteis para recém-chegados antes de abrir uma conta local"
+        ]
+      },
+      "tip": "O setor financeiro de Gibraltar é regulado pelo direito consuetudinário britânico e é um centro financeiro internacional de boa reputação. A moeda é a Libra de Gibraltar (GIP), vinculada na proporção de 1:1 à Libra Esterlina (GBP) e intercambiável em Gibraltar."
+    },
+    "prosCons": {
+      "eyebrow": "Resumo",
+      "title": "Gibraltar é a escolha certa para você?",
+      "pros": {
+        "title": "Motivos para se mudar para Gibraltar",
+        "points": [
+          "Sem imposto sobre ganhos de capital, sem imposto sobre herança, sem IVA",
+          "Imposto de renda limitado a 25% — bem abaixo da maioria dos países europeus",
+          "Regimes especiais (Category 2, HEPSS) para HNWIs e profissionais seniores",
+          "De língua inglesa — idioma oficial utilizado em todos os lugares",
+          "Sistema jurídico e de governança britânico — familiar aos cidadãos do Reino Unido",
+          "Clima mediterrâneo com mais de 300 dias de sol por ano",
+          "Um dos lugares mais seguros para se viver na Europa",
+          "O novo acordo Schengen garante aos residentes livre circulação pela Europa",
+          "Forte comunidade de expatriados, especialmente britânicos",
+          "Setor de serviços financeiros de classe mundial com oportunidades de carreira"
+        ]
+      },
+      "cons": {
+        "title": "Pontos a considerar",
+        "points": [
+          "Novos pedidos de residência suspensos desde outubro de 2025 — situação em evolução",
+          "Novos critérios de residência devem estabelecer um 'padrão financeiro muito elevado'",
+          "Oferta de moradia extremamente limitada — aluguéis altos e disponibilidade escassa",
+          "Território muito pequeno (6,7 km²) — pode parecer restritivo a longo prazo",
+          "Custo de vida mais alto do que o da vizinha Espanha",
+          "Opções limitadas de escolas e entretenimento em comparação com cidades maiores",
+          "Não faz mais parte da UE — algumas implicações para viagens e negócios na Europa",
+          "Mercado imobiliário com oferta limitada e preços elevados"
+        ]
+      }
+    },
+    "laLinea": {
+      "eyebrow": "A Opção Transfronteiriça",
+      "title": "Morar em La Línea e Trabalhar em Gibraltar",
+      "intro": "A cada dia útil, cerca de 15.000 pessoas cruzam a fronteira entre Gibraltar e a Espanha. Muitos trabalhadores de Gibraltar optam por morar em La Línea de la Concepción — a cidade espanhola diretamente do outro lado da fronteira — onde os aluguéis são entre 50% e 70% mais baratos. É um dos arranjos de moradia mais populares da região, mas envolve obrigações administrativas e fiscais importantes em ambos os lados da fronteira.",
+      "disclaimer": "O arranjo de moradia transfronteiriço é popular e viável, mas os requisitos fiscais e administrativos são complexos. Recomendamos fortemente consultar um consultor fiscal espanhol qualificado (gestor) e um consultor fiscal de Gibraltar antes de fazer a mudança."
+    },
+    "cta": {
+      "title": "Pronto para dar o próximo passo?",
+      "subtitle": "Use nossa ferramenta gratuita para comparar Gibraltar com outros países europeus e encontrar a melhor opção para a sua situação.",
+      "button": "Comparar todos os países →"
+    }
+  }
+}

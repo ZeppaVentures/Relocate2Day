@@ -1,0 +1,330 @@
+{
+  "country": "Portugal",
+  "hero": {
+    "badge": "Portugal",
+    "title": "Mude-se para Portugal",
+    "subtitle": "Custo de vida acessível, moradores acolhedores, gastronomia e vinhos de classe mundial, e um dos países mais receptivos da Europa para quem chega. Aqui está tudo o que você precisa saber.",
+    "stats": [
+      {
+        "label": "Custo de vida",
+        "value": "A partir de €900/mês"
+      },
+      {
+        "label": "Imposto fixo IFICI",
+        "value": "20%"
+      },
+      {
+        "label": "Clima",
+        "value": "300+ dias de sol"
+      },
+      {
+        "label": "Língua oficial",
+        "value": "Português"
+      }
+    ]
+  },
+  "sections": {
+    "visas": {
+      "eyebrow": "Vistos & Residência",
+      "title": "Como se mudar para Portugal",
+      "intro": "Cidadãos da UE/EEE podem se mudar para Portugal livremente e precisam apenas registrar sua residência. Cidadãos de fora da UE dispõem de excelentes rotas de visto dependendo da sua situação.",
+      "visas": [
+        {
+          "title": "D7 Passive Income Visa",
+          "badge": "Aposentados e renda passiva",
+          "points": [
+            "Para cidadãos não pertencentes à UE com renda passiva estável — pensões, renda de aluguel, dividendos ou investimentos",
+            "Renda mínima exigida: aprox. €760/mês (o salário mínimo português) para o requerente principal",
+            "Acrescente 50% para cônjuge/parceiro e 30% por filho dependente",
+            "É necessário comprovar poupanças de aprox. €10.440 por requerente",
+            "Exige seguro de saúde privado válido em Portugal",
+            "Autorização de residência inicial de 2 anos, renovável por períodos de 3 anos",
+            "Caminho para residência permanente após 5 anos e cidadania após 5 anos",
+            "Não permite emprego em Portugal — apenas renda passiva"
+          ]
+        },
+        {
+          "title": "D8 Digital Nomad Visa",
+          "badge": "Trabalhadores remotos e freelancers",
+          "points": [
+            "Para cidadãos não pertencentes à UE que trabalham remotamente para empregadores ou clientes sediados fora de Portugal",
+            "Renda mínima exigida: €3.680/mês (4x o salário mínimo de Portugal)",
+            "Acrescente 50% para cônjuge/parceiro e 30% por filho dependente",
+            "Válido por até 1 ano inicialmente, renovável como autorização de residência",
+            "Caminho para residência permanente após 5 anos",
+            "Exige um número de NIF e uma conta bancária portuguesa como parte do pedido",
+            "Um dos vistos de nômade digital mais populares da Europa"
+          ]
+        },
+        {
+          "title": "Golden Visa",
+          "badge": "Investidores",
+          "points": [
+            "Programa de residência por investimento de Portugal — disponível por meio de fundos de investimento, doações culturais ou atividades de investigação",
+            "Atenção: a modalidade imobiliária foi eliminada em 2023 e não está mais disponível",
+            "Investimento mínimo: aprox. €500.000 em fundos de investimento qualificados",
+            "Apenas 7 dias por ano em Portugal são necessários para manter a autorização",
+            "Caminho para residência permanente após 5 anos e cidadania após 5 anos"
+          ]
+        },
+        {
+          "title": "Student Visa (D4)",
+          "badge": "Estudantes",
+          "points": [
+            "Para cidadãos não pertencentes à UE matriculados em instituição de ensino portuguesa reconhecida",
+            "Válido pela duração do curso",
+            "Permite trabalho em tempo parcial durante os estudos",
+            "Portugal possui excelentes universidades e um custo de vida acessível para estudantes",
+            "Possibilidade de conversão para autorização de trabalho após a graduação"
+          ]
+        },
+        {
+          "title": "Cidadãos da UE / EEE",
+          "badge": "Livre circulação",
+          "points": [
+            "Cidadãos da UE/EEE têm o direito de viver e trabalhar em Portugal sem necessidade de visto",
+            "Devem registrar-se na Câmara Municipal local no prazo de 3 meses após a chegada",
+            "Receberão um certificado de registo confirmando os direitos de residência na UE",
+            "Após 5 anos de residência legal contínua, são elegíveis para residência permanente"
+          ]
+        }
+      ],
+      "disclaimer": "A agência de imigração de Portugal (AIMA) é conhecida pelos longos prazos de processamento — às vezes de 6 a 12 meses para agendamentos de residência. Solicite o quanto antes e considere contratar um advogado de imigração para evitar atrasos."
+    },
+    "taxes": {
+      "eyebrow": "Impostos",
+      "title": "Entendendo os impostos em Portugal",
+      "intro": "O imposto de renda padrão em Portugal é progressivo, variando de 14,5% a 48%. No entanto, os recém-chegados que se qualificarem podem se beneficiar do regime IFICI (também conhecido como NHR 2.0), que oferece uma alíquota fixa significativa por até 10 anos.",
+      "highlight": {
+        "title": "IFICI — O Novo Incentivo Fiscal de Portugal (NHR 2.0)",
+        "subtitle": "O regime original Non-Habitual Resident (NHR) encerrou em 2024. Foi substituído pelo IFICI (Incentivo Fiscal à Investigação Científica e Inovação), que oferece uma alíquota fixa de 20% sobre os rendimentos portugueses qualificados por até 10 anos.",
+        "items": [
+          {
+            "label": "Alíquota fixa",
+            "value": "20% sobre rendimentos portugueses qualificados"
+          },
+          {
+            "label": "Duração",
+            "value": "Até 10 anos"
+          },
+          {
+            "label": "Quem se qualifica",
+            "value": "Profissionais altamente qualificados em tecnologia, P&D, saúde, ensino superior e manufatura"
+          },
+          {
+            "label": "Rendimentos estrangeiros",
+            "value": "Podem ser isentos ou tributados a alíquotas reduzidas dependendo do tipo e origem"
+          }
+        ]
+      },
+      "nhrWarning": "O regime original NHR estava disponível para quase qualquer recém-chegado e encerrou em 2024 (prazo final de transição: 31 de março de 2025). O novo IFICI é significativamente mais restritivo — é limitado a profissionais altamente qualificados em setores específicos. A maioria dos aposentados, trabalhadores remotos em geral e quem recebe renda passiva NÃO se qualificará para o IFICI.",
+      "standardRates": {
+        "title": "Alíquotas padrão do imposto de renda (sem IFICI)",
+        "brackets": [
+          [
+            "Até €7.703",
+            "14,5%"
+          ],
+          [
+            "€7.703 – €11.623",
+            "21%"
+          ],
+          [
+            "€11.623 – €16.472",
+            "26,5%"
+          ],
+          [
+            "€16.472 – €21.321",
+            "28,5%"
+          ],
+          [
+            "€21.321 – €27.146",
+            "35%"
+          ],
+          [
+            "€27.146 – €39.791",
+            "37%"
+          ],
+          [
+            "€39.791 – €51.997",
+            "43,5%"
+          ],
+          [
+            "€51.997 – €81.199",
+            "45%"
+          ],
+          [
+            "Acima de €81.199",
+            "48%"
+          ]
+        ]
+      },
+      "freelancerRegime": "Se você é autônomo ou freelancer com rendimentos anuais de fonte estrangeira abaixo de €200.000, Portugal oferece um regime fiscal simplificado no qual apenas 75% da renda bruta é tributada — os 25% restantes são tratados como dedução de despesas empresariais.",
+      "disclaimer": "O cenário tributário de Portugal mudou significativamente nos últimos anos. Consulte sempre um assessor fiscal português qualificado antes de tomar qualquer decisão — especialmente em relação à elegibilidade ao IFICI, tributação de pensões e tratamento de rendimentos estrangeiros."
+    },
+    "costOfLiving": {
+      "eyebrow": "Custo de Vida",
+      "title": "Quanto custa viver em Portugal?",
+      "intro": "Portugal é um dos países mais acessíveis da Europa Ocidental. Uma pessoa solteira pode viver confortavelmente com €1.200–€1.800/mês nas grandes cidades, e com apenas €900–€1.300/mês em cidades menores e áreas rurais.",
+      "cities": [
+        {
+          "city": "Lisboa & Cascais",
+          "level": "Mais caro",
+          "items": [
+            "Apartamento de 1 quarto (centro): €1.200–€1.500/mês",
+            "Orçamento para solteiro: €1.750–€2.350/mês",
+            "Passe de transporte mensal: €40"
+          ]
+        },
+        {
+          "city": "Porto, Algarve, Setúbal",
+          "level": "Intermediário",
+          "items": [
+            "Apartamento de 1 quarto (centro): €700–€1.000/mês",
+            "Orçamento para solteiro: €1.200–€1.800/mês",
+            "Passe de transporte mensal: €30–€40"
+          ]
+        },
+        {
+          "city": "Cidades menores e áreas rurais",
+          "level": "Mais acessível",
+          "items": [
+            "Apartamento de 1 quarto: €400–€700/mês",
+            "Orçamento para solteiro: €900–€1.300/mês",
+            "Carro frequentemente necessário fora das cidades"
+          ]
+        }
+      ],
+      "expenses": {
+        "title": "Despesas mensais típicas (fora de Lisboa)",
+        "items": [
+          [
+            "Aluguel (1 quarto, centro da cidade)",
+            "€600 – €900"
+          ],
+          [
+            "Serviços (eletricidade, água, internet)",
+            "€80 – €130"
+          ],
+          [
+            "Supermercado",
+            "€200 – €300"
+          ],
+          [
+            "Refeições fora (restaurante intermediário)",
+            "€100 – €200"
+          ],
+          [
+            "Passe de transporte público",
+            "€30 – €40"
+          ],
+          [
+            "Seguro de saúde privado",
+            "€50 – €150"
+          ],
+          [
+            "Academia",
+            "€25 – €50"
+          ],
+          [
+            "Plano de celular",
+            "€10 – €25"
+          ]
+        ]
+      }
+    },
+    "healthcare": {
+      "eyebrow": "Saúde",
+      "title": "Saúde em Portugal",
+      "intro": "O sistema público de saúde de Portugal, o Serviço Nacional de Saúde (SNS), é classificado entre os melhores do mundo e está disponível a todos os residentes legais.",
+      "public": {
+        "title": "Saúde Pública (SNS)",
+        "points": [
+          "Gratuito ou altamente subsidiado para todos os residentes legais",
+          "Registre-se no Centro de Saúde local com seu NIF, NISS e autorização de residência",
+          "Você receberá um médico de família (médico de família)",
+          "Cobre consultas com clínico geral, internamento hospitalar, maternidade, serviços de emergência e receitas subsidiadas",
+          "Cuidados dentários NÃO são cobertos — pagamento particular",
+          "Pequenas copagamentos (taxas moderadoras) se aplicam a alguns serviços — tipicamente €5 por consulta com clínico geral",
+          "Longos tempos de espera para consultas não urgentes com especialistas podem ser de 6 a 18 meses",
+          "Número de emergência: 112"
+        ]
+      },
+      "private": {
+        "title": "Seguro de Saúde Privado",
+        "points": [
+          "Exigido para a maioria dos pedidos de visto (D7, D8, Golden Visa)",
+          "Custa aprox. €50–€150/mês por pessoa, dependendo da idade e da cobertura",
+          "Proporciona acesso mais rápido a especialistas e evita as filas de espera do SNS",
+          "Muitas clínicas privadas têm médicos que falam inglês, especialmente em Lisboa, Porto e no Algarve",
+          "Prestadores populares: Médis, Multicare, Fidelidade, AXA Portugal"
+        ]
+      },
+      "tip": "Obtenha seu NIF e NISS o quanto antes após chegar — na verdade, você pode solicitar ambos ao mesmo tempo numa repartição de Finanças. Em seguida, registre-se no Centro de Saúde local para ativar o acesso ao SNS."
+    },
+    "banking": {
+      "eyebrow": "Bancos & Finanças",
+      "title": "Serviços bancários em Portugal",
+      "intro": "Uma conta bancária portuguesa é essencial — é exigida para a maioria dos pedidos de visto, pagamento de aluguel, recebimento de salário ou pensão, e acesso à rede de pagamentos Multibanco de Portugal.",
+      "requirements": {
+        "title": "Obtendo seu NIF",
+        "points": [
+          "O NIF (Número de Identificação Fiscal) é o seu número fiscal português — exigido para quase tudo",
+          "Solicite presencialmente em qualquer Finanças (repartição fiscal) com seu passaporte e comprovante de endereço",
+          "Cidadãos não pertencentes à UE precisam de um representante fiscal português até obterem a residência",
+          "Também pode ser obtido remotamente por meio de um advogado de imigração ou serviço online",
+          "Emitido imediatamente na repartição fiscal — sem custo",
+          "Seu NIF é permanente e nunca expira"
+        ]
+      },
+      "banks": {
+        "title": "Abrindo uma conta bancária",
+        "points": [
+          "Necessário: NIF, passaporte, comprovante de endereço e comprovante de renda",
+          "Geralmente é exigido um depósito inicial de €250",
+          "Bancos populares entre expatriados: Millennium BCP, Novo Banco, Caixa Geral, Bankinter",
+          "Use Revolut ou Wise enquanto aguarda — ótimos para despesas do dia a dia antes de sua conta estar ativa"
+        ]
+      },
+      "tip": "A rede Multibanco de Portugal é um dos sistemas de pagamento mais avançados da Europa — os caixas eletrônicos permitem pagar contas, recarregar celulares, comprar bilhetes e muito mais."
+    },
+    "prosCons": {
+      "eyebrow": "Resumo",
+      "title": "Portugal é a escolha certa para você?",
+      "pros": {
+        "title": "Razões para se mudar para Portugal",
+        "points": [
+          "Um dos países mais acessíveis da Europa Ocidental",
+          "Clima quente com mais de 300 dias de sol por ano",
+          "Moradores amigáveis e acolhedores — consistentemente classificado como um dos países mais seguros do mundo",
+          "Excelente sistema público de saúde",
+          "Ampla variedade de opções de visto para todos os perfis de recém-chegados",
+          "Regime fiscal IFICI para profissionais qualificados (alíquota fixa de 20% por 10 anos)",
+          "Regime fiscal simplificado para freelancers e autônomos",
+          "Inglês amplamente falado, especialmente nas cidades e áreas turísticas",
+          "Excelente gastronomia, vinhos e qualidade de vida",
+          "Caminho para residência na UE e cidadania após 5 anos",
+          "Forte comunidade de expatriados — um dos destinos mais populares da Europa"
+        ]
+      },
+      "cons": {
+        "title": "Pontos a considerar",
+        "points": [
+          "O regime fiscal original NHR acabou — o IFICI é muito mais restritivo",
+          "A AIMA (agência de imigração) é conhecida pelos longos prazos de processamento — planeje com 6 a 12 meses de antecedência",
+          "Os custos de habitação em Lisboa e Porto aumentaram significativamente",
+          "A burocracia portuguesa pode ser lenta e complexa",
+          "Os tempos de espera do SNS para atendimento especializado podem ser muito longos",
+          "O português é importante para o dia a dia fora das áreas turísticas",
+          "O D8 visa exige renda relativamente alta (€3.680/mês)",
+          "A modalidade imobiliária do Golden Visa foi eliminada em 2023"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Pronto para dar o próximo passo?",
+      "subtitle": "Use nossa ferramenta gratuita para comparar Portugal com outros países europeus e encontrar a melhor opção para a sua situação.",
+      "button": "Comparar todos os países →"
+    }
+  }
+}

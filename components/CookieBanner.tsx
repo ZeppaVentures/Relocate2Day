@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "@/components/LocaleLink";
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
@@ -34,9 +35,9 @@ export default function CookieBanner() {
               We use essential cookies to keep the site working. We&apos;d also like to use
               optional analytics cookies to understand how you use Relocate2Day so we can
               improve it.{" "}
-              <a href="/privacy" className="text-blue-400 hover:underline">
+              <Link href="/privacy" className="text-blue-400 hover:underline">
                 Privacy Policy
-              </a>
+              </Link>
             </p>
             {showDetails && (
               <div className="mt-3 space-y-2 text-xs text-gray-400 border-t border-gray-700 pt-3">

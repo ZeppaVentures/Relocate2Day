@@ -12,7 +12,7 @@ fi
 COUNTRIES=("spain" "gibraltar" "portugal" "italy" "malta" "bulgaria" "greece" "netherlands" "romania")
 
 for country in "${COUNTRIES[@]}"; do
-  CONTENT_FILE="app/countries/${country}/content.json"
+  CONTENT_FILE="app/[locale]/countries/${country}/content.json"
   if [ ! -f "$CONTENT_FILE" ]; then
     echo "⚠️  Skipping $country — no content.json found"
     continue
