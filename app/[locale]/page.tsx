@@ -375,13 +375,13 @@ export default function Home() {
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               {[
-                t("hero.cta1") || "Compare countries",
-                t("hero.cta2") || "Understand taxes",
-                t("hero.cta3") || "Plan your move",
+                { label: t("hero.cta1") || "Compare countries", href: "#countries" },
+                { label: t("hero.cta2") || "Understand taxes", href: `/${locale}/tax-calculator` },
+                { label: t("hero.cta3") || "Plan your move", href: `/${locale}/checklist` },
               ].map((item) => (
-                <button key={item} className="rounded-2xl border border-white/40 bg-white/70 px-6 py-3 text-sm font-semibold shadow-lg backdrop-blur-xl transition hover:scale-105">
-                  {item}
-                </button>
+                <a key={item.label} href={item.href} className="rounded-2xl border border-white/40 bg-white/70 px-6 py-3 text-sm font-semibold shadow-lg backdrop-blur-xl transition hover:scale-105">
+                  {item.label}
+                </a>
               ))}
             </div>
           </div>
