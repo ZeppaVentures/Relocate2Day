@@ -54,6 +54,12 @@ const NATIVE_POSTS = [
     description: "What foreigners need to open a bank account in Portugal — the NIF, required documents, choosing a bank, common friction points, and whether to open before or after moving.",
     date: "2026-06-21",
   },
+  {
+    slug: "italy-digital-nomad-visa-requirements",
+    title: "Italy Digital Nomad Visa Requirements",
+    description: "A practical breakdown of Italy's digital nomad visa — income thresholds, the highly skilled work standard, required documents, health insurance, and how to apply from the US.",
+    date: "2026-06-19",
+  },
 ];
 
 export default function BlogPage() {
