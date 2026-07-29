@@ -1,4 +1,6 @@
 import { MetadataRoute } from "next";
+import fs from "fs";
+import path from "path";
 
 const LOCALES = ["en", "es", "pt", "zh"] as const;
 const BASE_URL = "https://relocate2day.com";
@@ -21,6 +23,18 @@ function languageAlternates(path: string): Record<string, string> {
   for (const locale of LOCALES) alternates[locale] = `${BASE_URL}/${locale}${path}`;
   alternates["x-default"] = `${BASE_URL}/en${path}`;
   return alternates;
+}
+
+function getBlogSlugs(): string[] {
+  const dir = path.join(process.cwd(), "posts", "en");
+  try {
+    return fs
+      .readdirSync(dir)
+      .filter((file) => file.endsWith(".md"))
+      .map((file) => file.replace(/\.md$/, ""));
+  } catch {
+    return [];
+  }
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -46,6 +60,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "weekly",
         priority: 0.8,
         alternates: { languages: languageAlternates(`/countries/${country}`) },
+      });
+    }
+  }
+
+  const blogSlugs = getBlogSlugs();
+  for (const slug of blogSlugs) {
+    for (const locale of LOCALES) {
+      entries.push({
+        url: `${BASE_URL}/${locale}/blog/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.7,
+        alternates: { languages: languageAlternates(`/blog/${slug}`) },
       });
     }
   }
